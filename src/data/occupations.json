@@ -1,0 +1,179 @@
+[
+  {
+    "id": "farmer",
+    "name": "농사꾼",
+    "title": "《빼앗긴 땅, 빼앗긴 봄》 · 최덕수",
+    "protagonistId": "char_deoksu",
+    "protagonistName": "최덕수",
+    "age": 34,
+    "summary": "전라북도 옥구군을 참고한 가상의 농촌 마을에서 대대로 지주의 땅을 빌려 농사짓는 소작농입니다. 아내 최순이, 어린 아들과 함께 언젠가 자기 땅을 갖는 날을 꿈꿉니다.",
+    "socialPosition": "식민지 농촌의 소작농. 1942년 사료 F(《조선농보》)의 경작권 이전·증산 표창 사례를 출발점으로 생존·협력·침묵·연대의 갈림길에 섭니다.",
+    "historicalScope": "1942~1945년 전시총동원체제 아래 농민은 노동력 동원, 고율 소작료, 식량 증산과 공출 할당에 동시에 노출되었습니다. 한 농민의 기회(경작권 이전)가 다른 농민의 몰락 및 식민지 당국의 선전과 얽히는 구조를 체험합니다.",
+    "keyConflicts": [
+      "이웃 김봉수가 동원과 흉작으로 포기한 논 네 두락의 경작권 이전 문제",
+      "가족의 식량과 면사무소·금융조합의 증산·공출 실적 압박 사이의 갈등",
+      "비밀 농민 연대의 탄압 위험과 해방 이후에도 남는 토지 소유권의 모순"
+    ],
+    "startLocationId": "loc_farmland",
+    "startBackground": "/assets/aistudio/Pixel_art_rice_paddies_landscape_005bd82c_d8816a80.jpg",
+    "portraitSprite": "/assets/aistudio/Korean_farmer_pixel_art_sprite_1ac6b1e0_e1e87f41.jpg",
+    "initialVariables": {
+      "livelihood": 35,
+      "cooperation": 20,
+      "communityBurden": 25,
+      "autonomy": 25,
+      "solidarity": 45
+    },
+    "initialRelationships": {
+      "char_suni_farmer": 78,
+      "char_son": 82,
+      "char_bongsu": 62,
+      "char_jaemun": 45,
+      "char_oh": 40,
+      "char_manseok": 30
+    },
+    "initialUnlockedLocations": [
+      "loc_home",
+      "loc_farmland",
+      "loc_meeting_room",
+      "loc_township_office",
+      "loc_clinic"
+    ],
+    "initialUnlockedSources": ["source_F", "source_D"],
+    "familyAndContacts": [
+      {
+        "characterId": "char_suni_farmer",
+        "relation": "아내 (최순이)",
+        "note": "가족의 식량과 안전을 우선시하며 현실적인 걱정을 드러냅니다."
+      },
+      {
+        "characterId": "char_bongsu",
+        "relation": "이웃 농민 (김봉수)",
+        "note": "노동력 동원과 흉작으로 기존 경작지를 포기해야 했던 이웃입니다."
+      },
+      {
+        "characterId": "char_jaemun",
+        "relation": "활동가 (이재문)",
+        "note": "과거 농민운동 경험을 지녔으며 공동 대응과 토지 문제를 제기합니다."
+      }
+    ]
+  },
+  {
+    "id": "clerk",
+    "name": "면서기",
+    "title": "《먹줄의 무게》 · 김진호",
+    "protagonistId": "char_clerk",
+    "protagonistName": "김진호",
+    "age": 27,
+    "summary": "가난한 집안에서 자라 면사무소 서기가 된 27세 조선인 행정 실무자입니다. 직접 폭력을 행사하지 않는다는 안도감 속에서, 문서 위 먹줄 한 줄이 이웃의 삶을 바꾸는 현실을 마주합니다.",
+    "socialPosition": "피식민자이면서 동시에 식민지 지배를 실행하는 말단 행정 실무자. 1944~1945년 전시 말기 공출·노무동원 명부·창씨개명 업무를 처리합니다.",
+    "historicalScope": "1944~1945년 일제강점기 말기, 면사무소 서기는 미곡 공출 실적 관리, 노무동원 대상자 명부 작성, 주민 인적 사항 조사, 창씨개명·황민화 행정 등 식민지 통치의 실무를 수행했습니다.",
+    "keyConflicts": [
+      "지주의 청탁과 면장의 실적 압박 속에서 노무동원 대상자 명부를 작성하는 일",
+      "동료 박태수의 현실주의적 자기합리화와 소꿉친구 이정수의 윤리적 질문 사이의 갈등",
+      "해방이 찾아와도 지워지지 않는 서류와 과거 행정 행위의 책임 문제"
+    ],
+    "startLocationId": "loc_township_office",
+    "startBackground": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
+    "portraitSprite": "/assets/aistudio/Young_man_carrying_document_folder_67f4d3c7_370f7e5d.png",
+    "initialVariables": {
+      "livelihood": 40,
+      "cooperation": 35,
+      "communityBurden": 35,
+      "autonomy": 40,
+      "solidarity": 45
+    },
+    "initialRelationships": {
+      "char_taesu": 62,
+      "char_jeongsu": 74,
+      "char_myeonjang": 45,
+      "char_deoksu": 50,
+      "char_jinho_mother": 80,
+      "char_manseok": 35
+    },
+    "initialUnlockedLocations": [
+      "loc_home",
+      "loc_township_office",
+      "loc_farmland",
+      "loc_meeting_room",
+      "loc_police_substation"
+    ],
+    "initialUnlockedSources": ["source_D", "source_E"],
+    "familyAndContacts": [
+      {
+        "characterId": "char_taesu",
+        "relation": "동료 서기 (박태수)",
+        "note": "식민지 질서에 순응해 출세하는 것이 현실적 처세라 믿으며 진호의 죄책감을 무마합니다."
+      },
+      {
+        "characterId": "char_jeongsu",
+        "relation": "소꿉친구 · 야학 교사 (이정수)",
+        "note": "마을 청년들에게 한글과 산술을 가르치며 진호의 선택에 정면으로 질문을 던집니다."
+      },
+      {
+        "characterId": "char_myeonjang",
+        "relation": "상관 (오 면장)",
+        "note": "군청 실적을 강조하며 지역 유력 지주의 청탁은 수용하고 진호를 압박합니다."
+      }
+    ]
+  },
+  {
+    "id": "police_assistant",
+    "name": "순사보",
+    "title": "송현 주재소 순사보 · 최민석",
+    "protagonistId": "char_police_asst",
+    "protagonistName": "최민석",
+    "age": 27,
+    "summary": "송현면 경찰 주재소에서 일본인 순사부장의 지휘 아래 치안 보조와 행정 단속을 맡는 조선인 순사보입니다.",
+    "socialPosition": "식민지 경찰기구 최하위 계급의 조선인 실무자. 주민에게는 제복 입은 권력이지만, 조직 내부에서는 명령 수행과 차별·감시 대상에 놓여 있습니다.",
+    "historicalScope": "식민지 경찰체제에서 조선인 하위 경찰(순사·순사보)은 일본인 상관의 지휘 아래 호구조사, 공출 단속, 동원 집행 보조, 일상 치안 통제에 동원되었습니다.",
+    "keyConflicts": [
+      "일본인 상관의 엄격한 보고·단속 명령과 개인적 판단의 한계",
+      "가족 생계를 보장하는 제복과 마을 공동체로부터의 고립",
+      "단속 현장에서의 규정 집행과 주민 피해 사이의 책임"
+    ],
+    "startLocationId": "loc_police_substation",
+    "startBackground": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
+    "portraitSprite": "/assets/aistudio/Korean_police_assistant_pixel_sp__43efdc41_22c3570f.jpg",
+    "initialVariables": {
+      "livelihood": 65,
+      "cooperation": 60,
+      "communityBurden": 45,
+      "autonomy": 30,
+      "solidarity": 30
+    },
+    "initialRelationships": {
+      "char_sato": 50,
+      "char_wife": 65,
+      "char_boy": 70,
+      "char_clerk": 50,
+      "char_farmer": 35,
+      "char_doctor": 40
+    },
+    "initialUnlockedLocations": [
+      "loc_home",
+      "loc_police_substation",
+      "loc_township_office",
+      "loc_farmland",
+      "loc_clinic"
+    ],
+    "initialUnlockedSources": ["source_G"],
+    "familyAndContacts": [
+      {
+        "characterId": "char_sato",
+        "relation": "상관 (사토 순사부장)",
+        "note": "송현 주재소 책임자. 철저한 전시 통제와 실적 보고를 요구합니다."
+      },
+      {
+        "characterId": "char_wife",
+        "relation": "아내 (순이)",
+        "note": "마을 사람들의 차가운 시선 속에서도 가정을 지키려 애씁니다."
+      },
+      {
+        "characterId": "char_clerk",
+        "relation": "면사무소 서기 (김진호)",
+        "note": "공출과 동원 업무로 자주 서류를 주고받는 행정 실무자입니다."
+      }
+    ]
+  }
+]

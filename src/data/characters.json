@@ -1,0 +1,311 @@
+[
+  {
+    "id": "char_farmer",
+    "name": "김태수",
+    "role": "송현면 들말 소작농",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Korean_farmer_pixel_art_sprite_1ac6b1e0_e1e87f41.jpg",
+      "work": "/assets/aistudio/Korean_male_farmer_pixel_sprite_49efd26c_96be0cd5.jpg",
+      "tired": "/assets/aistudio/Pixel_art_farmer_character_standing_1dda8750_b97f0313.png"
+    },
+    "description": "들말에서 다섯 마지기 논을 부치는 농민. 가족의 겨울 양식과 마을 이웃 사이의 책임감 사이에서 고민합니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_clerk",
+    "name": "김진호",
+    "role": "면사무소 서기 (주인공)",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Young_man_carrying_document_folder_67f4d3c7_370f7e5d.png",
+      "formal": "/assets/aistudio/Pixel_art_office_clerk_sprite_356d8ffe_93593a24.jpg",
+      "worried": "/assets/aistudio/Pixel_art_office_clerk_sprite_16e39dc8_1ee20749.jpg",
+      "field": "/assets/aistudio/Clerk_holding_ledger_pixel_art_68ccb602_723cbc58.png"
+    },
+    "description": "보통학교와 고등보통학교를 졸업하고 면사무소에 취직한 27세 서기. 문서 한 장에 적힌 먹줄이 타인의 삶을 바꾼다는 현실 앞에서 갈등합니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_police_asst",
+    "name": "최민석",
+    "role": "송현 주재소 순사보",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Korean_police_assistant_pixel_sp__43efdc41_22c3570f.jpg",
+      "patrol": "/assets/aistudio/Korean_police_assistant_characte__5e34962d_abdd39ec.png"
+    },
+    "description": "송현 주재소의 조선인 순사보. 제복이 주는 생계와 상부 명령, 그리고 동향 주민 사이의 괴리를 겪습니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_sato",
+    "name": "사토 순사부장",
+    "role": "송현 주재소 수석 순사부장",
+    "defaultExpression": "stern",
+    "expressions": {
+      "stern": "/assets/aistudio/Police_officer_pixel_art_sprite_d613ed99_2d276d64.jpg",
+      "field": "/assets/aistudio/Pixel_art_Japanese_police_officer_3e786421_5fa39bf7.jpg"
+    },
+    "description": "송현 주재소를 지휘하는 일본인 경찰 간부. 군 경찰서의 전시 지침과 실적 달성을 최우선으로 여깁니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_wife",
+    "name": "순이",
+    "role": "가족 (아내/집안 살림)",
+    "defaultExpression": "worried",
+    "expressions": {
+      "worried": "/assets/aistudio/Pixel_art_woman_in_hanbok_44ffe95a_366cd83f.jpg",
+      "calm": "/assets/aistudio/Woman_standing_in_retro_pixel_159b8e02_9c7cf6af.jpg",
+      "bundle": "/assets/aistudio/Pixel_art_woman_carrying_bundle_931b3b2f_8d9c0655.png"
+    },
+    "description": "배급과 물가, 이웃의 눈치 속에서 가족의 하루하루를 지켜 내려는 생활인입니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_boy",
+    "name": "영수",
+    "role": "가족 (동생/아들)",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Boy_character_pixel_art_sprite_3ff52aab_c09a390e.jpg",
+      "alt": "/assets/aistudio/Korean_boy_pixel_art_sprite_278b2707_870c2838.jpg"
+    },
+    "description": "학교와 들판을 오가며 자라는 소년. 어른들이 나누는 공출과 동원 이야기를 불안하게 듣습니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_doctor",
+    "name": "윤선생",
+    "role": "송현 의원 의사",
+    "defaultExpression": "calm",
+    "expressions": {
+      "calm": "/assets/aistudio/Pixel_art_male_rural_physician_1feac6a2_81ac6ed0.jpg",
+      "worried": "/assets/aistudio/Pixel_art_male_rural_physician_1feac6a2_81ac6ed0.jpg"
+    },
+    "description": "경성에서 의학을 배우고 내려온 지방 의원. 신문과 관보, 읍내 소식을 통해 제도의 흐름을 차분히 살핍니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_colleague",
+    "name": "이창호",
+    "role": "송현면 선임 서기 / 금융조합 연락원",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Clerk_character_pixel_art_sprite_fef88d0d_1b147acc.jpg",
+      "papers": "/assets/aistudio/Pixel_clerk_holding_documents_3da2c788_3e62fbe9.png",
+      "ledger": "/assets/aistudio/Young_man_standing_with_ledger_a643ffa2_0e673bb3.png"
+    },
+    "description": "오래 근무한 선임 실무자. 규정을 어겼을 때 돌아올 문책과 현실적 생존법을 잘 알고 있습니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_deoksu",
+    "name": "최덕수",
+    "role": "소작농 (주인공)",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Korean_farmer_pixel_art_sprite_1ac6b1e0_e1e87f41.jpg",
+      "work": "/assets/aistudio/Korean_male_farmer_pixel_sprite_49efd26c_96be0cd5.jpg"
+    },
+    "description": "대대로 지주의 땅을 빌려 농사짓는 30대 소작농. 가족의 생존과 언젠가 자기 땅을 갖는 일을 꿈꿉니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_suni_farmer",
+    "name": "최순이",
+    "role": "덕수의 아내",
+    "defaultExpression": "worried",
+    "expressions": {
+      "worried": "/assets/aistudio/Pixel_art_woman_in_hanbok_44ffe95a_366cd83f.jpg",
+      "calm": "/assets/aistudio/Woman_standing_in_retro_pixel_159b8e02_9c7cf6af.jpg",
+      "bundle": "/assets/aistudio/Pixel_art_woman_carrying_bundle_931b3b2f_8d9c0655.png",
+      "packing": "/assets/aistudio/Woman_standing_with_cloth_bundle_10048094_38311d7f.png"
+    },
+    "description": "가족의 식량과 안전을 우선시하며 현실적인 걱정을 드러냅니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_son",
+    "name": "아들",
+    "role": "덕수의 어린 아들",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Boy_character_pixel_art_sprite_3ff52aab_c09a390e.jpg",
+      "alt": "/assets/aistudio/Korean_boy_pixel_art_sprite_278b2707_870c2838.jpg"
+    },
+    "description": "아버지가 평생 남의 땅에서 땀 흘리는 모습을 곁에서 지켜보며 자라는 어린 아들입니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_bongsu",
+    "name": "김봉수",
+    "role": "이웃 농민",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Pixel_art_farmer_character_standing_1dda8750_b97f0313.png",
+      "work": "/assets/aistudio/Farmer_standing_in_neutral_pose_849e390a_373a6c36.png"
+    },
+    "description": "노동력 동원과 흉작, 경제적 어려움으로 기존 경작지를 포기하고 떠날 수밖에 없었던 이웃 농민입니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_jaemun",
+    "name": "이재문",
+    "role": "과거 농민운동 활동가",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Korean_clerk_holding_papers_63e6a9e0_e5f43a74.png",
+      "serious": "/assets/aistudio/Pixel_art_male_office_clerk_a5de2ff0_3cad09a5.jpg"
+    },
+    "description": "과거 농민조합운동과 연결된 사회주의 계열 활동가. 감시와 탄압 속에서 농민의 공동 대응과 토지 문제를 제기합니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_oh",
+    "name": "오 주사",
+    "role": "면사무소 직원",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Young_man_carrying_document_folder_67f4d3c7_370f7e5d.png",
+      "papers": "/assets/aistudio/Clerk_holding_ledger_pixel_art_68ccb602_723cbc58.png",
+      "ledger": "/assets/aistudio/Young_man_standing_with_ledger_a643ffa2_0e673bb3.png"
+    },
+    "description": "면사무소에서 증산·공출 정책과 경작권 이전을 농촌에 전달하고 실적을 관리합니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_manseok",
+    "name": "박만석",
+    "role": "지주",
+    "defaultExpression": "stern",
+    "expressions": {
+      "stern": "/assets/aistudio/Man_standing_in_pixel_art_52192664_1385c575.png",
+      "formal": "/assets/aistudio/Middle-aged_man_standing_pixel_art_108d0804_b22e35c5.png"
+    },
+    "description": "토지 소유권과 소작 관계를 통해 농민의 삶에 막강한 영향력을 행사하는 조선인 지주입니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_policeman",
+    "name": "주재소 순사",
+    "role": "식민지 경찰",
+    "defaultExpression": "stern",
+    "expressions": {
+      "stern": "/assets/aistudio/Pixel_art_Japanese_police_officer_3e786421_5fa39bf7.jpg",
+      "patrol": "/assets/aistudio/Police_officer_pixel_art_sprite_d613ed99_2d276d64.jpg"
+    },
+    "description": "전시 치안 유지와 사상·경제 통제를 명목으로 농촌의 작은 모임까지 감시하고 단속하는 주재소 경찰입니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_villager",
+    "name": "마을 어르신",
+    "role": "같은 마을 소작농",
+    "defaultExpression": "worried",
+    "expressions": {
+      "worried": "/assets/aistudio/Elderly_villager_holding_walking__58ddb2da_e2b20212.png",
+      "calm": "/assets/aistudio/Elderly_villager_holding_walking__7ccd2a52_5a4dd216.png"
+    },
+    "description": "공출과 감시의 무게 속에서 평생 농촌을 지켜 온 이웃 어르신입니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_reporter",
+    "name": "지방 신문 기자",
+    "role": "회보 · 신문 취재원",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/1930s_reporter_holding_newspaper__234533fa_62428e5d.png",
+      "glasses": "/assets/aistudio/Reporter_holding_newspaper_and_n__6cd68623_e4c5e20a.png"
+    },
+    "description": "면사무소의 증산 표창 사례와 읍내 소식을 기록하는 취재 기자입니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_peddler",
+    "name": "장터 행상",
+    "role": "읍내 · 농촌 왕래 상인",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Traveling_peddler_character_sprite_55e05462_f58379cd.png"
+    },
+    "description": "지겟짐을 메고 읍내 장터와 농촌 마을을 오가며 바깥 전황과 물가 소식을 전하는 행상입니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_teacher",
+    "name": "박 교사",
+    "role": "농촌 야학 · 계몽 인사",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Teacher_holding_textbook_and_reg__584ec89d_3ff07ca5.png",
+      "serious": "/assets/aistudio/Pixel_art_teacher_holding_books_1cd1aee5_bee21f46.png"
+    },
+    "description": "농민 교육과 협동을 통해 점진적인 자립 기반을 넓혀야 한다고 여기는 농촌 지식인입니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_student",
+    "name": "읍내 청년",
+    "role": "학생 · 야학 참여 청년",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Pixel_art_student_holding_bag_c7c7d943_040c4e78.png",
+      "active": "/assets/aistudio/Pixel_art_student_carrying_bag_f7568e45_c3923c62.png"
+    },
+    "description": "야학에서 한글과 산술을 배우거나 해방 직후 마을에 소식을 전하는 청년입니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_taesu",
+    "name": "박태수",
+    "role": "면사무소 서기 (동료)",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Clerk_character_pixel_art_sprite_fef88d0d_1b147acc.jpg",
+      "papers": "/assets/aistudio/Pixel_clerk_holding_documents_3da2c788_3e62fbe9.png",
+      "ledger": "/assets/aistudio/Young_man_standing_with_ledger_a643ffa2_0e673bb3.png"
+    },
+    "description": "김진호의 동료 서기(28세). 식민지 질서에 순응하는 것을 현실적 처세라 믿으며 진호의 죄책감을 무마합니다. (채만식 《치숙》·《맹순사》·《미스터 방》의 자기합리화·기회주의 모티브를 참고한 창작 인물)",
+    "isFictional": true
+  },
+  {
+    "id": "char_jeongsu",
+    "name": "이정수",
+    "role": "야학 교사 (진호의 소꿉친구)",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Teacher_holding_textbook_and_reg__584ec89d_3ff07ca5.png",
+      "serious": "/assets/aistudio/Pixel_art_teacher_holding_books_1cd1aee5_bee21f46.png"
+    },
+    "description": "진호와 어린 시절부터 함께 자란 27세 야학 교사. 마을 청년들에게 한글과 기초 산술을 가르치며 식민지 정책을 비판적으로 바라봅니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_myeonjang",
+    "name": "오 면장",
+    "role": "면사무소 면장",
+    "defaultExpression": "stern",
+    "expressions": {
+      "stern": "/assets/aistudio/Middle-aged_man_standing_pixel_art_108d0804_b22e35c5.png",
+      "formal": "/assets/aistudio/Pixel_art_male_office_clerk_a5de2ff0_3cad09a5.jpg"
+    },
+    "description": "일제 행정기관과 지역 유지 사이에서 권력을 유지하는 50대 면장. 유력 지주에게는 편의를 제공하면서 진호에게는 행정 실적을 압박합니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_jinho_mother",
+    "name": "어머니",
+    "role": "진호의 어머니",
+    "defaultExpression": "worried",
+    "expressions": {
+      "worried": "/assets/aistudio/Pixel_art_woman_in_hanbok_44ffe95a_366cd83f.jpg",
+      "calm": "/assets/aistudio/Woman_standing_in_retro_pixel_159b8e02_9c7cf6af.jpg",
+      "bundle": "/assets/aistudio/Pixel_art_woman_carrying_bundle_931b3b2f_8d9c0655.png"
+    },
+    "description": "가난한 살림 속에서 아들이 면사무소 서기가 된 것을 의지하며, 전쟁 말기 가족의 안위를 노심초사 걱정하는 어머니입니다.",
+    "isFictional": true
+  }
+]

@@ -1,0 +1,346 @@
+[
+  {
+    "id": "loc_home",
+    "name": "주인공의 집",
+    "district": "마을 주거지",
+    "description": "아궁이 불빛과 장독대가 있는 소박한 안채. 하루의 일을 마치고 가족과 속마음을 나누는 공간입니다.",
+    "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
+    "nightBackground": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
+    "historicalNote": "1940년대 전시 통제기에는 배급제와 공출 강화로 가정 내 식량·연료 확보 자체가 일상의 가장 큰 과제였습니다.",
+    "visits": [
+      {
+        "occupation": "farmer",
+        "chapter": 1,
+        "startNodeId": "exp_farmer_c1_home",
+        "npcIds": ["char_suni_farmer", "char_son"],
+        "activityLabel": "아내 최순이·아들과 겨울 양식 상의하기",
+        "rewardHint": "가정 식량 사정 파악"
+      },
+      {
+        "occupation": "clerk",
+        "chapter": 1,
+        "startNodeId": "exp_clerk_c1_home",
+        "npcIds": ["char_jinho_mother"],
+        "activityLabel": "어머니와 가계 사정·월급 이야기 나누기",
+        "rewardHint": "가족 부양의 현실 확인"
+      },
+      {
+        "occupation": "clerk",
+        "chapter": 2,
+        "startNodeId": "exp_clerk_c2_home",
+        "npcIds": ["char_jinho_mother"],
+        "activityLabel": "창씨개명 통지서 앞에서 어머니의 마음 듣기",
+        "rewardHint": "황민화 압박 체감"
+      },
+      {
+        "occupation": "clerk",
+        "chapter": 3,
+        "startNodeId": "exp_clerk_c3_home",
+        "npcIds": ["char_jinho_mother"],
+        "activityLabel": "전쟁 말기 밤, 어머니와 가족의 앞날 이야기하기",
+        "rewardHint": "가족 안전의 무게 확인"
+      },
+      {
+        "occupation": "police_assistant",
+        "chapter": 1,
+        "startNodeId": "exp_police_c1_home",
+        "npcIds": ["char_wife", "char_boy"],
+        "activityLabel": "아내와 마을 사람들의 시선 이야기하기"
+      },
+      {
+        "occupation": "police_assistant",
+        "chapter": 2,
+        "startNodeId": "exp_police_c2_home",
+        "npcIds": ["char_wife"],
+        "activityLabel": "집에서 동원 집행 명령을 두고 대화하기"
+      },
+      {
+        "occupation": "police_assistant",
+        "chapter": 3,
+        "startNodeId": "exp_police_c3_home",
+        "npcIds": ["char_wife"],
+        "activityLabel": "야간 출동 전 가족과 마지막 대화 나누기"
+      }
+    ]
+  },
+  {
+    "id": "loc_farmland",
+    "name": "들말과 논밭",
+    "district": "농촌 들말",
+    "description": "다랑논과 초가집이 늘어선 농촌 마을. 수로 너머로 면사무소 가는 흙길이 이어집니다.",
+    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
+    "historicalNote": "식민지 농촌에서는 소작농 비율이 높았고, 1940년대 들어 미곡 공출과 노무동원이 강화되며 농민의 생계 기반이 크게 흔들렸습니다.",
+    "visits": [
+      {
+        "occupation": "farmer",
+        "chapter": 1,
+        "startNodeId": "exp_farmer_c1_farmland",
+        "npcIds": ["char_bongsu"],
+        "activityLabel": "논둑에서 이웃 농민 김봉수와 이야기 나누기",
+        "rewardHint": "경작권 이전의 이면 파악"
+      },
+      {
+        "occupation": "clerk",
+        "chapter": 1,
+        "startNodeId": "exp_clerk_c1_farmland",
+        "npcIds": ["char_deoksu", "char_villager"],
+        "activityLabel": "소작농 최덕수와 들말 농가 실태 직접 살피기",
+        "rewardHint": "농가 동원·공출 실태 확인 · 사료 D",
+        "unlockSourceId": "source_D"
+      },
+      {
+        "occupation": "clerk",
+        "chapter": 2,
+        "startNodeId": "exp_clerk_c2_farmland",
+        "npcIds": ["char_deoksu"],
+        "activityLabel": "금속류 회수와 공출을 겪는 최덕수 찾아가기",
+        "rewardHint": "전시 말기 수탈 실상 파악"
+      },
+      {
+        "occupation": "police_assistant",
+        "chapter": 1,
+        "startNodeId": "exp_police_c1_farmland",
+        "npcIds": ["char_farmer"],
+        "activityLabel": "들말 순찰하며 마을 분위기 살피기",
+        "rewardHint": "사료 D 해금",
+        "unlockSourceId": "source_D"
+      },
+      {
+        "occupation": "police_assistant",
+        "chapter": 2,
+        "startNodeId": "exp_police_c2_farmland",
+        "npcIds": ["char_farmer"],
+        "activityLabel": "들말 주민들에게 기피자 행방 탐문하기"
+      }
+    ]
+  },
+  {
+    "id": "loc_township_office",
+    "name": "면사무소",
+    "district": "면 중심가",
+    "description": "국기 게양대와 공고판이 세워진 기와 관청. 공출 할당표와 호적 대장, 노무동원 명부, 창씨개명 서류가 오갑니다.",
+    "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
+    "historicalNote": "면사무소는 군청의 지시를 마을 구장·애국반으로 전달하는 식민지 말단 행정의 핵심 거점이었습니다.",
+    "visits": [
+      {
+        "occupation": "farmer",
+        "chapter": 1,
+        "startNodeId": "exp_farmer_c1_office",
+        "npcIds": ["char_oh", "char_reporter"],
+        "activityLabel": "오 주사에게 증산·공출 기준과 표창 안내 듣기",
+        "rewardHint": "사료 F(《조선농보》) 확인",
+        "unlockSourceId": "source_F"
+      },
+      {
+        "occupation": "clerk",
+        "chapter": 1,
+        "startNodeId": "exp_clerk_c1_office",
+        "npcIds": ["char_taesu", "char_myeonjang"],
+        "activityLabel": "박태수와 군청 노무동원 지침서 검토하기",
+        "rewardHint": "사료 E 확인 · 읍내 거리 해금",
+        "unlockSourceId": "source_E"
+      },
+      {
+        "occupation": "clerk",
+        "chapter": 2,
+        "startNodeId": "exp_clerk_c2_office",
+        "npcIds": ["char_taesu"],
+        "activityLabel": "창씨개명·황민화 행정 공문과 대장 살피기",
+        "rewardHint": "사료 H(창씨개명 행정자료) 해금",
+        "unlockSourceId": "source_H"
+      },
+      {
+        "occupation": "clerk",
+        "chapter": 3,
+        "startNodeId": "exp_clerk_c3_office",
+        "npcIds": ["char_taesu"],
+        "activityLabel": "추가 동원 10명 할당 공문과 호적부 대조하기",
+        "rewardHint": "1945년 7월 동원 압박 확인"
+      },
+      {
+        "occupation": "police_assistant",
+        "chapter": 1,
+        "startNodeId": "exp_police_c1_office",
+        "npcIds": ["char_clerk"],
+        "activityLabel": "면서기 김진호에게 공출 대장 확인하기",
+        "rewardHint": "사료 F 해금 · 읍내 거리 해금",
+        "unlockSourceId": "source_F"
+      },
+      {
+        "occupation": "police_assistant",
+        "chapter": 2,
+        "startNodeId": "exp_police_c2_office",
+        "npcIds": ["char_clerk"],
+        "activityLabel": "면사무소에서 동원 명단 사본 대조하기",
+        "rewardHint": "사료 E 해금",
+        "unlockSourceId": "source_E"
+      }
+    ]
+  },
+  {
+    "id": "loc_police_substation",
+    "name": "경찰 주재소",
+    "district": "삼거리 어귀",
+    "description": "어두운 목조 울타리와 경찰 문장이 걸린 주재소. 치안 유지와 사상 감시, 행정 단속 명령이 이곳에서 집행됩니다.",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
+    "historicalNote": "조선총독부 경찰은 일반 치안뿐 아니라 위생·호구조사·공출 및 동원 독려·야학 사상 감시 등 광범위한 행정 통제 기능을 겸했습니다.",
+    "unlockCondition": {
+      "requiredFlags": ["unlock_police_substation"]
+    },
+    "lockedHint": "주재소 출입은 관련 인물과 접촉하거나 2장 이후 접근할 수 있습니다.",
+    "visits": [
+      {
+        "occupation": "clerk",
+        "chapter": 1,
+        "startNodeId": "exp_clerk_c1_police",
+        "npcIds": ["char_policeman"],
+        "activityLabel": "주재소에 공문 전달하며 감시 분위기 살피기",
+        "rewardHint": "사료 G(경찰·감시 체제) 해금",
+        "unlockSourceId": "source_G"
+      },
+      {
+        "occupation": "clerk",
+        "chapter": 3,
+        "startNodeId": "exp_clerk_c3_police",
+        "npcIds": ["char_policeman"],
+        "activityLabel": "주재소 순사의 야학·불온 사상 감시 동향 듣기",
+        "rewardHint": "이정수 감시 정황 파악"
+      },
+      {
+        "occupation": "police_assistant",
+        "chapter": 1,
+        "startNodeId": "exp_police_c1_substation",
+        "npcIds": ["char_sato"],
+        "activityLabel": "사토 부장의 지시와 제보 문서 검토하기",
+        "rewardHint": "제보 출처 확인"
+      },
+      {
+        "occupation": "police_assistant",
+        "chapter": 2,
+        "startNodeId": "exp_police_c2_substation",
+        "npcIds": ["char_sato"],
+        "activityLabel": "기피자 수색 명령서와 관할 지침 확인하기"
+      },
+      {
+        "occupation": "police_assistant",
+        "chapter": 3,
+        "startNodeId": "exp_police_c3_substation",
+        "npcIds": ["char_sato"],
+        "activityLabel": "군 경찰서 비상 전문 확인하기"
+      }
+    ]
+  },
+  {
+    "id": "loc_meeting_room",
+    "name": "마을 회관 · 야학",
+    "district": "들말 어귀",
+    "description": "전구 하나가 낮게 매달린 주민 모임 장소이자 저녁이면 마을 청년들이 한글과 산술을 배우던 야학 공간입니다.",
+    "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
+    "nightBackground": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
+    "historicalNote": "애국반 모임은 총독부 지시를 전달하는 통로였고, 농촌 야학은 한글과 기초 학문을 나누던 공간이자 전시 말기 감시의 표적이 되었습니다.",
+    "visits": [
+      {
+        "occupation": "farmer",
+        "chapter": 1,
+        "startNodeId": "exp_farmer_c1_meeting",
+        "npcIds": ["char_villager", "char_bongsu"],
+        "activityLabel": "마을 농민들과 공출 할당과 공동 대응 논의하기",
+        "rewardHint": "초과 공출의 파장 파악"
+      },
+      {
+        "occupation": "clerk",
+        "chapter": 1,
+        "startNodeId": "exp_clerk_c1_meeting",
+        "npcIds": ["char_jeongsu", "char_student"],
+        "activityLabel": "야학에서 소꿉친구 이정수와 청년들 만나기",
+        "rewardHint": "이정수의 관점 확인"
+      },
+      {
+        "occupation": "clerk",
+        "chapter": 3,
+        "startNodeId": "exp_clerk_c3_meeting",
+        "npcIds": ["char_jeongsu"],
+        "activityLabel": "늦은 밤 야학 교실에서 이정수와 짧은 재회하기",
+        "rewardHint": "마지막 명부 전 이정수의 상황 확인"
+      },
+      {
+        "occupation": "police_assistant",
+        "chapter": 3,
+        "startNodeId": "exp_police_c3_meeting",
+        "npcIds": ["char_doctor"],
+        "activityLabel": "회관 인근 순찰하며 주민 동향 살피기"
+      }
+    ]
+  },
+  {
+    "id": "loc_clinic",
+    "name": "윤의원 진료소",
+    "district": "읍내 입구",
+    "description": "약장과 청진기, 오래된 신문이 놓인 시골 의원. 윤선생이 주민들의 병을 돌보며 세상 돌아가는 이야기를 나눕니다.",
+    "background": "/assets/aistudio/Colonial_Korea_rural_medical_clinic_78a8e22e_e9a11845.jpg",
+    "historicalNote": "지방 의원과 지식인은 관보·신문·도시 왕래를 통해 농촌 주민이 접하기 어려운 법령과 바깥 정세를 전달하는 창구가 되기도 했습니다.",
+    "visits": [
+      {
+        "occupation": "farmer",
+        "chapter": 1,
+        "startNodeId": "exp_farmer_c1_clinic",
+        "npcIds": ["char_manseok"],
+        "activityLabel": "마을 어귀에서 지주 박만석의 소작 조건 듣기",
+        "rewardHint": "지주·소작 관계 파악"
+      },
+      {
+        "occupation": "clerk",
+        "chapter": 2,
+        "startNodeId": "exp_clerk_c2_clinic",
+        "npcIds": ["char_doctor"],
+        "activityLabel": "윤선생에게 병약자 진단 규정과 읍내 정세 묻기",
+        "rewardHint": "전시 말기 바깥 소식 확인"
+      },
+      {
+        "occupation": "police_assistant",
+        "chapter": 1,
+        "startNodeId": "exp_police_c1_clinic",
+        "npcIds": ["char_doctor"],
+        "activityLabel": "윤의원에 들러 마을 민심과 위생 상황 듣기"
+      },
+      {
+        "occupation": "police_assistant",
+        "chapter": 2,
+        "startNodeId": "exp_police_c2_clinic",
+        "npcIds": ["char_doctor"],
+        "activityLabel": "윤선생에게 기피자 치료 흔적 탐문하기",
+        "rewardHint": "은신처 단서 획득"
+      }
+    ]
+  },
+  {
+    "id": "loc_city_street",
+    "name": "읍내 · 군청 방면 거리",
+    "district": "군청 소재지 방면",
+    "description": "전차 선로와 벽돌 상점, 한옥 점포가 뒤섞인 번화가. 군청 공문과 전시 통제 소식이 가장 먼저 닿는 곳입니다.",
+    "background": "/assets/aistudio/Historical_Seoul_commercial_stre__6a771eda_bbc4579d.jpg",
+    "historicalNote": "1940년대 경성과 지방 읍내에서는 물자 통제, 배급표, 전시 표어가 거리의 일상 풍경이 되었습니다.",
+    "unlockCondition": {
+      "requiredFlags": ["unlock_city_street"]
+    },
+    "lockedHint": "면사무소나 진료소에서 읍내 관련 소식을 들으면 방문할 수 있습니다.",
+    "visits": [
+      {
+        "occupation": "clerk",
+        "chapter": 2,
+        "startNodeId": "exp_clerk_c2_city",
+        "npcIds": ["char_taesu", "char_reporter"],
+        "activityLabel": "군청 출장길에 박태수·신문 기자와 시국 이야기 나누기",
+        "rewardHint": "전시 말기 관청 분위기 파악"
+      },
+      {
+        "occupation": "police_assistant",
+        "chapter": 2,
+        "startNodeId": "exp_police_c2_city",
+        "npcIds": ["char_clerk"],
+        "activityLabel": "읍내 상점가 순찰 중 전시 통제 분위기 체감하기",
+        "rewardHint": "도시 통제 실태 확인"
+      }
+    ]
+  }
+]

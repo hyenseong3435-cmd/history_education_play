@@ -1,0 +1,160 @@
+[
+  {
+    "number": 1,
+    "title": "제1장 · 추수의 계절, 할당의 무게",
+    "period": "1941년 늦가을 · 송현면",
+    "eventType": "occupation_specific",
+    "summary": "가뭄이 지나간 추수철. 농민·면서기·순사보는 각자의 자리에서 '미곡 공출'과 일상적 통제의 첫 갈림길에 섭니다.",
+    "historicalContext": "1940년부터 조선총독부는 전시 식량 확보를 위해 미곡 공출제를 본격화했으며, 면사무소·애국반·경찰 주재소가 결합하여 농촌 생산물을 통제했습니다.",
+    "titleByOccupation": {
+      "farmer": "제1장 · 풍년의 대가",
+      "clerk": "제1장 · 숫자로 환산된 사람들"
+    },
+    "periodByOccupation": {
+      "farmer": "1942년 여름~가을 · 옥구 방면 가상 농촌 마을",
+      "clerk": "1944년 11~12월 · 어느 농촌 지역의 면사무소"
+    },
+    "summaryByOccupation": {
+      "farmer": "수확량은 늘었지만 면사무소는 전시 식량 증산과 공출 실적을 더욱 강하게 요구합니다. 결정을 내리기 전 마을 곳곳을 둘러보며 아내 순이, 김봉수, 오 주사, 지주 박만석과 마을 사람들의 사정을 들어볼 수 있습니다.",
+      "clerk": "군청에서 관내 노무동원 대상자 확보 지시가 내려옵니다. 명부를 확정하기 전 면사무소·들말·마을 회관·집·주재소를 오가며 주민들의 실제 사정과 행정의 이면을 확인할 수 있습니다."
+    },
+    "historicalContextByOccupation": {
+      "farmer": "1942년 사료 F(《조선농보》 8월호)는 노동력 동원과 흉작으로 경작을 포기한 농지가 면사무소·금융조합 주선으로 이전되고, 새 경작자가 초과 공출로 ‘애국 증산 모범 농민’ 표창을 받은 사례를 기록합니다.",
+      "clerk": "1944년 일제 말기 조선의 노무동원은 모집·관 알선·국민징용령 등 법적 절차와 행정 단계를 거쳐 면사무소의 대상자 조사·명부 작성 실무로 연결되었습니다."
+    },
+    "introNodeByOccupation": {
+      "farmer": "farmer_prologue_1",
+      "clerk": "clerk_prologue_1",
+      "police_assistant": "police_c1_intro_1"
+    },
+    "mainEventNodeByOccupation": {
+      "farmer": "farmer_c1_main_1",
+      "clerk": "clerk_c1_main_1",
+      "police_assistant": "police_c1_main_1"
+    },
+    "mainEventLabelByOccupation": {
+      "farmer": "선택 2 · 증산과 공출의 갈림길",
+      "clerk": "선택 2 · 노무동원 대상자 선정",
+      "police_assistant": "주요 사건 · 들말 미곡 은닉 제보 출동"
+    },
+    "recommendedVisitsCount": 2
+  },
+  {
+    "number": 2,
+    "title": "제2장 · 명단과 통지서 (공통 역사 사건)",
+    "period": "1942년 여름 · 송현면 일대",
+    "eventType": "shared_historical",
+    "summary": "송현면에 '전시 노무 동원' 할당 공문이 내려옵니다. 세 직업은 같은 사건을 동원 대상자, 명단 작성자, 집행 보조자의 시선에서 각각 마주합니다.",
+    "historicalContext": "국가총동원법(1938)과 국민징용령(1939) 이후 1940년대 조선에서는 관 알선·징용 등의 형태로 대규모 노무 동원이 이루어졌으며, 지방 행정과 경찰이 그 실무와 집행에 동원되었습니다.",
+    "titleByOccupation": {
+      "farmer": "제2장 · 봄은 누구에게 오는가",
+      "clerk": "제2장 · 어쩔 수 없다는 말"
+    },
+    "periodByOccupation": {
+      "farmer": "1942년 늦가을 · 마을 창고",
+      "clerk": "1945년 2월 · 전시 통제기 면사무소"
+    },
+    "summaryByOccupation": {
+      "farmer": "늦가을 밤, 과거 농민조합운동 경험을 지닌 활동가 이재문이 덕수를 찾아와 봉수의 몰락과 소작 구조에 대해 묻습니다.",
+      "clerk": "전쟁이 길어지며 노무동원·금속류 회수·미곡 공출에 더해 창씨개명 등 황민화 행정까지 면사무소 책상 위로 몰려옵니다."
+    },
+    "historicalContextByOccupation": {
+      "farmer": "1930년대 이후 국내 농민운동은 일제의 탄압으로 크게 위축되었으나, 사회주의 계열 외에도 농촌 계몽·협동·경제적 권익을 중심으로 한 다양한 문제 제기가 이어졌습니다.",
+      "clerk": "일제의 창씨개명과 황민화 시책은 단순한 명칭 변경이 아니라, 호적·학교·취업·배급 등 일상 행정과 결합해 주민들에게 사실상 강제된 통제 장치였습니다."
+    },
+    "introNodeByOccupation": {
+      "farmer": "farmer_c2_intro_1",
+      "clerk": "clerk_c2_intro_1",
+      "police_assistant": "police_c2_intro_1"
+    },
+    "mainEventNodeByOccupation": {
+      "farmer": "farmer_c2_main_1",
+      "clerk": "clerk_c2_main_1",
+      "police_assistant": "police_c2_main_1"
+    },
+    "mainEventLabelByOccupation": {
+      "farmer": "선택 3 · 이재문의 제안",
+      "clerk": "선택 3 · 창씨개명과 황민화 행정",
+      "police_assistant": "공통 사건 · 동원 기피자 수색과 집행 지원"
+    },
+    "recommendedVisitsCount": 2
+  },
+  {
+    "number": 3,
+    "title": "제3장 · 돌아온 선택의 그림자",
+    "period": "1943년 겨울 · 송현면",
+    "eventType": "convergent_climax",
+    "summary": "지난 계절의 선택들이 지연된 결과로 되돌아옵니다. 생계와 체제, 이웃에 대한 책임 사이에서 마지막 결정을 내립니다.",
+    "historicalContext": "전시 말기로 갈수록 공출과 동원 압력은 극대화되었고, 식민지 사회의 말단에 있던 개인들은 생존·협력·회피·연대 사이에서 더욱 좁아진 선택지를 마주했습니다.",
+    "titleByOccupation": {
+      "farmer": "제3장 · 독립이 오면 모든 것이 달라질까?",
+      "clerk": "제3장 · 마지막 명부"
+    },
+    "periodByOccupation": {
+      "farmer": "1943년 · 전시 통제기 농촌",
+      "clerk": "1945년 7월 · 전쟁 막바지 면사무소"
+    },
+    "summaryByOccupation": {
+      "farmer": "전쟁이 길어지며 독립에 관한 소문이 도는 가운데, 해방 이후 조선인 지주와 소작 관계, 토지 문제를 어떻게 바라볼지 갈림길에 섭니다.",
+      "clerk": "전쟁이 막바지에 이른 1945년 7월, 군청에서 관내 청년 10명 추가 노무동원 지시가 내려옵니다. 명부 속에서 소꿉친구 이정수의 이름을 발견합니다."
+    },
+    "historicalContextByOccupation": {
+      "farmer": "1943년 전시 말기, 공개 농민조직 활동은 엄격히 탄압받았으나 해방 이후 사회의 방향을 둘러싸고 민족 연대, 토지 개혁, 농촌 계몽 등 서로 다른 전망이 교차했습니다.",
+      "clerk": "1945년 패전 직전까지 조선총독부는 전시 동원 실적을 강행했으며, 야학이나 비판적 언행을 보인 청년들은 우선 동원 대상이나 경찰 감시 대상이 되곤 했습니다."
+    },
+    "introNodeByOccupation": {
+      "farmer": "farmer_c3_intro_1",
+      "clerk": "clerk_c3_intro_1",
+      "police_assistant": "police_c3_intro_1"
+    },
+    "mainEventNodeByOccupation": {
+      "farmer": "farmer_c3_main_1",
+      "clerk": "clerk_c3_main_1",
+      "police_assistant": "police_c3_main_1"
+    },
+    "mainEventLabelByOccupation": {
+      "farmer": "선택 4 · 독립 이후의 사회",
+      "clerk": "선택 4 · 이정수의 이름이 적힌 명부",
+      "police_assistant": "최종 사건 · 비상 순찰과 주재소 최종 보고"
+    },
+    "recommendedVisitsCount": 1
+  },
+  {
+    "number": 4,
+    "title": "제4장 · 해방, 그리고 남겨진 자리",
+    "period": "1945년 8월 15일 · 해방 직후",
+    "eventType": "convergent_climax",
+    "availableOccupations": ["farmer", "clerk"],
+    "titleByOccupation": {
+      "farmer": "제4장 · 해방, 그리고 돌아오지 않는 땅",
+      "clerk": "제4장 · 해방, 그리고 남겨진 서류"
+    },
+    "periodByOccupation": {
+      "farmer": "1945년 8월 15일 · 해방 직후 마을 앞마당",
+      "clerk": "1945년 7~9월 · 해방 직전과 직후"
+    },
+    "summary": "일왕의 항복 방송과 함께 해방이 찾아왔지만, 식민지 시기의 선택과 서류, 토지 문제는 해방과 동시에 사라지지 않습니다.",
+    "summaryByOccupation": {
+      "farmer": "일왕의 항복 방송과 함께 해방이 찾아왔지만, 논 네 두락을 둘러싼 김봉수의 억울함, 덕수의 피땀, 지주 박만석의 소유권 주장이 정면으로 충돌합니다.",
+      "clerk": "일본의 항복 소식과 만세 소리 속에서 김진호는 자신이 작성한 서류와 그 위에 적힌 이름들, 그리고 지나온 선택의 결과를 정면으로 마주합니다."
+    },
+    "historicalContext": "해방은 식민 통치의 종식을 뜻했지만, 식민지 시기에 형성된 행정 책임과 토지 소유권의 모순은 해방 이후에도 긴 과제로 남았습니다.",
+    "historicalContextByOccupation": {
+      "farmer": "해방은 식민 통치를 끝냈으나 토지 소유권과 소작 관계의 모순을 즉시 해결하지 못했습니다. 채만식의 《논 이야기》가 제기한 토지 소외의 문제의식을 허구적 갈등 장면에 반영했습니다.",
+      "clerk": "해방 직후 식민지 관료 경험자의 잔류와 과거 청산 문제는 한국 사회의 중대한 쟁점이 되었습니다. 채만식의 《치숙》·《맹순사》·《미스터 방》·《논 이야기》의 문제의식을 허구적 서사에 반영했습니다."
+    },
+    "introNodeByOccupation": {
+      "farmer": "farmer_c4_intro_1",
+      "clerk": "clerk_c4_intro_1"
+    },
+    "mainEventNodeByOccupation": {
+      "farmer": "farmer_c4_intro_1",
+      "clerk": "clerk_c4_intro_1"
+    },
+    "mainEventLabelByOccupation": {
+      "farmer": "제4장 · 해방, 그리고 돌아오지 않는 땅",
+      "clerk": "제4장 · 해방, 그리고 남겨진 서류"
+    },
+    "recommendedVisitsCount": 0
+  }
+]

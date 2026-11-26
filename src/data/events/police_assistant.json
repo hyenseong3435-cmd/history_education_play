@@ -1,0 +1,759 @@
+[
+  {
+    "id": "police_c1_intro_1",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "center" }
+    ],
+    "speakerName": "해설",
+    "text": "1941년 늦가을, 송현면 경찰 주재소. 조선인 순사보 최민석은 제복의 단추를 여미며 아침 점호에 선다.",
+    "historicalBadge": {
+      "kind": "fiction",
+      "label": "허구적 각색 · 송현 주재소와 최민석은 식민지 경찰 조직의 권력관계를 탐구하기 위한 가상 설정입니다"
+    },
+    "setFlags": ["unlock_police_substation"],
+    "next": "police_c1_intro_2"
+  },
+  {
+    "id": "police_c1_intro_2",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
+      { "characterId": "char_sato", "expression": "stern", "position": "right" }
+    ],
+    "speakerId": "char_sato",
+    "speakerName": "사토 순사부장",
+    "speakerRole": "송현 주재소 책임자",
+    "text": "최 순사보, 들말 소작농 가운데 추수한 쌀을 광에 숨겼다는 제보가 들어왔다. 오늘 오후 현장에 나가 가택을 확인하고 보고서를 올리도록.",
+    "next": "police_c1_intro_3"
+  },
+  {
+    "id": "police_c1_intro_3",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "center" }
+    ],
+    "speakerId": "char_police_asst",
+    "speakerName": "최민석",
+    "speakerRole": "순사보 (주인공)",
+    "text": "명령을 어길 수는 없지만... 출동하기 전에 제보 내용과 면사무소 공출 대장, 마을 사정부터 직접 확인해 두어야겠다.",
+    "historicalBadge": {
+      "kind": "source",
+      "label": "사료 G 열람 가능 · 상단 '사료 열람'에서 식민지 경찰기구와 순사보의 권한을 확인하세요",
+      "sourceId": "source_G"
+    },
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_police_c1_home",
+    "locationId": "loc_home",
+    "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
+    "characters": [
+      { "characterId": "char_wife", "expression": "worried", "position": "left" },
+      { "characterId": "char_boy", "expression": "neutral", "position": "right" }
+    ],
+    "speakerId": "char_wife",
+    "speakerName": "순이",
+    "speakerRole": "아내",
+    "text": "여보, 어제 장터에 갔더니 이웃들이 저를 보고 말을 뚝 끊더군요... 먹고살려고 입은 제복이지만, 너무 모질게만 하지는 말아 주세요.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_police_c1_substation",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
+    "characters": [
+      { "characterId": "char_sato", "expression": "stern", "position": "right" },
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" }
+    ],
+    "speakerId": "char_sato",
+    "speakerName": "사토 순사부장",
+    "speakerRole": "송현 주재소 책임자",
+    "text": "제보는 지주 댁 마름 쪽에서 들어온 것이다. 군 경찰서에서 공출 단속 실적을 독촉하고 있으니 빈손으로 돌아오지 마라.",
+    "setFlags": ["flag_police_tip_source"],
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_police_c1_office",
+    "locationId": "loc_township_office",
+    "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
+      { "characterId": "char_clerk", "expression": "worried", "position": "right" }
+    ],
+    "speakerId": "char_clerk",
+    "speakerName": "김진호",
+    "speakerRole": "송현면 면서기",
+    "text": "최 순사보님, 들말은 올해 가뭄 피해가 커서 실제 수확이 대장 수치보다 훨씬 적습니다. 숨긴 게 아니라 종자와 최소 식량일 가능성이 높습니다.",
+    "unlockSourceId": "source_F",
+    "unlockLocationId": "loc_city_street",
+    "setFlags": ["unlock_city_street"],
+    "historicalBadge": {
+      "kind": "source",
+      "label": "사료 F 해금 · 면사무소 행정 통제 자료와 읍내 거리가 해금되었습니다",
+      "sourceId": "source_F"
+    },
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_police_c1_farmland",
+    "locationId": "loc_farmland",
+    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
+      { "characterId": "char_farmer", "expression": "work", "position": "right" }
+    ],
+    "speakerId": "char_farmer",
+    "speakerName": "김태수",
+    "speakerRole": "들말 소작농",
+    "text": "...순사보 나으리. 우린 그저 소작료 내고 남은 벼로 식구 입에 풀칠이나 하려는 것뿐이오. 제복 입었다고 같은 마을 사람 사정을 잊으신 건 아니겠지요.",
+    "unlockSourceId": "source_D",
+    "historicalBadge": {
+      "kind": "source",
+      "label": "사료 D 해금 · 전시 미곡 공출과 농가 부담 사료를 열람할 수 있습니다",
+      "sourceId": "source_D"
+    },
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_police_c1_clinic",
+    "locationId": "loc_clinic",
+    "background": "/assets/aistudio/Colonial_Korea_rural_medical_clinic_78a8e22e_e9a11845.jpg",
+    "characters": [
+      { "characterId": "char_doctor", "expression": "calm", "position": "right" },
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" }
+    ],
+    "speakerId": "char_doctor",
+    "speakerName": "윤선생",
+    "speakerRole": "송현 의원 의사",
+    "text": "최 순사보, 내가 자네 처지를 비난하려는 게 아니오. 다만 명령을 집행하는 방식에 따라 한 가정이 살아남기도, 무너지기도 한다는 것만 기억해 주게.",
+    "setFlags": ["flag_police_clinic_talk"],
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "police_c1_main_1",
+    "locationId": "loc_home",
+    "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
+      { "characterId": "char_farmer", "expression": "neutral", "position": "right" }
+    ],
+    "speakerName": "해설",
+    "text": "들말의 한 소작농 집. 광 한쪽 짚더미 아래에서 내년 종자와 겨울 양식으로 따로 빼 둔 쌀 두 가마가 눈에 들어왔다.",
+    "historicalBadge": {
+      "kind": "fact",
+      "label": "역사적 배경 · 조선총독부 경찰은 일반 치안뿐 아니라 미곡 공출 단속 등 경제 통제에 직접 동원되었습니다"
+    },
+    "next": "police_c1_main_2"
+  },
+  {
+    "id": "police_c1_main_2",
+    "locationId": "loc_home",
+    "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
+      { "characterId": "char_wife", "expression": "worried", "position": "right" }
+    ],
+    "speakerId": "char_police_asst",
+    "speakerName": "최민석",
+    "speakerRole": "순사보 (주인공)",
+    "text": "사토 부장은 실적을 기다리고 있고, 눈앞의 농가 식구들은 숨을 죽인 채 내 입만 바라보고 있다. 어떻게 처리해야 할까?",
+    "choices": [
+      {
+        "id": "choice_p1_strict_search",
+        "text": "규정대로 숨긴 쌀 두 가마를 전량 압수하고 경제 통제 위반으로 엄정 보고한다",
+        "subtext": "사토 부장의 신임과 직장 안정은 높아지지만 농가 생계와 마을 관계가 크게 악화됩니다.",
+        "effects": {
+          "variables": { "livelihood": 10, "cooperation": 16, "communityBurden": 18, "autonomy": -8, "solidarity": -16 },
+          "relationships": { "char_sato": 14, "char_farmer": -16, "char_wife": -6 },
+          "setFlags": ["p1_strict_search"]
+        },
+        "logSummary": "들말 농가의 미곡 두 가마를 전량 압수하고 규정 위반으로 보고함",
+        "next": "police_c1_res_strict"
+      },
+      {
+        "id": "choice_p1_minimal_report",
+        "text": "종자용 소량 곡식은 보지 못한 것으로 넘기고 '은닉 혐의 없음'으로 보고한다",
+        "subtext": "농가의 겨울 양식을 지켜 주지만 상관의 의심을 살 위험이 커집니다.",
+        "effects": {
+          "variables": { "livelihood": -6, "cooperation": -14, "communityBurden": -12, "autonomy": 14, "solidarity": 14 },
+          "relationships": { "char_sato": -12, "char_farmer": 14 },
+          "setFlags": ["p1_minimal_report"],
+          "delayedEffect": {
+            "id": "delay_p1_suspect",
+            "triggerChapter": 3,
+            "title": "사토 부장의 내부 감시",
+            "description": "1장 축소 보고 이후 사토 부장이 최민석의 동향과 보고서를 별도로 재확인하기 시작했습니다.",
+            "variables": { "livelihood": -6, "autonomy": -4 },
+            "flag": "delayed_p1_watched"
+          }
+        },
+        "logSummary": "종자용 곡식을 눈감아 주고 '특이사항 없음'으로 축소 보고함",
+        "next": "police_c1_res_minimal"
+      },
+      {
+        "id": "choice_p1_verify_first",
+        "text": "마름의 제보 편향성을 지적하며 농민에게 면사무소 자진 정정 신고할 시간을 준다",
+        "subtext": "단독 압수 대신 행정 절차로 돌려 피해를 줄이려 시도합니다.",
+        "condition": { "requiredFlags": ["flag_police_tip_source"] },
+        "showWhenLocked": true,
+        "lockedReason": "주재소에서 사토 부장에게 제보 출처를 확인하면 해금됩니다.",
+        "unlockTag": "제보 출처 확인으로 해금",
+        "effects": {
+          "variables": { "livelihood": -2, "cooperation": -4, "communityBurden": -6, "autonomy": 12, "solidarity": 8 },
+          "relationships": { "char_clerk": 8, "char_farmer": 8, "char_sato": -4 },
+          "setFlags": ["p1_verified_first"]
+        },
+        "logSummary": "제보 신빙성 확인을 명목으로 농가에 자진 정정 신고 시간을 부여함",
+        "next": "police_c1_res_verify"
+      },
+      {
+        "id": "choice_p1_defer_sato",
+        "text": "현장 판단을 유보하고 사토 부장을 직접 불러 상부의 처분에 맡긴다",
+        "subtext": "개인 책임은 피하지만 현장 통제가 더욱 강경해집니다.",
+        "effects": {
+          "variables": { "livelihood": 4, "cooperation": 10, "communityBurden": 12, "autonomy": -14, "solidarity": -8 },
+          "relationships": { "char_sato": 4, "char_farmer": -10 },
+          "setFlags": ["p1_deferred_sato"]
+        },
+        "logSummary": "현장 판단을 피하고 사토 부장의 직접 처분에 넘김",
+        "next": "police_c1_res_defer"
+      }
+    ]
+  },
+  {
+    "id": "police_c1_res_strict",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
+    "characters": [
+      { "characterId": "char_sato", "expression": "stern", "position": "right" },
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" }
+    ],
+    "speakerId": "char_sato",
+    "speakerName": "사토 순사부장",
+    "speakerRole": "송현 주재소 책임자",
+    "text": "좋아, 최 순사보. 군 경찰서에 자네 실적을 보고해 두겠네. 전시에는 인정보다 규율이 우선이다.",
+    "next": "police_c1_end"
+  },
+  {
+    "id": "police_c1_res_minimal",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
+    "characters": [
+      { "characterId": "char_sato", "expression": "stern", "position": "right" },
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" }
+    ],
+    "speakerId": "char_sato",
+    "speakerName": "사토 순사부장",
+    "speakerRole": "송현 주재소 책임자",
+    "text": "이상 없음이라... 알겠다. 하지만 다음번에는 내가 직접 동행해 확인해 보도록 하지.",
+    "next": "police_c1_end"
+  },
+  {
+    "id": "police_c1_res_verify",
+    "locationId": "loc_farmland",
+    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "center" }
+    ],
+    "speakerId": "char_police_asst",
+    "speakerName": "최민석",
+    "speakerRole": "순사보 (주인공)",
+    "text": "면사무소 서류 재확인으로 넘겨 당장의 압수는 피했다. 하지만 사토 부장의 눈빛이 싸늘하게 식은 것을 느꼈다.",
+    "next": "police_c1_end"
+  },
+  {
+    "id": "police_c1_res_defer",
+    "locationId": "loc_farmland",
+    "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "center" }
+    ],
+    "speakerName": "해설",
+    "text": "뒤이어 도착한 사토 부장은 곡식뿐 아니라 집안의 농기구까지 문제 삼아 엄중한 시말서를 받아 갔다.",
+    "next": "police_c1_end"
+  },
+  {
+    "id": "police_c1_end",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
+    "characters": [],
+    "speakerName": "해설",
+    "text": "가을 단속이 끝나고 해가 바뀌었다. 1942년 여름, 이번에는 '노무 동원 기피자 수색' 명령이 주재소에 떨어진다.",
+    "next": "__NEXT_CHAPTER__"
+  },
+  {
+    "id": "police_c2_intro_1",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
+    "characters": [
+      { "characterId": "char_sato", "expression": "stern", "position": "right" },
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" }
+    ],
+    "speakerId": "char_sato",
+    "speakerName": "사토 순사부장",
+    "speakerRole": "송현 주재소 책임자",
+    "text": "최 순사보, 면사무소에서 통지한 노무 동원 대상자 중 들말 청년 한 명이 소집 당일 자취를 감췄다. 해가 지기 전에 행방을 파악하고 연행 지원을 준비하라.",
+    "historicalBadge": {
+      "kind": "fact",
+      "label": "공통 역사 사건 · 전시 노무 동원 (경찰 집행 보조자의 시선)"
+    },
+    "next": "police_c2_intro_2"
+  },
+  {
+    "id": "police_c2_intro_2",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "center" }
+    ],
+    "speakerId": "char_police_asst",
+    "speakerName": "최민석",
+    "speakerRole": "순사보 (주인공)",
+    "text": "순사보에게는 단독 영장 권한이 없지만 현장 수색과 보고 의무는 내게 떨어져 있다. 면사무소, 들말, 진료소를 돌며 상황을 먼저 파악해야겠다.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_police_c2_home",
+    "locationId": "loc_home",
+    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
+    "characters": [
+      { "characterId": "char_wife", "expression": "worried", "position": "right" },
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" }
+    ],
+    "speakerId": "char_wife",
+    "speakerName": "순이",
+    "speakerRole": "아내",
+    "text": "여보, 그 청년 집은 홀어머니뿐이래요. 당신이 직장을 잃으면 우리도 막막하지만... 제발 사람 다치는 일만은 없었으면 해요.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_police_c2_substation",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
+    "characters": [
+      { "characterId": "char_sato", "expression": "stern", "position": "center" }
+    ],
+    "speakerId": "char_sato",
+    "speakerName": "사토 순사부장",
+    "speakerRole": "송현 주재소 책임자",
+    "text": "기피자를 놓치면 군 경찰서에서 우리 주재소 기강을 문제 삼는다. 자네 진급과 근무 평정이 이번 건에 걸려 있음을 명심하라.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_police_c2_office",
+    "locationId": "loc_township_office",
+    "background": "/assets/aistudio/Pixel_art_office_interior_desk_7f112f8d_5ea7f4ee.jpg",
+    "characters": [
+      { "characterId": "char_clerk", "expression": "worried", "position": "right" },
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" }
+    ],
+    "speakerId": "char_clerk",
+    "speakerName": "김진호",
+    "speakerRole": "송현면 면서기",
+    "text": "최 순사보님, 여기 동원 명단 사본과 총동원 지침서입니다. 사실 그 청년은 다리 부상 소견서를 내려다 기한을 놓친 것뿐입니다.",
+    "unlockSourceId": "source_E",
+    "historicalBadge": {
+      "kind": "source",
+      "label": "사료 E 해금 · 전시 노무 동원 사료를 열람할 수 있습니다",
+      "sourceId": "source_E"
+    },
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_police_c2_farmland",
+    "locationId": "loc_farmland",
+    "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
+    "characters": [
+      { "characterId": "char_farmer", "expression": "neutral", "position": "right" },
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" }
+    ],
+    "speakerId": "char_farmer",
+    "speakerName": "김태수",
+    "speakerRole": "들말 소작농",
+    "text": "모르오. 우리도 다들 제 목숨 건사하기 바쁜데 누가 어디로 갔는지 알겠소? 주재소에서 이렇게 들이닥치면 마을 사람들이 다 떨고만 있소.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_police_c2_clinic",
+    "locationId": "loc_clinic",
+    "background": "/assets/aistudio/Colonial_medical_clinic_pixel_art_ad58f7f4_b52caa9f.jpg",
+    "characters": [
+      { "characterId": "char_doctor", "expression": "worried", "position": "right" },
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" }
+    ],
+    "speakerId": "char_doctor",
+    "speakerName": "윤선생",
+    "speakerRole": "송현 의원 의사",
+    "text": "...진료실 뒤편에 젖은 붕대가 놓여 있군. 눈썰미가 있다면 자네도 짐작했겠지. 하지만 그 젊은이는 도망친 죄인이 아니라 살려고 숨은 것뿐이오.",
+    "setFlags": ["flag_police_hideout_clue"],
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_police_c2_city",
+    "locationId": "loc_city_street",
+    "background": "/assets/aistudio/Colonial_Korean_street_scene_ab83ffd0_53708480.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
+      { "characterId": "char_clerk", "expression": "field", "position": "right" }
+    ],
+    "speakerId": "char_clerk",
+    "speakerName": "김진호",
+    "speakerRole": "송현면 면서기",
+    "text": "읍내 거리에도 헌병과 순사들이 수시로 통행증을 검문하고 있더군요. 도망쳐도 갈 곳이 마땅치 않은 세상입니다.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "police_c2_main_1",
+    "locationId": "loc_farmland",
+    "background": "/assets/aistudio/Empty_colonial-era_Seoul_alley_p__499a5140_1b62e9ef.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "center" }
+    ],
+    "speakerName": "해설",
+    "text": "해 질 무렵, 마을 뒤편 버려진 헛간 인근에서 발자국과 인기척을 발견했다. 안에는 동원 통지를 피해 숨어 있던 들말 청년이 웅크리고 있다.",
+    "conditionalNext": [
+      {
+        "condition": { "requiredFlags": ["p1_minimal_report"] },
+        "next": "police_c2_main_1b_watched"
+      }
+    ],
+    "next": "police_c2_main_2"
+  },
+  {
+    "id": "police_c2_main_1b_watched",
+    "locationId": "loc_farmland",
+    "background": "/assets/aistudio/Empty_colonial-era_Seoul_alley_p__499a5140_1b62e9ef.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "center" }
+    ],
+    "speakerId": "char_police_asst",
+    "speakerName": "최민석",
+    "speakerRole": "순사보 (주인공)",
+    "text": "(지난가을 공출 축소 보고로 이미 사토 부장이 나를 의심하고 있다. 여기서 또 빈손으로 돌아가면 징계나 파면을 피하기 어려울지도 모른다...)",
+    "next": "police_c2_main_2"
+  },
+  {
+    "id": "police_c2_main_2",
+    "locationId": "loc_farmland",
+    "background": "/assets/aistudio/Empty_colonial-era_Seoul_alley_p__499a5140_1b62e9ef.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "center" }
+    ],
+    "speakerId": "char_police_asst",
+    "speakerName": "최민석",
+    "speakerRole": "순사보 (주인공)",
+    "text": "순사보의 자리에서, 지금 어떤 집행 판단을 내려야 할까?",
+    "choices": [
+      {
+        "id": "choice_p2_arrest",
+        "text": "명령대로 즉시 신병을 확보해 주재소로 연행하고 사토 부장에게 보고한다",
+        "subtext": "조직 내 신임과 생계는 굳건해지지만, 청년과 마을에 돌이킬 수 없는 상처를 남깁니다.",
+        "effects": {
+          "variables": { "livelihood": 10, "cooperation": 18, "communityBurden": 18, "autonomy": -8, "solidarity": -18 },
+          "relationships": { "char_sato": 15, "char_farmer": -16, "char_doctor": -12 },
+          "setFlags": ["p2_arrested"]
+        },
+        "logSummary": "동원 기피 청년을 현장에서 연행해 주재소에 인계함",
+        "next": "police_c2_res_arrest"
+      },
+      {
+        "id": "choice_p2_procedural_delay",
+        "text": "사료 G의 순사보 권한 한계와 행정 소명 절차를 들어 면사무소 재심의를 먼저 요청한다",
+        "subtext": "즉각 연행 대신 절차적 지연으로 시간을 벌어 보려 합니다.",
+        "condition": { "requiredSources": ["source_G"] },
+        "showWhenLocked": true,
+        "lockedReason": "사료 G를 열람하면 순사보의 권한 범위와 이첩 절차를 활용하는 선택지가 열립니다.",
+        "unlockTag": "사료 G 열람으로 해금",
+        "effects": {
+          "variables": { "livelihood": -2, "cooperation": -4, "communityBurden": -8, "autonomy": 14, "solidarity": 10 },
+          "relationships": { "char_clerk": 10, "char_doctor": 8, "char_sato": -6 },
+          "setFlags": ["p2_procedural_delay"],
+          "delayedEffect": {
+            "id": "delay_p2_proc",
+            "triggerChapter": 3,
+            "title": "사토 부장의 직무 태만 경고",
+            "description": "절차 이첩을 사유로 연행을 미룬 일에 대해 사토 부장이 공식 경고를 기록했습니다.",
+            "variables": { "livelihood": -4 },
+            "flag": "delayed_p2_warning"
+          }
+        },
+        "logSummary": "사료 G의 권한 규정을 근거로 즉각 연행 대신 면사무소 소명 확인을 요청함",
+        "next": "police_c2_res_proc"
+      },
+      {
+        "id": "choice_p2_look_away",
+        "text": "헛간 안을 보지 못한 채 돌아서고 주재소에는 '도주 흔적 없음'으로 허위 보고한다",
+        "subtext": "청년은 피할 수 있지만 발각 시 파면과 형사 처벌 위험이 뒤따릅니다.",
+        "condition": { "requiredFlags": ["flag_police_hideout_clue"] },
+        "showWhenLocked": true,
+        "lockedReason": "2장 탐색 중 윤의원 진료소에서 윤선생과 대화하면 해금됩니다.",
+        "unlockTag": "윤선생과 대화로 해금",
+        "effects": {
+          "variables": { "livelihood": -10, "cooperation": -18, "communityBurden": -10, "autonomy": 16, "solidarity": 16 },
+          "relationships": { "char_doctor": 14, "char_farmer": 12, "char_sato": -14 },
+          "setFlags": ["p2_looked_away"],
+          "delayedEffect": {
+            "id": "delay_p2_leak",
+            "triggerChapter": 3,
+            "title": "군 경찰서 감찰 의심",
+            "description": "허위 수색 보고 정황이 드러나며 3장 비상 순찰 때 사토 부장이 최민석을 시험대에 올리게 되었습니다.",
+            "variables": { "livelihood": -8, "autonomy": -4 },
+            "flag": "delayed_p2_probation"
+          }
+        },
+        "logSummary": "은신처를 묵인하고 '도주 흔적 없음'으로 보고해 시간을 벌어 줌",
+        "next": "police_c2_res_away"
+      },
+      {
+        "id": "choice_p2_persuade_return",
+        "text": "청년 가족에게 구금 처벌을 피하도록 자진 출두를 설득해 사건을 수습한다",
+        "subtext": "폭력적 연행은 막지만 동원 자체를 막지는 못합니다.",
+        "effects": {
+          "variables": { "livelihood": 4, "cooperation": 6, "communityBurden": 6, "autonomy": 2, "solidarity": -2 },
+          "relationships": { "char_sato": 4, "char_farmer": -4 },
+          "setFlags": ["p2_persuaded"]
+        },
+        "logSummary": "구금 처벌을 피하는 조건으로 자진 출두를 설득함",
+        "next": "police_c2_res_persuade"
+      }
+    ]
+  },
+  {
+    "id": "police_c2_res_arrest",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
+      { "characterId": "char_sato", "expression": "stern", "position": "right" }
+    ],
+    "speakerId": "char_sato",
+    "speakerName": "사토 순사부장",
+    "speakerRole": "송현 주재소 책임자",
+    "text": "수고했다. 본보기가 있어야 마을 전체가 통제된다. 다음 달 수당 심사에 좋게 올려 두지.",
+    "next": "police_c2_end"
+  },
+  {
+    "id": "police_c2_res_proc",
+    "locationId": "loc_township_office",
+    "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
+      { "characterId": "char_clerk", "expression": "formal", "position": "right" }
+    ],
+    "speakerId": "char_clerk",
+    "speakerName": "김진호",
+    "speakerRole": "송현면 면서기",
+    "text": "순사보님이 소명 절차로 넘겨주신 덕분에 당장 구금되는 일은 막았습니다. 사토 부장님 눈치가 걱정되지만요.",
+    "next": "police_c2_end"
+  },
+  {
+    "id": "police_c2_res_away",
+    "locationId": "loc_farmland",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "center" }
+    ],
+    "speakerId": "char_police_asst",
+    "speakerName": "최민석",
+    "speakerRole": "순사보 (주인공)",
+    "text": "헛간 문을 닫고 발길을 돌렸다. 제복 호주머니 속 수첩이 유난히 무겁게 느껴졌다.",
+    "next": "police_c2_end"
+  },
+  {
+    "id": "police_c2_res_persuade",
+    "locationId": "loc_farmland",
+    "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "center" }
+    ],
+    "speakerName": "해설",
+    "text": "청년은 포승줄 대신 걸어서 면사무소로 출두했다. 매질은 피했지만 이튿날 새벽 읍내행 트럭에 올라야 했다.",
+    "next": "police_c2_end"
+  },
+  {
+    "id": "police_c2_end",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Pixel_art_street_scene_7b99b827_e9f1b37c.jpg",
+    "characters": [],
+    "speakerName": "해설",
+    "text": "그해 여름이 지나고 1943년 겨울. 송현면에는 어느 때보다 날 선 비상 경계령이 내려진다.",
+    "next": "__NEXT_CHAPTER__"
+  },
+  {
+    "id": "police_c3_intro_1",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
+    "characters": [
+      { "characterId": "char_sato", "expression": "stern", "position": "right" },
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" }
+    ],
+    "speakerName": "해설",
+    "text": "1943년 겨울밤. 들말 주민들이 추가 공출에 반발해 마을 회관에 모였다는 보고가 주재소에 접수되었다.",
+    "conditionalNext": [
+      {
+        "condition": { "requiredFlags": ["delayed_p2_probation"] },
+        "next": "police_c3_delay_suspect"
+      },
+      {
+        "condition": { "requiredFlags": ["delayed_p1_watched"] },
+        "next": "police_c3_delay_suspect"
+      }
+    ],
+    "next": "police_c3_delay_trusted"
+  },
+  {
+    "id": "police_c3_delay_suspect",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
+    "characters": [
+      { "characterId": "char_sato", "expression": "stern", "position": "right" },
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" }
+    ],
+    "speakerId": "char_sato",
+    "speakerName": "사토 순사부장",
+    "speakerRole": "송현 주재소 책임자",
+    "text": "최 순사보, 그동안 자네 보고 태도에 의문이 많았다. 오늘 밤 마을 회관 단속에서 자네의 충성심을 분명히 증명해 보이라.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "police_c3_delay_trusted",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
+    "characters": [
+      { "characterId": "char_sato", "expression": "stern", "position": "right" },
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" }
+    ],
+    "speakerId": "char_sato",
+    "speakerName": "사토 순사부장",
+    "speakerRole": "송현 주재소 책임자",
+    "text": "최 순사보, 오늘 밤 회관 모임의 주동자를 파악하고 즉각 해산 보고를 올리라. 자네를 믿고 선봉을 맡기겠다.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_police_c3_home",
+    "locationId": "loc_home",
+    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
+    "characters": [
+      { "characterId": "char_wife", "expression": "calm", "position": "center" }
+    ],
+    "speakerId": "char_wife",
+    "speakerName": "순이",
+    "speakerRole": "아내",
+    "text": "여보, 오늘 밤 많이 춥네요. 우리가 조금 가난해지더라도 아이가 부끄러워하지 않을 길인지 한 번만 더 생각해 봐요.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_police_c3_substation",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "center" }
+    ],
+    "speakerName": "해설",
+    "text": "책상 위 군 경찰서 전문에는 '공출 불응 선동자 엄단 및 즉결 보고'라는 문구가 붉게 밑줄 쳐져 있다.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_police_c3_meeting",
+    "locationId": "loc_meeting_room",
+    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
+    "characters": [
+      { "characterId": "char_doctor", "expression": "calm", "position": "right" },
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" }
+    ],
+    "speakerId": "char_doctor",
+    "speakerName": "윤선생",
+    "speakerRole": "송현 의원 의사",
+    "text": "최 순사보, 안에서는 무장 봉기를 논하는 게 아니오. 그저 굶어 죽지 않게 공출 분담을 의논하고 있을 뿐이오. 자네 보고서 한 장이 사람 여럿을 감옥에 보낼 수 있네.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "police_c3_main_1",
+    "locationId": "loc_meeting_room",
+    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
+      { "characterId": "char_farmer", "expression": "neutral", "position": "right" }
+    ],
+    "speakerName": "해설",
+    "text": "회관 문이 열리자 김태수와 윤선생, 마을 사람들이 일제히 최민석의 제복을 바라보았다. 수첩과 연필을 쥔 손끝에 찬바람이 스민다.",
+    "next": "police_c3_main_2"
+  },
+  {
+    "id": "police_c3_main_2",
+    "locationId": "loc_meeting_room",
+    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "center" }
+    ],
+    "speakerId": "char_police_asst",
+    "speakerName": "최민석",
+    "speakerRole": "순사보 (주인공)",
+    "text": "주재소로 돌아가 올릴 마지막 보고, 그리고 내 제복의 향방을 지금 결정해야 한다.",
+    "choices": [
+      {
+        "id": "choice_p3_full_crackdown",
+        "text": "명령대로 모임을 강제 해산시키고 윤선생과 김태수를 주동자로 보고서에 올린다",
+        "subtext": "조직 내 입지와 생계는 확고해지지만 공동체에 큰 피해와 단절을 남깁니다.",
+        "effects": {
+          "variables": { "livelihood": 14, "cooperation": 22, "communityBurden": 22, "autonomy": -12, "solidarity": -22 },
+          "setFlags": ["p3_crackdown"]
+        },
+        "logSummary": "마을 회관 모임을 강제 해산하고 주도 인물들을 주재소에 보고함",
+        "next": "police_c3_end"
+      },
+      {
+        "id": "choice_p3_neutral_log",
+        "text": "'단순 애국반 공출 분담 회의, 불온 정황 없음'으로 보고해 주민 연행을 막는다",
+        "subtext": "자리를 유지하면서 피해를 줄이려 하지만 사토 부장과의 긴장이 깊어집니다.",
+        "effects": {
+          "variables": { "livelihood": -4, "cooperation": -8, "communityBurden": -12, "autonomy": 14, "solidarity": 14 },
+          "setFlags": ["p3_neutral_log"]
+        },
+        "logSummary": "불온 정황 없음으로 기록해 주민 연행을 막고 직무를 유지함",
+        "next": "police_c3_end"
+      },
+      {
+        "id": "choice_p3_take_off_uniform",
+        "text": "군 경찰서 단속 계획을 윤선생에게 알리고 새벽에 사직서를 두고 제복을 벗는다",
+        "subtext": "생계와 신변 안전은 크게 위태로워지지만 집행자의 자리에서 완전히 이탈합니다.",
+        "effects": {
+          "variables": { "livelihood": -24, "cooperation": -28, "communityBurden": -10, "autonomy": 22, "solidarity": 20 },
+          "setFlags": ["p3_resigned"]
+        },
+        "logSummary": "단속 계획을 마을에 알리고 순사보 사직서를 남긴 채 제복을 벗음",
+        "next": "police_c3_end"
+      },
+      {
+        "id": "choice_p3_request_transfer",
+        "text": "사료 E의 전시 노무·행정 과부하를 사유로 타 지역 내근 보조 전출을 신청한다",
+        "subtext": "고향 주민을 직접 단속하는 자리에서는 벗어나지만 체제 안에 머무릅니다.",
+        "condition": { "requiredSources": ["source_E"] },
+        "showWhenLocked": true,
+        "lockedReason": "사료 E를 열람하면 전시 행정 보조 전출 선택지가 열립니다.",
+        "unlockTag": "사료 E 열람으로 해금",
+        "effects": {
+          "variables": { "livelihood": 6, "cooperation": 6, "communityBurden": 0, "autonomy": 4, "solidarity": -4 },
+          "setFlags": ["p3_transferred"]
+        },
+        "logSummary": "고향 단속을 피하기 위해 타 지역 행정 보조 전출을 신청함",
+        "next": "police_c3_end"
+      }
+    ]
+  },
+  {
+    "id": "police_c3_end",
+    "locationId": "loc_police_substation",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
+    "characters": [
+      { "characterId": "char_police_asst", "expression": "neutral", "position": "center" }
+    ],
+    "speakerName": "해설",
+    "text": "주재소 창문 너머로 겨울 새벽이 밝아 왔다. 식민지 경찰 조직의 최말단에서 내린 선택은 개인과 마을 모두에게 지워지지 않는 흔적을 남겼다.",
+    "next": "__ENDING__"
+  }
+]

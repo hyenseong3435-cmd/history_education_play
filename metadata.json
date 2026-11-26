@@ -1,0 +1,8 @@
+{
+  "name": "역사교과교육론 수업 시연 활동 게임",
+  "description": "1940년대 식민지 조선을 배경으로 농사꾼·면서기·순사보 세 직업을 통해 일상적 통제와 생존, 협력과 저항, 선택의 책임을 탐구하는 16-bit 픽셀 아트 역사교육용 비주얼 노벨 웹 게임",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

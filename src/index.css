@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif-kr: "Noto Serif KR", Georgia, serif;
+    --font-sans-kr: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    --font-mono-data: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+    --canvas-bg: #0e0f11;
+    --surface-1: #15171a;
+    --surface-2: #1c1f23;
+    --surface-parchment: #ebe7de;
+    --border-hairline: #2d3138;
+    --ink-primary: #e6e3dc;
+    --ink-muted: #98968f;
+    --accent-seal: #7a2e29;
+    --accent-stone: #b2a999;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100dvh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  html,
+  body {
+    font-family: var(--font-sans-kr);
+    background-color: var(--canvas-bg);
+    color: var(--ink-primary);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-editorial {
+    font-family: var(--font-serif-kr);
+    text-wrap: balance;
+  }
+
+  .font-data {
+    font-family: var(--font-mono-data);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.pixel-art {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.hanji-surface {
+  background-color: #ece8df;
+  background-image: linear-gradient(
+    180deg,
+    rgba(24, 24, 22, 0.02) 0%,
+    rgba(24, 24, 22, 0.04) 100%
+  );
+  color: #1f1e1b;
+}
+
+.archival-panel {
+  background-color: rgba(20, 22, 25, 0.94);
+  border: 1px solid #2e3239;
+}
+
+.dialogue-box {
+  background: linear-gradient(
+    180deg,
+    rgba(19, 21, 24, 0.94) 0%,
+    rgba(13, 14, 17, 0.98) 100%
+  );
+  border: 1px solid #353942;
+  box-shadow: 0 -10px 36px rgba(0, 0, 0, 0.65);
+}
+
+/* Restrained archival scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121417;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30343b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #474d57;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
