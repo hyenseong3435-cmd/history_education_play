@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowLeft, ArrowRight, Check } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Calendar, Check } from 'lucide-react';
 import { OCCUPATIONS, getVariableMetaForOccupation } from '../data';
 import type { OccupationId } from '../types/game';
 import { PixelSprite } from './PixelSprite';
@@ -10,6 +10,7 @@ interface OccupationSelectScreenProps {
   onProceedToSelect: () => void;
   onSelectOccupation: (id: OccupationId) => void;
   onBackToTitle: () => void;
+  onOpenTimeline: (occId?: OccupationId) => void;
 }
 
 export function OccupationSelectScreen({
@@ -17,6 +18,7 @@ export function OccupationSelectScreen({
   onProceedToSelect,
   onSelectOccupation,
   onBackToTitle,
+  onOpenTimeline,
 }: OccupationSelectScreenProps) {
   const [selectedId, setSelectedId] = useState<OccupationId>('farmer');
   const activeOcc =
@@ -73,20 +75,30 @@ export function OccupationSelectScreen({
                 미곡 공출, 경작권 이전·증산 표창 기록(사료 F), 국가총동원법·노무
                 동원, 창씨개명 행정, 면사무소·애국반 행정망, 주재소 경찰 통제
                 구조는 실제 역사적 사실에 기반합니다. 반면 가상의 마을과
-                최덕수·김진호·최민석 등의 인물 및 대화는 역사적 맥락을 이해하기
+                최덕수·김진호·강동혁 등의 인물 및 대화는 역사적 맥락을 이해하기
                 위해 구성된 허구적 각색입니다.
               </p>
             </div>
 
             <div className="flex flex-col-reverse sm:flex-row items-stretch sm:items-center justify-between gap-2.5 pt-1 shrink-0">
-              <button
-                type="button"
-                onClick={onBackToTitle}
-                className="min-h-[44px] px-4 py-2 bg-[#16181C] hover:bg-[#202329] text-[#C6C2B9] border border-[#32363E] text-sm font-medium flex items-center justify-center gap-2 transition-colors cursor-pointer whitespace-nowrap"
-              >
-                <ArrowLeft className="w-4 h-4" />
-                메인 메뉴로
-              </button>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={onBackToTitle}
+                  className="flex-1 sm:flex-none min-h-[44px] px-4 py-2 bg-[#16181C] hover:bg-[#202329] text-[#C6C2B9] border border-[#32363E] text-sm font-medium flex items-center justify-center gap-2 transition-colors cursor-pointer whitespace-nowrap"
+                >
+                  <ArrowLeft className="w-4 h-4" />
+                  메인 메뉴로
+                </button>
+                <button
+                  type="button"
+                  onClick={() => onOpenTimeline()}
+                  className="flex-1 sm:flex-none min-h-[44px] px-4 py-2 bg-[#181B20] hover:bg-[#22262E] text-[#DFDCD5] border border-[#444954] text-sm font-medium flex items-center justify-center gap-2 transition-colors cursor-pointer whitespace-nowrap"
+                >
+                  <Calendar className="w-4 h-4 text-[#B2A999]" />
+                  역사 연표
+                </button>
+              </div>
               <button
                 type="button"
                 onClick={onProceedToSelect}
@@ -115,9 +127,19 @@ export function OccupationSelectScreen({
             <ArrowLeft className="w-4 h-4" />
             메인 메뉴
           </button>
-          <p className="text-xs sm:text-sm text-[#8F8D86] whitespace-nowrap">
-            직업 선택 · 1940년대 식민지 조선
-          </p>
+          <div className="flex items-center gap-3">
+            <p className="hidden sm:block text-xs sm:text-sm text-[#8F8D86] whitespace-nowrap">
+              직업 선택 · 1942~1945 식민지 조선
+            </p>
+            <button
+              type="button"
+              onClick={() => onOpenTimeline(activeOcc.id)}
+              className="min-h-[34px] px-2.5 py-1 bg-[#181B20] hover:bg-[#22262E] border border-[#3B4049] hover:border-[#9E9586] text-xs text-[#DFDCD5] flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap"
+            >
+              <Calendar className="w-3.5 h-3.5 text-[#B2A999]" />
+              <span>역사 연표 보기</span>
+            </button>
+          </div>
         </div>
       </header>
 
@@ -146,7 +168,7 @@ export function OccupationSelectScreen({
                     {occ.name}
                   </p>
                   <p className="text-[11px] opacity-80 truncate">
-                    {occ.protagonistName}
+                    {occ.protagonistName} · {occ.activePeriod ?? ''}
                   </p>
                 </button>
               );
@@ -202,6 +224,11 @@ export function OccupationSelectScreen({
                       <div className="flex items-center justify-between gap-2">
                         <p className="text-xs text-[#9E978B]">
                           {occ.protagonistName} ({occ.age}세)
+                          {occ.activePeriod && (
+                            <span className="font-data text-[11px] text-[#B2A999] ml-1.5">
+                              · {occ.activePeriod}
+                            </span>
+                          )}
                         </p>
                         {isSelected && (
                           <span className="text-[11px] text-[#E6E2DA] flex items-center gap-1 whitespace-nowrap">
@@ -242,6 +269,11 @@ export function OccupationSelectScreen({
               <div className="min-w-0 max-w-md space-y-1">
                 <p className="text-[11px] sm:text-xs text-[#A49B8C]">
                   {activeOcc.title} · {activeOcc.protagonistName} ({activeOcc.age}세)
+                  {activeOcc.activePeriod && (
+                    <span className="font-data text-[#DFD8CA] ml-1.5">
+                      · {activeOcc.activePeriod}
+                    </span>
+                  )}
                 </p>
                 <h3 className="font-editorial text-xl sm:text-2xl font-semibold text-[#F1EEE8] leading-tight">
                   {activeOcc.name}
@@ -289,6 +321,17 @@ export function OccupationSelectScreen({
                 </ul>
               </div>
 
+              {activeOcc.moralDilemma && (
+                <div className="p-3 bg-[#151314] border-l-2 border-[#7A2E29] border-y border-r border-y-[#2B2729] border-r-[#2B2729] space-y-1">
+                  <p className="text-[11px] font-semibold text-[#D69D96]">
+                    핵심 도덕적 딜레마
+                  </p>
+                  <p className="text-xs text-[#DFDCD5] leading-relaxed break-keep">
+                    {activeOcc.moralDilemma}
+                  </p>
+                </div>
+              )}
+
               <div className="space-y-1.5">
                 <p className="text-xs font-semibold text-[#A8A49C]">
                   주요 가족 및 주변 인물
@@ -311,11 +354,11 @@ export function OccupationSelectScreen({
               </div>
             </div>
 
-            {/* Initial 5 variables */}
+            {/* Initial 5 variables (0-20 scale) */}
             <div className="md:col-span-5 md:border-l md:border-[#2A2E35] md:pl-5 space-y-3">
               <div>
                 <p className="text-xs font-semibold text-[#A8A49C]">
-                  초기 상태 지표 (0–100)
+                  초기 상태 지표 (0–20)
                 </p>
                 <p className="text-[11px] text-[#86837C] mt-0.5 leading-snug">
                   도덕적 우열이 아닌 시작 시점의 사회적 조건입니다.
@@ -324,22 +367,33 @@ export function OccupationSelectScreen({
               <div className="space-y-2.5">
                 {activeVariableMeta.map((meta) => {
                   const val = activeOcc.initialVariables[meta.key];
+                  const pct = Math.max(0, Math.min(100, (val / 20) * 100));
                   return (
                     <div key={meta.key} className="space-y-1">
                       <div className="flex items-center justify-between text-xs">
                         <span className="text-[#D4D0C8]">{meta.label}</span>
-                        <span className="font-data text-[#B2A999]">{val}</span>
+                        <span className="font-data text-[#B2A999]">
+                          {val} / 20
+                        </span>
                       </div>
                       <div className="h-1.5 w-full bg-[#101215] border border-[#2B2F36] overflow-hidden">
                         <div
                           className="h-full bg-[#9E9586] transition-all duration-200"
-                          style={{ width: `${val}%` }}
+                          style={{ width: `${pct}%` }}
                         />
                       </div>
                     </div>
                   );
                 })}
               </div>
+              <button
+                type="button"
+                onClick={() => onOpenTimeline(activeOcc.id)}
+                className="w-full min-h-[38px] px-3 py-1.5 bg-[#16191E] hover:bg-[#20242C] border border-[#343942] text-xs text-[#D6D2C9] flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+              >
+                <Calendar className="w-3.5 h-3.5 text-[#B2A999]" />
+                <span>{activeOcc.name} 시기 역사 연표 확인</span>
+              </button>
             </div>
           </div>
 

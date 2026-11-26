@@ -4,6 +4,7 @@ import locationsRaw from './locations.json';
 import chaptersRaw from './chapters.json';
 import sourcesRaw from './sources.json';
 import endingsRaw from './endings.json';
+import timelineRaw from './timeline.json';
 import farmerEventsRaw from './events/farmer.json';
 import clerkEventsRaw from './events/clerk.json';
 import policeEventsRaw from './events/police_assistant.json';
@@ -17,6 +18,7 @@ import type {
   EndingData,
   DialogueNode,
   VariableMeta,
+  TimelineDataset,
 } from '../types/game';
 
 export const OCCUPATIONS: OccupationData[] = occupationsRaw as unknown as OccupationData[];
@@ -25,6 +27,7 @@ export const LOCATIONS: LocationData[] = locationsRaw as unknown as LocationData
 export const CHAPTERS: ChapterData[] = chaptersRaw as unknown as ChapterData[];
 export const SOURCES: HistoricalSource[] = sourcesRaw as unknown as HistoricalSource[];
 export const ENDINGS: EndingData[] = endingsRaw as unknown as EndingData[];
+export const TIMELINE_DATA: TimelineDataset = timelineRaw as unknown as TimelineDataset;
 
 export const ALL_EVENTS: DialogueNode[] = [
   ...(farmerEventsRaw as unknown as DialogueNode[]),
@@ -183,44 +186,44 @@ export const CLERK_VARIABLE_META: VariableMeta[] = [
 
 export const POLICE_VARIABLE_META: VariableMeta[] = [
   {
-    key: 'livelihood',
-    label: '직위·생계 안정',
-    shortLabel: '생계',
-    description: '순사보 급여와 관사, 가족 부양 기반이 유지되는 정도입니다.',
-    lowNote: '직위 박탈·생계 위기',
-    highNote: '신분·생계 유지',
-  },
-  {
     key: 'cooperation',
-    label: '상부 복종도',
-    shortLabel: '복종',
-    description: '사토 순사부장과 주재소의 단속·보고 명령을 충실히 수행한 정도입니다.',
-    lowNote: '명령 이탈·의심 누적',
-    highNote: '조직 지침 철저 집행',
-  },
-  {
-    key: 'communityBurden',
-    label: '단속 피해 부담',
-    shortLabel: '피해',
-    description: '단속과 연행 집행으로 들말과 송현면 주민에게 전가된 실질적 피해입니다.',
-    lowNote: '직접 피해 최소화',
-    highNote: '주민 피해·원성 심화',
-  },
-  {
-    key: 'autonomy',
-    label: '현장 재량',
-    shortLabel: '재량',
-    description: '경찰 위계 안에서 개인적 판단과 소극적 유예 여지를 행사한 정도입니다.',
-    lowNote: '기계적 복종',
-    highNote: '현장 재량 행사',
+    label: '조직 충성도',
+    shortLabel: '충성도',
+    description: '다나카 주임과 경찰 조직의 단속·수색·감시 요구에 얼마나 적극적으로 협력했는가입니다.',
+    lowNote: '명령 이탈·소극 집행',
+    highNote: '실적 우선·정규 순사 추천 근접',
   },
   {
     key: 'solidarity',
-    label: '주민 관계 유지',
-    shortLabel: '관계',
-    description: '제복을 입은 처지에서도 마을 이웃과 최소한의 신뢰를 지킨 정도입니다.',
-    lowNote: '마을과 완전 단절',
-    highNote: '최소한의 신뢰 유지',
+    label: '주민 신뢰도',
+    shortLabel: '신뢰도',
+    description: '최덕수·이정수 등 마을 사람들이 제복을 입은 동혁을 얼마나 신뢰하거나 경계하는가입니다.',
+    lowNote: '마을의 공포·완전 고립',
+    highNote: '최소한의 신뢰·정보 협조',
+  },
+  {
+    key: 'autonomy',
+    label: '감시 위험도',
+    shortLabel: '감시위험',
+    description: '다나카 주임과 선배 박태수가 동혁의 보고와 행동을 의심하는 정도입니다. 높아질수록 조사·문책·가족 감시 위험이 커집니다.',
+    lowNote: '조직 내부 의심 낮음',
+    highNote: '조사·은닉 혐의·탄압 임박',
+  },
+  {
+    key: 'communityBurden',
+    label: '자기합리화',
+    shortLabel: '합리화',
+    description: '‘생계 때문이었다’, ‘내가 안 해도 누군가 한다’며 자신의 행위를 정당화하는 정도입니다.',
+    lowNote: '폭력의 책임 직면',
+    highNote: '직업·명령 논리로 합리화 심화',
+  },
+  {
+    key: 'livelihood',
+    label: '가족 관계',
+    shortLabel: '가족관계',
+    description: '친형 강영수 및 가족과의 유대와 안전 정도입니다. 단속·수색 선택은 형의 행방과 가족이 입는 피해에 직접 영향을 줍니다.',
+    lowNote: '가족 단절·심각한 피해',
+    highNote: '가족 유대·보호 시도',
   },
 ];
 

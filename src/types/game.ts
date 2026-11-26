@@ -23,6 +23,7 @@ export interface ConditionRule {
   minVars?: Partial<Variables>;
   maxVars?: Partial<Variables>;
   requiredFlags?: string[];
+  anyFlags?: string[];
   forbiddenFlags?: string[];
   requiredSources?: string[];
   minRelationships?: Record<string, number>;
@@ -36,9 +37,11 @@ export interface OccupationData {
   protagonistId: string;
   protagonistName: string;
   age: number;
+  activePeriod: string;
   summary: string;
   socialPosition: string;
   historicalScope: string;
+  moralDilemma: string;
   keyConflicts: string[];
   startLocationId: string;
   startBackground: string;
@@ -105,9 +108,36 @@ export interface ChapterData {
   recommendedVisitsCount: number;
 }
 
+export type SourceCategory =
+  | 'common'
+  | 'farmer'
+  | 'clerk'
+  | 'police_assistant'
+  | 'reference';
+
+export interface SourcePage {
+  title: string;
+  subtitle?: string;
+  body?: string;
+  originalText?: string;
+  translationText?: string;
+  bullets?: string[];
+  table?: {
+    headers: string[];
+    rows: string[][];
+  };
+  imageUrl?: string;
+  fallbackImageUrl?: string;
+  imageCaption?: string;
+  imageCredit?: string;
+  footnote?: string;
+}
+
 export interface HistoricalSource {
   id: string;
   code: string;
+  category?: SourceCategory;
+  alwaysUnlocked?: boolean;
   title: string;
   period: string;
   relatedEvent: string;
@@ -119,6 +149,10 @@ export interface HistoricalSource {
   factVsFiction: string;
   commentary: string;
   gameplayInsight: string;
+  imageUrl?: string;
+  imageCaption?: string;
+  imageCredit?: string;
+  pages?: SourcePage[];
 }
 
 export interface StageCharacter {
@@ -277,3 +311,56 @@ export interface GameSettings {
   textSize: 'normal' | 'large';
   displayRatio: DisplayRatioMode;
 }
+
+export type TimelineTab = 'common' | 'occupation' | 'synthesis';
+
+export interface CommonTimelineEvent {
+  id: string;
+  year: number;
+  dateLabel: string;
+  title: string;
+  shortTitle: string;
+  background: string;
+  impactOnKoreans: string;
+  relatedOccupations: OccupationId[];
+  occupationImpacts: Partial<Record<OccupationId, string>>;
+  factVsFictionNote: string;
+}
+
+export interface OccupationTimelineEntry {
+  id: string;
+  period: string;
+  kind: 'historical_background' | 'game_event';
+  title: string;
+  summary: string;
+  connectionNote?: string;
+}
+
+export interface OccupationTimelineData {
+  occupationId: OccupationId;
+  occupationName: string;
+  storyTitle: string;
+  protagonistName: string;
+  protagonistAge: number;
+  startYear: number;
+  endYear: number;
+  periodLabel: string;
+  perspectiveSummary: string;
+  colonialRuleMode: string;
+  continuityNote: string;
+  entries: OccupationTimelineEntry[];
+}
+
+export interface TimelineDataset {
+  commonEvents: CommonTimelineEvent[];
+  occupationTimelines: OccupationTimelineData[];
+  sharedStructureNotes: string[];
+  synthesisSummary: {
+    title: string;
+    subtitle: string;
+    commonInstitutionalBackground: string[];
+    crossOccupationLinks: string[];
+    finalQuestion: string;
+  };
+}
+

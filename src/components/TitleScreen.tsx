@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BookOpen, History, Info, Monitor, Play, RotateCcw, ScrollText } from 'lucide-react';
+import { BookOpen, Calendar, History, Info, Monitor, Play, RotateCcw, ScrollText } from 'lucide-react';
 import { OCCUPATIONS_BY_ID } from '../data';
 import type { DisplayRatioMode, SaveSlotData } from '../types/game';
 import { ResilientBackground } from './ResilientBackground';
@@ -18,6 +18,7 @@ interface TitleScreenProps {
   onCycleDisplayRatio: () => void;
   onNewGame: () => void;
   onContinue: () => void;
+  onOpenTimeline: () => void;
   onOpenRecords: () => void;
   onOpenGuide: () => void;
   onOpenCredits: () => void;
@@ -30,6 +31,7 @@ export function TitleScreen({
   onCycleDisplayRatio,
   onNewGame,
   onContinue,
+  onOpenTimeline,
   onOpenRecords,
   onOpenGuide,
   onOpenCredits,
@@ -75,7 +77,7 @@ export function TitleScreen({
       {/* Top archival header line */}
       <header className="relative z-10 shrink-0 hidden sm:flex w-full max-w-6xl mx-auto px-5 sm:px-8 pt-4 pb-2.5 border-b border-[#25282E]/80 items-center justify-end gap-4">
         <p className="text-xs text-[#7D7B75] font-data tracking-wider">
-          1941 — 1943 · SONGHYEON-MYEON
+          1942 — 1945 · ARCHIVAL EDITION
         </p>
       </header>
 
@@ -170,7 +172,23 @@ export function TitleScreen({
             )}
 
             {/* Secondary navigation buttons */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-2">
+            <div className="grid grid-cols-2 gap-2 pt-2">
+              <button
+                type="button"
+                onClick={onOpenTimeline}
+                className="min-h-[46px] px-3.5 py-2.5 bg-[#191C21]/95 hover:bg-[#23272F] text-[#ECE9E2] border border-[#474D58] hover:border-[#9E9586] transition-colors flex items-center justify-center sm:justify-start gap-2 text-sm font-medium cursor-pointer whitespace-nowrap"
+              >
+                <Calendar className="w-4 h-4 text-[#B2A999] shrink-0" />
+                <span>역사 연표</span>
+              </button>
+              <button
+                type="button"
+                onClick={onOpenCredits}
+                className="min-h-[46px] px-3.5 py-2.5 bg-[#15171B]/92 hover:bg-[#1E2127] text-[#D4D0C7] border border-[#2C3037] hover:border-[#454B56] transition-colors flex items-center justify-center sm:justify-start gap-2 text-sm cursor-pointer whitespace-nowrap"
+              >
+                <ScrollText className="w-4 h-4 text-[#A49B8C] shrink-0" />
+                <span>사료 노트</span>
+              </button>
               <button
                 type="button"
                 onClick={onOpenRecords}
@@ -190,25 +208,17 @@ export function TitleScreen({
                 <Info className="w-4 h-4 text-[#A49B8C] shrink-0" />
                 <span>게임 설명</span>
               </button>
-              <button
-                type="button"
-                onClick={onOpenCredits}
-                className="min-h-[46px] px-3.5 py-2.5 bg-[#15171B]/92 hover:bg-[#1E2127] text-[#D4D0C7] border border-[#2C3037] hover:border-[#454B56] transition-colors flex items-center justify-center sm:justify-start gap-2 text-sm cursor-pointer whitespace-nowrap"
-              >
-                <ScrollText className="w-4 h-4 text-[#A49B8C] shrink-0" />
-                <span>사료 노트</span>
-              </button>
             </div>
           </div>
         </div>
       </main>
 
       {/* Quiet institutional disclaimer footer with quick ratio control */}
-      <footer className="relative z-10 shrink-0 w-full max-w-6xl mx-auto px-5 sm:px-8 py-3 border-t border-[#25282E]/90 flex flex-wrap items-center justify-between gap-2 text-xs text-[#898780]">
-        <div className="flex items-center gap-2 min-w-0">
-          <BookOpen className="w-3.5 h-3.5 text-[#9F9687] shrink-0" />
-          <span className="truncate">
-            실제 역사적 제도·사료와 게임의 허구적 인물·각색은 본문 내에서 명확히 구분됩니다.
+      <footer className="relative z-10 shrink-0 w-full max-w-6xl mx-auto px-5 sm:px-8 py-3 border-t border-[#25282E]/90 flex flex-wrap items-center justify-between gap-2.5 text-xs text-[#898780]">
+        <div className="flex items-start sm:items-center gap-2 min-w-0 flex-1">
+          <BookOpen className="w-3.5 h-3.5 text-[#9F9687] shrink-0 mt-0.5 sm:mt-0" />
+          <span className="leading-relaxed break-keep">
+            실제 역사적 제도 및 사료를 기반으로 하되, 소설을 참고해 각색하였습니다. 그로 인해 게임의 요소가 허구적 인물과 사건이오니 학습하실때 유의하길 바라겠습니다.
           </span>
         </div>
         <button

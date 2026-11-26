@@ -39,16 +39,34 @@ export const DEFAULT_SETTINGS: GameSettings = {
   displayRatio: 'auto',
 };
 
+export const MAX_VARIABLE = 20;
+
 export const DEFAULT_VARIABLES: Variables = {
-  livelihood: 50,
-  cooperation: 30,
-  communityBurden: 30,
-  autonomy: 40,
-  solidarity: 50,
+  livelihood: 10,
+  cooperation: 10,
+  communityBurden: 10,
+  autonomy: 10,
+  solidarity: 10,
 };
 
 export function clampVariable(val: number): number {
+  return Math.max(0, Math.min(MAX_VARIABLE, Math.round(val)));
+}
+
+export function clampRelationship(val: number): number {
   return Math.max(0, Math.min(100, Math.round(val)));
+}
+
+function normalizeLoadedVariables(vars?: Partial<Variables>): Variables {
+  const merged: Variables = { ...DEFAULT_VARIABLES, ...(vars ?? {}) };
+  const values = Object.values(merged);
+  const looksLegacyScale = values.some((v) => typeof v === 'number' && v > MAX_VARIABLE);
+  const out = { ...DEFAULT_VARIABLES };
+  (Object.keys(DEFAULT_VARIABLES) as VariableKey[]).forEach((k) => {
+    const raw = merged[k] ?? DEFAULT_VARIABLES[k];
+    out[k] = clampVariable(looksLegacyScale ? Math.round(raw / 5) : raw);
+  });
+  return out;
 }
 
 export function applyVariableDelta(
@@ -164,6 +182,11 @@ export function evaluateCondition(
     }
   }
 
+  if (condition.anyFlags && condition.anyFlags.length > 0) {
+    const hasAny = condition.anyFlags.some((flag) => state.flags.includes(flag));
+    if (!hasAny) return false;
+  }
+
   if (condition.forbiddenFlags) {
     for (const flag of condition.forbiddenFlags) {
       if (state.flags.includes(flag)) return false;
@@ -256,7 +279,7 @@ export function applyChoiceToState(
   const nextRelationships = { ...state.relationships };
   if (effects?.relationships) {
     for (const [charId, delta] of Object.entries(effects.relationships)) {
-      nextRelationships[charId] = clampVariable(
+      nextRelationships[charId] = clampRelationship(
         (nextRelationships[charId] ?? 50) + delta
       );
     }
@@ -493,7 +516,11 @@ export function loadAutoSave(): SaveSlotData | null {
   try {
     const raw = localStorage.getItem(STORAGE_KEYS.AUTOSAVE);
     if (!raw) return null;
-    return JSON.parse(raw) as SaveSlotData;
+    const parsed = JSON.parse(raw) as SaveSlotData;
+    if (parsed?.state) {
+      parsed.state.variables = normalizeLoadedVariables(parsed.state.variables);
+    }
+    return parsed;
   } catch {
     return null;
   }
@@ -503,7 +530,13 @@ export function loadManualSlots(): Record<string, SaveSlotData> {
   try {
     const raw = localStorage.getItem(STORAGE_KEYS.SLOTS);
     if (!raw) return {};
-    return JSON.parse(raw) as Record<string, SaveSlotData>;
+    const parsed = JSON.parse(raw) as Record<string, SaveSlotData>;
+    Object.values(parsed).forEach((slot) => {
+      if (slot?.state) {
+        slot.state.variables = normalizeLoadedVariables(slot.state.variables);
+      }
+    });
+    return parsed;
   } catch {
     return {};
   }
@@ -553,7 +586,11 @@ export function loadPlaythroughRecords(): PlaythroughRecord[] {
   try {
     const raw = localStorage.getItem(STORAGE_KEYS.RECORDS);
     if (!raw) return [];
-    return JSON.parse(raw) as PlaythroughRecord[];
+    const parsed = JSON.parse(raw) as PlaythroughRecord[];
+    return parsed.map((rec) => ({
+      ...rec,
+      finalVariables: normalizeLoadedVariables(rec.finalVariables),
+    }));
   } catch {
     return [];
   }

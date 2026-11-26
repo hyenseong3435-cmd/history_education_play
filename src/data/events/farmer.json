@@ -4,7 +4,11 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Pixel_art_rice_paddies_landscape_005bd82c_d8816a80.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "center", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "center",
+        "expression": "neutral"
+      }
     ],
     "speakerName": "프롤로그 · 남의 땅에서 피어난 봄 (1942년 봄)",
     "text": "1942년 봄. 전라북도 옥구군을 참고한 가상의 농촌 마을 들판에 찬 안개가 걷히고 있습니다. 서른넷의 소작농 최덕수는 대대로 지주의 땅을 빌려 농사를 지으며, 언젠가 자기 이름 석 자가 적힌 논 한 마지기를 갖는 날을 꿈꿔 왔습니다.",
@@ -19,8 +23,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_suni_farmer", "position": "right", "expression": "bundle" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "position": "right",
+        "expression": "bundle"
+      }
     ],
     "speakerId": "char_suni_farmer",
     "speakerName": "최순이",
@@ -33,8 +45,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "work" },
-      { "characterId": "char_bongsu", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "work"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_bongsu",
     "speakerName": "김봉수",
@@ -47,8 +67,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_bongsu", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -61,8 +89,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_bongsu", "position": "right", "expression": "work" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "right",
+        "expression": "work"
+      }
     ],
     "speakerId": "char_bongsu",
     "speakerName": "김봉수",
@@ -75,8 +111,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_oh", "position": "right", "expression": "papers" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_oh",
+        "position": "right",
+        "expression": "papers"
+      }
     ],
     "speakerId": "char_oh",
     "speakerName": "오 주사",
@@ -95,8 +139,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_suni_farmer", "position": "right", "expression": "worried" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "position": "right",
+        "expression": "worried"
+      }
     ],
     "speakerId": "char_suni_farmer",
     "speakerName": "최순이",
@@ -109,8 +161,17 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_oh", "position": "right", "expression": "neutral", "dimmed": true }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_oh",
+        "position": "right",
+        "expression": "neutral",
+        "dimmed": true
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -123,17 +184,19 @@
         "subtext": "체제 협력 · 생계 우선 (생계 안정 +12, 체제 협력 +18, 주민 연대 -15)",
         "effects": {
           "variables": {
-            "livelihood": 12,
-            "cooperation": 18,
-            "solidarity": -15,
-            "communityBurden": 6
+            "livelihood": 2,
+            "cooperation": 3,
+            "solidarity": -3,
+            "communityBurden": 1
           },
           "relationships": {
             "char_oh": 10,
             "char_suni_farmer": 6,
             "char_bongsu": -14
           },
-          "setFlags": ["f_c0_accepted_land"]
+          "setFlags": [
+            "f_c0_accepted_land"
+          ]
         },
         "logSummary": "[선택 1] 가족의 생존을 우선해 면사무소와 금융조합이 주선한 김봉수의 논 네 두락 경작권을 수락했습니다.",
         "next": "farmer_prologue_res_a"
@@ -144,16 +207,18 @@
         "subtext": "관계 조율 · 절충 (주민 연대 +12, 저항 참여 +6, 생계 안정 -4)",
         "effects": {
           "variables": {
-            "solidarity": 12,
-            "livelihood": -4,
-            "cooperation": -5,
-            "autonomy": 6
+            "solidarity": 2,
+            "livelihood": -1,
+            "cooperation": -1,
+            "autonomy": 1
           },
           "relationships": {
             "char_bongsu": 12,
             "char_oh": -4
           },
-          "setFlags": ["f_c0_checked_bongsu"]
+          "setFlags": [
+            "f_c0_checked_bongsu"
+          ]
         },
         "logSummary": "[선택 1] 면사무소 제안에 바로 도장을 찍지 않고 김봉수의 사정과 추후 귀환 가능성을 먼저 헤아렸습니다.",
         "next": "farmer_prologue_res_b"
@@ -164,17 +229,19 @@
         "subtext": "연대 · 문제 제기 (주민 연대 +15, 저항 참여 +16, 체제 협력 -12)",
         "effects": {
           "variables": {
-            "solidarity": 15,
-            "autonomy": 16,
-            "cooperation": -12,
-            "communityBurden": 8
+            "solidarity": 3,
+            "autonomy": 3,
+            "cooperation": -2,
+            "communityBurden": 2
           },
           "relationships": {
             "char_bongsu": 15,
             "char_oh": -12,
             "char_manseok": -8
           },
-          "setFlags": ["f_c0_protested_transfer"]
+          "setFlags": [
+            "f_c0_protested_transfer"
+          ]
         },
         "logSummary": "[선택 1] 이농 농민의 경작권을 일방적으로 이전하는 처사에 이의를 제기하고 마을 농민들과의 공동 대응을 모색했습니다.",
         "next": "farmer_prologue_res_c"
@@ -185,15 +252,17 @@
         "subtext": "침묵 · 거리 두기 (체제 협력 -12, 생계 안정 -12, 저항 참여 +4)",
         "effects": {
           "variables": {
-            "cooperation": -12,
-            "livelihood": -12,
-            "autonomy": 4
+            "cooperation": -2,
+            "livelihood": -2,
+            "autonomy": 1
           },
           "relationships": {
             "char_suni_farmer": -6,
             "char_oh": -8
           },
-          "setFlags": ["f_c0_declined_land"]
+          "setFlags": [
+            "f_c0_declined_land"
+          ]
         },
         "logSummary": "[선택 1] 이웃의 땅을 맡는 부담과 갈등을 피해 기존 소작지 농사에만 머물기로 했습니다.",
         "next": "farmer_prologue_res_d"
@@ -205,8 +274,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_oh", "position": "right", "expression": "ledger" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_oh",
+        "position": "right",
+        "expression": "ledger"
+      }
     ],
     "speakerId": "char_oh",
     "speakerName": "오 주사",
@@ -219,8 +296,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_bongsu", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_bongsu",
     "speakerName": "김봉수",
@@ -233,8 +318,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_oh", "position": "right", "expression": "papers" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_oh",
+        "position": "right",
+        "expression": "papers"
+      }
     ],
     "speakerId": "char_oh",
     "speakerName": "오 주사",
@@ -247,8 +340,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_suni_farmer", "position": "right", "expression": "worried" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "position": "right",
+        "expression": "worried"
+      }
     ],
     "speakerId": "char_suni_farmer",
     "speakerName": "최순이",
@@ -261,7 +362,11 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "center", "expression": "work" }
+      {
+        "characterId": "char_deoksu",
+        "position": "center",
+        "expression": "work"
+      }
     ],
     "speakerName": "제1장 · 풍년의 대가 (1942년 여름~가을)",
     "text": "1942년 여름과 가을. 덕수가 새벽 이슬을 맞으며 논을 갈고 김을 맨 덕에 들판에는 모처럼 누런 벼 이삭이 가득 고개를 숙였습니다. 그러나 수확이 다가올수록 마을에는 기쁨보다 무거운 긴장이 감돕니다.",
@@ -272,8 +377,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "work" },
-      { "characterId": "char_oh", "position": "right", "expression": "papers" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "work"
+      },
+      {
+        "characterId": "char_oh",
+        "position": "right",
+        "expression": "papers"
+      }
     ],
     "speakerId": "char_oh",
     "speakerName": "오 주사",
@@ -286,7 +399,11 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "center", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "center",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -303,8 +420,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
     "characters": [
-      { "characterId": "char_suni_farmer", "position": "left", "expression": "bundle" },
-      { "characterId": "char_son", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_suni_farmer",
+        "position": "left",
+        "expression": "bundle"
+      },
+      {
+        "characterId": "char_son",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_suni_farmer",
     "speakerName": "최순이",
@@ -317,8 +442,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_son", "position": "right", "expression": "alt" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_son",
+        "position": "right",
+        "expression": "alt"
+      }
     ],
     "speakerId": "char_son",
     "speakerName": "아들",
@@ -331,8 +464,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_bongsu", "position": "right", "expression": "work" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "right",
+        "expression": "work"
+      }
     ],
     "speakerId": "char_bongsu",
     "speakerName": "김봉수",
@@ -345,8 +486,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_bongsu", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_bongsu",
     "speakerName": "김봉수",
@@ -359,8 +508,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_oh", "position": "right", "expression": "papers" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_oh",
+        "position": "right",
+        "expression": "papers"
+      }
     ],
     "speakerId": "char_oh",
     "speakerName": "오 주사",
@@ -374,8 +531,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_oh", "position": "left", "expression": "ledger" },
-      { "characterId": "char_reporter", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_oh",
+        "position": "left",
+        "expression": "ledger"
+      },
+      {
+        "characterId": "char_reporter",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_reporter",
     "speakerName": "지방 신문 기자",
@@ -393,8 +558,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
     "characters": [
-      { "characterId": "char_villager", "position": "left", "expression": "worried" },
-      { "characterId": "char_bongsu", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_villager",
+        "position": "left",
+        "expression": "worried"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_villager",
     "speakerName": "마을 어르신",
@@ -407,8 +580,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_villager", "position": "right", "expression": "calm" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_villager",
+        "position": "right",
+        "expression": "calm"
+      }
     ],
     "speakerId": "char_villager",
     "speakerName": "마을 어르신",
@@ -421,8 +602,16 @@
     "locationId": "loc_clinic",
     "background": "/assets/aistudio/Colonial_Korea_pixel_art_street_41461940_083abc1a.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_manseok", "position": "right", "expression": "stern" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_manseok",
+        "position": "right",
+        "expression": "stern"
+      }
     ],
     "speakerId": "char_manseok",
     "speakerName": "박만석",
@@ -435,8 +624,16 @@
     "locationId": "loc_clinic",
     "background": "/assets/aistudio/Colonial_Korea_pixel_art_street_41461940_083abc1a.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_manseok", "position": "right", "expression": "formal" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_manseok",
+        "position": "right",
+        "expression": "formal"
+      }
     ],
     "speakerId": "char_manseok",
     "speakerName": "박만석",
@@ -453,8 +650,17 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "work" },
-      { "characterId": "char_manseok", "position": "right", "expression": "stern", "dimmed": true }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "work"
+      },
+      {
+        "characterId": "char_manseok",
+        "position": "right",
+        "expression": "stern",
+        "dimmed": true
+      }
     ],
     "speakerName": "선택 2 · 증산과 공출의 갈림길",
     "text": "가을 타작이 끝나고 가마니가 높이 쌓였습니다. 그러나 면사무소의 공출 독촉과 지주 박만석의 소작료 계산이 겹치며, 덕수의 마당에는 가족의 겨울 식량과 체제의 요구, 이웃의 고통이 한꺼번에 교차합니다.",
@@ -465,8 +671,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_oh", "position": "right", "expression": "papers" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_oh",
+        "position": "right",
+        "expression": "papers"
+      }
     ],
     "speakerId": "char_oh",
     "speakerName": "오 주사",
@@ -479,26 +693,28 @@
         "subtext": "체제 협력 · 모범 실적 (체제 협력 +26, 감시·부담 +14, 주민 연대 -18)",
         "effects": {
           "variables": {
-            "cooperation": 26,
-            "livelihood": -4,
-            "solidarity": -18,
-            "communityBurden": 14,
-            "autonomy": -10
+            "cooperation": 5,
+            "livelihood": -1,
+            "solidarity": -4,
+            "communityBurden": 3,
+            "autonomy": -2
           },
           "relationships": {
             "char_oh": 15,
             "char_bongsu": -18,
             "char_manseok": 10
           },
-          "setFlags": ["f_c1_model_farmer"],
+          "setFlags": [
+            "f_c1_model_farmer"
+          ],
           "delayedEffect": {
             "id": "de_farmer_excess_quota",
             "triggerChapter": 2,
             "title": "초과 공출 실적의 파장",
             "description": "덕수의 초과 공출 기록이 군청 보고서에 오르면서, 마을 전체의 다음 해 공출 할당 기준을 압박하는 근거가 되고 있습니다.",
             "variables": {
-              "communityBurden": 8,
-              "solidarity": -6
+              "communityBurden": 2,
+              "solidarity": -1
             },
             "flag": "triggered_de_farmer_excess_quota"
           }
@@ -512,15 +728,17 @@
         "subtext": "생계 유지 · 침묵 (생계 안정 +8, 체제 협력 +4, 저항 참여 -4)",
         "effects": {
           "variables": {
-            "livelihood": 8,
-            "cooperation": 4,
-            "solidarity": -2,
-            "autonomy": -4
+            "livelihood": 2,
+            "cooperation": 1,
+            "solidarity": -1,
+            "autonomy": -1
           },
           "relationships": {
             "char_suni_farmer": 8
           },
-          "setFlags": ["f_c1_minimal_quota"]
+          "setFlags": [
+            "f_c1_minimal_quota"
+          ]
         },
         "logSummary": "[선택 2] 표창을 노리지 않고 할당 목표만 최소한으로 채워 가족의 겨울 양식을 지키는 쪽을 택했습니다.",
         "next": "farmer_c1_res_b"
@@ -531,24 +749,26 @@
         "subtext": "공동 대응 · 연대 (주민 연대 +16, 저항 참여 +18, 체제 협력 -12)",
         "effects": {
           "variables": {
-            "solidarity": 16,
-            "autonomy": 18,
-            "communityBurden": 14,
-            "cooperation": -12
+            "solidarity": 3,
+            "autonomy": 4,
+            "communityBurden": 3,
+            "cooperation": -2
           },
           "relationships": {
             "char_bongsu": 14,
             "char_oh": -14,
             "char_manseok": -14
           },
-          "setFlags": ["f_c1_collective_petition"],
+          "setFlags": [
+            "f_c1_collective_petition"
+          ],
           "delayedEffect": {
             "id": "de_farmer_petition_watch",
             "triggerChapter": 2,
             "title": "면사무소와 주재소의 시선",
             "description": "공출 감면을 요구한 탄원 이후 면사무소와 주재소에서 덕수의 동향을 주시하기 시작했습니다.",
             "variables": {
-              "communityBurden": 6
+              "communityBurden": 1
             },
             "flag": "triggered_de_farmer_petition_watch"
           }
@@ -562,18 +782,20 @@
         "subtext": "우회적 저항 · 위험 감수 (저항 참여 +8, 주민 연대 +6, 체제 협력 -10)",
         "effects": {
           "variables": {
-            "cooperation": -10,
-            "livelihood": 2,
-            "autonomy": 8,
-            "solidarity": 6,
-            "communityBurden": 6
+            "cooperation": -2,
+            "livelihood": 1,
+            "autonomy": 2,
+            "solidarity": 1,
+            "communityBurden": 1
           },
           "relationships": {
             "char_bongsu": 8,
             "char_suni_farmer": 4,
             "char_oh": -8
           },
-          "setFlags": ["f_c1_secret_share"]
+          "setFlags": [
+            "f_c1_secret_share"
+          ]
         },
         "logSummary": "[선택 2] 단속 위험을 무릅쓰고 수확물 일부를 따로 빼돌려 가족과 굶주린 이웃의 식량으로 나누었습니다.",
         "next": "farmer_c1_res_d"
@@ -585,9 +807,21 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_oh", "position": "center", "expression": "papers" },
-      { "characterId": "char_reporter", "position": "right", "expression": "glasses" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_oh",
+        "position": "center",
+        "expression": "papers"
+      },
+      {
+        "characterId": "char_reporter",
+        "position": "right",
+        "expression": "glasses"
+      }
     ],
     "speakerId": "char_oh",
     "speakerName": "오 주사 · 면사무소 표창식",
@@ -605,8 +839,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_bongsu", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_bongsu",
     "speakerName": "김봉수",
@@ -619,8 +861,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_bongsu", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -633,8 +883,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_bongsu", "position": "right", "expression": "work" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "right",
+        "expression": "work"
+      }
     ],
     "speakerId": "char_bongsu",
     "speakerName": "김봉수",
@@ -647,8 +905,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_suni_farmer", "position": "right", "expression": "calm" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "position": "right",
+        "expression": "calm"
+      }
     ],
     "speakerId": "char_suni_farmer",
     "speakerName": "최순이",
@@ -657,7 +923,9 @@
     "conditionalNext": [
       {
         "condition": {
-          "minVars": { "cooperation": 55 }
+          "minVars": {
+            "cooperation": 11
+          }
         },
         "next": "farmer_c1_award_1"
       }
@@ -669,8 +937,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_villager", "position": "right", "expression": "worried" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_villager",
+        "position": "right",
+        "expression": "worried"
+      }
     ],
     "speakerId": "char_villager",
     "speakerName": "마을 어르신",
@@ -683,8 +959,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_suni_farmer", "position": "right", "expression": "bundle" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "position": "right",
+        "expression": "bundle"
+      }
     ],
     "speakerId": "char_suni_farmer",
     "speakerName": "최순이",
@@ -697,8 +981,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_jaemun", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_jaemun",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerName": "제2장 · 봄은 누구에게 오는가 (1942년 늦가을)",
     "text": "1942년 늦가을, 찬 서리가 내린 밤. 과거 농민조합운동과 연결되어 활동했던 이재문이 인적이 끊긴 마을 창고 뒤편으로 최덕수를 조용히 불러냈습니다.",
@@ -709,8 +1001,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_jaemun", "position": "right", "expression": "serious" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_jaemun",
+        "position": "right",
+        "expression": "serious"
+      }
     ],
     "speakerId": "char_jaemun",
     "speakerName": "이재문",
@@ -723,8 +1023,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_jaemun", "position": "right", "expression": "serious" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_jaemun",
+        "position": "right",
+        "expression": "serious"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -737,8 +1045,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_jaemun", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_jaemun",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_jaemun",
     "speakerName": "이재문",
@@ -751,8 +1067,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_jaemun", "position": "right", "expression": "serious" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_jaemun",
+        "position": "right",
+        "expression": "serious"
+      }
     ],
     "speakerId": "char_jaemun",
     "speakerName": "이재문",
@@ -765,17 +1089,19 @@
         "subtext": "연대 참여 · 저항 (주민 연대 +20, 저항 참여 +20, 감시·부담 +14)",
         "effects": {
           "variables": {
-            "solidarity": 20,
-            "autonomy": 20,
-            "communityBurden": 14,
-            "cooperation": -12
+            "solidarity": 4,
+            "autonomy": 4,
+            "communityBurden": 3,
+            "cooperation": -2
           },
           "relationships": {
             "char_jaemun": 18,
             "char_bongsu": 10,
             "char_oh": -10
           },
-          "setFlags": ["f_c2_joined_jaemun"]
+          "setFlags": [
+            "f_c2_joined_jaemun"
+          ]
         },
         "logSummary": "[선택 3] 탄압의 위험을 감수하고 이재문이 제안한 비밀 농민 모임에 참여해 공동 대응을 준비하기로 했습니다.",
         "next": "farmer_c2_res_a"
@@ -786,16 +1112,18 @@
         "subtext": "협동 · 신중한 연대 (주민 연대 +12, 저항 참여 +10, 감시·부담 +6)",
         "effects": {
           "variables": {
-            "solidarity": 12,
-            "autonomy": 10,
-            "communityBurden": 6,
-            "cooperation": -4
+            "solidarity": 2,
+            "autonomy": 2,
+            "communityBurden": 1,
+            "cooperation": -1
           },
           "relationships": {
             "char_jaemun": 6,
             "char_bongsu": 10
           },
-          "setFlags": ["f_c2_cooperative_help"]
+          "setFlags": [
+            "f_c2_cooperative_help"
+          ]
         },
         "logSummary": "[선택 3] 조직적 활동에는 거리를 두되, 농민들의 상호 부조와 협동 방식으로 이웃을 돕기로 했습니다.",
         "next": "farmer_c2_res_b"
@@ -806,15 +1134,17 @@
         "subtext": "침묵 · 가족 보호 (생계 안정 +8, 저항 참여 -12, 주민 연대 -6)",
         "effects": {
           "variables": {
-            "livelihood": 8,
-            "autonomy": -12,
-            "solidarity": -6
+            "livelihood": 2,
+            "autonomy": -2,
+            "solidarity": -1
           },
           "relationships": {
             "char_jaemun": -8,
             "char_suni_farmer": 8
           },
-          "setFlags": ["f_c2_declined_quiet"]
+          "setFlags": [
+            "f_c2_declined_quiet"
+          ]
         },
         "logSummary": "[선택 3] 가족의 안전을 우선해 이재문의 제안을 거절하고, 어떤 모임에도 엮이지 않기로 했습니다.",
         "next": "farmer_c2_res_c"
@@ -825,17 +1155,19 @@
         "subtext": "체제 협력 · 밀고 (체제 협력 +18, 주민 연대 -20, 저항 참여 -10)",
         "effects": {
           "variables": {
-            "cooperation": 18,
-            "solidarity": -20,
-            "autonomy": -10,
-            "communityBurden": 10
+            "cooperation": 4,
+            "solidarity": -4,
+            "autonomy": -2,
+            "communityBurden": 2
           },
           "relationships": {
             "char_oh": 14,
             "char_jaemun": -25,
             "char_bongsu": -12
           },
-          "setFlags": ["f_c2_reported_oh"]
+          "setFlags": [
+            "f_c2_reported_oh"
+          ]
         },
         "logSummary": "[선택 3] 마을과 가족에 닥칠 화를 피하기 위해 이재문의 접촉 사실을 면사무소 오 주사에게 알렸습니다.",
         "next": "farmer_c2_res_d"
@@ -847,8 +1179,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_jaemun", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_jaemun",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_jaemun",
     "speakerName": "이재문",
@@ -861,8 +1201,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_jaemun", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_jaemun",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_jaemun",
     "speakerName": "이재문",
@@ -875,8 +1223,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_suni_farmer", "position": "right", "expression": "worried" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "position": "right",
+        "expression": "worried"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -889,8 +1245,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_oh", "position": "right", "expression": "papers" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_oh",
+        "position": "right",
+        "expression": "papers"
+      }
     ],
     "speakerId": "char_oh",
     "speakerName": "오 주사",
@@ -903,8 +1267,17 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
     "characters": [
-      { "characterId": "char_teacher", "position": "left", "expression": "neutral" },
-      { "characterId": "char_jaemun", "position": "right", "expression": "neutral", "dimmed": true }
+      {
+        "characterId": "char_teacher",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_jaemun",
+        "position": "right",
+        "expression": "neutral",
+        "dimmed": true
+      }
     ],
     "speakerId": "char_teacher",
     "speakerName": "박 교사 · 농민운동의 다양한 흐름",
@@ -921,8 +1294,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Colonial_Korea_pixel_art_street_41461940_083abc1a.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_peddler", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_peddler",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_peddler",
     "speakerName": "장터 행상",
@@ -935,8 +1316,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_jaemun", "position": "right", "expression": "serious" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_jaemun",
+        "position": "right",
+        "expression": "serious"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -949,8 +1338,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_jaemun", "position": "right", "expression": "serious" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_jaemun",
+        "position": "right",
+        "expression": "serious"
+      }
     ],
     "speakerId": "char_jaemun",
     "speakerName": "이재문",
@@ -963,8 +1360,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_teacher", "position": "left", "expression": "serious" },
-      { "characterId": "char_jaemun", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_teacher",
+        "position": "left",
+        "expression": "serious"
+      },
+      {
+        "characterId": "char_jaemun",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_teacher",
     "speakerName": "박 교사 · 해방 이후를 향한 서로 다른 전망",
@@ -977,7 +1382,11 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "center", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "center",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -990,10 +1399,12 @@
         "subtext": "민족 연대 우선 (주민 연대 +8, 저항 참여 +8)",
         "effects": {
           "variables": {
-            "solidarity": 8,
-            "autonomy": 8
+            "solidarity": 2,
+            "autonomy": 2
           },
-          "setFlags": ["f_c3_national_unity"]
+          "setFlags": [
+            "f_c3_national_unity"
+          ]
         },
         "logSummary": "[선택 4] 일제 축출과 민족 독립이 최우선 과제이며, 그 과정에서 계층을 넘은 연대가 필요하다고 보았습니다.",
         "next": "farmer_c3_res_a"
@@ -1004,16 +1415,18 @@
         "subtext": "토지 개혁 · 구조 비판 (저항 참여 +16, 주민 연대 +12, 체제 협력 -10)",
         "effects": {
           "variables": {
-            "autonomy": 16,
-            "solidarity": 12,
-            "cooperation": -10,
-            "communityBurden": 10
+            "autonomy": 3,
+            "solidarity": 2,
+            "cooperation": -2,
+            "communityBurden": 2
           },
           "relationships": {
             "char_jaemun": 14,
             "char_manseok": -14
           },
-          "setFlags": ["f_c3_land_reform"]
+          "setFlags": [
+            "f_c3_land_reform"
+          ]
         },
         "logSummary": "[선택 4] 민족 해방뿐 아니라 지주·소작 구조와 토지 소유 문제의 근본적 개혁이 함께 이루어져야 한다고 판단했습니다.",
         "next": "farmer_c3_res_b"
@@ -1024,11 +1437,13 @@
         "subtext": "점진적 자립 · 협동 (생계 안정 +8, 주민 연대 +6, 저항 참여 +4)",
         "effects": {
           "variables": {
-            "livelihood": 8,
-            "solidarity": 6,
-            "autonomy": 4
+            "livelihood": 2,
+            "solidarity": 1,
+            "autonomy": 1
           },
-          "setFlags": ["f_c3_gradual_reform"]
+          "setFlags": [
+            "f_c3_gradual_reform"
+          ]
         },
         "logSummary": "[선택 4] 정치적 충돌보다 농촌 계몽과 협동을 통해 농민 스스로 자립 기반을 넓히는 점진적 변화를 택했습니다.",
         "next": "farmer_c3_res_c"
@@ -1039,16 +1454,18 @@
         "subtext": "생존 집중 · 침묵 (생계 안정 +12, 저항 참여 -14, 주민 연대 -8)",
         "effects": {
           "variables": {
-            "livelihood": 12,
-            "autonomy": -14,
-            "solidarity": -8,
-            "cooperation": 6
+            "livelihood": 2,
+            "autonomy": -3,
+            "solidarity": -2,
+            "cooperation": 1
           },
           "relationships": {
             "char_suni_farmer": 10,
             "char_jaemun": -10
           },
-          "setFlags": ["f_c3_family_first"]
+          "setFlags": [
+            "f_c3_family_first"
+          ]
         },
         "logSummary": "[선택 4] 거대한 시국 논의보다 당장 눈앞의 가족 생존을 지키는 데 모든 힘을 기울이기로 했습니다.",
         "next": "farmer_c3_res_d"
@@ -1060,8 +1477,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_jaemun", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_jaemun",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_jaemun",
     "speakerName": "이재문",
@@ -1074,8 +1499,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_jaemun", "position": "right", "expression": "serious" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_jaemun",
+        "position": "right",
+        "expression": "serious"
+      }
     ],
     "speakerId": "char_jaemun",
     "speakerName": "이재문",
@@ -1088,8 +1521,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_teacher", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_teacher",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_teacher",
     "speakerName": "박 교사",
@@ -1102,8 +1543,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_suni_farmer", "position": "right", "expression": "calm" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "position": "right",
+        "expression": "calm"
+      }
     ],
     "speakerId": "char_suni_farmer",
     "speakerName": "최순이",
@@ -1116,8 +1565,17 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_policeman", "position": "right", "expression": "patrol", "dimmed": true }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_policeman",
+        "position": "right",
+        "expression": "patrol",
+        "dimmed": true
+      }
     ],
     "speakerName": "1943년 겨울의 갈림길",
     "text": "1943년의 겨울바람이 들판을 휩쓸고 지나갑니다. 전시 말기 조선총독부의 감시망은 농촌의 작은 모임조차 용납하지 않았습니다.",
@@ -1125,8 +1583,22 @@
       {
         "condition": {
           "minVars": {
-            "solidarity": 60,
-            "autonomy": 55
+            "solidarity": 13,
+            "autonomy": 12
+          },
+          "anyFlags": [
+            "f_c1_collective_petition",
+            "f_c2_joined_jaemun",
+            "f_c3_land_reform"
+          ]
+        },
+        "next": "farmer_e3_raid_1"
+      },
+      {
+        "condition": {
+          "minVars": {
+            "solidarity": 15,
+            "autonomy": 14
           }
         },
         "next": "farmer_e3_raid_1"
@@ -1139,8 +1611,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_jaemun", "position": "right", "expression": "serious" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_jaemun",
+        "position": "right",
+        "expression": "serious"
+      }
     ],
     "speakerName": "1943년 겨울밤 · 마을 창고의 탄압",
     "text": "연대와 저항을 택한 덕수는 그해 겨울밤, 이재문 및 이웃 농민들과 함께 마을 창고에서 공출·소작료 공동 대응을 논의하고 있었습니다. 그때 누군가의 밀고로 어둠 속을 가르는 거친 구둣발 소리가 창고 문을 에워쌌습니다.",
@@ -1151,8 +1631,16 @@
     "locationId": "loc_police_substation",
     "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_policeman", "position": "right", "expression": "stern" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_policeman",
+        "position": "right",
+        "expression": "stern"
+      }
     ],
     "speakerId": "char_policeman",
     "speakerName": "주재소 순사",
@@ -1165,8 +1653,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_manseok", "position": "right", "expression": "stern" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_manseok",
+        "position": "right",
+        "expression": "stern"
+      }
     ],
     "speakerName": "보복과 고립",
     "text": "주재소에서 모진 조사를 받고 만신창이가 되어 풀려난 덕수를 기다린 것은 더 차가운 보복이었습니다. 지주 박만석은 즉시 소작지를 회수했고, 면사무소는 덕수의 집을 비료와 식량 배급 명단에서 제외했습니다.",
@@ -1177,8 +1673,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_villager", "position": "right", "expression": "worried" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_villager",
+        "position": "right",
+        "expression": "worried"
+      }
     ],
     "speakerId": "char_villager",
     "speakerName": "마을 어르신",
@@ -1191,8 +1695,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_suni_farmer", "position": "right", "expression": "worried" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "position": "right",
+        "expression": "worried"
+      }
     ],
     "speakerId": "char_suni_farmer",
     "speakerName": "최순이",
@@ -1205,8 +1717,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_oh", "position": "right", "expression": "papers" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_oh",
+        "position": "right",
+        "expression": "papers"
+      }
     ],
     "speakerId": "char_oh",
     "speakerName": "오 주사",
@@ -1219,8 +1739,17 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_suni_farmer", "position": "right", "expression": "worried", "dimmed": true }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "position": "right",
+        "expression": "worried",
+        "dimmed": true
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -1233,11 +1762,14 @@
         "subtext": "연대 고수 · 가혹한 희생 (저항 참여 +10, 주민 연대 +8, 생계 안정 -12)",
         "effects": {
           "variables": {
-            "autonomy": 10,
-            "solidarity": 8,
-            "livelihood": -12
+            "autonomy": 2,
+            "solidarity": 2,
+            "livelihood": -2
           },
-          "setFlags": ["farmer_ending_3", "f_e3_silent"]
+          "setFlags": [
+            "farmer_ending_3",
+            "f_e3_silent"
+          ]
         },
         "logSummary": "[마지막 선택] 면사무소의 회유를 거부하고 침묵으로 동료를 지켰으나, 가족은 극심한 굶주림과 감시를 견뎌야 했습니다.",
         "next": "farmer_e3_after_a"
@@ -1248,11 +1780,14 @@
         "subtext": "가족 생존 · 뼈아픈 후퇴 (생계 안정 +8, 저항 참여 -10, 주민 연대 -10)",
         "effects": {
           "variables": {
-            "livelihood": 8,
-            "autonomy": -10,
-            "solidarity": -10
+            "livelihood": 2,
+            "autonomy": -2,
+            "solidarity": -2
           },
-          "setFlags": ["farmer_ending_3", "f_e3_recant"]
+          "setFlags": [
+            "farmer_ending_3",
+            "f_e3_recant"
+          ]
         },
         "logSummary": "[마지막 선택] 무고한 가족의 굶주림을 멈추기 위해 전향 각서에 서명했지만, 이미 깊어진 상처와 고립은 되돌릴 수 없었습니다.",
         "next": "farmer_e3_after_b"
@@ -1263,11 +1798,14 @@
         "subtext": "책임 감당 · 공동체 보호 (주민 연대 +6, 감시·부담 -6, 생계 안정 -8)",
         "effects": {
           "variables": {
-            "solidarity": 6,
-            "communityBurden": -6,
-            "livelihood": -8
+            "solidarity": 1,
+            "communityBurden": -1,
+            "livelihood": -2
           },
-          "setFlags": ["farmer_ending_3", "f_e3_take_blame"]
+          "setFlags": [
+            "farmer_ending_3",
+            "f_e3_take_blame"
+          ]
         },
         "logSummary": "[마지막 선택] 이웃에게 번진 연대책임을 줄이려 모든 책임을 스스로 떠안았으나, 그 대가는 혹독한 옥바라지와 궁핍으로 이어졌습니다.",
         "next": "farmer_e3_after_c"
@@ -1279,8 +1817,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_suni_farmer", "position": "right", "expression": "worried" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "position": "right",
+        "expression": "worried"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -1293,8 +1839,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_oh", "position": "right", "expression": "papers" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_oh",
+        "position": "right",
+        "expression": "papers"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -1307,8 +1861,16 @@
     "locationId": "loc_police_substation",
     "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_policeman", "position": "right", "expression": "stern" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_policeman",
+        "position": "right",
+        "expression": "stern"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -1321,7 +1883,11 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
     "characters": [
-      { "characterId": "char_jaemun", "position": "center", "expression": "serious" }
+      {
+        "characterId": "char_jaemun",
+        "position": "center",
+        "expression": "serious"
+      }
     ],
     "speakerName": "와해된 모임, 길고 추운 두 해",
     "text": "결국 마을의 비밀 모임은 완전히 와해되었고, 수배를 피한 이재문은 국경을 넘어 만주로 몸을 숨겼습니다. 감시와 굶주림, 깨어진 신뢰 속에서 길고 혹독한 두 해가 흘렀습니다.",
@@ -1332,8 +1898,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
     "characters": [
-      { "characterId": "char_student", "position": "left", "expression": "active" },
-      { "characterId": "char_reporter", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_student",
+        "position": "left",
+        "expression": "active"
+      },
+      {
+        "characterId": "char_reporter",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerName": "제4장 · 해방, 그리고 돌아오지 않는 땅 (1945년 8월 15일 정오)",
     "text": "1945년 8월 15일 정오. 면사무소 앞마당의 낡은 라디오에서 잡음 섞인 일왕의 항복 방송이 흘러나왔습니다. 잠시 정적이 흐른 뒤, 들판과 마을 곳곳에서 억눌렸던 \"조선 독립 만세!\" 함성이 터져 나왔습니다.",
@@ -1344,7 +1918,11 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_student", "position": "center", "expression": "neutral" }
+      {
+        "characterId": "char_student",
+        "position": "center",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_student",
     "speakerName": "읍내 청년 · 건국준비위원회",
@@ -1353,7 +1931,9 @@
     "conditionalNext": [
       {
         "condition": {
-          "requiredFlags": ["farmer_ending_3"]
+          "requiredFlags": [
+            "farmer_ending_3"
+          ]
         },
         "next": "farmer_c4_e3_1"
       }
@@ -1365,9 +1945,21 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_bongsu", "position": "center", "expression": "neutral" },
-      { "characterId": "char_manseok", "position": "right", "expression": "stern" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "center",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_manseok",
+        "position": "right",
+        "expression": "stern"
+      }
     ],
     "speakerName": "논 네 두락을 둘러싼 정면 충돌",
     "text": "해방의 기쁨이 채 가시기도 전, 마을 앞마당에서 '아랫배미 논 네 두락'을 둘러싼 세 사람의 입장이 정면으로 맞부딪쳤습니다.",
@@ -1378,8 +1970,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_bongsu", "position": "right", "expression": "work" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "right",
+        "expression": "work"
+      }
     ],
     "speakerId": "char_bongsu",
     "speakerName": "김봉수",
@@ -1392,8 +1992,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_bongsu", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -1406,8 +2014,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_manseok", "position": "right", "expression": "stern" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_manseok",
+        "position": "right",
+        "expression": "stern"
+      }
     ],
     "speakerId": "char_manseok",
     "speakerName": "박만석",
@@ -1424,21 +2040,39 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "center", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "center",
+        "expression": "neutral"
+      }
     ],
     "speakerName": "돌아온 선택의 무게",
     "text": "해방의 햇살 아래서도 땅은 여전히 소작농의 손에 닿지 않았습니다. 그리고 지난 세 해 동안 최덕수가 택해 온 길의 결과가 이제 마을 앞에서 선명하게 드러납니다.",
     "conditionalNext": [
       {
         "condition": {
-          "minVars": { "cooperation": 55 },
-          "maxVars": { "solidarity": 45 }
+          "minVars": {
+            "cooperation": 12
+          },
+          "maxVars": {
+            "solidarity": 9
+          },
+          "anyFlags": [
+            "f_c1_model_farmer",
+            "f_c2_reported_oh",
+            "f_c0_accepted_land"
+          ]
         },
         "next": "farmer_c4_e1_1"
       },
       {
         "condition": {
-          "minVars": { "cooperation": 60 }
+          "minVars": {
+            "cooperation": 14
+          },
+          "maxVars": {
+            "solidarity": 8
+          }
         },
         "next": "farmer_c4_e1_1"
       }
@@ -1450,12 +2084,23 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_student", "position": "right", "expression": "neutral", "dimmed": true }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_student",
+        "position": "right",
+        "expression": "neutral",
+        "dimmed": true
+      }
     ],
     "speakerName": "엔딩 1 · 모범 농민의 초상",
     "text": "해방 이튿날. 자생적 농민위원회가 붙인 벽보 아래 모인 마을 사람들 사이에서, 유독 최덕수의 주변만 썰렁하게 비어 있습니다. 수군거림과 차가운 시선이 등 뒤로 쏟아집니다.",
-    "setFlags": ["farmer_ending_1"],
+    "setFlags": [
+      "farmer_ending_1"
+    ],
     "next": "farmer_c4_e1_2"
   },
   {
@@ -1463,8 +2108,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_bongsu", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -1477,8 +2130,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_bongsu", "position": "right", "expression": "work" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "right",
+        "expression": "work"
+      }
     ],
     "speakerId": "char_bongsu",
     "speakerName": "김봉수",
@@ -1491,7 +2152,11 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "center", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "center",
+        "expression": "neutral"
+      }
     ],
     "speakerName": "흙벽에 남은 붉은 도장",
     "text": "말문이 막힌 채 돌아온 초가집 안방. 흙벽에는 면사무소에서 받은 붉은 도장 찍힌 ‘애국 증산 모범 농민’ 표창장이 여전히 걸려 있습니다. 떼어 내려 손을 뻗었다가도, 덕수는 한참을 움직이지 못합니다.",
@@ -1502,7 +2167,11 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "center", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "center",
+        "expression": "neutral"
+      }
     ],
     "speakerName": "내레이션",
     "text": "해방은 찾아왔지만, 그가 잃어버린 공동체의 온기는 돌아오지 않았다. 그는 자신의 피땀 어린 노력을 기억했으나, 사람들은 그의 성실함이 지탱해 준 가혹한 체제의 무게를 기억했다.",
@@ -1513,12 +2182,22 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_manseok", "position": "right", "expression": "formal" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_manseok",
+        "position": "right",
+        "expression": "formal"
+      }
     ],
     "speakerName": "엔딩 2 · 나만의 봄은 오지 않았다",
     "text": "해방 후 얼마 지나지 않아 지주 박만석이 마름을 대동하고 덕수가 일구던 논둑에 나타났습니다. 누구와도 다투지 않고 조용히 가족만 지켜 온 덕수에게 돌아온 것은 일방적인 통보였습니다.",
-    "setFlags": ["farmer_ending_2"],
+    "setFlags": [
+      "farmer_ending_2"
+    ],
     "next": "farmer_c4_e2_2"
   },
   {
@@ -1526,8 +2205,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_manseok", "position": "right", "expression": "stern" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_manseok",
+        "position": "right",
+        "expression": "stern"
+      }
     ],
     "speakerId": "char_manseok",
     "speakerName": "박만석",
@@ -1540,8 +2227,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_bongsu", "position": "right", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_bongsu",
+        "position": "right",
+        "expression": "neutral"
+      }
     ],
     "speakerId": "char_bongsu",
     "speakerName": "김봉수",
@@ -1554,8 +2249,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
     "characters": [
-      { "characterId": "char_suni_farmer", "position": "left", "expression": "packing" },
-      { "characterId": "char_son", "position": "right", "expression": "alt" }
+      {
+        "characterId": "char_suni_farmer",
+        "position": "left",
+        "expression": "packing"
+      },
+      {
+        "characterId": "char_son",
+        "position": "right",
+        "expression": "alt"
+      }
     ],
     "speakerId": "char_son",
     "speakerName": "아들",
@@ -1568,8 +2271,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_suni_farmer", "position": "right", "expression": "packing" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "position": "right",
+        "expression": "packing"
+      }
     ],
     "speakerName": "내레이션",
     "text": "덕수는 끝내 대답하지 못했습니다. 그는 누구의 봄도 빼앗지 않기 위해 숨죽였으나, 끝내 자기 가족의 봄조차 지켜내지 못했다. 구조적 불평등 앞에서 홀로 선 개인의 침묵은, 그 자체로 가장 취약한 패배의 다른 이름이었다.",
@@ -1580,8 +2291,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_suni_farmer", "position": "right", "expression": "worried" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "position": "right",
+        "expression": "worried"
+      }
     ],
     "speakerName": "엔딩 3 · 우리의 봄은 아직 오지 않았다",
     "text": "1945년 8월 15일. 들판 너머로 해방의 만세 소리가 울려 퍼지지만, 덕수의 초가집 마당에는 깊은 적막만이 감돕니다. 지난 두 해 동안 옥바라지와 굶주림을 버텨 낸 가족에게는 축배를 들 힘조차 남아 있지 않았습니다.",
@@ -1592,8 +2311,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_suni_farmer", "position": "right", "expression": "bundle" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "position": "right",
+        "expression": "bundle"
+      }
     ],
     "speakerId": "char_suni_farmer",
     "speakerName": "최순이",
@@ -1606,8 +2333,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "position": "left", "expression": "neutral" },
-      { "characterId": "char_manseok", "position": "right", "expression": "stern" }
+      {
+        "characterId": "char_deoksu",
+        "position": "left",
+        "expression": "neutral"
+      },
+      {
+        "characterId": "char_manseok",
+        "position": "right",
+        "expression": "stern"
+      }
     ],
     "speakerName": "여전한 땅의 주인, 찢어진 공동체",
     "text": "마을 어귀에서는 지주 박만석이 여전히 등기부등본을 움켜쥔 채 소작지를 관리하고 있습니다. 공포 속에서 서로를 원망하던 공동체의 균열은 해방이 왔다고 해서 하루아침에 아물지 않았습니다.",
@@ -1618,7 +2353,11 @@
     "locationId": "loc_police_substation",
     "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
     "characters": [
-      { "characterId": "char_deoksu", "position": "center", "expression": "neutral" }
+      {
+        "characterId": "char_deoksu",
+        "position": "center",
+        "expression": "neutral"
+      }
     ],
     "speakerName": "내레이션",
     "text": "마침내 독립은 찾아왔으나, 그들이 꿈꾸었던 진정한 해방의 봄은 당도하지 않았다. 얼어붙은 땅을 녹이기 위해 온몸을 던졌던 이들은, 봄의 온기가 채 닿기도 전에 너무나 많은 것을 잃어버렸다.",

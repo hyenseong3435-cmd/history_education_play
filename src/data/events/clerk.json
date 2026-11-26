@@ -4,7 +4,11 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_desk_interior_128ed0c9_30eda3be.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "neutral", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "neutral",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
     "text": "1944년 11월, 겨울이 다가오는 어느 농촌 지역의 면사무소. 보통학교와 고등보통학교를 나와 가난한 집안의 생계를 짊어진 27세 서기 김진호는 책상 위에 쌓인 서류를 정리하고 있다.",
@@ -19,8 +23,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -38,8 +50,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -51,8 +71,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "work", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "work",
+        "position": "right"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -64,8 +92,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -78,8 +114,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "papers", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -91,8 +135,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "papers", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -104,8 +156,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -117,8 +177,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "field", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "field",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "태수가 웃으며 책상으로 돌아간 직후, 오 면장으로부터 새 공문이 내려왔다. 「관내 청년 노무동원 대상자 명부를 작성하여 기한 내 제출할 것.」 이번에는 쌀이 아니라 누군가의 이름을 먹줄 위에 적어 넣어야 했다.",
@@ -134,8 +202,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "ledger", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "ledger",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -147,16 +223,18 @@
         "subtext": "행정 지침을 빠짐없이 따라 기한 내에 명부를 올린다.",
         "effects": {
           "variables": {
-            "cooperation": 16,
-            "livelihood": 8,
-            "solidarity": -8
+            "cooperation": 3,
+            "livelihood": 2,
+            "solidarity": -2
           },
           "relationships": {
             "char_myeonjang": 10,
             "char_taesu": 8,
             "char_deoksu": -8
           },
-          "setFlags": ["clerk_p_obeyed"]
+          "setFlags": [
+            "clerk_p_obeyed"
+          ]
         },
         "logSummary": "지시대로 관내 청년들의 노무동원 대상자 명부를 작성해 제출했다.",
         "next": "clerk_prologue_after_a"
@@ -167,15 +245,18 @@
         "subtext": "규정의 틈을 찾아 형편이 어려운 청년들을 명부에서 빼려 시도한다.",
         "effects": {
           "variables": {
-            "solidarity": 8,
-            "cooperation": -8,
-            "autonomy": 8
+            "solidarity": 2,
+            "cooperation": -2,
+            "autonomy": 2
           },
           "relationships": {
             "char_deoksu": 8,
             "char_myeonjang": -6
           },
-          "setFlags": ["clerk_p_excluded", "risk_p_exclude"]
+          "setFlags": [
+            "clerk_p_excluded",
+            "risk_p_exclude"
+          ]
         },
         "logSummary": "신체적·가정적 사정을 근거로 동원 대상자를 최대한 제외하려 시도했다.",
         "next": "clerk_prologue_after_b"
@@ -186,15 +267,18 @@
         "subtext": "감시 위험을 감수하고 농촌 인력 사정과 동원의 부당함을 직접 제기한다.",
         "effects": {
           "variables": {
-            "autonomy": 16,
-            "cooperation": -16,
-            "livelihood": -8
+            "autonomy": 3,
+            "cooperation": -3,
+            "livelihood": -2
           },
           "relationships": {
             "char_myeonjang": -14,
             "char_jeongsu": 8
           },
-          "setFlags": ["clerk_p_protested", "risk_p_protest"]
+          "setFlags": [
+            "clerk_p_protested",
+            "risk_p_protest"
+          ]
         },
         "logSummary": "노무동원 명부 작성의 부당함을 오 면장에게 직접 항의했다.",
         "next": "clerk_prologue_after_c"
@@ -205,12 +289,14 @@
         "subtext": "직접 이름을 적는 책임을 피하고 다른 행정 서류 뒤로 물러선다.",
         "effects": {
           "variables": {
-            "communityBurden": 12
+            "communityBurden": 2
           },
           "relationships": {
             "char_taesu": 6
           },
-          "setFlags": ["clerk_p_deferred"]
+          "setFlags": [
+            "clerk_p_deferred"
+          ]
         },
         "logSummary": "명부 작성 업무를 박태수에게 넘기고 자신은 다른 서류 처리로 물러섰다.",
         "next": "clerk_prologue_after_d"
@@ -222,8 +308,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "neutral", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "붓끝이 호적부의 이름들을 옮겨 적을 때마다 종이 위에 짙은 먹줄이 남았다. 오 면장은 군말 없이 일하는 진호를 흡족해했지만, 공고판 앞에 선 주민들의 얼굴은 굳어 갔다.",
@@ -234,8 +328,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "field", "position": "left" },
-      { "characterId": "char_taesu", "expression": "papers", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "field",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 병약자와 외아들, 부양가족이 많은 청년들을 사유서에 적어 제외했다. 그러나 서류를 훑어본 오 면장의 눈빛은 날카로워졌고, 주재소 쪽의 시선도 이전 같지 않았다.",
@@ -246,8 +348,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
     "speakerName": "오 면장",
@@ -259,8 +369,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "ledger", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "ledger",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 미곡 집계표를 핑계 삼아 명부 작성 건을 태수에게 넘겼다. 내 손으로 직접 이름을 적지 않았다는 안도감이 잠시 스쳤지만, 명부는 결국 같은 면사무소 책상에서 완성되고 있었다.",
@@ -271,8 +389,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -284,20 +410,31 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "neutral", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "neutral",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
     "text": "며칠 뒤 1944년 12월, 군청에서 관내 노무동원 대상자를 추가 확보하라는 공문이 내려왔다. 최종 명부를 작성하기 전에 마을 곳곳을 둘러보며 가족과 이웃, 야학의 이정수, 그리고 관청의 분위기를 살필 수 있다.",
     "next": "__EXPLORE__"
   },
-
   {
     "id": "exp_clerk_c1_home",
     "locationId": "loc_home",
     "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jinho_mother",
     "speakerName": "어머니",
@@ -309,8 +446,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "calm", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "calm",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -322,8 +467,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_deoksu", "expression": "work", "position": "left" },
-      { "characterId": "char_villager", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_deoksu",
+        "expression": "work",
+        "position": "left"
+      },
+      {
+        "characterId": "char_villager",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -341,8 +494,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_villager", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_villager",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_villager",
     "speakerName": "마을 어르신",
@@ -354,15 +515,25 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_desk_interior_128ed0c9_30eda3be.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "field", "position": "left" },
-      { "characterId": "char_taesu", "expression": "papers", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "field",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
     "text": "이번 동원은 모집이니 관 알선이니 해도 결국 국민징용령과 맞물려 군청에서 인원을 꽉 채워 올리라는 거야. 우리가 독립을 시킬 수 있는 것도 아니잖아. 세상이 정해놓은 질서에 맞춰 사는 것도 능력이지.",
     "unlockSourceId": "source_E",
     "unlockLocationId": "loc_city_street",
-    "setFlags": ["unlock_city_street"],
+    "setFlags": [
+      "unlock_city_street"
+    ],
     "historicalBadge": {
       "kind": "source",
       "label": "사료 E · 노무동원 절차와 행정명부",
@@ -375,8 +546,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
     "characters": [
-      { "characterId": "char_jeongsu", "expression": "neutral", "position": "left" },
-      { "characterId": "char_student", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_jeongsu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_student",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jeongsu",
     "speakerName": "이정수",
@@ -389,8 +568,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jeongsu",
     "speakerName": "이정수",
@@ -402,8 +589,16 @@
     "locationId": "loc_police_substation",
     "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "formal", "position": "left" },
-      { "characterId": "char_policeman", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_policeman",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_policeman",
     "speakerName": "주재소 순사",
@@ -416,14 +611,21 @@
     },
     "next": "__EXPLORE__"
   },
-
   {
     "id": "clerk_c1_main_1",
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "field", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "field",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
     "speakerName": "오 면장",
@@ -439,7 +641,11 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_desk_interior_128ed0c9_30eda3be.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 호적부와 주민등록 장부를 펼쳤다. 수많은 이름 속에는 소작농 최덕수의 아들, 홀어머니를 부양하는 청년, 얼마 전 결혼한 신혼부부의 가장도 적혀 있었다.",
@@ -450,8 +656,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_manseok", "expression": "stern", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "formal", "position": "right" }
+      {
+        "characterId": "char_manseok",
+        "expression": "stern",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "formal",
+        "position": "right"
+      }
     ],
     "speakerId": "char_manseok",
     "speakerName": "박만석",
@@ -464,8 +678,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_manseok", "expression": "formal", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "formal", "position": "right" }
+      {
+        "characterId": "char_manseok",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "formal",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
     "speakerName": "오 면장",
@@ -477,8 +699,16 @@
     "locationId": "loc_city_street",
     "background": "/assets/aistudio/Colonial_Korea_pixel_art_street_41461940_083abc1a.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -490,8 +720,16 @@
     "locationId": "loc_city_street",
     "background": "/assets/aistudio/Colonial_Korea_pixel_art_street_41461940_083abc1a.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -503,8 +741,16 @@
     "locationId": "loc_city_street",
     "background": "/assets/aistudio/Colonial_Korea_pixel_art_street_41461940_083abc1a.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "ledger", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "ledger",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -516,8 +762,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_desk_7f112f8d_5ea7f4ee.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "field", "position": "left" },
-      { "characterId": "char_taesu", "expression": "papers", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "field",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -529,25 +783,27 @@
         "subtext": "면장의 지시대로 유력자 집안을 제외하고 할당량을 채운다.",
         "effects": {
           "variables": {
-            "cooperation": 16,
-            "livelihood": 16,
-            "solidarity": -16,
-            "communityBurden": 8
+            "cooperation": 3,
+            "livelihood": 3,
+            "solidarity": -3,
+            "communityBurden": 2
           },
           "relationships": {
             "char_myeonjang": 14,
             "char_manseok": 12,
             "char_deoksu": -18
           },
-          "setFlags": ["clerk_listed_deoksu_son"],
+          "setFlags": [
+            "clerk_listed_deoksu_son"
+          ],
           "delayedEffect": {
             "id": "delay_clerk_deoksu_son",
             "triggerChapter": 2,
             "title": "최덕수 아들의 동원 통지",
             "description": "지주 집안이 빠진 자리에 빈농 청년들이 채워지면서 소작농 최덕수의 아들이 노무동원 대상자 명부에 올랐다.",
             "variables": {
-              "solidarity": -6,
-              "communityBurden": 6
+              "solidarity": -1,
+              "communityBurden": 1
             },
             "flag": "deoksu_son_mobilized"
           }
@@ -561,14 +817,17 @@
         "subtext": "형편이 가장 어려운 가구를 먼저 빼고 나름의 기준을 세워 명부를 작성한다.",
         "effects": {
           "variables": {
-            "autonomy": 8,
-            "cooperation": -8
+            "autonomy": 2,
+            "cooperation": -2
           },
           "relationships": {
             "char_myeonjang": -6,
             "char_deoksu": 6
           },
-          "setFlags": ["clerk_c1_fair", "risk_c1_fair"]
+          "setFlags": [
+            "clerk_c1_fair",
+            "risk_c1_fair"
+          ]
         },
         "logSummary": "가정 형편을 감안해 가능한 한 공평하게 동원 대상자를 선정하려 애썼다.",
         "next": "clerk_c1_after_b"
@@ -579,17 +838,20 @@
         "subtext": "면장과 지주의 반발 및 감시 위험을 감수하고 원칙대로 명부를 작성한다.",
         "effects": {
           "variables": {
-            "autonomy": 16,
-            "solidarity": 8,
-            "cooperation": -12,
-            "livelihood": -12
+            "autonomy": 3,
+            "solidarity": 2,
+            "cooperation": -2,
+            "livelihood": -2
           },
           "relationships": {
             "char_myeonjang": -16,
             "char_manseok": -18,
             "char_deoksu": 12
           },
-          "setFlags": ["clerk_c1_rejected_landlord", "risk_c1_reject_landlord"]
+          "setFlags": [
+            "clerk_c1_rejected_landlord",
+            "risk_c1_reject_landlord"
+          ]
         },
         "logSummary": "지주 박만석의 청탁을 거부하고 유력자와 빈농 모두에게 동일한 기준을 적용했다.",
         "next": "clerk_c1_after_c"
@@ -600,13 +862,16 @@
         "subtext": "혼자 감당하기 어려운 갈등을 소꿉친구 이정수에게 전한다.",
         "effects": {
           "variables": {
-            "solidarity": 8,
-            "autonomy": 8
+            "solidarity": 2,
+            "autonomy": 2
           },
           "relationships": {
             "char_jeongsu": 12
           },
-          "setFlags": ["clerk_c1_confided_jeongsu", "risk_c1_confide"]
+          "setFlags": [
+            "clerk_c1_confided_jeongsu",
+            "risk_c1_confide"
+          ]
         },
         "logSummary": "이정수를 찾아가 노무동원 명부 작성의 부당함과 고민을 털어놓았다.",
         "next": "clerk_c1_after_d_1"
@@ -618,8 +883,17 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "right", "dimmed": true }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right",
+        "dimmed": true
+      }
     ],
     "speakerName": "해설",
     "text": "지주 집안의 이름들을 건너뛰자 빈칸을 채울 이름은 결국 소작농 집안 청년들에게 돌아갔다. 진호의 붓끝은 소작농 최덕수의 아들 이름 위에 검은 먹줄을 그었다. 오 면장은 만족했고, 진호의 승급 평정은 한 칸 올라갔다.",
@@ -630,8 +904,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_desk_7f112f8d_5ea7f4ee.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "field", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "field",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 홀어머니를 모시는 청년과 막 혼인한 가장을 제외하려 애썼다. 오 면장은 기준이 제멋대로라며 불만을 표했고, 결국 누군가의 이름은 여전히 명부 위에 남아야 했다.",
@@ -642,8 +924,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "formal", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
     "speakerName": "오 면장",
@@ -655,8 +945,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jeongsu",
     "speakerName": "이정수",
@@ -668,8 +966,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -681,22 +987,37 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jeongsu",
     "speakerName": "이정수",
     "text": "어쩔 수 없다는 말은 참 편리하지. 하지만 그 서류에 이름을 적는 건 결국 자네 손이잖아.",
     "next": "__NEXT_CHAPTER__"
   },
-
   {
     "id": "clerk_c2_intro_1",
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "field", "position": "left" },
-      { "characterId": "char_taesu", "expression": "papers", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "field",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "1945년 2월, 전쟁은 끝날 기미가 보이지 않았다. 면사무소에서는 노무동원뿐 아니라 금속류 회수, 미곡 공출, 창씨개명과 신사참배 같은 황민화 행정업무까지 쉴 새 없이 밀려들었다.",
@@ -707,14 +1028,21 @@
     "unlockSourceId": "source_H",
     "next": "__EXPLORE__"
   },
-
   {
     "id": "exp_clerk_c2_home",
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jinho_mother",
     "speakerName": "어머니",
@@ -726,8 +1054,16 @@
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -739,8 +1075,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "field", "position": "left" },
-      { "characterId": "char_taesu", "expression": "ledger", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "field",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "ledger",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -758,8 +1102,16 @@
     "locationId": "loc_clinic",
     "background": "/assets/aistudio/Colonial_Korea_rural_medical_clinic_78a8e22e_e9a11845.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "neutral", "position": "left" },
-      { "characterId": "char_doctor", "expression": "calm", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_doctor",
+        "expression": "calm",
+        "position": "right"
+      }
     ],
     "speakerId": "char_doctor",
     "speakerName": "윤선생",
@@ -771,8 +1123,16 @@
     "locationId": "loc_city_street",
     "background": "/assets/aistudio/Historical_Seoul_commercial_stre__6a771eda_bbc4579d.jpg",
     "characters": [
-      { "characterId": "char_taesu", "expression": "papers", "position": "left" },
-      { "characterId": "char_reporter", "expression": "glasses", "position": "right" }
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "left"
+      },
+      {
+        "characterId": "char_reporter",
+        "expression": "glasses",
+        "position": "right"
+      }
     ],
     "speakerId": "char_reporter",
     "speakerName": "지방 신문 기자",
@@ -784,22 +1144,37 @@
     "locationId": "loc_city_street",
     "background": "/assets/aistudio/Historical_Seoul_commercial_stre__6a771eda_bbc4579d.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
     "text": "들었지? 진호야, 시대의 흐름을 읽고 제 자리를 올리는 사람이 결국 가족도 먹여 살리는 거야.",
     "next": "__EXPLORE__"
   },
-
   {
     "id": "clerk_c2_main_1",
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "field", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "field",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "진호가 창씨개명 관련 서류를 정리하고 있을 때, 소꿉친구 이정수가 면사무소로 찾아왔다. 자신의 가족에게 창씨개명을 강요하지 말아 달라고 부탁하기 위해서였다.",
@@ -815,8 +1190,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jeongsu",
     "speakerName": "이정수",
@@ -828,8 +1211,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -841,8 +1232,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jeongsu",
     "speakerName": "이정수",
@@ -854,8 +1253,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_taesu", "expression": "neutral", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -867,8 +1274,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_taesu", "expression": "neutral", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jeongsu",
     "speakerName": "이정수",
@@ -880,9 +1295,21 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_taesu", "expression": "papers", "position": "left" },
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "left"
+      },
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -894,8 +1321,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_desk_interior_128ed0c9_30eda3be.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -907,16 +1342,18 @@
         "subtext": "창씨개명 독촉 통지서와 미신청자 명단을 기한 안에 정리해 보고한다.",
         "effects": {
           "variables": {
-            "cooperation": 16,
-            "livelihood": 8,
-            "solidarity": -16
+            "cooperation": 3,
+            "livelihood": 2,
+            "solidarity": -3
           },
           "relationships": {
             "char_myeonjang": 10,
             "char_taesu": 10,
             "char_jeongsu": -14
           },
-          "setFlags": ["clerk_c2_fast_obey"]
+          "setFlags": [
+            "clerk_c2_fast_obey"
+          ]
         },
         "logSummary": "면장과 박태수의 의견에 따라 창씨개명·황민화 행정업무를 신속히 처리했다.",
         "next": "clerk_c2_after_a"
@@ -927,15 +1364,17 @@
         "subtext": "형식적 안내만 전달하고 미신청 가구에 대한 독촉은 최대한 늦춘다.",
         "effects": {
           "variables": {
-            "autonomy": 8,
-            "solidarity": 8,
-            "cooperation": -8
+            "autonomy": 2,
+            "solidarity": 2,
+            "cooperation": -2
           },
           "relationships": {
             "char_jeongsu": 6,
             "char_deoksu": 6
           },
-          "setFlags": ["clerk_c2_non_coercive"]
+          "setFlags": [
+            "clerk_c2_non_coercive"
+          ]
         },
         "logSummary": "창씨개명 절차를 안내하되 주민들에게 강요하지 않는 방향으로 처리했다.",
         "next": "clerk_c2_after_b"
@@ -946,16 +1385,19 @@
         "subtext": "감시 위험을 무릅쓰고 이정수 가족과 마을 주민들의 독촉 서류를 보류한다.",
         "effects": {
           "variables": {
-            "autonomy": 16,
-            "solidarity": 8,
-            "cooperation": -12,
-            "livelihood": -8
+            "autonomy": 3,
+            "solidarity": 2,
+            "cooperation": -2,
+            "livelihood": -2
           },
           "relationships": {
             "char_jeongsu": 14,
             "char_myeonjang": -12
           },
-          "setFlags": ["clerk_c2_delayed_docs", "risk_c2_delay"]
+          "setFlags": [
+            "clerk_c2_delayed_docs",
+            "risk_c2_delay"
+          ]
         },
         "logSummary": "이정수의 요청을 받아 창씨개명 관련 서류 처리를 의도적으로 지연·거부했다.",
         "next": "clerk_c2_after_c"
@@ -966,14 +1408,16 @@
         "subtext": "겉으로는 행정 절차를 따르되, 눈에 띄지 않는 선에서 몇몇 서류만 뒤로 미룬다.",
         "effects": {
           "variables": {
-            "autonomy": 8,
-            "communityBurden": 12
+            "autonomy": 2,
+            "communityBurden": 2
           },
           "relationships": {
             "char_taesu": 6,
             "char_jeongsu": -4
           },
-          "setFlags": ["clerk_c2_double_face"]
+          "setFlags": [
+            "clerk_c2_double_face"
+          ]
         },
         "logSummary": "겉으로는 박태수에게 동조하면서 개인적으로 일부 주민의 사정만 제한적으로 도왔다.",
         "next": "clerk_c2_after_d_1"
@@ -985,8 +1429,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "formal", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "정수는 아무 말 없이 진호를 한참 바라보다가 등을 돌렸다. 면사무소의 창씨개명 실적표는 빠르게 채워졌고, 정수의 발걸음은 그날 이후 면사무소에서 멀어졌다.",
@@ -997,8 +1449,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "neutral", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 주민들에게 서류 양식만 설명하고 독촉하지 않았다. 정수는 고개를 끄덕이며 돌아갔지만, 군청의 실적 압박은 다음 달에도 변함없이 내려왔다.",
@@ -1009,8 +1469,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_desk_7f112f8d_5ea7f4ee.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 정수네 가족을 비롯한 미신청 가구의 독촉 서류를 서랍 깊숙이 미뤄 두었다. 오 면장은 실적이 저조하다며 진호의 근무 태도를 주재소 순사에게까지 언급하기 시작했다.",
@@ -1021,8 +1489,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -1034,20 +1510,31 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_desk_interior_128ed0c9_30eda3be.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 자신이 주민들을 돕고 있다고 믿으려 애썼다. 그러나 실제로는 식민지 행정의 틀 안에서, 자신의 자리가 위태롭지 않은 선까지만 제한적인 도움을 내어주고 있을 뿐이었다.",
     "next": "__NEXT_CHAPTER__"
   },
-
   {
     "id": "clerk_c3_intro_1",
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "1945년 7월, 전쟁이 막바지에 접어들었다. 군청에서 추가 노무동원 실적을 요구하는 급전이 도착했다. 이번에는 관내에서 청년 10명을 반드시 선발하라는 지시였다.",
@@ -1057,14 +1544,21 @@
     },
     "next": "__EXPLORE__"
   },
-
   {
     "id": "exp_clerk_c3_home",
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jinho_mother",
     "speakerName": "어머니",
@@ -1076,8 +1570,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "field", "position": "left" },
-      { "characterId": "char_taesu", "expression": "ledger", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "field",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "ledger",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -1089,8 +1591,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jeongsu",
     "speakerName": "이정수",
@@ -1102,22 +1612,37 @@
     "locationId": "loc_police_substation",
     "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
     "characters": [
-      { "characterId": "char_clerk", "expression": "formal", "position": "left" },
-      { "characterId": "char_policeman", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_policeman",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_policeman",
     "speakerName": "주재소 순사",
     "text": "야학에서 한글을 가르친다는 이정수라는 자, 시국에 불온한 말을 흘리고 다닌다는 보고가 있소. 이번 노무동원 명단에 빠뜨리지 말도록 면장에게 전해 두었소.",
     "next": "__EXPLORE__"
   },
-
   {
     "id": "clerk_c3_main_1",
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "field", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "field",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
     "speakerName": "오 면장",
@@ -1134,8 +1659,17 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right", "dimmed": true }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right",
+        "dimmed": true
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 명부를 작성하다 손이 멈췄다. 일곱 번째 칸에 소꿉친구 이정수의 이름이 올라와 있었다. 야학을 운영하며 한글을 가르치고 일제의 정책을 비판해 왔다는 이유였다.",
@@ -1146,8 +1680,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_desk_7f112f8d_5ea7f4ee.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -1159,8 +1701,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_desk_7f112f8d_5ea7f4ee.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -1172,8 +1722,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_desk_7f112f8d_5ea7f4ee.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "papers", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -1185,8 +1743,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_desk_7f112f8d_5ea7f4ee.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "papers", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -1198,8 +1764,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_desk_7f112f8d_5ea7f4ee.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "ledger", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "ledger",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -1211,8 +1785,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "ledger", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "ledger",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -1224,17 +1806,19 @@
         "subtext": "가족과 자리를 지키기 위해 올라온 명부를 수정하지 않고 올린다.",
         "effects": {
           "variables": {
-            "cooperation": 16,
-            "livelihood": 16,
-            "solidarity": -16,
-            "communityBurden": 8
+            "cooperation": 4,
+            "livelihood": 3,
+            "solidarity": -4,
+            "communityBurden": 2
           },
           "relationships": {
             "char_myeonjang": 12,
             "char_taesu": 10,
             "char_jeongsu": -24
           },
-          "setFlags": ["clerk_submitted_jeongsu"]
+          "setFlags": [
+            "clerk_submitted_jeongsu"
+          ]
         },
         "logSummary": "이정수의 이름이 적힌 마지막 노무동원 명부를 그대로 제출했다.",
         "next": "clerk_c3_after_a"
@@ -1245,15 +1829,18 @@
         "subtext": "친구를 빼내는 대가로 할당량 10명을 채우기 위해 다른 이웃 청년의 이름을 적는다.",
         "effects": {
           "variables": {
-            "autonomy": 8,
-            "solidarity": -8,
-            "communityBurden": 8
+            "autonomy": 2,
+            "solidarity": -2,
+            "communityBurden": 2
           },
           "relationships": {
             "char_jeongsu": 6,
             "char_deoksu": -10
           },
-          "setFlags": ["clerk_substituted_other", "risk_c3_substitute"]
+          "setFlags": [
+            "clerk_substituted_other",
+            "risk_c3_substitute"
+          ]
         },
         "logSummary": "이정수의 이름을 빼는 대신 할당량을 채우기 위해 다른 청년의 이름을 명부에 적었다.",
         "next": "clerk_c3_after_b"
@@ -1264,15 +1851,18 @@
         "subtext": "극심한 감시와 탄압 위험을 무릅쓰고 부당한 명부 제출을 정면으로 거부한다.",
         "effects": {
           "variables": {
-            "autonomy": 20,
-            "cooperation": -18,
-            "livelihood": -16
+            "autonomy": 5,
+            "cooperation": -4,
+            "livelihood": -4
           },
           "relationships": {
             "char_myeonjang": -24,
             "char_jeongsu": 14
           },
-          "setFlags": ["clerk_refused_final_list", "risk_c3_protest"]
+          "setFlags": [
+            "clerk_refused_final_list",
+            "risk_c3_protest"
+          ]
         },
         "logSummary": "이정수의 이름이 올라간 마지막 명부 제출을 거부하고 오 면장에게 항의했다.",
         "next": "clerk_c3_after_c"
@@ -1283,15 +1873,18 @@
         "subtext": "위험을 감수하고 정수에게만이라도 미리 피신할 기회를 알린다.",
         "effects": {
           "variables": {
-            "solidarity": 16,
-            "autonomy": 12,
-            "cooperation": -8
+            "solidarity": 3,
+            "autonomy": 3,
+            "cooperation": -2
           },
           "relationships": {
             "char_jeongsu": 18,
             "char_myeonjang": -10
           },
-          "setFlags": ["clerk_warned_jeongsu", "risk_c3_warn"]
+          "setFlags": [
+            "clerk_warned_jeongsu",
+            "risk_c3_warn"
+          ]
         },
         "logSummary": "이정수를 직접 찾아가 동원 명부에 이름이 올라갔다는 사실을 미리 알렸다.",
         "next": "clerk_c3_after_d"
@@ -1303,8 +1896,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 끝내 정수의 이름을 지우지 못한 채 결재판에 서류를 올렸다. '내가 하지 않아도 누군가는 했을 것'이라는 태수의 목소리가 귓가에서 떠나지 않았다.",
@@ -1315,7 +1916,11 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
     "text": "정수의 이름 위에 먹줄을 그어 지우고, 아랫마을의 힘없는 청년 이름을 대신 써 넣었다. 친구를 구하려던 손이 곧 다른 누군가의 운명을 밀어 넣는 손이 되었다.",
@@ -1326,8 +1931,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "formal", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 정수의 이름을 뺀 서류를 내밀며 이 명부는 제출할 수 없다고 항의했다. 오 면장의 얼굴이 붉으락푸르락 변하더니, 곧바로 주재소로 전화를 걸었다.",
@@ -1338,48 +1951,80 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "밤늦게 야학으로 달려간 진호는 정수에게 명단 사실을 알렸다. 정수는 고맙다고 말하면서도, '나 말고 명부에 적힌 나머지 아홉 청년은 어찌 되느냐'며 무겁게 눈을 감았다.",
     "next": "__NEXT_CHAPTER__"
   },
-
   {
     "id": "clerk_c4_intro_1",
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
     "text": "1945년 여름, 기나긴 전쟁의 끝자락이 다가오고 있었다. 그러나 그동안 먹줄 위에 쌓인 선택의 무게는 각기 다른 파국으로 진호 앞에 되돌아온다.",
     "conditionalNext": [
       {
         "condition": {
-          "requiredFlags": ["clerk_refused_final_list"]
+          "requiredFlags": [
+            "clerk_refused_final_list"
+          ],
+          "minVars": {
+            "autonomy": 13
+          }
         },
         "next": "clerk_c4_e3_1"
       },
       {
         "condition": {
-          "minVars": { "autonomy": 68 },
-          "maxVars": { "cooperation": 30, "communityBurden": 42 }
+          "anyFlags": [
+            "clerk_warned_jeongsu",
+            "clerk_c2_delayed_docs",
+            "clerk_c1_rejected_landlord"
+          ],
+          "minVars": {
+            "autonomy": 15
+          },
+          "maxVars": {
+            "cooperation": 7
+          }
         },
         "next": "clerk_c4_e3_1"
       }
     ],
     "next": "clerk_c4_lib_1"
   },
-
   {
     "id": "clerk_c4_lib_1",
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_Seoul_alley_street_de053a92_515e25e9.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "papers", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "1945년 8월 15일. 일본의 항복 소식이 전해졌다. 마을 거리마다 만세 소리가 울려 퍼졌다. 진호는 면사무소 창문 너머로 쏟아져 나오는 주민들을 바라보았다. 옆자리 태수는 급히 책상 위 일본어 문서들을 정리하고 있었다.",
@@ -1395,8 +2040,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "papers", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -1408,9 +2061,21 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "center" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "center"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jeongsu",
     "speakerName": "이정수",
@@ -1422,8 +2087,16 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_desk_interior_128ed0c9_30eda3be.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -1435,35 +2108,60 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 책상 서랍을 바라보았다. 그곳에는 자신이 작성한 수많은 공출표와 노무동원 명부가 고스란히 남아 있었다. 해방이 찾아왔다고 해서 자신이 그은 먹줄이 사라지는 것은 아니었다.",
     "conditionalNext": [
       {
         "condition": {
-          "minVars": { "cooperation": 55 },
-          "maxVars": { "solidarity": 45 }
+          "anyFlags": [
+            "clerk_submitted_jeongsu",
+            "clerk_listed_deoksu_son"
+          ],
+          "minVars": {
+            "cooperation": 12
+          },
+          "maxVars": {
+            "solidarity": 8
+          }
         },
         "next": "clerk_c4_e1_1"
       },
       {
         "condition": {
-          "minVars": { "cooperation": 65 }
+          "minVars": {
+            "cooperation": 14,
+            "livelihood": 13
+          },
+          "maxVars": {
+            "solidarity": 7
+          }
         },
         "next": "clerk_c4_e1_1"
       }
     ],
     "next": "clerk_c4_e2_1"
   },
-
   {
     "id": "clerk_c4_e1_1",
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "formal", "position": "left" },
-      { "characterId": "char_taesu", "expression": "papers", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -1473,7 +2171,9 @@
       "label": "사료 I · 해방 직후 관료 잔류와 책임 문제",
       "sourceId": "source_I"
     },
-    "setFlags": ["clerk_ending_1"],
+    "setFlags": [
+      "clerk_ending_1"
+    ],
     "next": "clerk_c4_e1_2"
   },
   {
@@ -1481,8 +2181,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
@@ -1494,8 +2202,16 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "work", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "work",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -1507,26 +2223,43 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "work", "position": "center" },
-      { "characterId": "char_villager", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "work",
+        "position": "center"
+      },
+      {
+        "characterId": "char_villager",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_deoksu",
     "speakerName": "최덕수",
     "text": "그럼 자네가 적은 이름은 누가 책임지나? ...며칠 뒤 열린 마을 회관 회의에서 주민들은 진호에게 발언권을 주지 않았다. 그는 체제가 바뀌어도 살아남았지만, 자신이 살아온 방식으로 인해 공동체를 잃었다.",
     "next": "__ENDING__"
   },
-
   {
     "id": "clerk_c4_e2_1",
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_desk_interior_128ed0c9_30eda3be.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
     "text": "해방 이후 진호는 면사무소를 떠났다. 마지막으로 서류를 정리하다 명부 속에서 정수와 최덕수 아들의 이름을 발견했다. 정수는 돌아오지 않았고, 덕수의 아들은 동원된 뒤 소식이 끊겼다.",
-    "setFlags": ["clerk_ending_2"],
+    "setFlags": [
+      "clerk_ending_2"
+    ],
     "next": "clerk_c4_e2_2"
   },
   {
@@ -1534,8 +2267,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -1547,8 +2288,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -1560,20 +2309,31 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 태수처럼 과거를 완전히 합리화하지도, 공개적으로 인정할 용기도 내지 못한 채 고향을 떠나기로 결심했다. 종이 위에 남은 먹줄은 지워지지 않았다. 그는 살아남았지만, 무엇을 위해 살아남았는지 끝내 대답하지 못했다.",
     "next": "__ENDING__"
   },
-
   {
     "id": "clerk_c4_e3_1",
     "locationId": "loc_police_substation",
     "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_policeman", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_policeman",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "1945년 7월 말, 해방 직전. 진호가 마지막 노무동원 명부에서 정수의 이름을 제외하고 동원 업무를 방해했다는 보고가 면장을 통해 주재소로 올라갔다. 진호는 곧바로 주재소로 불려 가 조사를 받았다.",
@@ -1582,7 +2342,9 @@
       "label": "창작 서사 · 전시 말기 사상 감시와 탄압"
     },
     "unlockSourceId": "source_I",
-    "setFlags": ["clerk_ending_3"],
+    "setFlags": [
+      "clerk_ending_3"
+    ],
     "next": "clerk_c4_e3_2"
   },
   {
@@ -1590,8 +2352,16 @@
     "locationId": "loc_police_substation",
     "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_policeman", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_policeman",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_policeman",
     "speakerName": "주재소 순사",
@@ -1603,8 +2373,16 @@
     "locationId": "loc_police_substation",
     "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_policeman", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_policeman",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -1616,8 +2394,16 @@
     "locationId": "loc_police_substation",
     "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_policeman", "expression": "patrol", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_policeman",
+        "expression": "patrol",
+        "position": "right"
+      }
     ],
     "speakerId": "char_policeman",
     "speakerName": "주재소 순사",
@@ -1629,8 +2415,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "조사가 끝난 뒤 진호는 면사무소에서 해고되었다. 그러나 그것으로 끝나지 않았다. 야학을 운영하던 정수는 불온한 사상을 전파했다는 혐의로 연행되었고, 진호의 가족마저 감시 대상이 되었다.",
@@ -1641,8 +2435,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jinho_mother",
     "speakerName": "어머니",
@@ -1654,8 +2456,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "speakerName": "박태수",
@@ -1667,9 +2477,21 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "worried", "position": "center" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "center"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
     "speakerName": "김진호",
@@ -1681,15 +2503,17 @@
         "subtext": "가족에 대한 조사를 멈추기 위해 이정수를 모른다고 진술한다.",
         "effects": {
           "variables": {
-            "cooperation": 8,
-            "solidarity": -16,
-            "autonomy": -8
+            "cooperation": 2,
+            "solidarity": -3,
+            "autonomy": -2
           },
           "relationships": {
             "char_jeongsu": -20,
             "char_jinho_mother": -6
           },
-          "setFlags": ["clerk_e3_denied"]
+          "setFlags": [
+            "clerk_e3_denied"
+          ]
         },
         "logSummary": "조사 과정에서 자신의 행동을 부인하고 이정수와의 관계를 부정했다.",
         "next": "clerk_c4_e3_after_a"
@@ -1700,12 +2524,15 @@
         "subtext": "명부 누락이 자신의 판단이었음을 밝히며 정수의 무고를 주장한다.",
         "effects": {
           "variables": {
-            "autonomy": 16
+            "autonomy": 3
           },
           "relationships": {
             "char_jinho_mother": -18
           },
-          "setFlags": ["clerk_e3_admitted", "risk_e3_admit"]
+          "setFlags": [
+            "clerk_e3_admitted",
+            "risk_e3_admit"
+          ]
         },
         "logSummary": "명부 조작을 인정하며 이정수를 보호하려 했으나, 가족까지 조사받게 되었다.",
         "next": "clerk_c4_e3_after_b"
@@ -1716,12 +2543,15 @@
         "subtext": "감시망을 피해 가족을 데리고 다른 지역으로 이동을 시도한다.",
         "effects": {
           "variables": {
-            "solidarity": -8
+            "solidarity": -2
           },
           "relationships": {
             "char_jinho_mother": -10
           },
-          "setFlags": ["clerk_e3_fled", "risk_e3_flee"]
+          "setFlags": [
+            "clerk_e3_fled",
+            "risk_e3_flee"
+          ]
         },
         "logSummary": "가족과 함께 마을을 떠나 도망치려 했으나 생계와 이동의 벽에 부딪혀 흩어졌다.",
         "next": "clerk_c4_e3_after_c"
@@ -1733,8 +2563,16 @@
     "locationId": "loc_police_substation",
     "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_policeman", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_policeman",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 조사 과정에서 정수와의 관계를 부정했다. 그러나 이미 주재소의 요시찰 명단에 오른 가족의 감시와 곤궁은 끝내 나아지지 않았다.",
@@ -1745,8 +2583,16 @@
     "locationId": "loc_police_substation",
     "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_policeman", "expression": "patrol", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_policeman",
+        "expression": "patrol",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 자신이 명부를 고쳤다고 인정했지만, 정수는 이미 연행되어 이송된 뒤였다. 그의 진술은 정수를 구하지 못했고, 오히려 진호의 가족까지 주재소의 조사를 받게 만들었다.",
@@ -1757,8 +2603,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "bundle", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "bundle",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 가족을 데리고 다른 고장으로 떠나려 했으나, 끊긴 생계와 통행 통제 앞에서 계획은 무너졌다. 가족은 뿔뿔이 흩어졌고 진호는 고향 밖을 떠돌아야 했다.",
@@ -1769,8 +2623,16 @@
     "locationId": "loc_city_street",
     "background": "/assets/aistudio/Colonial_era_Seoul_alley_street_de053a92_515e25e9.jpg",
     "characters": [
-      { "characterId": "char_villager", "expression": "calm", "position": "left" },
-      { "characterId": "char_student", "expression": "active", "position": "right" }
+      {
+        "characterId": "char_villager",
+        "expression": "calm",
+        "position": "left"
+      },
+      {
+        "characterId": "char_student",
+        "expression": "active",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
     "text": "1945년 8월 15일. 일본의 항복과 조선의 해방을 알리는 만세 소리가 면사무소 앞과 거리에 가득 울려 퍼졌다. 그러나 진호는 그 자리에 없었다.",
@@ -1785,8 +2647,16 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jinho_mother",
     "speakerName": "어머니",
@@ -1798,7 +2668,11 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
     "text": "진호는 마지막으로 정수가 운영했던 야학을 찾아갔다. 교실에는 책상 몇 개와 낡은 교재만 남아 있었고, 칠판에는 누군가 적어 둔 글씨가 남아 있었다. 「배움은 사람을 자유롭게 한다.」 그러나 교실에는 더 이상 학생도, 정수도 없었다.",

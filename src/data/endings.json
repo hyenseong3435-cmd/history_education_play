@@ -222,56 +222,110 @@
     "recommendedSourceId": "source_E"
   },
   {
-    "id": "ending_police_breakaway",
+    "id": "ending_police_name_in_mountains",
+    "scope": "occupation",
+    "occupation": "police_assistant",
+    "priority": 110,
+    "condition": {
+      "occupation": "police_assistant",
+      "requiredFlags": ["police_ending_3"]
+    },
+    "title": "엔딩 3 · 《산속에 남겨진 이름》",
+    "subtitle": "순사보 결말 · 폭력을 거부한 대가와 되돌릴 수 없는 상처",
+    "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
+    "narrationLines": [
+      "강동혁은 마지막 순간에 폭력의 편에 서기를 거부했다.",
+      "그러나 폭력적인 구조는 그의 선택조차 쉽게 용서하지 않았다.",
+      "그는 제복을 빼앗기고 구금되었으며, 그 여파는 고스란히 가족과 주변 사람들의 고통으로 돌아왔다.",
+      "해방의 만세 소리가 산골에 울려 퍼졌지만, 숯가마터 너머로 떠난 형의 이름은 끝내 돌아오지 않았다."
+    ],
+    "protagonistOutcome": "친형 강영수를 숨기거나 옛 친구 이정수에게 경고하고 마지막 명령을 거부한 사실이 드러나, 강동혁은 다나카 주임에게 제복과 환도를 빼앗긴 채 유치장에 구금되었습니다. 해방으로 풀려났지만 몸과 마음에는 지울 수 없는 상처가 남았습니다.",
+    "familyOutcome": "동혁이 구금된 사이 가족들은 주재소의 집요한 감시와 생계 압박에 시달렸습니다. 산 너머로 피신한 형 강영수는 해방 이후에도 한동안 행방이 확인되지 않았습니다.",
+    "communityOutcome": "사전 경고 덕분에 이정수와 일부 청년들은 최악의 연행을 피할 수 있었으나, 주재소의 보복 수색으로 마을은 해방 직전까지 극심한 공포에 떨었습니다.",
+    "choiceConsequencesSummary": "형 보호와 명령 거부로 조직 충성도가 낮아지고 감시 위험도가 높아진 결과, 폭력의 집행에서 이탈했으나 식민지 경찰 체제의 보복은 개인과 가족 모두에게 가혹하게 되돌아왔습니다.",
+    "colonialSystemRelation": "폭력적 지배 기구의 최말단에서 명령을 거부한 선택이었지만, 제복을 입고 있던 시간과 조직의 보복 구조는 저항마저 온전한 구원으로 끝나지 않게 만들었습니다.",
+    "reflectionQuestions": [
+      "생계를 위해 경찰 조직에 들어간 조선인 순사보의 선택을 어디까지 이해하고 어디까지 비판할 수 있는가?",
+      "폭력적인 구조 안에서 명령을 거부했을 때 개인과 가족이 감당해야 했던 대가는 무엇을 의미하는가?",
+      "구조적 피해자이면서 동시에 권력을 행사한 개인의 책임은 어떻게 평가해야 하는가?"
+    ],
+    "commonReflectionLines": [
+      "그는 식민지 권력의 가장 낮은 자리에 있었다.",
+      "그러나 그보다 더 낮은 자리에 놓인 사람들에게는 권력을 행사했다.",
+      "그렇다면 그의 책임은 어디까지일까?"
+    ],
+    "sourceRevisitNote": "수업 성찰: 사료 노트의 순사보 관련 사료(《현하 식량사정과 치안대책에 관한 건》 및 1944년 황해도 순사보 신문 기록)를 다시 읽고, 조선인 순사보의 이중적 위치와 책임을 토의해 보십시오.",
+    "recommendedSourceId": "source_G"
+  },
+  {
+    "id": "ending_police_uniform_remains",
+    "scope": "occupation",
+    "occupation": "police_assistant",
+    "priority": 105,
+    "condition": {
+      "occupation": "police_assistant",
+      "requiredFlags": ["police_ending_1"]
+    },
+    "title": "엔딩 1 · 《제복은 남았다》",
+    "subtitle": "순사보 결말 · 체제 충성의 대가와 공동체로부터의 완전한 고립",
+    "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
+    "narrationLines": [
+      "그는 끝내 원하던 제복을 지켰다.",
+      "그러나 이제 그 제복은 아무도 인정하지 않는 옷이 되었다.",
+      "다나카 주임은 도망쳤고, 주재소 마당에는 주인을 잃은 녹슨 환도만 남았다.",
+      "가난에서 벗어나려 선택한 권력은 결국 그를 가족과 이웃 모두로부터 고립시켰다."
+    ],
+    "protagonistOutcome": "강동혁은 다나카 주임의 지시를 끝까지 수행해 실적을 쌓고 제복을 유지했으나, 1945년 8월 일제의 패망과 함께 모든 권위의 근거를 잃고 마을 사람들 앞에 홀로 남겨졌습니다.",
+    "familyOutcome": "전시 중에는 월급과 배급으로 당장의 생계를 유지했으나, 단속과 수색의 여파로 형 강영수 및 가족과의 유대는 깊게 손상되었고 마을 안에서 고개를 들기 어려운 처지가 되었습니다.",
+    "communityOutcome": "장터 단속과 야학 감시, 마지막 청년 명단 제출로 최덕수·이정수를 비롯한 마을 주민들은 회복하기 어려운 피해를 입었습니다. 해방된 마을은 강동혁에게 자리를 내주지 않았습니다.",
+    "choiceConsequencesSummary": "조직 충성도를 높이고 협력 선택을 거듭한 결과, 당장의 신분과 생계는 지켰으나 주민 신뢰도를 완전히 잃고 식민지 폭력의 집행자로 기억되었습니다.",
+    "colonialSystemRelation": "경찰 조직 내부에서는 일본인 순사보다 낮은 대우를 받으면서도, 마을 주민에게는 제국 권력의 물리적 강제력을 직접 집행하는 최전선으로 기능했습니다.",
+    "reflectionQuestions": [
+      "조직 내부에서 차별받던 조선인 순사보가 더 낮은 자리의 주민에게 폭력을 행사했을 때, 그의 책임은 어떻게 보아야 하는가?",
+      "박태수처럼 '내가 안 해도 누군가 한다'는 논리로 협력과 출세를 합리화하는 태도의 문제는 무엇인가?",
+      "해방 이후 식민지 경찰 인력이 사회에 남긴 갈등과 과거 청산 문제는 왜 쉽게 해결되지 않았는가?"
+    ],
+    "commonReflectionLines": [
+      "그는 식민지 권력의 가장 낮은 자리에 있었다.",
+      "그러나 그보다 더 낮은 자리에 놓인 사람들에게는 권력을 행사했다.",
+      "그렇다면 그의 책임은 어디까지일까?"
+    ],
+    "sourceRevisitNote": "수업 성찰: 사료 노트의 순사보 관련 사료와 참고 자료(채만식 《맹순사》·《치숙》)를 함께 읽으며, 생계 논리와 권력 집행의 책임을 비교해 보십시오.",
+    "recommendedSourceId": "source_G"
+  },
+  {
+    "id": "ending_police_no_ones_side",
     "scope": "occupation",
     "occupation": "police_assistant",
     "priority": 100,
     "condition": {
-      "occupation": "police_assistant",
-      "minVars": {
-        "autonomy": 45,
-        "solidarity": 45
-      },
-      "maxVars": {
-        "cooperation": 55
-      }
+      "occupation": "police_assistant"
     },
-    "title": "제복의 무게를 벗어 둔 새벽길",
-    "subtitle": "순사보 전용 엔딩 · 위계적 명령의 거부 또는 소극적 이탈",
-    "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
-    "protagonistOutcome": "최민석은 주재소의 명령을 그대로 따를 수 없는 순간 앞에서 보고를 누락하거나 제복을 내려놓았습니다. 사토 부장의 의심과 징계 위험을 감수한 대가로 조직의 보호막을 잃었습니다.",
-    "familyOutcome": "안정된 급여와 관사 혜택이 사라지며 가족은 읍내 변두리로 거처를 옮겨야 했습니다. 그러나 아내 순이는 이웃 앞에서 고개를 들 수 없던 날들에서 비로소 벗어났다고 말합니다.",
-    "communityOutcome": "그의 묵인과 사전 연락 덕분에 몇몇 주민은 연행과 몰수를 피할 수 있었습니다. 하지만 주재소에는 곧 군 경찰서의 감찰 인력이 증원되어 감시가 강화되었습니다.",
-    "choiceConsequencesSummary": "식민지 경찰 조직 내부에서 허용되지 않는 재량을 행사함으로써 주민 피해를 줄였지만, 개인과 가족의 생계·안전은 큰 위험에 노출되었습니다.",
-    "colonialSystemRelation": "경찰기구의 최말단 집행자에서 이탈하거나 내부의 균열을 만든 사례로, 조직의 강제력과 개인의 판단이 정면으로 충돌한 결말입니다.",
+    "title": "엔딩 2 · 《누구의 편도 아닌 사람》",
+    "subtitle": "순사보 결말 · 회피와 자기합리화의 끝, 어디에도 남지 못한 자리",
+    "background": "/assets/aistudio/Colonial_era_Seoul_alley_street_de053a92_515e25e9.jpg",
+    "narrationLines": [
+      "그는 명령을 어기지도 못했고, 그렇다고 완전히 복종하지도 못했다.",
+      "직접 손을 대지 않고 한 발 물러설 때마다 스스로를 달랬지만, 그 빈자리에는 늘 다른 누군가의 폭력과 상처가 남았다.",
+      "그리고 해방된 세상은 그에게 어느 자리도 남겨 두지 않았다."
+    ],
+    "protagonistOutcome": "강동혁은 결정적인 순간마다 임무를 미루거나 타인에게 떠넘기며 스스로를 합리화했습니다. 주재소에서도 끝내 신뢰받지 못했고, 해방 이후에는 마을을 떠나 낯선 타지로 향할 수밖에 없었습니다.",
+    "familyOutcome": "가족을 지키려 제복을 유지했지만, 끝내 형 강영수의 안위도 마을 안의 평온한 삶도 온전히 지켜내지 못한 채 고향을 떠나게 되었습니다.",
+    "communityOutcome": "동혁이 회피하고 지연시킨 단속과 감시는 결국 박태수와 다른 순사들의 손으로 더 가혹하게 집행되었습니다. 주민들에게 그의 침묵은 무관심이자 방관으로 남았습니다.",
+    "choiceConsequencesSummary": "조직 충성도와 주민 신뢰도 어느 쪽에도 온전히 서지 못한 채 자기합리화와 회피를 반복한 결과, 해방 이후 어느 공동체에도 속하지 못하고 고립되었습니다.",
+    "colonialSystemRelation": "적극적으로 앞장서지는 않았으나 제복과 급여가 주는 체제 내부의 자리에 머무름으로써, 폭력적 구조가 유지되는 일상의 고리를 벗어나지 못했습니다.",
     "reflectionQuestions": [
-      "식민지 경찰 조직에 들어간 동기(생계·신분)와 그 안에서 내린 실제 행동(집행·묵인·이탈)은 각각 어떻게 구분해 평가해야 할까요?",
-      "권력 기구 내부에서의 소극적 방조나 이탈은 어떤 위험과 한계를 동반했을까요?"
-    ]
-  },
-  {
-    "id": "ending_police_enforcer",
-    "scope": "occupation",
-    "occupation": "police_assistant",
-    "priority": 90,
-    "condition": {
-      "occupation": "police_assistant",
-      "minVars": {
-        "cooperation": 70
-      }
-    },
-    "title": "주재소 등불 아래 남은 이름",
-    "subtitle": "순사보 전용 엔딩 · 체제 내부의 생존과 공동체와의 단절",
-    "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
-    "protagonistOutcome": "최민석은 사토 부장의 지시를 철저히 수행해 주재소 내 실적을 인정받았습니다. 조직 내부의 유리천장은 여전했지만, 당장의 신분과 가족의 생활은 보장되었습니다.",
-    "familyOutcome": "물자 부족 속에서도 배급과 월급으로 생계를 지켰습니다. 그러나 동생 영수는 학교에서 아이들과 어울리지 못했고, 아내 역시 마을 우물가에 나가지 못하게 되었습니다.",
-    "communityOutcome": "미곡 압수와 동원 기피자 연행이 잇따르며 들말과 송현면 주민들의 삶은 크게 위축되었습니다. 주민들에게 최민석의 이름은 제국 권력의 가장 가까운 얼굴로 각인되었습니다.",
-    "choiceConsequencesSummary": "상부의 명령과 조직 논리에 충실했던 선택은 개인적 안전과 생계를 지켰지만, 공동체에 직접적이고 회복하기 어려운 피해를 남겼습니다.",
-    "colonialSystemRelation": "식민지 경찰 통치의 말단 집행자로 기능하며 전시 통제 정책을 현장에서 관철했습니다. 조직의 위계 속에 있었더라도 집행의 결과에 대한 책임은 지워지지 않습니다.",
-    "reflectionQuestions": [
-      "조선인 순사보가 조직 내부에서 겪은 차별과, 그가 주민에게 행사한 권력·피해는 어떻게 함께 이해해야 할까요?",
-      "명령 복종으로 얻은 개인의 안전과 공동체에 남긴 상처의 무게를 어떻게 바라보아야 할까요?"
-    ]
+      "직접 폭력을 휘두르지 않고 임무를 회피하거나 타인에게 넘긴 경우에도 구조적 책임이 있는가?",
+      "폭력적인 구조 속에서 '어쩔 수 없었다'는 자기합리화는 개인과 공동체에 어떤 결과를 남기는가?",
+      "그 시대를 살아보지 않은 우리는 강동혁의 선택을 어떤 기준으로 평가해야 하는가?"
+    ],
+    "commonReflectionLines": [
+      "그는 식민지 권력의 가장 낮은 자리에 있었다.",
+      "그러나 그보다 더 낮은 자리에 놓인 사람들에게는 권력을 행사했다.",
+      "그렇다면 그의 책임은 어디까지일까?"
+    ],
+    "sourceRevisitNote": "수업 성찰: 사료 노트의 순사보 신문 기록(1944년 황해도 일대)을 다시 읽고, '말단 심부름꾼에 불과했다'는 진술 속에 담긴 현실과 한계를 함께 토론해 보십시오.",
+    "recommendedSourceId": "source_G"
   },
   {
     "id": "ending_common_gray_zone",
@@ -279,11 +333,11 @@
     "priority": 60,
     "condition": {
       "minVars": {
-        "livelihood": 35,
-        "cooperation": 35
+        "livelihood": 7,
+        "cooperation": 7
       },
       "maxVars": {
-        "cooperation": 69
+        "cooperation": 13
       }
     },
     "title": "회색 지대의 하루, 끝나지 않은 질문",
@@ -305,7 +359,7 @@
     "priority": 40,
     "condition": {
       "minVars": {
-        "communityBurden": 65
+        "communityBurden": 13
       }
     },
     "title": "누군가에게 옮겨간 무게",

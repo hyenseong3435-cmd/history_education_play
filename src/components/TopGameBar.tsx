@@ -1,6 +1,7 @@
 import {
   BarChart3,
   BookOpen,
+  Calendar,
   ClipboardList,
   Monitor,
   Save,
@@ -33,6 +34,7 @@ interface TopGameBarProps {
   displayRatio: DisplayRatioMode;
   onCycleDisplayRatio: () => void;
   onOpenModal: (modal: ActiveModalType) => void;
+  onOpenTimeline: () => void;
 }
 
 export function TopGameBar({
@@ -41,6 +43,7 @@ export function TopGameBar({
   displayRatio,
   onCycleDisplayRatio,
   onOpenModal,
+  onOpenTimeline,
 }: TopGameBarProps) {
   const occ = state.occupation ? OCCUPATIONS_BY_ID[state.occupation] : null;
   const ch = CHAPTERS.find((c) => c.number === state.chapter);
@@ -72,13 +75,23 @@ export function TopGameBar({
         >
           <button
             type="button"
+            onClick={onOpenTimeline}
+            className="min-h-[38px] px-2 sm:px-2.5 py-1 text-xs sm:text-sm text-[#D6D3CB] hover:text-[#F4F1EB] hover:bg-[#1D2025] border border-transparent hover:border-[#343942] transition-colors flex items-center gap-1.5 cursor-pointer whitespace-nowrap shrink-0"
+            title="역사 연표 보기"
+          >
+            <Calendar className="w-4 h-4 text-[#A49B8C] shrink-0" />
+            <span className="hidden sm:inline">연표</span>
+          </button>
+
+          <button
+            type="button"
             onClick={() => onOpenModal('sources')}
             className="relative min-h-[38px] px-2 sm:px-2.5 py-1 text-xs sm:text-sm text-[#D6D3CB] hover:text-[#F4F1EB] hover:bg-[#1D2025] border border-transparent hover:border-[#343942] transition-colors flex items-center gap-1.5 cursor-pointer whitespace-nowrap shrink-0"
-            title="사료 열람"
+            title="사료 노트"
           >
             <BookOpen className="w-4 h-4 text-[#A49B8C] shrink-0" />
             <span className="hidden sm:inline">사료</span>
-            <span className="hidden lg:inline">열람</span>
+            <span className="hidden lg:inline">노트</span>
             {unreadSourceCount > 0 && (
               <span className="font-data text-[11px] font-medium text-[#F4F1EB] bg-[#7A2E29] px-1.5 py-0.5 leading-none">
                 +{unreadSourceCount}

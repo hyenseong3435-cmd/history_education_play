@@ -29,15 +29,20 @@ import type {
   OccupationId,
   PlaythroughRecord,
   SaveSlotData,
+  TimelineTab,
 } from './types/game';
 import { playUiSound } from './utils/soundFx';
 import { EndingScreen } from './components/EndingScreen';
 import { ExplorationView } from './components/ExplorationView';
 import { GameModals } from './components/GameModals';
+import { HistoricalTimelineModal } from './components/HistoricalTimelineModal';
 import { OccupationSelectScreen } from './components/OccupationSelectScreen';
 import { TitleScreen } from './components/TitleScreen';
 import { TopGameBar, type ActiveModalType } from './components/TopGameBar';
-import { VisualNovelStage } from './components/VisualNovelStage';
+import {
+  VisualNovelStage,
+  type ChoiceFeedback,
+} from './components/VisualNovelStage';
 
 const RATIO_CYCLE: DisplayRatioMode[] = ['auto', '16:9', '4:3', 'portrait'];
 
@@ -73,6 +78,13 @@ export default function App() {
   const [recentDelayedEffects, setRecentDelayedEffects] = useState<DelayedEffect[]>(
     []
   );
+  const [timelineOpen, setTimelineOpen] = useState(false);
+  const [timelineInitialTab, setTimelineInitialTab] =
+    useState<TimelineTab>('common');
+  const [timelineInitialOcc, setTimelineInitialOcc] =
+    useState<OccupationId | null>(null);
+  const [lastChoiceFeedback, setLastChoiceFeedback] =
+    useState<ChoiceFeedback | null>(null);
 
   // Latest save for Title screen "이어하기"
   const latestSave = useMemo<SaveSlotData | null>(() => {
@@ -102,6 +114,26 @@ export default function App() {
       (id) => !state.readSources.includes(id)
     ).length;
   }, [state.unlockedSources, state.readSources]);
+
+  const allOccupationsCompleted = useMemo(() => {
+    const completed = new Set(records.map((r) => r.occupation));
+    return (
+      completed.has('farmer') &&
+      completed.has('clerk') &&
+      completed.has('police_assistant')
+    );
+  }, [records]);
+
+  const handleOpenTimeline = useCallback(
+    (tab: TimelineTab = 'common', occId: OccupationId | null = null) => {
+      playUiSound('paper', settings.soundEnabled);
+      setActiveModal(null);
+      setTimelineInitialTab(tab);
+      setTimelineInitialOcc(occId ?? state.occupation ?? 'farmer');
+      setTimelineOpen(true);
+    },
+    [settings.soundEnabled, state.occupation]
+  );
 
   const handleUpdateSettings = useCallback((next: GameSettings) => {
     setSettings(next);
@@ -155,6 +187,7 @@ export default function App() {
     clearAutoSave();
     setAutoSave(null);
     setRecentDelayedEffects([]);
+    setLastChoiceFeedback(null);
     const fresh = createInitialGameState();
     setState({ ...fresh, screen: 'PROLOGUE' });
   }, [settings.soundEnabled]);
@@ -163,6 +196,7 @@ export default function App() {
     if (!latestSave) return;
     playUiSound('click', settings.soundEnabled);
     setRecentDelayedEffects([]);
+    setLastChoiceFeedback(null);
     setState(latestSave.state);
   }, [latestSave, settings.soundEnabled]);
 
@@ -170,6 +204,7 @@ export default function App() {
     (occupationId: OccupationId) => {
       playUiSound('chapter', settings.soundEnabled);
       setRecentDelayedEffects([]);
+      setLastChoiceFeedback(null);
       const initial = startNewOccupationGame(occupationId);
       const firstNode = initial.currentNodeId
         ? EVENTS_BY_ID[initial.currentNodeId]
@@ -184,6 +219,7 @@ export default function App() {
       playUiSound('click', settings.soundEnabled);
       const targetNode = EVENTS_BY_ID[startNodeId];
       if (!targetNode) return;
+      setLastChoiceFeedback(null);
 
       setState((prev) => {
         const nextVisited = prev.visitedExplorationKeys.includes(visitKey)
@@ -214,6 +250,7 @@ export default function App() {
 
     playUiSound('chapter', settings.soundEnabled);
     setRecentDelayedEffects([]);
+    setLastChoiceFeedback(null);
     setState((prev) => {
       const next: GameState = {
         ...prev,
@@ -228,6 +265,7 @@ export default function App() {
   const transitionToTarget = useCallback(
     (currentState: GameState, targetId: string | null) => {
       if (!targetId || targetId === '__EXPLORE__') {
+        setLastChoiceFeedback(null);
         setState({
           ...currentState,
           screen: 'EXPLORE',
@@ -238,6 +276,7 @@ export default function App() {
 
       if (targetId === '__NEXT_CHAPTER__') {
         playUiSound('chapter', settings.soundEnabled);
+        setLastChoiceFeedback(null);
         const { nextState, newlyTriggered } = advanceToNextChapter(currentState);
         setRecentDelayedEffects(newlyTriggered);
         setState(nextState);
@@ -246,6 +285,7 @@ export default function App() {
 
       if (targetId === '__ENDING__') {
         playUiSound('chapter', settings.soundEnabled);
+        setLastChoiceFeedback(null);
         const ending = resolveEnding(currentState);
         const updatedRecords = appendPlaythroughRecord(currentState, ending);
         setRecords(updatedRecords);
@@ -287,6 +327,7 @@ export default function App() {
     if (!currentNode) return;
 
     playUiSound('advance', settings.soundEnabled);
+    setLastChoiceFeedback(null);
     const nextTarget = resolveNextNodeId(currentNode, state);
     transitionToTarget(state, nextTarget);
   }, [state, settings.soundEnabled, transitionToTarget]);
@@ -294,6 +335,16 @@ export default function App() {
   const handleSelectChoice = useCallback(
     (choice: ChoiceOption) => {
       playUiSound('choice', settings.soundEnabled);
+      const variableChanges = choice.effects?.variables ?? {};
+      const hasTrace = Boolean(
+        (choice.effects?.setFlags && choice.effects.setFlags.length > 0) ||
+          choice.effects?.delayedEffect
+      );
+      setLastChoiceFeedback({
+        variableChanges,
+        hasTrace,
+        choiceText: choice.text,
+      });
       const updatedState = applyChoiceToState(state, choice);
       transitionToTarget(updatedState, choice.next);
     },
@@ -313,6 +364,7 @@ export default function App() {
     (slot: SaveSlotData) => {
       playUiSound('click', settings.soundEnabled);
       setRecentDelayedEffects([]);
+      setLastChoiceFeedback(null);
       setState(slot.state);
     },
     [settings.soundEnabled]
@@ -329,6 +381,7 @@ export default function App() {
 
   const handleReturnToTitle = useCallback(() => {
     playUiSound('click', settings.soundEnabled);
+    setLastChoiceFeedback(null);
     setState((prev) => ({ ...prev, screen: 'TITLE' }));
   }, [settings.soundEnabled]);
 
@@ -363,6 +416,7 @@ export default function App() {
             onCycleDisplayRatio={handleCycleDisplayRatio}
             onNewGame={handleStartNewGame}
             onContinue={handleContinueGame}
+            onOpenTimeline={() => handleOpenTimeline('common')}
             onOpenRecords={() => handleOpenModal('records')}
             onOpenGuide={() => handleOpenModal('guide')}
             onOpenCredits={() => handleOpenModal('credits')}
@@ -379,6 +433,9 @@ export default function App() {
             }}
             onSelectOccupation={handleSelectOccupation}
             onBackToTitle={handleReturnToTitle}
+            onOpenTimeline={(occId) =>
+              handleOpenTimeline(occId ? 'occupation' : 'common', occId ?? null)
+            }
           />
         )}
 
@@ -390,6 +447,9 @@ export default function App() {
               displayRatio={settings.displayRatio}
               onCycleDisplayRatio={handleCycleDisplayRatio}
               onOpenModal={handleOpenModal}
+              onOpenTimeline={() =>
+                handleOpenTimeline('occupation', state.occupation ?? 'farmer')
+              }
             />
 
             {state.screen === 'EXPLORE' && (
@@ -408,7 +468,8 @@ export default function App() {
                 node={currentNode}
                 state={state}
                 settings={settings}
-                isModalOpen={activeModal !== null}
+                isModalOpen={activeModal !== null || timelineOpen}
+                lastChoiceFeedback={lastChoiceFeedback}
                 onAdvance={handleAdvanceDialogue}
                 onSelectChoice={handleSelectChoice}
                 onOpenSourceById={handleOpenSourceById}
@@ -426,19 +487,33 @@ export default function App() {
               displayRatio={settings.displayRatio}
               onCycleDisplayRatio={handleCycleDisplayRatio}
               onOpenModal={handleOpenModal}
+              onOpenTimeline={() =>
+                handleOpenTimeline(
+                  allOccupationsCompleted ? 'synthesis' : 'occupation',
+                  state.occupation ?? 'farmer'
+                )
+              }
             />
             <EndingScreen
               ending={activeEnding}
               state={state}
+              allOccupationsCompleted={allOccupationsCompleted}
               onRestartOtherOccupation={() => {
                 playUiSound('click', settings.soundEnabled);
                 setRecentDelayedEffects([]);
+                setLastChoiceFeedback(null);
                 const fresh = createInitialGameState();
                 setState({ ...fresh, screen: 'OCCUPATION_SELECT' });
               }}
               onReturnTitle={handleReturnToTitle}
               onOpenSources={() => handleOpenModal('sources')}
               onOpenSourceById={handleOpenSourceById}
+              onOpenTimeline={(tab) =>
+                handleOpenTimeline(
+                  tab ?? (allOccupationsCompleted ? 'synthesis' : 'occupation'),
+                  state.occupation ?? 'farmer'
+                )
+              }
             />
           </>
         )}
@@ -458,6 +533,14 @@ export default function App() {
           onDeleteSlot={handleDeleteSlot}
           onUpdateSettings={handleUpdateSettings}
           onReturnToTitle={handleReturnToTitle}
+        />
+
+        <HistoricalTimelineModal
+          isOpen={timelineOpen}
+          initialTab={timelineInitialTab}
+          initialOccupation={timelineInitialOcc}
+          records={records}
+          onClose={() => setTimelineOpen(false)}
         />
       </div>
     </div>

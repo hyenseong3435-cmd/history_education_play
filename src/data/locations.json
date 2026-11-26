@@ -44,22 +44,25 @@
         "occupation": "police_assistant",
         "chapter": 1,
         "startNodeId": "exp_police_c1_home",
-        "npcIds": ["char_wife", "char_boy"],
-        "activityLabel": "아내와 마을 사람들의 시선 이야기하기"
+        "npcIds": ["char_yeongsu"],
+        "activityLabel": "집에 들러 형 강영수와 집안 생계 이야기 나누기",
+        "rewardHint": "소작농 집안의 현실과 형의 걱정 확인"
       },
       {
         "occupation": "police_assistant",
         "chapter": 2,
         "startNodeId": "exp_police_c2_home",
-        "npcIds": ["char_wife"],
-        "activityLabel": "집에서 동원 집행 명령을 두고 대화하기"
+        "npcIds": ["char_villager"],
+        "activityLabel": "텅 빈 집에서 형 강영수의 흔적과 이웃 소문 확인하기",
+        "rewardHint": "노무동원 회피 소문 파악"
       },
       {
         "occupation": "police_assistant",
         "chapter": 3,
         "startNodeId": "exp_police_c3_home",
-        "npcIds": ["char_wife"],
-        "activityLabel": "야간 출동 전 가족과 마지막 대화 나누기"
+        "npcIds": ["char_villager"],
+        "activityLabel": "가족의 소식과 산간 수색 이후의 마을 분위기 살피기",
+        "rewardHint": "가족 감시 여파 확인"
       }
     ]
   },
@@ -100,17 +103,18 @@
         "occupation": "police_assistant",
         "chapter": 1,
         "startNodeId": "exp_police_c1_farmland",
-        "npcIds": ["char_farmer"],
-        "activityLabel": "들말 순찰하며 마을 분위기 살피기",
-        "rewardHint": "사료 D 해금",
+        "npcIds": ["char_deoksu"],
+        "activityLabel": "들말과 장터 어귀를 순찰하며 최덕수의 생계 사정 살피기",
+        "rewardHint": "사료 D 해금 · 산림 단속 실태 확인",
         "unlockSourceId": "source_D"
       },
       {
         "occupation": "police_assistant",
         "chapter": 2,
         "startNodeId": "exp_police_c2_farmland",
-        "npcIds": ["char_farmer"],
-        "activityLabel": "들말 주민들에게 기피자 행방 탐문하기"
+        "npcIds": ["char_deoksu", "char_villager"],
+        "activityLabel": "들말과 산자락에서 노무동원 이탈자 소문 탐문하기",
+        "rewardHint": "산속 숯가마터 단서 확인"
       }
     ]
   },
@@ -162,8 +166,8 @@
         "chapter": 1,
         "startNodeId": "exp_police_c1_office",
         "npcIds": ["char_clerk"],
-        "activityLabel": "면서기 김진호에게 공출 대장 확인하기",
-        "rewardHint": "사료 F 해금 · 읍내 거리 해금",
+        "activityLabel": "면사무소 서기 김진호와 산림·공출 단속 공문 대조하기",
+        "rewardHint": "사료 D·F 확인 · 행정과 경찰의 연결 파악",
         "unlockSourceId": "source_F"
       },
       {
@@ -171,8 +175,8 @@
         "chapter": 2,
         "startNodeId": "exp_police_c2_office",
         "npcIds": ["char_clerk"],
-        "activityLabel": "면사무소에서 동원 명단 사본 대조하기",
-        "rewardHint": "사료 E 해금",
+        "activityLabel": "면사무소에서 노무동원 소재 불명자 명부 사본 확인하기",
+        "rewardHint": "사료 E 확인 · 동원 명단 대조",
         "unlockSourceId": "source_E"
       }
     ]
@@ -210,23 +214,25 @@
         "occupation": "police_assistant",
         "chapter": 1,
         "startNodeId": "exp_police_c1_substation",
-        "npcIds": ["char_sato"],
-        "activityLabel": "사토 부장의 지시와 제보 문서 검토하기",
-        "rewardHint": "제보 출처 확인"
+        "npcIds": ["char_sato", "char_police_taesu"],
+        "activityLabel": "다나카 주임의 단속 지시와 박태수의 처세론 듣기",
+        "rewardHint": "주재소 내부 차별과 실적 구조 확인"
       },
       {
         "occupation": "police_assistant",
         "chapter": 2,
         "startNodeId": "exp_police_c2_substation",
-        "npcIds": ["char_sato"],
-        "activityLabel": "기피자 수색 명령서와 관할 지침 확인하기"
+        "npcIds": ["char_sato", "char_police_taesu"],
+        "activityLabel": "산간 수색 지침과 정규 순사 추천 조건 확인하기",
+        "rewardHint": "다나카 주임의 의도 파악"
       },
       {
         "occupation": "police_assistant",
         "chapter": 3,
         "startNodeId": "exp_police_c3_substation",
-        "npcIds": ["char_sato"],
-        "activityLabel": "군 경찰서 비상 전문 확인하기"
+        "npcIds": ["char_sato", "char_police_taesu"],
+        "activityLabel": "주재소 내 일본인 순사의 잡무 전가와 야학 감시 지령 확인하기",
+        "rewardHint": "사료 G(사상 감시) 심화"
       }
     ]
   },
@@ -265,10 +271,19 @@
       },
       {
         "occupation": "police_assistant",
+        "chapter": 1,
+        "startNodeId": "exp_police_c1_meeting",
+        "npcIds": ["char_jeongsu", "char_student"],
+        "activityLabel": "마을 야학 어귀에서 옛 친구 이정수와 마주치기",
+        "rewardHint": "옛 친구의 시선 확인"
+      },
+      {
+        "occupation": "police_assistant",
         "chapter": 3,
         "startNodeId": "exp_police_c3_meeting",
-        "npcIds": ["char_doctor"],
-        "activityLabel": "회관 인근 순찰하며 주민 동향 살피기"
+        "npcIds": ["char_jeongsu", "char_student"],
+        "activityLabel": "저녁 야학 교실 바깥에서 청년들의 동향 살피기",
+        "rewardHint": "감시 대상이 된 야학 확인"
       }
     ]
   },
@@ -298,18 +313,11 @@
       },
       {
         "occupation": "police_assistant",
-        "chapter": 1,
-        "startNodeId": "exp_police_c1_clinic",
-        "npcIds": ["char_doctor"],
-        "activityLabel": "윤의원에 들러 마을 민심과 위생 상황 듣기"
-      },
-      {
-        "occupation": "police_assistant",
         "chapter": 2,
         "startNodeId": "exp_police_c2_clinic",
         "npcIds": ["char_doctor"],
-        "activityLabel": "윤선생에게 기피자 치료 흔적 탐문하기",
-        "rewardHint": "은신처 단서 획득"
+        "activityLabel": "윤선생에게 산간 마을 병자 치료 흔적 묻기",
+        "rewardHint": "산속 은신자 정황 파악"
       }
     ]
   },
@@ -337,9 +345,9 @@
         "occupation": "police_assistant",
         "chapter": 2,
         "startNodeId": "exp_police_c2_city",
-        "npcIds": ["char_clerk"],
-        "activityLabel": "읍내 상점가 순찰 중 전시 통제 분위기 체감하기",
-        "rewardHint": "도시 통제 실태 확인"
+        "npcIds": ["char_peddler"],
+        "activityLabel": "읍내 장터 순찰 중 전황과 노무동원 소문 듣기",
+        "rewardHint": "전시 통제 실태 확인"
       }
     ]
   }

@@ -28,26 +28,26 @@
   },
   {
     "id": "char_police_asst",
-    "name": "최민석",
-    "role": "송현 주재소 순사보",
+    "name": "강동혁",
+    "role": "산간 주재소 조선인 순사보 (주인공)",
     "defaultExpression": "neutral",
     "expressions": {
       "neutral": "/assets/aistudio/Korean_police_assistant_pixel_sp__43efdc41_22c3570f.jpg",
       "patrol": "/assets/aistudio/Korean_police_assistant_characte__5e34962d_abdd39ec.png"
     },
-    "description": "송현 주재소의 조선인 순사보. 제복이 주는 생계와 상부 명령, 그리고 동향 주민 사이의 괴리를 겪습니다.",
+    "description": "가난한 소작농 집안의 셋째 아들로 가족의 생계를 책임지려 순사보가 된 24세 조선인. 정규 순사 승진을 꿈꾸지만 조직 내부의 차별과 마을 주민에 대한 폭력 사이에서 갈등합니다.",
     "isFictional": true
   },
   {
     "id": "char_sato",
-    "name": "사토 순사부장",
-    "role": "송현 주재소 수석 순사부장",
+    "name": "다나카 주임",
+    "role": "40대 일본인 주재소장",
     "defaultExpression": "stern",
     "expressions": {
       "stern": "/assets/aistudio/Police_officer_pixel_art_sprite_d613ed99_2d276d64.jpg",
       "field": "/assets/aistudio/Pixel_art_Japanese_police_officer_3e786421_5fa39bf7.jpg"
     },
-    "description": "송현 주재소를 지휘하는 일본인 경찰 간부. 군 경찰서의 전시 지침과 실적 달성을 최우선으로 여깁니다.",
+    "description": "동혁의 상관인 40대 일본인 주재소장. 단속과 수색 실적을 집요하게 요구하면서도 동혁을 동등한 경찰로 대우하지 않습니다.",
     "isFictional": true
   },
   {
@@ -306,6 +306,30 @@
       "bundle": "/assets/aistudio/Pixel_art_woman_carrying_bundle_931b3b2f_8d9c0655.png"
     },
     "description": "가난한 살림 속에서 아들이 면사무소 서기가 된 것을 의지하며, 전쟁 말기 가족의 안위를 노심초사 걱정하는 어머니입니다.",
+    "isFictional": true
+  },
+  {
+    "id": "char_police_taesu",
+    "name": "박태수",
+    "role": "30세 조선인 순사보 (선배)",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Korean_police_assistant_characte__5e34962d_abdd39ec.png",
+      "stern": "/assets/aistudio/Korean_police_assistant_pixel_sp__43efdc41_22c3570f.jpg"
+    },
+    "description": "동혁의 선배 조선인 순사보(30세). 권력에 순응하고 출세를 위해 주민을 적극적으로 단속하며, 자신의 행동을 생계와 직업의 논리로 합리화합니다. (채만식 《맹순사》·《치숙》의 인물 유형을 참고한 창작 인물)",
+    "isFictional": true
+  },
+  {
+    "id": "char_yeongsu",
+    "name": "강영수",
+    "role": "동혁의 친형 (29세 · 소작농)",
+    "defaultExpression": "neutral",
+    "expressions": {
+      "neutral": "/assets/aistudio/Pixel_art_farmer_character_standing_1dda8750_b97f0313.png",
+      "work": "/assets/aistudio/Farmer_standing_in_neutral_pose_849e390a_373a6c36.png"
+    },
+    "description": "소작농 출신의 동혁의 친형(29세). 노무동원을 피해 산간 지역의 숯가마터 근처에 숨어 지내고 있습니다.",
     "isFictional": true
   }
 ]

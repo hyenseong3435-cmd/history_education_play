@@ -1,28 +1,41 @@
 import { useState } from 'react';
-import { BookOpen, Home, RotateCcw, Save } from 'lucide-react';
+import { BookOpen, Calendar, Home, RotateCcw, Save } from 'lucide-react';
 import { OCCUPATIONS_BY_ID, getVariableMetaForOccupation } from '../data';
 import { loadReflectionMemo, saveReflectionMemo } from '../engine/gameEngine';
-import type { EndingData, GameState } from '../types/game';
+import type { EndingData, GameState, TimelineTab } from '../types/game';
 import { ResilientBackground } from './ResilientBackground';
 
 interface EndingScreenProps {
   ending: EndingData;
   state: GameState;
+  allOccupationsCompleted?: boolean;
   onRestartOtherOccupation: () => void;
   onReturnTitle: () => void;
   onOpenSources: () => void;
   onOpenSourceById?: (sourceId: string) => void;
+  onOpenTimeline: (tab?: TimelineTab) => void;
 }
 
 type EndingTab = 'summary' | 'records' | 'reflection';
 
+const RECOMMENDED_SOURCE_LABEL: Record<string, string> = {
+  source_D: '사료 D 다시 읽기',
+  source_E: '사료 E 다시 읽기',
+  source_F: '사료 F 다시 읽기',
+  source_G: '사료 G 다시 읽기',
+  source_H: '사료 H 다시 읽기',
+  source_I: '사료 I 다시 읽기',
+};
+
 export function EndingScreen({
   ending,
   state,
+  allOccupationsCompleted = false,
   onRestartOtherOccupation,
   onReturnTitle,
   onOpenSources,
   onOpenSourceById,
+  onOpenTimeline,
 }: EndingScreenProps) {
   const occ = state.occupation ? OCCUPATIONS_BY_ID[state.occupation] : null;
   const variableMeta = getVariableMetaForOccupation(state.occupation);
@@ -190,18 +203,19 @@ export function EndingScreen({
               <div className="space-y-2.5">
                 {variableMeta.map((meta) => {
                   const val = state.variables[meta.key];
+                  const pct = Math.max(0, Math.min(100, (val / 20) * 100));
                   return (
                     <div key={meta.key} className="space-y-1">
                       <div className="flex items-center justify-between text-xs">
                         <span className="text-[#D4D0C7]">{meta.label}</span>
                         <span className="font-data text-[#B2A999]">
-                          {val} / 100
+                          {val} / 20
                         </span>
                       </div>
                       <div className="h-1.5 w-full bg-[#0E1013] border border-[#2B2F36]">
                         <div
                           className="h-full bg-[#9E9586]"
-                          style={{ width: `${val}%` }}
+                          style={{ width: `${pct}%` }}
                         />
                       </div>
                     </div>
@@ -325,13 +339,9 @@ export function EndingScreen({
                   className="min-h-[40px] px-3.5 py-1.5 bg-[#E2DDD2] hover:bg-[#D5CFC2] text-[#262420] border border-[#B7B1A3] text-xs sm:text-sm font-medium flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap"
                 >
                   <BookOpen className="w-4 h-4" />
-                  {ending.recommendedSourceId === 'source_F'
-                    ? '사료 F 다시 읽기'
-                    : ending.recommendedSourceId === 'source_I'
-                    ? '사료 I 다시 읽기'
-                    : ending.recommendedSourceId === 'source_E'
-                    ? '사료 E 다시 읽기'
-                    : '관련 사료 다시 보기'}
+                  {(ending.recommendedSourceId &&
+                    RECOMMENDED_SOURCE_LABEL[ending.recommendedSourceId]) ||
+                    '관련 사료 다시 보기'}
                 </button>
                 <button
                   type="button"
@@ -350,14 +360,28 @@ export function EndingScreen({
       {/* Pinned Bottom Action Bar */}
       <footer className="shrink-0 w-full border-t border-[#262930] bg-[#111316]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-2.5 sm:py-3 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5">
-          <button
-            type="button"
-            onClick={onReturnTitle}
-            className="min-h-[42px] px-4 py-2 bg-[#15171B] hover:bg-[#1E2127] text-[#D4D0C7] border border-[#343841] text-xs sm:text-sm font-medium flex items-center justify-center gap-2 transition-colors cursor-pointer whitespace-nowrap"
-          >
-            <Home className="w-4 h-4" />
-            메인 메뉴로
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={onReturnTitle}
+              className="flex-1 sm:flex-none min-h-[42px] px-4 py-2 bg-[#15171B] hover:bg-[#1E2127] text-[#D4D0C7] border border-[#343841] text-xs sm:text-sm font-medium flex items-center justify-center gap-2 transition-colors cursor-pointer whitespace-nowrap"
+            >
+              <Home className="w-4 h-4" />
+              메인 메뉴로
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                onOpenTimeline(allOccupationsCompleted ? 'synthesis' : 'occupation')
+              }
+              className="flex-1 sm:flex-none min-h-[42px] px-4 py-2 bg-[#191C22] hover:bg-[#232730] text-[#ECE9E2] border border-[#4D525E] hover:border-[#9E9586] text-xs sm:text-sm font-medium flex items-center justify-center gap-2 transition-colors cursor-pointer whitespace-nowrap"
+            >
+              <Calendar className="w-4 h-4 text-[#B2A999]" />
+              {allOccupationsCompleted
+                ? '종합 연표 보기 (3/3 해금)'
+                : '역사 연표 보기'}
+            </button>
+          </div>
           <button
             type="button"
             onClick={onRestartOtherOccupation}

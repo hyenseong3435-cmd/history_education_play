@@ -1,10 +1,7 @@
 import { useEffect, useState } from 'react';
 import {
-  BookOpen,
-  CheckCircle2,
   Download,
   Home,
-  Lock,
   Save,
   Trash2,
   Volume2,
@@ -15,7 +12,6 @@ import {
   CHARACTERS_BY_ID,
   ENDINGS,
   OCCUPATIONS_BY_ID,
-  SOURCES,
   getClerkRiskMetrics,
   getVariableMetaForOccupation,
 } from '../data';
@@ -26,6 +22,7 @@ import type {
   SaveSlotData,
   VariableKey,
 } from '../types/game';
+import { SourceArchivePanel } from './SourceArchivePanel';
 import type { ActiveModalType } from './TopGameBar';
 
 interface GameModalsProps {
@@ -46,14 +43,14 @@ interface GameModalsProps {
 }
 
 const MODAL_TITLES: Record<Exclude<ActiveModalType, null>, string> = {
-  sources: '사료 열람실 (사료 D–I)',
+  sources: '사료 노트',
   status: '변수 현황 · 인물 관계',
   log: '선택 기록',
   save: '저장 및 불러오기',
   settings: '환경 설정',
   records: '플레이 기록',
   guide: '게임 설명',
-  credits: '사료 노트',
+  credits: '사료 노트 · 전체 열람',
 };
 
 const SLOT_IDS = ['slot_1', 'slot_2', 'slot_3'];
@@ -74,24 +71,13 @@ export function GameModals({
   onUpdateSettings,
   onReturnToTitle,
 }: GameModalsProps) {
-  const [selectedSourceId, setSelectedSourceId] = useState<string>(
-    initialSourceId || state.unlockedSources[0] || SOURCES[0].id
-  );
   const [saveToast, setSaveToast] = useState<string | null>(null);
   const [confirmTitleReturn, setConfirmTitleReturn] = useState(false);
 
   useEffect(() => {
-    if (activeModal === 'sources') {
-      const target =
-        initialSourceId || state.unlockedSources[0] || SOURCES[0].id;
-      setSelectedSourceId(target);
-      if (state.unlockedSources.includes(target)) {
-        onMarkSourceRead(target);
-      }
-    }
     setConfirmTitleReturn(false);
     setSaveToast(null);
-  }, [activeModal, initialSourceId, state.unlockedSources, onMarkSourceRead]);
+  }, [activeModal]);
 
   useEffect(() => {
     if (!activeModal) return;
@@ -106,25 +92,11 @@ export function GameModals({
 
   if (!activeModal) return null;
 
-  const handleSelectSource = (srcId: string, unlocked: boolean) => {
-    setSelectedSourceId(srcId);
-    if (unlocked) {
-      onMarkSourceRead(srcId);
-    }
-  };
-
   const handleManualSave = (slotId: string) => {
     onSaveSlot(slotId);
     setSaveToast('현재 진행 상황이 브라우저에 저장되었습니다.');
     window.setTimeout(() => setSaveToast(null), 2200);
   };
-
-  const activeSource =
-    SOURCES.find((s) => s.id === selectedSourceId) ?? SOURCES[0];
-  const isActiveSourceUnlocked =
-    state.screen === 'TITLE' ||
-    state.screen === 'ENDING' ||
-    state.unlockedSources.includes(activeSource.id);
 
   const uniqueEndedIds = new Set(records.map((r) => r.endingId));
   const occ = state.occupation ? OCCUPATIONS_BY_ID[state.occupation] : null;
@@ -169,137 +141,11 @@ export function GameModals({
         <div className="flex-1 overflow-y-auto p-4 sm:p-6">
           {/* 1. HISTORICAL SOURCES ARCHIVE */}
           {activeModal === 'sources' && (
-            <div className="space-y-5">
-              <p className="text-xs sm:text-sm text-[#A8A49C] leading-relaxed">
-                탐색 중 획득한 사료를 열람하면 관련 역사적 맥락을 확인할 수 있으며,
-                주요 사건에서 새로운 조건부 선택지가 해금될 수 있습니다.
-              </p>
-
-              {/* Source selector tabs */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                {SOURCES.map((src) => {
-                  const unlocked =
-                    state.screen === 'TITLE' ||
-                    state.screen === 'ENDING' ||
-                    state.unlockedSources.includes(src.id);
-                  const read = state.readSources.includes(src.id);
-                  const selected = src.id === selectedSourceId;
-
-                  return (
-                    <button
-                      key={src.id}
-                      type="button"
-                      onClick={() => handleSelectSource(src.id, unlocked)}
-                      className={`min-h-[48px] px-3 py-2 text-left border transition-colors cursor-pointer ${
-                        selected
-                          ? 'bg-[#202328] border-[#B2A999] text-[#F4F1EB]'
-                          : unlocked
-                          ? 'bg-[#17191D] border-[#2C3037] hover:border-[#4D535E] text-[#CFCBC2]'
-                          : 'bg-[#121417] border-[#22252B] text-[#6E6C67]'
-                      }`}
-                    >
-                      <div className="flex items-center justify-between gap-1 text-xs font-semibold">
-                        <span>{src.code}</span>
-                        {!unlocked ? (
-                          <Lock className="w-3.5 h-3.5" />
-                        ) : read ? (
-                          <CheckCircle2 className="w-3.5 h-3.5 text-[#A49B8C]" />
-                        ) : (
-                          <span className="text-[11px] text-[#D49790]">미열람</span>
-                        )}
-                      </div>
-                      <p className="text-[11px] truncate opacity-80 mt-0.5">
-                        {unlocked ? src.title : '탐색으로 해금'}
-                      </p>
-                    </button>
-                  );
-                })}
-              </div>
-
-              {/* Active source document view */}
-              {!isActiveSourceUnlocked ? (
-                <div className="p-6 bg-[#111316] border border-[#292D34] text-center space-y-2">
-                  <Lock className="w-6 h-6 mx-auto text-[#7B7973]" />
-                  <p className="font-editorial text-base text-[#D4D0C7]">
-                    아직 획득하지 못한 사료입니다 ({activeSource.code})
-                  </p>
-                  <p className="text-xs sm:text-sm text-[#8F8C85]">
-                    관련 사건({activeSource.relatedEvent})을 진행하거나 면사무소·주재소·들말을
-                    탐색하면 열람할 수 있습니다.
-                  </p>
-                </div>
-              ) : (
-                <article className="hanji-surface p-5 sm:p-7 border border-[#BDB7A9] space-y-5">
-                  <header className="border-b border-[#C8C2B5] pb-3.5 space-y-1">
-                    <div className="flex flex-wrap items-center gap-2 text-xs text-[#6F2C27] font-semibold">
-                      <span>{activeSource.code}</span>
-                      <span aria-hidden="true">·</span>
-                      <span>{activeSource.period}</span>
-                    </div>
-                    <h3 className="font-editorial text-xl sm:text-2xl font-semibold text-[#1C1B18]">
-                      {activeSource.title}
-                    </h3>
-                    <p className="text-xs text-[#545049]">
-                      관련 사건: {activeSource.relatedEvent}
-                    </p>
-                  </header>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="p-4 bg-[#F5F2EB] border border-[#CCC6B9] space-y-1.5">
-                      <p className="text-xs font-semibold text-[#544F47]">
-                        사료 원문
-                      </p>
-                      <p className="text-xs sm:text-sm text-[#2D2A26] leading-relaxed font-editorial">
-                        {activeSource.originalText}
-                      </p>
-                    </div>
-                    <div className="p-4 bg-[#F5F2EB] border border-[#CCC6B9] space-y-1.5">
-                      <p className="text-xs font-semibold text-[#544F47]">
-                        번역문 및 출처
-                      </p>
-                      <p className="text-xs sm:text-sm text-[#2D2A26] leading-relaxed">
-                        {activeSource.translationText}
-                      </p>
-                      <p className="text-[11px] text-[#6B665D] pt-1 font-data">
-                        출처: {activeSource.citation}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="space-y-3 text-sm text-[#262420] leading-[1.78]">
-                    <div>
-                      <p className="text-xs font-bold text-[#6F2C27] mb-1">
-                        실제 역사적 사실 및 제도 맥락
-                      </p>
-                      <p>{activeSource.historicalContext}</p>
-                    </div>
-
-                    <div className="pt-2.5 border-t border-[#CFC9BC]">
-                      <p className="text-xs font-bold text-[#444039] mb-1">
-                        역사적 사실과 게임 각색의 구분
-                      </p>
-                      <p className="text-xs sm:text-sm text-[#393630]">
-                        {activeSource.factVsFiction}
-                      </p>
-                    </div>
-
-                    <div className="pt-2.5 border-t border-[#CFC9BC]">
-                      <p className="text-xs font-bold text-[#444039] mb-1">
-                        사료 해설
-                      </p>
-                      <p className="text-xs sm:text-sm text-[#393630]">
-                        {activeSource.commentary}
-                      </p>
-                    </div>
-
-                    <div className="p-3 bg-[#E3DDD1] border border-[#C2BCAE] text-xs text-[#2B2823] flex items-start gap-2">
-                      <BookOpen className="w-4 h-4 text-[#6F2C27] shrink-0 mt-0.5" />
-                      <span>{activeSource.gameplayInsight}</span>
-                    </div>
-                  </div>
-                </article>
-              )}
-            </div>
+            <SourceArchivePanel
+              initialSourceId={initialSourceId}
+              state={state}
+              onMarkSourceRead={onMarkSourceRead}
+            />
           )}
 
           {/* 2. STATUS & RELATIONSHIPS */}
@@ -322,10 +168,10 @@ export function GameModals({
               <div className="space-y-3">
                 <div>
                   <h4 className="font-editorial text-base font-semibold text-[#EAE7E0]">
-                    {occ ? `${occ.name} 전용 5대 변수 현황 (0–100)` : '5대 핵심 지표 (0–100)'}
+                    {occ ? `${occ.name} 전용 5대 변수 현황 (0–20)` : '5대 핵심 지표 (0–20)'}
                   </h4>
                   <p className="text-xs text-[#928F88] mt-0.5">
-                    직업마다 서로 다른 5대 변수가 적용됩니다. 이 수치들은 도덕성을
+                    직업마다 서로 다른 5대 변수가 0~20 범위로 적용됩니다. 이 수치들은 도덕성을
                     채점하는 점수가 아니라, 선택이 남긴 구조적 위치와 관계의 흔적입니다.
                   </p>
                 </div>
@@ -333,6 +179,7 @@ export function GameModals({
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
                   {activeVariableMeta.map((meta) => {
                     const val = state.variables[meta.key];
+                    const pct = Math.max(0, Math.min(100, (val / 20) * 100));
                     const lastDelta = lastDecisionChanges[meta.key];
                     return (
                       <div
@@ -356,19 +203,19 @@ export function GameModals({
                               </span>
                             )}
                             <span className="font-data text-sm font-medium text-[#B2A999]">
-                              {val} / 100
+                              {val} / 20
                             </span>
                           </div>
                         </div>
                         <div className="h-1.5 w-full bg-[#1E2126] overflow-hidden">
                           <div
                             className="h-full bg-[#9E9586] transition-all duration-200"
-                            style={{ width: `${val}%` }}
+                            style={{ width: `${pct}%` }}
                           />
                         </div>
                         <div className="flex items-center justify-between text-[11px] text-[#7E7C76]">
                           <span>0 · {meta.lowNote}</span>
-                          <span>100 · {meta.highNote}</span>
+                          <span>20 · {meta.highNote}</span>
                         </div>
                         <p className="text-xs text-[#A5A29A] leading-snug">
                           {meta.description}
@@ -891,7 +738,7 @@ export function GameModals({
                             <span key={m.key}>
                               {m.shortLabel}{' '}
                               <strong className="text-[#E2DDD2]">
-                                {rec.finalVariables[m.key]}
+                                {rec.finalVariables[m.key]}/20
                               </strong>
                             </span>
                           ))}
@@ -925,25 +772,23 @@ export function GameModals({
                   02. 세 직업의 서로 다른 스토리라인
                 </h3>
                 <p>
-                  농사꾼(최덕수 · 《빼앗긴 땅, 빼앗긴 봄》), 면서기(김진호 ·
-                  《먹줄의 무게》), 순사보(최민석) 중 하나를 선택해 시작합니다.
-                  농사꾼 편은 1942년 사료 F(《조선농보》)의 경작권 이전·증산
-                  표창 사례에서 출발해 해방 직후 토지 문제까지 다루며, 면서기
-                  편은 1944~1945년 피식민자이자 행정 실무자로서 공출·노무동원
-                  명부·창씨개명과 해방 이후 책임 문제를 체험합니다.
+                  농사꾼(최덕수 · 《빼앗긴 땅, 빼앗긴 봄》 · 1942~1945), 면서기(김진호 ·
+                  《먹줄의 무게》 · 1944~1945), 순사보(강동혁 · 《녹슨 환도》 · 1943~1945)
+                  중 하나를 선택해 시작합니다. 세 직업은 서로 다른 시기에 식민지 통치를
+                  경험하며, 역사 연표를 통해 하나의 시대적 맥락으로 이어집니다.
                 </p>
               </div>
 
               <div className="space-y-2 pt-3 border-t border-[#292D34]">
                 <h3 className="font-editorial text-lg font-semibold text-[#F1EEE8]">
-                  03. 마을 지도 탐색, 변수 현황 창, 사료 열람
+                  03. 마을 지도 탐색, 0–20 변수 현황, 역사 연표와 사료 노트
                 </h3>
                 <p>
                   주요 선택에 들어가기 전, 마을 약도에서 장소를 선택해 가족·이웃·
-                  면사무소·야학·주재소 인물과 대화하고 역사 사료(D–I)를 확인할
-                  수 있습니다. 상단과 화면 내 「변수 현황」 버튼을 누르면 각
-                  직업별 5대 변수와 인물 관계를 별도의 창에서 언제든 확인할 수
-                  있습니다.
+                  면사무소·야학·주재소 인물과 대화하고 역사 사료를 확인할 수 있습니다.
+                  상단의 「연표」「사료」「변수 현황」 버튼으로 1937~1945년 역사 연표,
+                  원문·사진이 수록된 사료 노트, 0~20 범위의 5대 변수와 인물 관계를
+                  언제든 확인할 수 있습니다.
                 </p>
               </div>
 
@@ -953,68 +798,32 @@ export function GameModals({
                 </h3>
                 <ul className="space-y-1 text-xs sm:text-sm text-[#B4B0A8]">
                   <li>· PC: 마우스 클릭 또는 키보드 Space / Enter(대화 진행), 숫자 1–4(선택지 결정), Esc(메뉴 닫기)</li>
-                  <li>· 모바일: 대화창 터치로 진행, 세로 배치된 선택지 버튼 터치, 상단 메뉴로 언제든 사료·변수 현황·저장 접근</li>
+                  <li>· 모바일: 대화창 터치로 진행, 세로 배치된 선택지 버튼 터치, 상단 메뉴로 언제든 연표·사료·변수 현황·저장 접근</li>
                 </ul>
               </div>
             </div>
           )}
 
-          {/* 8. SOURCES & CREDITS */}
+          {/* 8. SOURCES NOTE (FULL ARCHIVE FROM TITLE) */}
           {activeModal === 'credits' && (
-            <div className="space-y-5 text-sm text-[#C8C4BC] leading-[1.82]">
-              <div className="space-y-2">
-                <h3 className="font-editorial text-lg font-semibold text-[#F1EEE8]">
+            <div className="space-y-5">
+              <SourceArchivePanel
+                initialSourceId={initialSourceId}
+                state={state}
+                unlockAll
+                onMarkSourceRead={onMarkSourceRead}
+              />
+
+              <div className="p-4 bg-[#111316] border border-[#292D34] text-xs text-[#9E9B93] leading-relaxed space-y-1.5">
+                <p className="font-semibold text-[#DFDCD5]">
                   역사적 사실과 허구적 각색의 구분 원칙
-                </h3>
-                <p>
-                  본 게임은 1940년대 전시총동원체제(미곡 공출, 경작권 이전·증산 표창
-                  기록, 국가총동원법 및 노무동원, 창씨개명·황민화 행정, 면사무소·애국반
-                  말단 행정, 조선총독부 경찰·순사보 제도, 해방 직후 관료 청산 문제)라는
-                  검증된 역사적 제도와 구조를 배경으로 삼고 있습니다. 1944년 노무동원은
-                  모집·관 알선·국민징용령에 따른 징용의 절차적 차이를 고려해
-                  ‘노무동원 대상자 명부’를 기본 표기로 사용했습니다.
                 </p>
                 <p>
-                  가상의 마을과 등장인물(최덕수, 최순이, 김봉수, 이재문, 오 주사,
-                  박만석, 김진호, 박태수, 이정수, 오 면장, 최민석, 사토 순사부장,
-                  윤선생 등) 및 구체적 대사·가족 피해는 교육적 시뮬레이션을 위한
-                  허구적 각색입니다. 또한 면서기 편의 박태수는 채만식 《치숙》의
-                  화자와 동일 인물이 아니라 작품 속 자기합리화 논리를 차용한 창작
-                  인물이며, 《맹순사》·《미스터 방》·《논 이야기》와 이기영의 《봄》은
-                  문학적 모티브로만 참고해 실제 역사 사실과 명확히 구분했습니다.
-                </p>
-              </div>
-
-              <div className="space-y-2 pt-3 border-t border-[#292D34]">
-                <h3 className="font-editorial text-lg font-semibold text-[#F1EEE8]">
-                  사료 D–I 수록 및 무창작 원칙
-                </h3>
-                <p>
-                  사료 열람실의 사료 D–I 원문과 출처는 임의로 창작하거나 변조하지
-                  않는 원칙을 따릅니다. 현재 각 사료 항목에는 검증된 역사적 제도
-                  배경 해설과 함께, 기획자가 확정 제공하는 원문·번역문·출처를 그대로
-                  교체 수록할 수 있는 JSON 데이터 구조(
-                  <code className="font-data text-xs text-[#DFDAD0]">
-                    src/data/sources.json
-                  </code>
-                  )가 적용되어 있습니다.
-                </p>
-              </div>
-
-              <div className="space-y-2 pt-3 border-t border-[#292D34]">
-                <h3 className="font-editorial text-lg font-semibold text-[#F1EEE8]">
-                  데이터 기반 확장 구조
-                </h3>
-                <p className="text-xs sm:text-sm text-[#A9A59D]">
-                  직업(<code className="font-data">occupations.json</code>), 인물(
-                  <code className="font-data">characters.json</code>), 장소(
-                  <code className="font-data">locations.json</code>), 챕터(
-                  <code className="font-data">chapters.json</code>), 사건(
-                  <code className="font-data">events/*.json</code>), 사료(
-                  <code className="font-data">sources.json</code>), 엔딩(
-                  <code className="font-data">endings.json</code>)이 분리된 JSON 파일로
-                  관리되어 핵심 엔진을 전면 수정하지 않고도 새로운 직업·사건·사료를
-                  확장할 수 있습니다.
+                  대동아공영권 선전, 애국반·배급 통제, 《조선식량관리령》·쌀 공출,
+                  《조선농보》 경작권 이전·증산 표창 사례, 국가총동원법·노무동원(모집·관알선·징용),
+                  면사무소 행정과 순사보 제도는 실제 역사 사료에 기반합니다. 반면
+                  가상의 마을과 등장인물(최덕수, 김진호, 강동혁, 다나카 주임, 강영수,
+                  박태수, 이정수 등) 및 구체적 대사는 교육적 성찰을 위한 허구적 각색입니다.
                 </p>
               </div>
             </div>
