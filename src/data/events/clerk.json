@@ -4,10 +4,14 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "formal", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
-    "text": "1944년 봄, 경상도 송현면 면사무소. 가난한 집안을 일으키려 어렵게 면서기 자리를 얻은 김진호는 이 지배가 십 년이 갈지, 영원할지 알지 못한 채 매일 아침 잉크병을 연다.",
+    "text": "1944년 봄, 경상도 송현면 면사무소. 가난한 집안을 일으키려 어렵게 면서기 자리를 얻은 27세 김진호는 이 지배가 십 년이 갈지, 영원할지 알지 못한 채 매일 아침 잉크병을 연다.",
     "historicalBadge": {
       "kind": "fact",
       "label": "역사적 배경 · 1944년 말단 행정과 농업생산책임제"
@@ -18,44 +22,76 @@
     "id": "clerk_c1_intro_2",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "neutral", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
-    "text": "김 서기, 이번 주 안으로 관내 토지 변동과 예상 생산량을 빠짐없이 정리하게. 들말 김봉수의 논 네 두락을 최덕수가 넘겨받는다는 얘기도 들리더군. 장부가 정확해야 가을 공출 실적을 채울 수 있어.",
+    "text": "김 서기, 이번 주 안으로 관내 토지 대장과 예상 생산량을 정리하게. 들말 김봉수 논 네 두락이 최덕수 앞으로 넘어간다는 보고가 들어왔더군. 이 봄철 대장이 곧바로 가을 공출 할당과 여름 노무동원 기초 자료가 되니 숫자를 빈틈없이 맞춰야 해.",
     "next": "clerk_c1_intro_3"
   },
   {
     "id": "clerk_c1_intro_3",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
-    "text": "진호야, 새로 들어왔으니 요령 있게 해. 위에서 시키는 대로 숫자만 맞추면 월급 꼬박꼬박 나오고 어머니 모시기도 편하잖아. 일단 집이나 들말 한번 둘러보고 와.",
+    "text": "진호야, 새로 들어왔으니 요령껏 해. 면사무소 서류란 게 결국 위에서 내려온 숫자 맞추는 일이야. 어머니 모시고 월급 받으려면 긁어 부스럼 만들지 마. 일단 집이나 들말 한번 들렀다 오게.",
     "next": "__EXPLORE__"
   },
   {
     "id": "exp_clerk_c1_home",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_clerk", "expression": "neutral", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "calm", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "calm",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jinho_mother",
-    "text": "진호야, 네가 면사무소 서기가 돼서 이 어미가 얼마나 든든한지 모른다. 세상이 흉흉하니 부디 상관 말씀 잘 듣고 탈 없이 자리만 지켜 다오.",
+    "text": "진호야, 네가 면사무소 월급을 타 온 뒤로 이 어미가 처음으로 보릿고개 걱정을 덜었다. 세상이 어수선하니 부디 오 면장님 눈밖에 나지 말고 자리만 지켜 다오.",
     "next": "__EXPLORE__"
   },
   {
     "id": "exp_clerk_c1_farmland",
     "locationId": "loc_farmland",
     "characters": [
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
-      { "characterId": "char_bongsu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_bongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_deoksu",
-    "text": "김 서기 양반, 봉수 형님이 빚 때문에 논 네 두락을 내놓게 됐소. 면사무소 장부에 예상 수확량을 너무 높게 잡으면 올가을 공출에 우리 다 굶어 죽소. 사정 좀 봐주시오.",
+    "text": "김 서기 양반, 봉수 형님 논 네 두락 거래 때문에 나오셨소? 면사무소 장부에 예상 수확량을 실제보다 부풀려 적으면 올가을 공출에 우리 식구 다 굶어 죽소. 제발 현장 사정대로만 적어 주시오.",
     "historicalBadge": {
       "kind": "source",
       "label": "사료 F 확인 · 농지 이전과 공출 행정",
@@ -69,87 +105,151 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "formal", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
-    "text": "김 서기, 들말 토지 대장 정리 다 됐나? 김봉수 논 네 두락을 포함한 소작지들은 올해 증산 목표를 올려서 기록하라는 군청 지침이 내려왔네. 실제 수확이 덜 나오더라도 장부상 목표를 높여 둬야 해.",
+    "text": "김 서기, 들말 토지 대장 마감이 코앞일세. 군청에서 농업생산책임제 목표를 두 할 올려 잡으라는 공문이 내려왔어. 김봉수 논 네 두락을 포함한 들말 소작지 수확 예상치를 전부 두 할씩 올려서 정서하게.",
     "next": "clerk_c1_main_2"
   },
   {
     "id": "clerk_c1_main_2",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "papers", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
-    "text": "진호야, 내 장부 일부에 숫자가 빠졌는데 면장님께 들키면 곤란해. 어차피 우리가 총 칼 드는 것도 아니고 종이에 글씨만 쓰는 일인데, 그냥 시키는 대로 올리자고.",
+    "text": "진호야, 작게 말할게. 내가 맡은 윗말 대장에 두 필지 계산이 틀렸는데 지금 고칠 시간이 없어. 어차피 우리가 직접 곡식을 뺏는 것도 아니고 종이에 숫자만 적는 거니까, 시키는 대로 올려서 같이 넘어가자.",
     "next": "clerk_c1_main_3"
   },
   {
     "id": "clerk_c1_main_3",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
-    "text": "책상 위 대장에는 최덕수와 김봉수를 비롯한 들말 농민들의 이름이 빼곡하다. 먹줄 한 줄이 가을 공출 할당을 결정짓는다. 김진호는 어떻게 처리할 것인가.",
+    "text": "사무실 안에는 오 면장과 서기 서너 명이 모두 자리에 앉아 있고, 창밖 민원실에는 볼일을 보러 온 마을 이장과 주민들이 서성이고 있다. 지금 대장에 적는 숫자가 올가을 들말 농민들의 공출 할당량으로 확정된다.",
     "choices": [
       {
         "id": "c1_a",
-        "text": "오 면장의 지시에 따라 마을의 토지와 상향된 생산량 목표를 빠짐없이 정확히 기록한다.",
-        "subtext": "안정적인 직장 생활과 상관의 신뢰를 우선 지킨다.",
+        "text": "붓을 들어 대장을 채운다. “군청 지침대로 두 할 상향해 정리했습니다. 도장 올리겠습니다.”",
         "effects": {
-          "variables": { "livelihood": 2, "cooperation": 2, "communityBurden": 1, "autonomy": -1, "solidarity": -1 },
-          "relationships": { "char_myeonjang": 10, "char_deoksu": -8 },
-          "setFlags": ["c1_a"]
+          "variables": {
+            "livelihood": 2,
+            "cooperation": 2,
+            "communityBurden": 1,
+            "autonomy": -1,
+            "solidarity": -1
+          },
+          "relationships": {
+            "char_myeonjang": 10,
+            "char_deoksu": -8
+          },
+          "setFlags": [
+            "c1_a"
+          ]
         },
-        "logSummary": "지시에 따라 마을 토지와 상향된 생산량 목표를 빠짐없이 장부에 기록했다.",
+        "logSummary": "군청 지침대로 예상 생산량을 두 할 올려 토지 대장을 작성하고 결재를 올렸다.",
         "next": "clerk_c1_react_a"
       },
       {
         "id": "c1_b",
-        "text": "농민에게 과도한 공출을 떠넘기는 행정 지침이 부당하다고 사무실 안에서 공개적으로 문제 제기하며 허위 증산 기록을 거부한다.",
-        "subtext": "면장의 문책과 직장 내 불이익, 나아가 가족에게까지 압박이 미칠 수 있다.",
+        "text": "붓을 내려놓고 대장을 덮으며 사무실 직원들 앞에서 말한다. “들말 논 사정을 직접 보고 왔습니다. 거짓 수확량을 적어 농민을 굶기는 장부에는 도장을 못 찍겠습니다.”",
         "effects": {
-          "variables": { "livelihood": -3, "cooperation": -3, "communityBurden": -1, "autonomy": 3, "solidarity": 2 },
-          "relationships": { "char_myeonjang": -22, "char_deoksu": 14, "char_jinho_mother": -8 },
-          "setFlags": ["c1_b", "clerk_public_resist"],
+          "variables": {
+            "livelihood": -3,
+            "cooperation": -3,
+            "communityBurden": -1,
+            "autonomy": 3,
+            "solidarity": 2
+          },
+          "relationships": {
+            "char_myeonjang": -22,
+            "char_deoksu": 14,
+            "char_jinho_mother": -8
+          },
+          "setFlags": [
+            "c1_b",
+            "clerk_public_resist"
+          ],
           "delayedEffect": {
             "id": "del_c1_b",
             "triggerChapter": 2,
-            "title": "면사무소 내 징계 경고와 어머니의 걱정",
-            "description": "행정 지침에 공개 항의한 뒤 오 면장의 눈밖에 나 수당이 깎이고, 주재소에서 집안 사정을 묻고 갔다는 소식이 전해졌다.",
-            "variables": { "livelihood": -1 },
+            "title": "시말서 처분과 수당 삭감",
+            "description": "토지 대장 작성을 거부한 대가로 감봉과 시말서 처분을 받았고, 오 면장이 주재소에 진호의 동향을 알리면서 어머니가 불안에 떨게 되었다.",
+            "variables": {
+              "livelihood": -1
+            },
             "flag": "clerk_c1_retaliation"
           }
         },
-        "logSummary": "주민에게 불리한 행정 지침에 공개적으로 문제 제기하고 부당한 기록 작성을 거부했다.",
+        "logSummary": "사무실 직원들 앞에서 대장을 덮고 허위 증산 기록 작성을 공개적으로 거부했다.",
         "next": "clerk_c1_react_b"
       },
       {
         "id": "c1_c",
-        "text": "동료 박태수의 장부 누락 실수를 면장에게 보고하고, 내가 완벽히 정리해 면사무소 내 입지를 다진다.",
-        "subtext": "타인의 실수를 발판 삼아 상급자의 신임과 승진 기회를 노린다.",
+        "text": "오 면장 책상 앞에 박태수의 계산 오류를 짚어 올린다. “윗말 대장에 누락이 있어 제가 바로잡았습니다. 들말 대장도 지침대로 마쳤습니다.”",
         "effects": {
-          "variables": { "livelihood": 2, "cooperation": 3, "communityBurden": 3, "autonomy": -2, "solidarity": -3 },
-          "relationships": { "char_myeonjang": 15, "char_taesu": -24 },
-          "setFlags": ["c1_c"]
+          "variables": {
+            "livelihood": 2,
+            "cooperation": 3,
+            "communityBurden": 3,
+            "autonomy": -2,
+            "solidarity": -3
+          },
+          "relationships": {
+            "char_myeonjang": 15,
+            "char_taesu": -24
+          },
+          "setFlags": [
+            "c1_c"
+          ]
         },
-        "logSummary": "동료 직원의 업무 실수를 보고해 면사무소 내 자신의 입지를 강화했다.",
+        "logSummary": "동료 박태수의 계산 오류를 면장에게 보고하고 지침대로 대장을 정리해 신임을 얻었다.",
         "next": "clerk_c1_react_c"
       },
       {
         "id": "c1_d",
-        "text": "토지 변동 확인을 핑계로 최종 대장 제출을 지연시키고, 들말 농민들에게 공출 기준 변경 소식을 미리 알려 준다.",
-        "subtext": "정면 충돌을 피하면서 주민들이 대비할 작은 틈을 만든다.",
+        "text": "“김봉수 논 경계 확인이 덜 끝났습니다.” 서류 보완을 핑계로 제출을 늦추고, 퇴근길 들말에 들러 공출 기준 인상 소식을 미리 전한다.",
         "effects": {
-          "variables": { "livelihood": -1, "cooperation": -1, "communityBurden": -1, "autonomy": 1, "solidarity": 1 },
-          "relationships": { "char_deoksu": 10, "char_myeonjang": -6 },
-          "setFlags": ["c1_d"]
+          "variables": {
+            "livelihood": -1,
+            "cooperation": -1,
+            "communityBurden": -1,
+            "autonomy": 1,
+            "solidarity": 1
+          },
+          "relationships": {
+            "char_deoksu": 10,
+            "char_myeonjang": -6
+          },
+          "setFlags": [
+            "c1_d"
+          ]
         },
-        "logSummary": "행정 절차를 지연시키고 들말 주민들에게 공출 기준 변경 정보를 미리 전달했다.",
+        "logSummary": "경계 확인을 핑계로 대장 제출을 지연시키고 들말 농민들에게 공출 인상 소식을 미리 알렸다.",
         "next": "clerk_c1_react_d"
       }
     ]
@@ -158,62 +258,127 @@
     "id": "clerk_c1_react_a",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_myeonjang", "expression": "formal", "position": "left" },
-      { "characterId": "char_clerk", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_myeonjang",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_clerk",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
-    "text": "좋아, 깔끔하게 정리됐군. 김 서기는 일머리가 있어. 이대로만 하면 내년 주사 승진도 멀지 않겠어.",
+    "text": "군더더기 없이 깔끔하군. 김 서기는 행정이 뭔지 알아. 이 대장이 군청에 들어가면 올가을 공출 실적은 걱정이 없겠어.",
     "next": "clerk_c1_end"
   },
   {
     "id": "clerk_c1_react_b",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "left" },
-      { "characterId": "char_clerk", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "center"
+      },
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
-    "text": "자네, 제정신인가! 총독부 전시 지침에 말단 서기가 토를 달아? 당장 시말서를 쓰고 근신하게. 집안 식구들 얼굴 볼 생각은 안 하나!",
+    "text": "말단 서기가 전시 지침을 거부해? 박 서기, 진호 책상에서 대장 가져다 자네가 오늘 안으로 끝내게! 김진호, 자네는 시말서 쓰고 이달 수당은 삭감이다. 네 하나 빠진다고 면사무소 일이 멈출 줄 알았느냐!",
     "next": "clerk_c1_react_b2"
   },
   {
     "id": "clerk_c1_react_b2",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "ledger",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_taesu",
+    "text": "박태수는 아무 일 없었다는 듯 진호의 책상에서 토지 대장을 가져가 두 할 올린 숫자를 채워 넣기 시작했다. “진호야, 봤지? 네가 거절해도 도장은 내 손으로 찍혀. 괜히 네 월급이랑 어머님만 고생시키는 거야.”",
+    "next": "clerk_c1_react_b3"
+  },
+  {
+    "id": "clerk_c1_react_b3",
+    "locationId": "loc_farmland",
+    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_deoksu",
-    "text": "김 서기 양반… 면장한테 크게 혼났다는 소문을 들었소. 우리 때문에 괜히 불이익 당한 것 같아 미안하오. 그래도 면사무소 안에 바른말 해 주는 사람이 있다는 게 고맙구려.",
+    "text": "퇴근길 들말 어귀에서 마주친 최덕수가 낮게 말을 걸었다. “아까 면사무소 민원실에 갔던 이장한테 들었소. 결국 박 서기가 대장을 올렸다지만… 그 안에서 우리 사정을 대변해 준 사람이 있다는 것만으로도 마음이 다르오.”",
     "next": "clerk_c1_end"
   },
   {
     "id": "clerk_c1_react_c",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_myeonjang", "expression": "formal", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_myeonjang",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
-    "text": "…김진호, 자네 참 무서운 사람이구먼. 그렇게 동료 등 밟고 올라가면 마음이 편한가 보지?",
+    "text": "면장에게 크게 꾸중을 들은 박태수가 이를 악물고 지나갔다. “김진호, 참 출세에 눈이 멀었구나. 동료 등 밟고 올라간 자리가 언제까지 안전할지 두고 보자.”",
     "next": "clerk_c1_end"
   },
   {
     "id": "clerk_c1_react_d",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
-    "text": "처리가 왜 이렇게 굼뜬가? 다음 업무는 군청 기한이 엄격하니 이번처럼 늦장을 부리면 곤란하네.",
+    "text": "경계 확인에 며칠씩이나 걸리나? 군청 독촉이 빗발치니 다음 공문은 절대 늦추지 말게.",
     "next": "clerk_c1_end"
   },
   {
     "id": "clerk_c1_end",
     "locationId": "loc_township_office",
     "speakerName": "해설",
-    "text": "봄의 토지 대장이 군청으로 넘어간 지 얼마 지나지 않아, 1944년 여름 더위와 함께 더 무거운 공문이 면사무소 책상 위에 떨어졌다. 마을 청년 노무동원 명부 작성 지시였다.",
+    "text": "봄철 토지 대장이 군청에 접수되자, 군청은 그 가구별 호적과 경작 규모 자료를 토대로 여름 노무동원 할당 인원을 송현면에 배정했다. 행정의 다음 단계가 책상 위로 떨어졌다.",
     "next": "__NEXT_CHAPTER__"
   },
   {
@@ -221,13 +386,39 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
-    "text": "1944년 여름. 군청에서 관내 노무동원 대상자를 선발해 명부를 제출하라는 긴급 공문이 내려왔다.",
+    "text": "1944년 여름. 군청에서 봄철 토지·호적 대장을 근거로 관내 청년 노무동원 대상자 명부를 작성하라는 긴급 공문이 내려왔다.",
     "conditionalNext": [
-      { "condition": { "requiredFlags": ["c1_b"] }, "next": "clerk_c2_intro_b" },
-      { "condition": { "requiredFlags": ["c1_c"] }, "next": "clerk_c2_intro_c" }
+      {
+        "condition": {
+          "requiredFlags": [
+            "c1_b"
+          ]
+        },
+        "next": "clerk_c2_intro_b"
+      },
+      {
+        "condition": {
+          "requiredFlags": [
+            "c1_c"
+          ]
+        },
+        "next": "clerk_c2_intro_c"
+      },
+      {
+        "condition": {
+          "requiredFlags": [
+            "c1_d"
+          ]
+        },
+        "next": "clerk_c2_intro_d"
+      }
     ],
     "next": "clerk_c2_intro_a"
   },
@@ -235,44 +426,116 @@
     "id": "clerk_c2_intro_a",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
-    "text": "김 서기, 이번 노무동원 명부는 작성되는 즉시 주재소에도 사본을 넘겨야 하네. 대상자들이 도망치지 못하게 강동혁 순사보 쪽에서 바로 추적에 들어갈 테니 빈틈없이 적게.",
+    "text": "김 서기, 봄철 토지 대장을 잘 정리했으니 이번 노무동원 명부도 자네가 맡게. 명부가 확정되는 대로 주재소 강동혁 순사보에게 사본을 넘겨 도주를 막아야 하네.",
     "next": "__EXPLORE__"
   },
   {
     "id": "clerk_c2_intro_b",
     "locationId": "loc_home",
+    "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jinho_mother",
-    "text": "진호야, 어제 주재소 순사가 동네를 돌며 우리 집 문 앞을 기웃거리고 갔단다. 면사무소에서 무슨 일 있었니? 수당도 줄었다던데… 제발 네 몸이랑 우리 집안부터 생각해 다오.",
+    "text": "진호야, 어제 주재소 순사가 마당까지 들어와 네가 집에서 누구랑 만나는지 묻고 갔단다. 수당까지 깎였는데 대체 면사무소에서 왜 반항을 한 게냐! 오늘 면장님이 널 다시 부르셨다는데, 제발 이번엔 순순히 따르거라.",
+    "next": "clerk_c2_intro_b2"
+  },
+  {
+    "id": "clerk_c2_intro_b2",
+    "locationId": "loc_township_office",
+    "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_myeonjang",
+    "text": "출근하자 오 면장이 노무동원 공문을 책상에 던졌다. “봄철 실수를 만회할 마지막 기회다. 이번 동원 명부만큼은 자네 손으로 완벽히 정서해서 주재소에 넘기게. 또 딴소리를 하면 그땐 파면뿐이 아닐 걸세.”",
     "next": "__EXPLORE__"
   },
   {
     "id": "clerk_c2_intro_c",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "formal", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "formal", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "formal",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
-    "text": "자네가 꼼꼼하니 이번 노무동원 명부도 직접 맡게. 주재소에서 명단을 기다리고 있으니 지체 없이 넘겨야 하네.",
+    "text": "박태수보다 자네가 훨씬 믿음직하군. 이번 노무동원 명부도 직접 맡아 주재소에 지체 없이 넘기게. 이번 일만 잘 마치면 가을에 주사 승진을 추천하겠네.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "clerk_c2_intro_d",
+    "locationId": "loc_township_office",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_myeonjang",
+    "text": "봄철 대장 제출을 늦춰서 군청에 한소리 들었네. 이번 노무동원 명부는 주재소에서 기다리고 있으니 단 하루도 지체하지 말고 정서하게.",
     "next": "__EXPLORE__"
   },
   {
     "id": "exp_clerk_c2_office",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "neutral", "position": "left" },
-      { "characterId": "char_taesu", "expression": "ledger", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "ledger",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
-    "text": "군청에서 창씨개명 미이행자랑 야학 참여 청년들을 노무동원 우선 대상으로 올리라는 비공식 지침까지 내려왔어. 명단에 이름 한번 올라가면 끝장인 거지.",
+    "text": "군청 비공식 지침 봤지? 창씨개명 안 한 집이랑 야학에서 글 가르치는 청년들을 동원 1순위로 올리라잖아. 이름 한 줄 올라가면 주재소에서 바로 소환장을 들이민다고.",
     "historicalBadge": {
       "kind": "source",
       "label": "사료 H 확인 · 황민화·창씨개명과 동원 행정",
@@ -285,11 +548,19 @@
     "id": "exp_clerk_c2_meeting",
     "locationId": "loc_meeting_room",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jeongsu",
-    "text": "진호야, 오랜만이다. 마을 애들에게 글 조금 가르친 걸로 주재소가 자꾸 눈독을 들이는구나. 넌 면사무소에서 지내기가 어떠니? 네가 적는 서류 뒤에 사람들이 있다는 것만은 잊지 말아 다오.",
+    "text": "진호야, 오랜만이구나. 요새 주재소에서 야학 문 앞을 자꾸 기웃거리더라. 네가 면사무소에서 적는 호적과 명부 뒤에 우리 마을 사람들 얼굴이 있다는 것만은 잊지 말아 다오.",
     "next": "__EXPLORE__"
   },
   {
@@ -297,11 +568,19 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_desk_interior_128ed0c9_30eda3be.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
-    "text": "호적부에서 추린 1차 동원 명부다. 봐라, 야학에 드나들던 이정수 녀석 이름도 들어 있군. 주재소에서도 예의주시하던 청년이니 내일 오전까지 정서해서 도장을 찍어 올리게.",
+    "text": "호적부에서 추린 1차 노무동원 명부다. 야학에 드나들던 이정수 녀석 이름이 맨 위에 있군. 주재소 다나카 주임도 눈여겨보던 자이니 내일 아침 주재소에 넘길 정본에 빠짐없이 적어 도장 찍어 올리게.",
     "historicalBadge": {
       "kind": "source",
       "label": "사료 E 확인 · 노무동원 대상자 명부 작성",
@@ -314,65 +593,136 @@
     "id": "clerk_c2_main_2",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_taesu",
+    "text": "진호야, 소꿉친구 이름이라 손이 떨리는 건 안다. 근데 네가 안 적으면 내가 적을 뿐이고, 군청 인원은 어차피 채워져야 해. 어머님 생각해서라도 괜한 객기 부리지 마.",
+    "next": "clerk_c2_main_3"
+  },
+  {
+    "id": "clerk_c2_main_3",
+    "locationId": "loc_township_office",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
-    "text": "명부 한가운데 적힌 소꿉친구 이정수의 이름. 이 명부가 그대로 넘어가면 주재소 순사보 강동혁이 이정수를 추적하게 된다. 김진호의 펜 끝이 멈춘다.",
+    "text": "먹물이 마르지 않은 붓끝 아래 소꿉친구 이정수의 이름이 놓여 있다. 이 종이 한 장이 주재소로 넘어가면 강동혁 순사보가 이정수를 추적하게 된다. 진호는 어떤 결정을 내릴 것인가.",
     "choices": [
       {
         "id": "c2_a",
-        "text": "상급자의 지시에 따라 이정수의 이름을 그대로 정서해 동원 명부를 제출한다.",
-        "subtext": "규정과 자리를 지키지만 이정수는 즉시 동원과 경찰 추적 대상이 된다.",
+        "text": "숨을 고른 뒤 이정수의 이름을 정본 맨 위에 옮겨 적는다. “명부 정서를 마쳤습니다. 주재소로 넘기겠습니다.”",
         "effects": {
-          "variables": { "livelihood": 2, "cooperation": 2, "communityBurden": 1, "autonomy": -1, "solidarity": -1 },
-          "relationships": { "char_myeonjang": 8, "char_jeongsu": -18 },
-          "setFlags": ["c2_a", "clerk_listed_jeongsu"]
+          "variables": {
+            "livelihood": 2,
+            "cooperation": 2,
+            "communityBurden": 1,
+            "autonomy": -1,
+            "solidarity": -1
+          },
+          "relationships": {
+            "char_myeonjang": 8,
+            "char_jeongsu": -18
+          },
+          "setFlags": [
+            "c2_a",
+            "clerk_listed_jeongsu"
+          ]
         },
-        "logSummary": "지시에 따라 소꿉친구 이정수의 이름을 노무동원 명부에 그대로 기록했다.",
+        "logSummary": "지시에 따라 소꿉친구 이정수의 이름을 노무동원 명부 정본에 그대로 기록해 넘겼다.",
         "next": "clerk_c2_react_a"
       },
       {
         "id": "c2_b",
-        "text": "강제 노무동원 명부 작성 자체가 부당하다고 오 면장 앞에서 공개적으로 문제 제기하며 명부 작성을 거부한다.",
-        "subtext": "직장 내 징계와 업무 제한은 물론, 어머니와 집안에까지 감시와 압박이 닥칠 수 있다.",
+        "text": "명부 초안을 오 면장 책상 위에 도로 올려놓으며 말한다. “산 사람을 탄광으로 끌고 가는 명부는 제 손으로 못 씁니다. 이 업무는 거부하겠습니다.”",
         "effects": {
-          "variables": { "livelihood": -3, "cooperation": -3, "communityBurden": -1, "autonomy": 3, "solidarity": 2 },
-          "relationships": { "char_myeonjang": -25, "char_jeongsu": 20, "char_jinho_mother": -12 },
-          "setFlags": ["c2_b", "clerk_public_resist", "clerk_c2_refused_roster"],
+          "variables": {
+            "livelihood": -3,
+            "cooperation": -3,
+            "communityBurden": -1,
+            "autonomy": 3,
+            "solidarity": 2
+          },
+          "relationships": {
+            "char_myeonjang": -25,
+            "char_jeongsu": 20,
+            "char_jinho_mother": -12
+          },
+          "setFlags": [
+            "c2_b",
+            "clerk_public_resist",
+            "clerk_c2_refused_roster"
+          ],
           "delayedEffect": {
             "id": "del_c2_b",
             "triggerChapter": 3,
-            "title": "명부 작성 거부의 파장과 어머니의 불안",
-            "description": "업무가 제한되고 주재소에서 집안을 조사하고 가면서 어머니가 큰 충격과 불안에 휩싸였다.",
-            "variables": { "livelihood": -1 },
+            "title": "업무 배제와 가정 배급 통제",
+            "description": "명부 작성을 거부한 뒤 진호는 한직으로 밀려났고, 주재소가 집을 수시로 살피며 어머니의 식량 배급표까지 까다롭게 통제하기 시작했다.",
+            "variables": {
+              "livelihood": -1
+            },
             "flag": "clerk_c2_family_pressure"
           }
         },
-        "logSummary": "노무동원 명부 작성의 부당성을 상급자에게 공개 제기하고 업무 수행을 거부했다.",
+        "logSummary": "오 면장 앞에 명부 초안을 되돌려 놓으며 노무동원 명부 작성 업무를 공개 거부했다.",
         "next": "clerk_c2_react_b"
       },
       {
         "id": "c2_c",
-        "text": "이정수를 빼는 대신, 배경이 약한 아랫말의 다른 청년을 추천해 할당 인원을 그대로 채운다.",
-        "subtext": "내 자리와 친분은 챙기지만 힘없는 다른 이웃에게 동원 부담을 떠넘긴다.",
+        "text": "“이정수는 몸이 약해 부적합합니다. 대신 아랫말 소작농 집 둘째가 건장하니 그 아이로 채우시지요.”",
         "effects": {
-          "variables": { "livelihood": 2, "cooperation": 3, "communityBurden": 3, "autonomy": -2, "solidarity": -3 },
-          "relationships": { "char_myeonjang": 6, "char_deoksu": -18, "char_jeongsu": -10 },
-          "setFlags": ["c2_c"]
+          "variables": {
+            "livelihood": 2,
+            "cooperation": 3,
+            "communityBurden": 3,
+            "autonomy": -2,
+            "solidarity": -3
+          },
+          "relationships": {
+            "char_myeonjang": 6,
+            "char_deoksu": -18,
+            "char_jeongsu": -10
+          },
+          "setFlags": [
+            "c2_c"
+          ]
         },
-        "logSummary": "이정수 대신 다른 마을 청년을 추천해 노무동원 할당 인원을 충당했다.",
+        "logSummary": "이정수를 빼는 대신 힘없는 아랫말 소작농 가구의 청년을 추천해 할당 인원을 채웠다.",
         "next": "clerk_c2_react_c"
       },
       {
         "id": "c2_d",
-        "text": "호적 확인 오류를 핑계로 명부 일부를 누락하고 제출을 지연시키며 이정수에게 피할 틈을 준다.",
-        "subtext": "겉으로는 절차를 따르는 척하지만 나중에 발각될 위험을 감수한다.",
+        "text": "이정수의 본적란에 일부러 오기를 남겨 군청 반송을 유도한 뒤, 어둠을 틈타 야학 문틈에 '명부 확정 임박' 쪽지를 밀어 넣는다.",
         "effects": {
-          "variables": { "livelihood": -1, "cooperation": -1, "communityBurden": -1, "autonomy": 1, "solidarity": 1 },
-          "relationships": { "char_jeongsu": 14, "char_myeonjang": -8 },
-          "setFlags": ["c2_d", "clerk_delayed_roster"]
+          "variables": {
+            "livelihood": -1,
+            "cooperation": -1,
+            "communityBurden": -1,
+            "autonomy": 1,
+            "solidarity": 1
+          },
+          "relationships": {
+            "char_jeongsu": 14,
+            "char_myeonjang": -8
+          },
+          "setFlags": [
+            "c2_d",
+            "clerk_delayed_roster"
+          ]
         },
-        "logSummary": "명부 일부를 누락하고 제출을 지연시켜 이정수가 피할 시간을 벌어 주었다.",
+        "logSummary": "서류 오기를 남겨 제출을 지연시키고 야학 문틈으로 이정수에게 경고 쪽지를 전했다.",
         "next": "clerk_c2_react_d"
       }
     ]
@@ -381,62 +731,127 @@
     "id": "clerk_c2_react_a",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "right"
+      }
     ],
     "speakerId": "char_police_asst",
-    "text": "명부 사본 받았습니다, 김 서기님. 이정수 주소지도 확인됐으니 주재소에서 곧장 움직이겠습니다.",
+    "text": "다음 날 아침, 사본을 수령하러 온 강동혁 순사보가 명단을 훑어보았다. “이정수 주소지까지 정확하군요. 고생하셨습니다, 김 서기님. 주재소에서 곧장 움직이겠습니다.” 진호는 차마 고개를 들지 못했다.",
     "next": "clerk_c2_end"
   },
   {
     "id": "clerk_c2_react_b",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "center"
+      },
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
-    "text": "기어코 항명을 하는구나! 박 서기, 이 명부는 자네가 대신 마무리해 주재소에 넘기게. 김진호 자네는 당분간 주요 업무에서 배제하고 군청과 주재소에 보고하겠네!",
+    "text": "기어코 정면으로 항명하는구나! 박 서기, 지금 당장 자네가 이정수 이름을 정서해 주재소로 보내게. 김진호는 오늘부로 호적·동원 업무에서 완전히 배제하고, 불온 언동으로 주재소에 통보하겠다!",
     "next": "clerk_c2_react_b2"
   },
   {
     "id": "clerk_c2_react_b2",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "ledger",
+        "position": "right"
+      }
+    ],
+    "speakerName": "해설",
+    "text": "진호가 구석 자리로 밀려난 사이, 박태수는 그날 오후 안에 명부를 완성해 주재소로 넘겼다. 진호의 거부는 면사무소라는 거대한 행정 기계를 단 하루도 멈추지 못했다.",
+    "next": "clerk_c2_react_b3"
+  },
+  {
+    "id": "clerk_c2_react_b3",
+    "locationId": "loc_meeting_room",
+    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jeongsu",
-    "text": "진호야… 면사무소에서 네가 명부 작성을 거부했다는 소식을 들었어. 다른 서기가 대신 넘겨서 결국 쫓기는 신세는 됐지만, 소문이 먼저 퍼진 덕분에 하루 여유를 벌었다. 다만 네 어머니가 걱정이다.",
+    "text": "해 질 녘, 퇴근하는 진호를 골목 어귀에서 기다리던 이정수가 낮게 말했다. “면사무소 급사 아이에게 네가 명부를 거부하다 쫓겨났다는 소식을 들었어. 다른 서기가 대신 넘겼더라도 네 소란 덕분에 하루 먼저 눈치챘다. 고맙다… 하지만 네 어머니가 무사할지 걱정이다.”",
     "next": "clerk_c2_end"
   },
   {
     "id": "clerk_c2_react_c",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "papers", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
-    "text": "아랫말 가난한 집 둘째로 바꿔 넣었군. 인원만 맞으면 면장님도 모른 척 넘어가실 거야. 대신 그 집 부모 울음소리는 귀 막고 지내야겠지.",
+    "text": "아랫말 가난한 집 둘째로 바꿔 넣었군. 인원만 맞으면 면장님도 모른 척 넘어가실 거야. 대신 며칠 뒤 소집장 받아 들고 울부짖을 그 집 부모 얼굴은 마주치지 않게 조심해.",
     "next": "clerk_c2_end"
   },
   {
     "id": "clerk_c2_react_d",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
-    "text": "진호야, 호적 누락 핑계로 며칠 미뤘다며? 주재소에서도 이정수 이름 빠진 걸 눈치채면 가만 안 있을 텐데… 조심해.",
+    "text": "진호야, 본적 오기 때문에 명부가 군청에서 되돌아왔다며? 면장님이 눈치채고 크게 화내셨어. 며칠은 벌었을지 몰라도 결국 다시 올려야 해.",
     "next": "clerk_c2_end"
   },
   {
     "id": "clerk_c2_end",
     "locationId": "loc_township_office",
     "speakerName": "해설",
-    "text": "1944년 가을이 깊어지며 공출과 동원 압박은 정점에 달했다. 면사무소에도 군청의 추궁이 빗발치며 마지막 갈림길이 다가왔다.",
+    "text": "여름 동원 명부가 주재소로 넘어가고 가을 추수철이 되자, 봄철 토지 대장을 근거로 한 공출 수납 실적이 송현면 사무소의 마지막 시험대가 되었다.",
     "next": "__NEXT_CHAPTER__"
   },
   {
@@ -444,14 +859,44 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
-    "text": "1944년 늦가을. 추수는 끝났지만 송현면의 공출과 동원 실적은 군청 목표에 미치지 못하고 있다.",
+    "text": "1944년 늦가을. 들말에서는 공출 수납이 지지부진하고, 주재소에서는 명부에 오른 이정수를 찾느라 마을이 흉흉하다.",
     "conditionalNext": [
-      { "condition": { "requiredFlags": ["c2_b"] }, "next": "clerk_c3_intro_b" },
-      { "condition": { "requiredFlags": ["c2_d"] }, "next": "clerk_c3_intro_d" }
+      {
+        "condition": {
+          "requiredFlags": [
+            "c2_b"
+          ]
+        },
+        "next": "clerk_c3_intro_b"
+      },
+      {
+        "condition": {
+          "requiredFlags": [
+            "c2_c"
+          ]
+        },
+        "next": "clerk_c3_intro_c"
+      },
+      {
+        "condition": {
+          "requiredFlags": [
+            "c2_d"
+          ]
+        },
+        "next": "clerk_c3_intro_d"
+      }
     ],
     "next": "clerk_c3_intro_default"
   },
@@ -459,65 +904,128 @@
     "id": "clerk_c3_intro_b",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jinho_mother",
-    "text": "진호야… 네 뜻이 옳다는 건 어미도 안다. 하지만 배급표가 줄고 순사가 집 앞을 감시하는데, 아무 잘못도 없는 이 늙은 어미까지 이런 불안을 겪어야 하니? 제발 이번만은 면장님 말씀을 거스르지 말아 다오.",
+    "text": "진호야… 어제 배급소에 갔더니 우리 집 식량 배급표가 절반으로 줄었더라. 네가 친구를 지키려 한 뜻이 바른 줄은 어미도 안다. 그런데 결국 명부는 박 서기가 넘겼고, 남은 건 순사 감시와 굶주림뿐 아니냐! 이 늙은 어미까지 같이 죽자는 게냐!",
     "next": "clerk_c3_intro_b2"
   },
   {
     "id": "clerk_c3_intro_b2",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
-    "text": "어머니… 죄송합니다. 어머니를 편히 모시려고 들어간 직장인데, 오히려 어머니께 두려움을 안겨 드렸습니다.",
+    "text": "어머니… 죄송합니다. 제가 막을 수 있을 줄 알았는데 제도는 멈추지 않았고, 그 대가만 어머니께 돌아갔습니다.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "clerk_c3_intro_c",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_jinho_mother",
+    "text": "진호야, 아랫말 소작농 집 둘째가 징용에 끌려가며 우리 집 쪽을 노려보더란다. 네가 면사무소에서 명부를 바꿨다는 소문이 돌던데… 사실이냐?",
     "next": "__EXPLORE__"
   },
   {
     "id": "clerk_c3_intro_d",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jinho_mother",
-    "text": "진호야, 요즘 밤잠을 설치는구나. 면사무소에서 실적이 안 나와 면장님이 크게 화를 냈다던데… 몸 상할까 걱정이다.",
+    "text": "진호야, 요즘 밥도 못 먹고 밤잠을 설치는구나. 군청에서 실적이 모자란다고 면장님이 크게 노하셨다던데, 제발 모난 돌 되지 말고 조심하거라.",
     "next": "__EXPLORE__"
   },
   {
     "id": "clerk_c3_intro_default",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "calm", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "calm",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jinho_mother",
-    "text": "마을 인심이 날로 흉흉해지는구나. 들말에서는 공출 때문에 난리고 주재소에서는 이정수를 찾는대. 너는 부디 구설에 오르지 말고 조심하거라.",
+    "text": "들말은 공출 독촉에 울음바다고, 주재소에서는 이정수를 잡겠다고 난리란다. 네가 작성한 서류가 사람들 목을 조인다고 수군거리던데… 마음 굳게 먹고 자리 지켜라.",
     "next": "__EXPLORE__"
   },
   {
     "id": "exp_clerk_c3_home",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_jinho_mother", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerId": "char_jinho_mother",
-    "text": "전쟁이 언제 끝날지 아무도 모른단다. 내년에도, 십 년 뒤에도 이 세상이 그대로라면 우리 식구가 기댈 데는 네 자리뿐이야.",
+    "text": "전쟁이 언제 끝날지 아무도 모른다. 십 년 뒤에도 이 세상이 그대로라면 우리 식구가 기댈 데는 네 자리뿐이야.",
     "next": "__EXPLORE__"
   },
   {
     "id": "exp_clerk_c3_police",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_clerk", "expression": "neutral", "position": "left" },
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "right"
+      }
     ],
     "speakerId": "char_police_asst",
-    "text": "김 서기님, 공출 미납 농가 명단과 이정수 호적 자료는 주재소에서 넘겨받았습니다. 다나카 주임님이 면사무소와 합동으로 강하게 단속하라고 불호령을 내리셨습니다.",
+    "text": "김 서기님, 면사무소에서 넘겨준 공출 미납 명단과 이정수 호적 자료로 주재소 수색이 시작됐습니다. 서류 한 줄이 그대로 현장 출동 명령이 되는군요.",
     "historicalBadge": {
       "kind": "source",
       "label": "사료 G 확인 · 경찰 단속과 행정기관의 연계",
@@ -531,79 +1039,143 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_interior_c92dcc23_f7adb1ca.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_myeonjang", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
-    "text": "김 서기! 군청에서 송현면 공출과 동원 실적이 최하위라고 질책이 내려왔네. 이번에 실적을 끌어올리면 자네를 정식 주사로 올리겠지만, 또 미적거리면 당장 파면이고 집안 배급도 장담 못 하네!",
+    "text": "김 서기! 군청에서 송현면 공출과 동원 실적이 관내 꼴찌라고 불호령이 떨어졌네. 오늘 안으로 미납 농가 독촉장을 돌려 목표량을 채워 오게. 해내면 정식 주사 승진 추천서에 도장을 찍겠지만, 또 거역하면 즉각 파면이고 집안 배급도 끝일세!",
     "next": "clerk_c3_main_2"
   },
   {
     "id": "clerk_c3_main_2",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "papers", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
-    "text": "진호야, 힘없는 빈농 가구 몇 집만 강하게 독촉하면 목표량은 금방 채워. 이번 기회에 면장님 눈도장 확실히 찍자고.",
+    "text": "진호야, 지주 박만석 영감 집은 면장님이 건드리지 말라셨어. 대신 항의 못 하는 들말 빈농 가구 몇 집만 주재소 대동해서 쥐어짜면 오늘 안에 실적이 딱 맞아떨어져. 승진 놓치지 마.",
     "next": "clerk_c3_main_3"
   },
   {
     "id": "clerk_c3_main_3",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
-    "text": "창밖으로는 공출 가마니를 짊어지고 힘겹게 걸어가는 최덕수와 마을 농민들이 보인다. 승진과 어머니의 안정, 그리고 부당한 행정 강요 앞에서 김진호는 마지막 선택을 내린다.",
+    "text": "면사무소 앞마당에는 공출 연기를 청하러 온 최덕수와 들말 농민 몇 사람이 추위에 떨며 기다리고 있다. 손안에는 강제 수납 독촉장 뭉치가 들려 있다. 김진호는 마지막 선택을 내려야 한다.",
     "choices": [
       {
         "id": "c3_a",
-        "text": "면장의 지시대로 마을을 돌며 주민들에게 공출과 동원 협조를 적극 독려해 실적을 채운다.",
-        "subtext": "직장과 승진의 길은 지켜지지만 주민들의 원망과 고통이 깊어진다.",
+        "text": "독촉장 뭉치를 들고 앞마당으로 나간다. “군청 명령입니다. 미납 가구는 내일까지 예외 없이 공출미를 납부하십시오.”",
         "effects": {
-          "variables": { "livelihood": 2, "cooperation": 2, "communityBurden": 1, "autonomy": -1, "solidarity": -1 },
-          "relationships": { "char_myeonjang": 12, "char_deoksu": -14 },
-          "setFlags": ["c3_a"]
+          "variables": {
+            "livelihood": 2,
+            "cooperation": 2,
+            "communityBurden": 1,
+            "autonomy": -1,
+            "solidarity": -1
+          },
+          "relationships": {
+            "char_myeonjang": 12,
+            "char_deoksu": -14
+          },
+          "setFlags": [
+            "c3_a"
+          ]
         },
-        "logSummary": "주민들에게 공출과 동원 정책 협조를 적극 독려해 행정 실적을 끌어올렸다.",
+        "logSummary": "면장의 지시에 따라 앞마당의 주민들에게 공출과 동원 납부를 강하게 독려해 실적을 채웠다.",
         "next": "clerk_c3_react_a"
       },
       {
         "id": "c3_b",
-        "text": "주민들에게 더 이상 부당한 공출과 동원을 강요하지 않겠다고 공개적으로 선언하고 상부의 압박에 맞선다.",
-        "subtext": "해고와 경찰 조사, 그리고 어머니의 생계와 안전까지 위협받는 대가를 감수한다.",
+        "text": "독촉장 뭉치를 오 면장 책상에 반납하고 앞마당의 농민들이 보는 앞에서 선언한다. “굶어 가는 주민들에게 이 부당한 공출을 더는 강요하지 못하겠습니다. 차라리 파면하십시오.”",
         "effects": {
-          "variables": { "livelihood": -3, "cooperation": -3, "communityBurden": -1, "autonomy": 3, "solidarity": 2 },
-          "relationships": { "char_myeonjang": -25, "char_deoksu": 18, "char_jinho_mother": -14 },
-          "setFlags": ["c3_b", "clerk_public_resist", "clerk_c3_public_stand"]
+          "variables": {
+            "livelihood": -3,
+            "cooperation": -3,
+            "communityBurden": -1,
+            "autonomy": 3,
+            "solidarity": 2
+          },
+          "relationships": {
+            "char_myeonjang": -25,
+            "char_deoksu": 18,
+            "char_jinho_mother": -14
+          },
+          "setFlags": [
+            "c3_b",
+            "clerk_public_resist",
+            "clerk_c3_public_stand"
+          ]
         },
-        "logSummary": "주민들에게 부당한 행정 요구를 강요하지 않겠다고 공개 선언하고 상부 압박에 맞섰다.",
+        "logSummary": "독촉장을 면장 책상에 반납하고 주민들이 보는 앞에서 부당한 공출 강요 거부를 공개 선언했다.",
         "next": "clerk_c3_react_b"
       },
       {
         "id": "c3_c",
-        "text": "유지나 지주 집안은 건드리지 않고, 항의할 힘이 없는 빈농과 소외된 가구에 공출·동원 부담을 집중한다.",
-        "subtext": "손쉽게 실적을 채우고 승진을 얻지만 가장 약한 주민들이 무너진다.",
+        "text": "지주와 유지 집안 명단은 슬그머니 빼고, 말발이 약한 최덕수 등 들말 빈농 가구에만 추가 할당 독촉장을 발부한다.",
         "effects": {
-          "variables": { "livelihood": 2, "cooperation": 3, "communityBurden": 3, "autonomy": -2, "solidarity": -3 },
-          "relationships": { "char_myeonjang": 14, "char_deoksu": -22, "char_villager": -20 },
-          "setFlags": ["c3_c"]
+          "variables": {
+            "livelihood": 2,
+            "cooperation": 3,
+            "communityBurden": 3,
+            "autonomy": -2,
+            "solidarity": -3
+          },
+          "relationships": {
+            "char_myeonjang": 14,
+            "char_deoksu": -22,
+            "char_villager": -20
+          },
+          "setFlags": [
+            "c3_c"
+          ]
         },
-        "logSummary": "빈농과 소외된 가구에 행정적 부담을 집중해 공출·동원 실적을 채웠다.",
+        "logSummary": "유지 가구는 제외하고 빈농과 소외된 가구에 공출 부담을 집중해 실적을 채웠다.",
         "next": "clerk_c3_react_c"
       },
       {
         "id": "c3_d",
-        "text": "재해 감면 규정 등 행정 절차의 허점을 활용해 서류상 실적을 조정하고 주민 부담을 최대한 덜어 준다.",
-        "subtext": "완전한 거부는 아니지만 제도의 틈새에서 주민의 피해를 줄이려 애쓴다.",
+        "text": "“들말 서쪽 논은 냉해 피해 구역입니다.” 재해 감면 서식을 끼워 넣어 장부상 목표치를 낮춰 올린다.",
         "effects": {
-          "variables": { "livelihood": -1, "cooperation": -1, "communityBurden": -1, "autonomy": 1, "solidarity": 1 },
-          "relationships": { "char_deoksu": 12, "char_myeonjang": -6 },
-          "setFlags": ["c3_d"]
+          "variables": {
+            "livelihood": -1,
+            "cooperation": -1,
+            "communityBurden": -1,
+            "autonomy": 1,
+            "solidarity": 1
+          },
+          "relationships": {
+            "char_deoksu": 12,
+            "char_myeonjang": -6
+          },
+          "setFlags": [
+            "c3_d"
+          ]
         },
-        "logSummary": "행정 절차의 허점을 활용해 실적을 조정하며 주민의 공출·동원 부담을 줄였다.",
+        "logSummary": "재해 감면 서식 등 행정 절차의 허점을 활용해 서류상 목표를 낮추고 주민 부담을 덜어 주었다.",
         "next": "clerk_c3_react_d"
       }
     ]
@@ -612,8 +1184,16 @@
     "id": "clerk_c3_react_a",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_myeonjang", "expression": "formal", "position": "left" },
-      { "characterId": "char_clerk", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_myeonjang",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_myeonjang",
     "text": "수고했네, 김 서기. 자네 덕분에 군청 체면을 세웠어. 승진 추천서는 내가 직접 올려 두겠네.",
@@ -621,46 +1201,109 @@
   },
   {
     "id": "clerk_c3_react_b",
-    "locationId": "loc_home",
+    "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "center"
+      },
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
-    "speakerId": "char_jinho_mother",
-    "text": "진호야… 면사무소에서 쫓겨나고 주재소에서 조서까지 받았다니. 네 뜻이 바른 건 알지만, 아무 힘도 없는 이 어미가 당장 내일부터 뭘 먹고 어떻게 버티란 말이냐….",
+    "speakerName": "해설",
+    "text": "오 면장은 그 자리에서 파면 통지서를 써 내밀었고, 박태수는 곧바로 진호가 내려놓은 독촉장 뭉치를 집어 들었다. 오 면장이 차갑게 내뱉었다. “네가 물러나도 공출은 한 톨도 안 줄어든다. 주재소 조사나 제대로 받을 준비나 해!”",
     "next": "clerk_c3_react_b2"
   },
   {
     "id": "clerk_c3_react_b2",
     "locationId": "loc_home",
+    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
-    "speakerId": "char_deoksu",
-    "text": "김 서기 양반, 들말 사람들이 다 알고 있소. 면사무소에서 주민들 편을 들다 쫓겨났다고…. 많지는 않지만 땔감이랑 곡식 조금 두고 가오. 부디 아주머니 잘 모시시오.",
+    "speakerId": "char_jinho_mother",
+    "text": "주재소에서 밤새 조서를 쓰고 풀려난 진호를 본 어머니가 마루에 주저앉았다. “진호야… 면사무소에서 쫓겨나고 경찰서 문턱까지 밟았다니. 네 뜻이 바른 건 알지만, 아무 죄 없는 이 어미가 당장 내일부터 뭘 먹고 사느냐….”",
+    "next": "clerk_c3_react_b3"
+  },
+  {
+    "id": "clerk_c3_react_b3",
+    "locationId": "loc_farmland",
+    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "center"
+      },
+      {
+        "characterId": "char_villager",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerName": "해설",
+    "text": "이튿날 골목길에서 마주친 이웃들의 반응은 엇갈렸다. 어떤 주민은 “그동안 서류 찍던 양반이 이제 와서 쫓겨난들 공출이 없어지나”며 냉담히 돌아섰지만, 최덕수는 조용히 땔감과 쌀 한 되를 건넸다. “면사무소 마당에서 자네가 한 말을 들었소. 모자라지만 어머님께 드리시오.”",
     "next": "clerk_epi_1"
   },
   {
     "id": "clerk_c3_react_c",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "formal", "position": "left" },
-      { "characterId": "char_villager", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_villager",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_villager",
-    "text": "부잣집 곳간은 놔두고 힘없는 소작농 집만 털어 실적을 채우다니… 김진호 서기, 이 은원은 마을 사람들이 두고두고 잊지 않을 것이오.",
+    "text": "앞마당에서 추가 독촉장을 받아 든 들말 어르신이 치를 떨었다. “박 영감 곳간은 멀쩡한데 힘없는 소작농만 털어 실적을 채우다니… 김진호 서기, 이 은원은 마을이 두고두고 기억할 것이오.”",
     "next": "clerk_epi_1"
   },
   {
     "id": "clerk_c3_react_d",
-    "locationId": "loc_township_office",
+    "locationId": "loc_farmland",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_deoksu",
-    "text": "김 서기 양반, 서류상 흉작 감면을 넣어 준 덕분에 몇 가마니는 겨우 건졌소. 티 내지 않고 애써 준 건 알고 있소.",
+    "text": "퇴근길에 만난 최덕수가 조심스레 고개를 숙였다. “김 서기 양반, 냉해 감면으로 올려 준 덕분에 우리 집이랑 이웃 몇 집이 두 가마니씩은 건졌소. 티 내지 않고 애써 준 건 알고 있소.”",
     "next": "clerk_epi_1"
   },
   {
@@ -668,7 +1311,7 @@
     "locationId": "loc_township_office",
     "background": "/assets/aistudio/Pixel_art_office_desk_interior_128ed0c9_30eda3be.jpg",
     "speakerName": "해설",
-    "text": "1945년 8월 15일, 해방이 찾아왔다. 면사무소 캐비닛을 정리하던 김진호의 손끝에 지난 1944년 자신이 작성한 토지 대장과 공출·노무동원 명부가 그대로 잡힌다.",
+    "text": "1945년 8월 15일, 해방이 찾아왔다. 면사무소 캐비닛에는 지난 1944년 작성된 토지 대장과 공출 할당표, 노무동원 명부가 한 장도 사라지지 않은 채 그대로 쌓여 있었다.",
     "historicalBadge": {
       "kind": "source",
       "label": "사료 I 확인 · 해방 이후 남겨진 행정 기록과 책임",
@@ -678,14 +1321,20 @@
     "conditionalNext": [
       {
         "condition": {
-          "requiredFlags": ["clerk_public_resist"],
-          "minVars": { "autonomy": 11 }
+          "requiredFlags": [
+            "clerk_public_resist"
+          ],
+          "minVars": {
+            "autonomy": 11
+          }
         },
         "next": "clerk_epi_resist_1"
       },
       {
         "condition": {
-          "minVars": { "cooperation": 14 }
+          "minVars": {
+            "cooperation": 14
+          }
         },
         "next": "clerk_epi_coop_1"
       }
@@ -694,65 +1343,111 @@
   },
   {
     "id": "clerk_epi_resist_1",
-    "locationId": "loc_township_office",
+    "locationId": "loc_home",
+    "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jinho_mother", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jinho_mother",
-    "text": "해방이 되니 이제 순사 눈치는 안 봐도 된다지만… 그동안 네가 쫓겨나고 우리 집이 겪은 가난과 두려움은 쉽게 가시질 않는구나. 그래도 마을 사람들이 너를 욕하지 않고 고마워하니 그나마 숨이 트인다.",
-    "setFlags": ["clerk_ending_3"],
+    "text": "해방이 되니 순사 눈치는 안 봐도 된다지만… 그동안 네가 쫓겨나고 우리 집이 겪은 가난과 두려움은 쉽게 가시질 않는구나. 그래도 마을 사람들이 너를 손가락질하지 않으니 그나마 숨이 트인다.",
+    "setFlags": [
+      "clerk_ending_3"
+    ],
     "next": "clerk_epi_resist_2"
   },
   {
     "id": "clerk_epi_resist_2",
     "locationId": "loc_township_office",
+    "background": "/assets/aistudio/Pixel_art_office_desk_interior_128ed0c9_30eda3be.jpg",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jeongsu",
-    "text": "진호야, 네가 끝내 부당한 명령에 맞서 준 걸 주민들도 기억해. 다만 그 전에 면사무소에서 작성된 기록들까지 저절로 지워지는 건 아니니, 우리가 함께 이 기록을 직시해야겠지.",
+    "text": "면사무소 기록 정리에 불려 나온 진호 곁에서 이정수가 조용히 말했다. “진호야, 네가 부당한 명령에 맞선 걸 주민들도 기억해. 다만 그 전에 네 도장이 찍혔던 행정 기록들까지 저절로 지워지는 건 아니니, 우리가 함께 이 문서를 직시해야겠지.”",
     "next": "clerk_epi_resist_3"
   },
   {
     "id": "clerk_epi_resist_3",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
-    "text": "공개적으로 저항한 사실은 공동체의 기억에 남았지만, 가족이 감당한 고초와 그 이전에 남긴 행정 문서의 무게는 해방 이후에도 그대로 남아 있었다.",
+    "text": "공개적으로 저항한 사실은 공동체의 기억에 남았지만, 조직이 멈추지 않았던 현실과 가족의 고초, 그리고 과거에 남긴 문서의 책임 역시 해방 이후에도 그대로 남아 있었다.",
     "next": "__ENDING__"
   },
   {
     "id": "clerk_epi_coop_1",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_taesu", "expression": "papers", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_taesu",
+        "expression": "papers",
+        "position": "right"
+      }
     ],
     "speakerId": "char_taesu",
     "text": "진호야, 세상이 바뀌어도 행정을 아는 사람은 필요해. 어서 옛 공출 장부랑 동원 명부부터 치우자고. 우리도 먹고살려고 위에서 시킨 일만 했을 뿐이잖아.",
-    "setFlags": ["clerk_ending_1"],
+    "setFlags": [
+      "clerk_ending_1"
+    ],
     "next": "clerk_epi_coop_2"
   },
   {
     "id": "clerk_epi_coop_2",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_deoksu",
-    "text": "김 서기, 그 서류들 함부로 태우지 마시오. 우리 마을 공출표랑 이정수 이름이 적힌 명부에 당신 도장이 찍혀 있소. 시켜서 했다는 말만으로 지나갈 일은 아니오.",
+    "text": "면사무소 문을 열고 들어온 최덕수가 서류 뭉치를 막아섰다. “김 서기, 그 장부들 함부로 태우지 마시오. 우리 마을 공출 할당표랑 청년 동원 명부에 당신 도장이 찍혀 있소. 시켜서 했다는 말만으로 덮일 일은 아니오.”",
     "next": "clerk_epi_coop_3"
   },
   {
     "id": "clerk_epi_coop_3",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
     "text": "안정과 승진을 위해 쌓아 올린 행정 실적은 해방과 동시에 가장 지우기 어려운 증거가 되어 김진호 앞에 놓였다.",
@@ -762,19 +1457,62 @@
     "id": "clerk_epi_gray_1",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_deoksu",
+    "text": "면사무소를 찾은 최덕수가 서류 뭉치를 바라보며 말했다. “김 서기 양반, 서류 틈새로 주민 부담을 조금씩 덜어 주려 애쓴 건 아오. 하지만 결국 이 책상 위 문서들 때문에 우리 마을이 휘청였던 것도 사실이구려.”",
+    "setFlags": [
+      "clerk_ending_2"
+    ],
+    "conditionalNext": [
+      {
+        "condition": {
+          "requiredFlags": [
+            "c2_d"
+          ]
+        },
+        "next": "clerk_epi_gray_jeongsu"
+      }
+    ],
+    "next": "clerk_epi_gray_2"
+  },
+  {
+    "id": "clerk_epi_gray_jeongsu",
+    "locationId": "loc_township_office",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jeongsu",
-    "text": "진호야, 네가 서류를 늦추고 틈을 만들어 준 덕분에 최악은 면했다. 고마워. 하지만 책상 위에 남은 이 명부들을 보면, 우리 모두가 그 체제 안에서 어떤 역할을 했는지 끝내 묻지 않을 수 없구나.",
-    "setFlags": ["clerk_ending_2"],
+    "text": "뒤이어 들어온 이정수가 진호의 어깨에 손을 얹었다. “진호야, 네가 서류 제출을 늦추고 야학에 쪽지를 넣어 준 덕분에 살아 돌아왔다. 고마워. 다만 이 명부들이 남긴 상처와 우리의 책임은 쉽게 지워지지 않겠지.”",
     "next": "clerk_epi_gray_2"
   },
   {
     "id": "clerk_epi_gray_2",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_clerk", "expression": "worried", "position": "center" }
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
     "text": "정면으로 맞서지도, 완전히 순응하지도 못한 채 우회와 타협을 거듭한 시간. 종이 위에 남은 먹줄은 해방된 아침에도 지워지지 않았다.",

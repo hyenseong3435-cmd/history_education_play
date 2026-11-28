@@ -4,10 +4,14 @@
     "locationId": "loc_police_substation",
     "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "center" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
-    "text": "1944년 봄, 경상도 송현면 주재소. 가난에서 벗어나 정규 순사로 인정받길 바라며 제복을 입은 24세 조선인 순사보 강동혁은, 이 지배가 언제 끝날지 모른 채 아침 점호에 선다.",
+    "text": "1944년 봄, 경상도 송현면 주재소. 들말 소작농 집안의 가난에서 벗어나 정규 순사로 인정받길 바라며 제복을 입은 24세 조선인 순사보 강동혁은, 이 지배가 언제 끝날지 모른 채 아침 점호에 선다.",
     "historicalBadge": {
       "kind": "fact",
       "label": "역사적 배경 · 조선인 순사보의 이중적 위치"
@@ -18,44 +22,76 @@
     "id": "police_c1_intro_2",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_sato", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_sato",
-    "text": "강 순사보, 멍하니 서 있지 말고 들말 보고서부터 정리해. 조선인 순사보는 말귀가 어두워서 일일이 챙겨야 한다니까. 올해는 공출 기피와 노무동원 회피자가 늘고 있으니 마을을 샅샅이 감시하라.",
+    "text": "강 순사보, 멍하니 서 있지 말고 들말 동향 보고서부터 정리해. 조선인 순사보는 말귀가 어두워서 일일이 챙겨야 한다니까. 면사무소에서 봄 토지 대장과 공출·동원 기초 명부가 넘어올 테니, 올해는 마을을 샅샅이 감시하라.",
     "next": "police_c1_intro_3"
   },
   {
     "id": "police_c1_intro_3",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_police_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_police_taesu",
-    "text": "동혁아, 다나카 주임님 비위 거스르면 끝장이야. 들말에서 김봉수 논 거래니 공출이니 시끄럽다던데, 순찰 나가기 전에 형님 집이나 면사무소부터 들러 분위기 좀 살펴봐.",
+    "text": "동혁아, 다나카 주임님 비위 거스르면 승진은커녕 네 형님네 농사까지 트집 잡힐 수 있어. 오후 순찰 나가기 전에 형님 집이나 면사무소부터 들러 들말 분위기 좀 살펴둬.",
     "next": "__EXPLORE__"
   },
   {
     "id": "exp_police_c1_home",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_yeongsu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_yeongsu",
-    "text": "동혁아, 네가 집안 먹여 살리려고 순사보가 된 건 안다. 하지만 마을 사람들이 제복 입은 너를 보는 눈길이 예전 같지 않아. 너무 모질게 굴어도 탈이고, 상관한테 찍혀도 우리 집안이 위태로워진다.",
+    "text": "동혁아, 네가 집안 먹여 살리려고 순사보가 된 건 안다. 하지만 우리도 들말에서 논 부쳐 먹고 사는 처지야. 주민들한테 너무 모질게 굴어도 원망을 사고, 상관한테 찍히면 내 공출 장부와 배급표부터 당장 표적이 된다.",
     "next": "__EXPLORE__"
   },
   {
     "id": "exp_police_c1_office",
     "locationId": "loc_township_office",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
-      { "characterId": "char_clerk", "expression": "formal", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "right"
+      }
     ],
     "speakerId": "char_clerk",
-    "text": "강 순사보님, 면사무소 김진호입니다. 들말 김봉수 씨 논 네 두락이 최덕수 씨에게 넘어가는 문제와 올해 노무동원 대상자 기초 자료를 정리 중입니다. 확정되면 주재소에도 전달하겠습니다.",
+    "text": "강 순사보님, 면사무소 김진호입니다. 들말 김봉수 씨 논 네 두락이 최덕수 씨에게 넘어간 토지 대장과 가을 공출 기초 자료, 그리고 야학 이정수 씨 등 노무동원 대상자 명단을 정리 중입니다. 확정되는 대로 주재소에도 전달됩니다.",
     "historicalBadge": {
       "kind": "source",
       "label": "사료 E 확인 · 면사무소 명부와 주재소 추적의 연계",
@@ -69,9 +105,21 @@
     "locationId": "loc_police_substation",
     "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_sato", "expression": "stern", "position": "center" },
-      { "characterId": "char_police_taesu", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "center"
+      },
+      {
+        "characterId": "char_police_taesu",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_sato",
     "text": "들말 농민들 사이에 공출 불만이 퍼지고, 노무동원을 피해 숨으려는 청년들도 있다는 첩보가 들어왔다. 강 순사보, 정규 순사 추천을 원한다면 박태수보다 먼저 본보기를 잡아 오라. 조선인끼리 사정 봐주면 즉각 문책한다.",
@@ -81,76 +129,134 @@
     "id": "police_c1_main_2",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_police_taesu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_taesu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_police_taesu",
-    "text": "들었지? 오늘 저녁부터 들말 순찰을 강화할 거야. 내가 안 잡아도 어차피 누군가는 실적 채워야 해. 넌 어떻게 움직일 셈이냐?",
+    "text": "들었지? 오늘 저녁부터 들말 순찰을 강화할 거야. 내가 안 잡아도 어차피 누군가는 실적 채워야 해. 주재소 마당 밖에 여행 증명 도장 받으러 온 들말 어르신도 지켜보고 있는데, 넌 어떻게 움직일 셈이냐?",
     "next": "police_c1_main_3"
   },
   {
     "id": "police_c1_main_3",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "center" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
-    "text": "조직 안에서는 차별받는 조선인 순사보이지만, 마을 골목에 나서면 주민을 단속하는 제복의 권력이 된다. 강동혁은 첫 임무 앞에서 자신의 태도를 정해야 한다.",
+    "text": "조직 안에서는 차별받는 조선인 순사보이지만, 골목에 나서면 주민을 단속하는 제복의 권력이 된다. 열린 창문 너머 마당에서는 민원인이 숨죽여 기다리고 있고, 다나카 주임은 강동혁의 대답을 재촉한다.",
     "choices": [
       {
         "id": "p1_a",
-        "text": "다나카 주임의 지시에 충실히 따라 마을 공출과 동원 회피 동향을 꼼꼼히 조사해 보고한다.",
-        "subtext": "조직 내 입지와 생계를 안정적으로 다지지만 주민들과의 거리가 멀어진다.",
+        "text": "\"알겠습니다, 주임님.\" 지시에 따라 들말의 공출 불만과 동원 회피 정황을 규정대로 조사해 보고한다.",
         "effects": {
-          "variables": { "livelihood": 2, "cooperation": 2, "communityBurden": 1, "autonomy": -1, "solidarity": -1 },
-          "relationships": { "char_sato": 10, "char_deoksu": -8 },
-          "setFlags": ["p1_a"]
+          "variables": {
+            "livelihood": 2,
+            "cooperation": 2,
+            "communityBurden": 1,
+            "autonomy": -1,
+            "solidarity": -1
+          },
+          "relationships": {
+            "char_sato": 10,
+            "char_deoksu": -8
+          },
+          "setFlags": [
+            "p1_a"
+          ]
         },
         "logSummary": "상관의 지시에 충실히 따라 마을의 공출·동원 회피 여부를 조사하며 조직 내 입지를 다졌다.",
         "next": "police_c1_react_a"
       },
       {
         "id": "p1_b",
-        "text": "생계마저 위협받는 주민들을 과도하게 감시·통제하는 경찰 업무와 차별적 지시가 부당하다고 다나카 주임 앞에서 공개적으로 문제 제기한다.",
-        "subtext": "주재소 내 지위가 위태로워지고 형 강영수와 집안에까지 감시가 번질 수 있다.",
+        "text": "순찰 수첩을 책상 위에 내려놓고 말한다. \"굶주리는 들말 주민을 본보기 삼아 몰아세우는 과잉 단속과 차별적 지시는 부당합니다.\"",
         "effects": {
-          "variables": { "livelihood": -3, "cooperation": -3, "communityBurden": -1, "autonomy": 3, "solidarity": 2 },
-          "relationships": { "char_sato": -24, "char_yeongsu": -10, "char_deoksu": 14 },
-          "setFlags": ["p1_b", "police_public_resist"],
+          "variables": {
+            "livelihood": -3,
+            "cooperation": -3,
+            "communityBurden": -1,
+            "autonomy": 3,
+            "solidarity": 2
+          },
+          "relationships": {
+            "char_sato": -24,
+            "char_yeongsu": -10,
+            "char_deoksu": 14
+          },
+          "setFlags": [
+            "p1_b",
+            "police_public_resist"
+          ],
           "delayedEffect": {
             "id": "del_p1_b",
             "triggerChapter": 2,
-            "title": "주재소 내 질책과 가족을 향한 눈초리",
-            "description": "다나카 주임에게 공개 항의한 뒤 승진 명단에서 밀려났고, 박태수가 형 강영수의 집 주변을 살피기 시작했다.",
-            "variables": { "livelihood": -1 },
+            "title": "승진 탈락과 형 강영수 집안에 대한 감시",
+            "description": "다나카 주임에게 공개 항의한 뒤 정규 순사 추천에서 제외되었고, 박태수가 들말 형의 집 공출 장부를 들여다보기 시작했다.",
+            "variables": {
+              "livelihood": -1
+            },
             "flag": "police_c1_retaliation"
           }
         },
-        "logSummary": "주민을 부당하게 통제하는 경찰 업무와 상관의 지시에 공개적으로 문제를 제기했다.",
+        "logSummary": "다나카 주임 앞에서 순찰 수첩을 내려놓고 과잉 단속과 차별적 지시가 부당하다고 공개 항의했다.",
         "next": "police_c1_react_b"
       },
       {
         "id": "p1_c",
-        "text": "선배 박태수보다 더 높은 실적을 올리기 위해 사소한 규정 위반까지 적극적으로 적발해 보고한다.",
-        "subtext": "상관의 인정을 빠르게 얻을 수 있지만 마을 주민들의 피해가 커진다.",
+        "text": "\"선배님보다 제가 먼저 실적을 올리겠습니다.\" 수첩을 챙겨 들고 사소한 규정 위반까지 들말에서 적극 적발한다.",
         "effects": {
-          "variables": { "livelihood": 2, "cooperation": 3, "communityBurden": 3, "autonomy": -2, "solidarity": -3 },
-          "relationships": { "char_sato": 16, "char_police_taesu": -15, "char_deoksu": -18 },
-          "setFlags": ["p1_c"]
+          "variables": {
+            "livelihood": 2,
+            "cooperation": 3,
+            "communityBurden": 3,
+            "autonomy": -2,
+            "solidarity": -3
+          },
+          "relationships": {
+            "char_sato": 16,
+            "char_police_taesu": -15,
+            "char_deoksu": -18
+          },
+          "setFlags": [
+            "p1_c"
+          ]
         },
-        "logSummary": "선배 순사보보다 높은 실적을 얻기 위해 주민들을 적극적으로 단속했다.",
+        "logSummary": "선배 순사보보다 높은 실적을 얻기 위해 사소한 규정 위반까지 적극적으로 단속했다.",
         "next": "police_c1_react_c"
       },
       {
         "id": "p1_d",
-        "text": "겉으로는 순찰을 도는 척 형식적으로 수행하면서, 단속 일정 정보를 마을 주민들에게 은근히 흘려 준다.",
-        "subtext": "정면 충돌은 피하지만 상관에게 의심받을 위험을 감수한다.",
+        "text": "\"예, 순찰 다녀오겠습니다.\" 겉으로는 순찰을 돌면서 들말 입구에서 마주친 어르신에게 내일 아침 단속 일정을 몰래 귀띔한다.",
         "effects": {
-          "variables": { "livelihood": -1, "cooperation": -1, "communityBurden": -1, "autonomy": 1, "solidarity": 1 },
-          "relationships": { "char_deoksu": 10, "char_sato": -6 },
-          "setFlags": ["p1_d", "police_tipped_off"]
+          "variables": {
+            "livelihood": -1,
+            "cooperation": -1,
+            "communityBurden": -1,
+            "autonomy": 1,
+            "solidarity": 1
+          },
+          "relationships": {
+            "char_deoksu": 10,
+            "char_sato": -6
+          },
+          "setFlags": [
+            "p1_d",
+            "police_tipped_off"
+          ]
         },
-        "logSummary": "지시를 형식적으로 수행하면서 단속 일정을 마을 주민들에게 미리 전달했다.",
+        "logSummary": "지시를 형식적으로 수행하면서 내일 아침 단속 일정을 마을 주민에게 미리 귀띔했다.",
         "next": "police_c1_react_d"
       }
     ]
@@ -159,62 +265,140 @@
     "id": "police_c1_react_a",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_sato", "expression": "stern", "position": "left" },
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_sato",
-    "text": "그래, 그 태도가 맞다. 조선인 순사보라도 시키는 대로 일하면 제 몫은 챙겨 주지. 가을 공출 때도 오늘처럼 보고하라.",
+    "text": "그래, 그 태도가 맞다. 조선인 순사보라도 시키는 대로 일하면 제 몫은 챙겨 주지. 가을 공출 수색 때도 오늘처럼 보고하라.",
     "next": "police_c1_end"
   },
   {
     "id": "police_c1_react_b",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_sato", "expression": "stern", "position": "left" },
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_sato",
-    "text": "뭐라고? 순사보 주제에 제국 경찰의 단속 방침에 이의를 달아? 네 형과 집안 식구들도 이 마을에서 농사짓지 않나? 처신 똑바로 하지 않으면 집안까지 무사치 못할 줄 알라!",
+    "text": "뭐라고? 조선인 순사보 주제에 제국 경찰의 단속 방침에 이의를 달아? 정규 순사 추천은 오늘로 끝이다! 박태수, 들말에서 농사짓는 강동혁 친형 강영수 집안에 불온한 물이 들었는지 공출 장부와 곡간부터 따로 들여다보라!",
     "next": "police_c1_react_b2"
   },
   {
     "id": "police_c1_react_b2",
     "locationId": "loc_farmland",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_villager", "expression": "calm", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_villager",
+        "expression": "calm",
+        "position": "right"
+      }
     ],
     "speakerId": "char_villager",
-    "text": "강 순사보가 주재소장한테 마을 사정을 말하다 크게 혼났다더군…. 제복 입은 사람이라 경계했었는데, 그래도 우리 사정을 아주 외면하진 않는구먼.",
+    "text": "강 순사보… 낮에 여행 증명 받으러 주재소 마당에 서 있다가 창문 너머 고함 소리를 다 들었네. 제복 입은 사람이라 경계했는데 고맙기도 하고…. 다만 곁에서 듣던 젊은이들은 주재소 화풀이로 마을만 더 뒤집어질까 봐 겁을 먹더군.",
+    "next": "police_c1_react_b3"
+  },
+  {
+    "id": "police_c1_react_b3",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_yeongsu",
+    "text": "동혁아, 박태수가 아까 마당에 들이닥쳐 내 논 소출과 배급표를 꼬치꼬치 캐물었다. 네 말이 옳다 쳐도… 상관한테 대들어 집안까지 감시받게 만들면 우리 식구는 어쩌란 말이냐.",
     "next": "police_c1_end"
   },
   {
     "id": "police_c1_react_c",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_sato", "expression": "field", "position": "left" },
-      { "characterId": "char_police_taesu", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_sato",
+        "expression": "field",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_taesu",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_police_taesu",
-    "text": "치, 제법이네 강동혁. 선배 실적까지 가로채며 기어오르겠다 이거지? 마을 사람들이 널 어떻게 부르는지 귀 좀 기울여 봐.",
+    "text": "치, 제법이네 강동혁. 선배 실적까지 가로채며 기어오르겠다 이거지? 방금 과태료 문 들말 농민들이 골목에서 널 뭐라 부르는지 귀 좀 기울여 봐.",
     "next": "police_c1_end"
   },
   {
     "id": "police_c1_react_d",
     "locationId": "loc_farmland",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
-      { "characterId": "char_villager", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_villager",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_police_asst",
+    "text": "어르신, 내일 아침 해 뜰 무렵 주재소에서 들말 안쪽까지 불시 순찰이 돕니다. 그저 지나가는 말로만 듣고 집에 계신 분들께 일러 두십시오.",
+    "next": "police_c1_react_d2"
+  },
+  {
+    "id": "police_c1_react_d2",
+    "locationId": "loc_farmland",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_villager",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_villager",
-    "text": "어르신, 내일 아침 주재소에서 들말 순찰이 돈답니다…. 말은 아꼈지만 눈치 빠른 주민들은 금세 고개를 끄덕이며 자리를 비웠다.",
+    "text": "…알아들었네, 강 순사보. 겉으론 못 본 체하고 갈 테니 자네도 조심하게.",
     "next": "police_c1_end"
   },
   {
     "id": "police_c1_end",
     "locationId": "loc_police_substation",
     "speakerName": "해설",
-    "text": "여름이 지나고 추수철인 1944년 가을이 왔다. 면사무소에서 송현면의 공출 실적이 크게 부진하다는 보고가 올라오자, 주재소는 농가 곡식 보관 실태 수색에 나섰다.",
+    "text": "여름이 지나고 추수철인 1944년 가을이 왔다. 면사무소 서기 김진호가 정리한 토지·수확량 장부를 바탕으로 공출이 집행되었지만, 송현면 실적이 크게 부진하다는 보고가 올라오자 주재소는 농가 곡식 수색에 나섰다.",
     "next": "__NEXT_CHAPTER__"
   },
   {
@@ -222,13 +406,39 @@
     "locationId": "loc_police_substation",
     "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "center" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
-    "text": "1944년 초가을. 들말의 공출 실적이 목표치에 못 미친다는 면사무소 보고가 주재소에 접수되었다.",
+    "text": "1944년 초가을. 들말의 공출 실적이 목표치에 크게 못 미친다는 면사무소 보고가 주재소에 접수되었다.",
     "conditionalNext": [
-      { "condition": { "requiredFlags": ["p1_b"] }, "next": "police_c2_intro_b" },
-      { "condition": { "requiredFlags": ["p1_c"] }, "next": "police_c2_intro_c" }
+      {
+        "condition": {
+          "requiredFlags": [
+            "p1_b"
+          ]
+        },
+        "next": "police_c2_intro_b"
+      },
+      {
+        "condition": {
+          "requiredFlags": [
+            "p1_c"
+          ]
+        },
+        "next": "police_c2_intro_c"
+      },
+      {
+        "condition": {
+          "requiredFlags": [
+            "p1_d"
+          ]
+        },
+        "next": "police_c2_intro_d"
+      }
     ],
     "next": "police_c2_intro_a"
   },
@@ -236,44 +446,114 @@
     "id": "police_c2_intro_a",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
-      { "characterId": "char_sato", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_sato",
-    "text": "강 순사보, 면사무소 장부보다 실제 수확량이 적게 들어온 집들이 있다. 특히 봄에 김봉수의 논 네 두락을 넘겨받은 최덕수 집을 포함해 들말 농가의 곡식 보관 실태를 직접 조사하고 보고하라.",
+    "text": "강 순사보, 면사무소 장부보다 실제 수확량이 적게 들어온 집들이 있다. 특히 봄에 김봉수의 논 네 두락을 넘겨받은 최덕수 집을 포함해 들말 농가의 곡식 보관 실태를 직접 수색하고 보고하라.",
     "next": "__EXPLORE__"
   },
   {
     "id": "police_c2_intro_b",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_yeongsu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_yeongsu",
-    "text": "동혁아, 어제 박태수 순사보가 괜히 우리 집 앞을 기웃거리며 공출 할당이 맞냐고 캐묻고 갔어. 네가 주재소에서 상관한테 맞선 뒤로 우리 집까지 표적이 된 모양이야. 제발 조심해 다오.",
+    "text": "동혁아, 어제도 박태수가 우리 집 마당 앞을 서성이다 공출 할당량이 맞냐며 시비를 걸고 갔다. 네가 봄에 상관한테 맞선 뒤로 우리 집안이 주재소 눈 밖에 단단히 났어. 이번 가을 수색에서는 제발 모나지 않게 넘겨 다오.",
+    "next": "police_c2_intro_b2"
+  },
+  {
+    "id": "police_c2_intro_b2",
+    "locationId": "loc_police_substation",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_sato",
+    "text": "강 순사보, 봄철 항명을 만회할 기회를 주지. 면사무소 장부상 공출 미달로 찍힌 최덕수 집 곡식 수색을 네게 맡긴다. 박태수가 골목 밖에서 지켜볼 테니 이번에도 헛소리하면 형 집안까지 각오하라.",
     "next": "__EXPLORE__"
   },
   {
     "id": "police_c2_intro_c",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
-      { "characterId": "char_sato", "expression": "field", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "field",
+        "position": "right"
+      }
     ],
     "speakerId": "char_sato",
-    "text": "자네가 실적 욕심이 있으니 이번 공출 부진 농가 수색을 맡기겠네. 들말 최덕수 집부터 확실하게 털어서 은닉 곡식을 찾아내라.",
+    "text": "봄 단속에서 실적 욕심을 보여 줬으니 이번 공출 부진 농가 수색도 자네에게 맡기겠네. 들말 최덕수 집부터 확실하게 털어서 은닉 곡식을 찾아내라.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "police_c2_intro_d",
+    "locationId": "loc_police_substation",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_sato",
+    "text": "지난봄 들말 불시 순찰 때 이상하게도 주민들이 미리 자리를 비웠더군. 누가 일정을 흘렸는지 의심스럽다. 이번 최덕수 집 공출 수색에는 박태수가 골목 밖에서 함께 감시할 테니 허튼짓 말라.",
     "next": "__EXPLORE__"
   },
   {
     "id": "exp_police_c2_farmland",
     "locationId": "loc_farmland",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
-      { "characterId": "char_villager", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_villager",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_villager",
-    "text": "올해는 벼가 덜 여물어 어느 집이나 곳간이 바닥이라오. 조선식량관리령 때문에 먹을 쌀 몇 말만 남겨도 죄인이 되는 세상이니, 다들 숨죽이고 살 뿐이오.",
+    "text": "올해는 벼가 덜 여물어 어느 집이나 곳간이 바닥인데, 조선식량관리령 때문에 먹을 쌀 몇 말만 남겨도 죄인이 되오. 게다가 면사무소에서 야학 이정수 이름까지 노무동원 명부에 올렸다는 소문이 돌아 마을이 온통 뒤숭숭하구려.",
     "historicalBadge": {
       "kind": "source",
       "label": "사료 D 확인 · 조선식량관리령과 식량 단속",
@@ -286,11 +566,19 @@
     "id": "exp_police_c2_substation",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_sato", "expression": "stern", "position": "left" },
-      { "characterId": "char_police_taesu", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_taesu",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_police_taesu",
-    "text": "군청에서 공출 단속 실적으로 주재소를 평가한대. 한 집만 제대로 본보기로 잡아 올려도 다나카 주임님 체면이 서는 거지.",
+    "text": "군청에서 공출 단속 실적으로 주재소를 평가한대. 한 집만 제대로 본보기로 잡아 올려도 다나카 주임님 체면이 서지. 곧 면사무소에서 노무동원 최종 명부도 넘어온다니까 바짝 긴장해야 해.",
     "historicalBadge": {
       "kind": "source",
       "label": "사료 G 확인 · 식민지 경찰의 식량·치안 단속",
@@ -304,21 +592,45 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "center" },
-      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "center"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
-    "text": "들말 농가를 돌며 곡식 보관 상태를 점검하던 강동혁은 소작농 최덕수의 집 광 안쪽에서 신고되지 않은 벼 가마니와 짚더미 흔적을 발견한다.",
+    "text": "면사무소 토지 장부에 따라 들말 농가를 수색하던 강동혁은 소작농 최덕수의 집 광 안쪽에서 신고되지 않은 벼 가마니와 짚더미 흔적을 발견한다.",
     "next": "police_c2_main_2"
   },
   {
     "id": "police_c2_main_2",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "center" },
-      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "center"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_suni_farmer",
     "text": "순사보 양반, 제발 한 번만 눈감아 주세요…. 어린 애 겨울 먹을 양식뿐이에요. 이것마저 뺏기면 우리 세 식구는 정말 굶어 죽습니다.",
@@ -328,66 +640,121 @@
     "id": "police_c2_main_3",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
-    "text": "골목 밖에서는 선배 순사보 박태수가 다른 집을 살피며 이쪽 동향을 엿보고 있다. 이 정황을 그대로 보고하면 최덕수 집안은 무너지고, 숨겨 주거나 맞서면 동혁과 형의 집안이 위험해진다.",
+    "text": "골목 밖에서는 선배 순사보 박태수의 구두 소리가 이쪽 담장을 맴돌고 있다. 이 정황을 그대로 보고하면 최덕수 집안은 무너지고, 맞서거나 숨겨 주면 동혁과 형 강영수의 집안이 표적이 된다.",
     "choices": [
       {
         "id": "p2_a",
-        "text": "발견한 은닉 곡식 정황을 규정에 따라 다나카 주임에게 그대로 보고한다.",
-        "subtext": "경찰로서의 직무와 승진 가능성을 지키지만 최덕수 가족은 큰 처벌을 받는다.",
+        "text": "벼 가마니 수량을 수첩에 적으며 말한다. \"규정대로 처리할 수밖에 없습니다.\" 은닉 정황을 다나카 주임에게 그대로 보고한다.",
         "effects": {
-          "variables": { "livelihood": 2, "cooperation": 2, "communityBurden": 1, "autonomy": -1, "solidarity": -1 },
-          "relationships": { "char_sato": 10, "char_deoksu": -20 },
-          "setFlags": ["p2_a"]
+          "variables": {
+            "livelihood": 2,
+            "cooperation": 2,
+            "communityBurden": 1,
+            "autonomy": -1,
+            "solidarity": -1
+          },
+          "relationships": {
+            "char_sato": 10,
+            "char_deoksu": -20
+          },
+          "setFlags": [
+            "p2_a"
+          ]
         },
         "logSummary": "최덕수의 집에서 발견한 곡식 은닉 정황을 상관에게 그대로 보고했다.",
         "next": "police_c2_react_a"
       },
       {
         "id": "p2_b",
-        "text": "굶주린 농가의 최소 식량까지 빼앗는 공출 단속이 부당하다고 다나카 주임에게 공개적으로 지적하며 부당한 농가 수색을 거부한다.",
-        "subtext": "상관과의 갈등이 격화되고 형 강영수와 가족에게까지 감시와 압박이 닥칠 수 있다.",
+        "text": "빈손으로 주재소에 돌아가 다나카 주임과 박태수 앞에서 압수 조서를 밀어낸다. \"굶주린 농가 양식까지 빼앗는 수색은 부당합니다. 조서에 도장을 찍지 않겠습니다.\"",
         "effects": {
-          "variables": { "livelihood": -3, "cooperation": -3, "communityBurden": -1, "autonomy": 3, "solidarity": 2 },
-          "relationships": { "char_sato": -25, "char_deoksu": 20, "char_yeongsu": -12 },
-          "setFlags": ["p2_b", "police_public_resist", "police_c2_refused_search"],
+          "variables": {
+            "livelihood": -3,
+            "cooperation": -3,
+            "communityBurden": -1,
+            "autonomy": 3,
+            "solidarity": 2
+          },
+          "relationships": {
+            "char_sato": -25,
+            "char_deoksu": 20,
+            "char_yeongsu": -12
+          },
+          "setFlags": [
+            "p2_b",
+            "police_public_resist",
+            "police_c2_refused_search"
+          ],
           "delayedEffect": {
             "id": "del_p2_b",
             "triggerChapter": 3,
-            "title": "수색 거부의 파장과 형 강영수의 불만",
-            "description": "다나카 주임에게 정직 경고를 받았고, 주재소 감시가 형의 집안과 농사에까지 미치며 가족 갈등이 커졌다.",
-            "variables": { "livelihood": -1 },
+            "title": "수색 거부의 보복과 형 강영수의 분노",
+            "description": "감봉과 외근 배제 처분을 받았고, 박태수가 형 강영수의 곡간과 배급표를 들쑤시며 집안 갈등이 폭발했다.",
+            "variables": {
+              "livelihood": -1
+            },
             "flag": "police_c2_family_pressure"
           }
         },
-        "logSummary": "공출 단속의 부당성을 상관에게 공개 지적하고 주민 대상 부당 조사를 거부했다.",
+        "logSummary": "주재소에서 압수 조서 날인을 공개 거부하며 굶주린 농가에 대한 부당한 공출 수색에 항의했다.",
         "next": "police_c2_react_b"
       },
       {
         "id": "p2_c",
-        "text": "실적을 확실히 채우기 위해 최덕수에게 책임을 집중해 과장 보고하고, 다른 집 조사는 대충 마무리한다.",
-        "subtext": "한 가정에 모든 책임을 떠넘겨 빠르고 손쉽게 상부의 신임을 얻는다.",
+        "text": "\"들말 공출 부진의 주범이 바로 여기 있습니다.\" 다른 집 조사는 대충 넘기고 최덕수에게 책임을 몰아 과장 보고한다.",
         "effects": {
-          "variables": { "livelihood": 2, "cooperation": 3, "communityBurden": 3, "autonomy": -2, "solidarity": -3 },
-          "relationships": { "char_sato": 14, "char_deoksu": -28, "char_villager": -18 },
-          "setFlags": ["p2_c"]
+          "variables": {
+            "livelihood": 2,
+            "cooperation": 3,
+            "communityBurden": 3,
+            "autonomy": -2,
+            "solidarity": -3
+          },
+          "relationships": {
+            "char_sato": 14,
+            "char_deoksu": -28,
+            "char_villager": -18
+          },
+          "setFlags": [
+            "p2_c"
+          ]
         },
-        "logSummary": "실적을 위해 최덕수에게 책임을 집중시켜 보고하고 다른 집 조사를 넘겼다.",
+        "logSummary": "실적을 위해 최덕수에게 책임을 집중시켜 과장 보고하고 다른 집 조사를 넘겼다.",
         "next": "police_c2_react_c"
       },
       {
         "id": "p2_d",
-        "text": "재조사 일정을 최덕수에게 몰래 알려 주고, 이번 보고서에서는 광 안쪽 곡식 흔적을 누락해 넘긴다.",
-        "subtext": "겉으로는 조사에 응한 척하면서 최덕수 가족이 위기를 넘길 틈을 만들어 준다.",
+        "text": "광 문을 조용히 닫으며 덕수에게만 속삭인다. \"내일 박 순사보가 재조사를 나옵니다. 밤안에 옮기십시오.\" 보고서에는 이상 없음으로 적는다.",
         "effects": {
-          "variables": { "livelihood": -1, "cooperation": -1, "communityBurden": -1, "autonomy": 1, "solidarity": 1 },
-          "relationships": { "char_deoksu": 16, "char_sato": -6 },
-          "setFlags": ["p2_d", "police_tipped_off"]
+          "variables": {
+            "livelihood": -1,
+            "cooperation": -1,
+            "communityBurden": -1,
+            "autonomy": 1,
+            "solidarity": 1
+          },
+          "relationships": {
+            "char_deoksu": 16,
+            "char_sato": -6
+          },
+          "setFlags": [
+            "p2_d",
+            "police_tipped_off"
+          ]
         },
-        "logSummary": "조사 정보를 사전에 전달하고 보고 내용 일부를 누락해 최덕수 집안을 넘겨주었다.",
+        "logSummary": "재조사 일정을 최덕수에게 몰래 전달하고 보고서에서 은닉 흔적을 누락해 넘겨주었다.",
         "next": "police_c2_react_d"
       }
     ]
@@ -396,8 +763,16 @@
     "id": "police_c2_react_a",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
-      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "expression": "worried",
+        "position": "right"
+      }
     ],
     "speakerId": "char_deoksu",
     "text": "…같은 마을에서 자란 조선 사람이 어찌 이리 매정하오. 그래, 제복 입었으니 시키는 대로 다 가져가시오.",
@@ -407,30 +782,54 @@
     "id": "police_c2_react_b",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_sato", "expression": "stern", "position": "left" },
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_sato",
-    "text": "명령 거부라니, 네놈이 조선인 폭도와 다를 게 무엇이냐! 당장 최덕수 집 재조사는 박태수에게 넘기고, 네 형 집안의 공출 장부도 낱낱이 대조해 보라!",
+    "text": "명령 거부라니, 네놈이 조선인 폭도와 다를 게 무엇이냐! 당장 감봉하고 외근에서 빼겠다! 박태수, 최덕수 집 재수색은 네가 맡고, 가는 길에 강동혁 친형 강영수 집 곡간과 배급표까지 낱낱이 털어 보고하라!",
     "next": "police_c2_react_b2"
   },
   {
     "id": "police_c2_react_b2",
     "locationId": "loc_farmland",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_deoksu",
-    "text": "강 순사보… 주재소에서 크게 소란이 난 사이 우리 식구가 급히 양식을 옮겨 한숨 돌렸소. 당신 집안에 화가 미칠까 걱정이구려. 고맙소, 진심으로.",
+    "text": "강 순사보… 주재소에서 크게 소란이 나 박태수가 반나절 늦게 들이닥친 덕에, 우리 식구가 양식 절반은 겨우 빼돌렸소. 진심으로 고맙소. 다만 골목 이웃들은 박태수가 화풀이로 더 거칠게 뒤지고 갔다며 눈치를 보더구려.",
     "next": "police_c2_end"
   },
   {
     "id": "police_c2_react_c",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_sato", "expression": "field", "position": "left" },
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "right" }
+      {
+        "characterId": "char_sato",
+        "expression": "field",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "right"
+      }
     ],
     "speakerId": "char_sato",
     "text": "잘했다. 최덕수를 본보기로 엄벌에 처하면 다른 농가들도 알아서 곡식을 내놓겠지. 자네 공로를 군 경찰서에 올려 두겠네.",
@@ -440,18 +839,26 @@
     "id": "police_c2_react_d",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_deoksu",
-    "text": "…아무것도 못 본 걸로 해 주시는 겁니까? 내일 다시 나온다는 말, 잊지 않겠습니다. 정말 고맙습니다, 강 순사보.",
+    "text": "…아무것도 못 본 걸로 해 주시는 겁니까? 내일 박 순사보가 다시 나온다는 말, 잊지 않겠습니다. 오늘 밤 안에 반드시 옮겨 놓겠소.",
     "next": "police_c2_end"
   },
   {
     "id": "police_c2_end",
     "locationId": "loc_police_substation",
     "speakerName": "해설",
-    "text": "1944년 늦가을. 면사무소 서기 김진호가 넘긴 노무동원 명부가 주재소 책상 위에 올라왔다. 그 명부에는 마을 야학에서 청년들을 가르치던 이정수의 이름이 적혀 있었다.",
+    "text": "1944년 늦가을. 면사무소 서기 김진호가 정리한 노무동원 최종 명부가 주재소 책상 위에 올라왔다. 그 명부에는 마을 야학에서 청년들을 가르치던 이정수의 이름이 적혀 있었다.",
     "next": "__NEXT_CHAPTER__"
   },
   {
@@ -459,14 +866,44 @@
     "locationId": "loc_home",
     "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_yeongsu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerName": "해설",
-    "text": "1944년 늦가을 저녁. 주재소에서 노무동원 대상자 행방 추적 명령이 떨어지기 직전, 동혁은 잠시 형 강영수와 마주한다.",
+    "text": "1944년 늦가을 저녁. 주재소에서 노무동원 기피자 추적 명령이 떨어지기 직전, 동혁은 잠시 집에 들러 형 강영수와 마주한다.",
     "conditionalNext": [
-      { "condition": { "requiredFlags": ["p2_b"] }, "next": "police_c3_intro_b" },
-      { "condition": { "requiredFlags": ["p2_d"] }, "next": "police_c3_intro_d" }
+      {
+        "condition": {
+          "requiredFlags": [
+            "p2_b"
+          ]
+        },
+        "next": "police_c3_intro_b"
+      },
+      {
+        "condition": {
+          "requiredFlags": [
+            "p2_c"
+          ]
+        },
+        "next": "police_c3_intro_c"
+      },
+      {
+        "condition": {
+          "requiredFlags": [
+            "p2_d"
+          ]
+        },
+        "next": "police_c3_intro_d"
+      }
     ],
     "next": "police_c3_intro_default"
   },
@@ -474,54 +911,109 @@
     "id": "police_c3_intro_b",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_yeongsu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_yeongsu",
-    "text": "동혁아… 네가 옳은 마음으로 단속을 거부한 건 안다. 하지만 왜 아무 잘못도 없는 내 농사까지 주재소 감시를 받고, 배급표에서 트집 잡혀야 하느냐? 우리 집안이 통째로 무너져도 괜찮다는 거냐!",
+    "text": "동혁아… 네가 옳은 마음으로 수색을 거부한 건 안다. 하지만 그날 밤 박태수가 들이닥쳐 우리 곡간을 뒤집어 놓고 배급표까지 깎아 갔어! 형수는 밤마다 잠을 못 자는데, 왜 아무 죄 없는 우리 집안이 통째로 무너져야 하느냐!",
     "next": "police_c3_intro_b2"
   },
   {
     "id": "police_c3_intro_b2",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_yeongsu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_police_asst",
-    "text": "형님… 미안하오. 형님과 집안을 괴롭게 하려던 게 아니오. 그저 굶어 가는 이웃 앞에서 제복을 앞세우는 게 도저히 견딜 수 없었소.",
+    "text": "형님… 정말 미안하오. 형님과 집안을 괴롭게 하려던 게 아니오. 그저 굶어 가는 이웃 앞에서 제복을 앞세우는 게 도저히 견딜 수 없었소.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "police_c3_intro_c",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_yeongsu",
+    "text": "동혁아, 최덕수 집안에 죄를 몰아붙였다는 소문이 돈 뒤로 들말 사람들이 우리 집 대문 앞을 지나며 침을 뱉는다. 이번엔 야학 이정수까지 잡으러 다닌다는데… 제발 이웃 원한 살 일은 그만해라.",
     "next": "__EXPLORE__"
   },
   {
     "id": "police_c3_intro_d",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_yeongsu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_yeongsu",
-    "text": "동혁아, 박태수가 요즘 널 유심히 지켜보는 눈치더라. 오늘 밤에는 야학 이정수 행방을 찾으라고 주재소가 난리라던데… 들키지 않게 조심해라.",
+    "text": "동혁아, 최덕수 집 재수색이 빈손으로 끝난 뒤부터 박태수가 널 유심히 감시하는 눈치더라. 오늘 밤엔 야학 이정수 행방을 찾으라고 주재소가 난리라던데… 들키지 않게 조심해라.",
     "next": "__EXPLORE__"
   },
   {
     "id": "police_c3_intro_default",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_yeongsu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_yeongsu",
-    "text": "면사무소 명부에 야학 이정수 이름이 올라갔다는 소문이 마을에 쫙 퍼졌더라. 주재소에서 널 보낼 텐데… 이 일 끝이 어떻게 될지 걱정뿐이다.",
+    "text": "면사무소 노무동원 명부에 야학 이정수 이름이 올라갔다는 소문이 마을에 쫙 퍼졌더라. 주재소에서 널 보낼 텐데… 이 일 끝이 어떻게 될지 걱정뿐이다.",
     "next": "__EXPLORE__"
   },
   {
     "id": "exp_police_c3_home",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_yeongsu", "expression": "neutral", "position": "center" }
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "center"
+      }
     ],
     "speakerId": "char_yeongsu",
-    "text": "이 지배가 언제 끝날지 누가 아느냐. 우리 집 식구들 숨 쉬고 살게만 해 다오, 동혁아.",
+    "text": "이 지배가 언제 끝날지 누가 아느냐. 10년이 갈지 50년이 갈지 모르는 세상에, 우리 집 식구들 숨 쉬고 살게만 해 다오, 동혁아.",
     "next": "__EXPLORE__"
   },
   {
@@ -529,11 +1021,19 @@
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
-      { "characterId": "char_student", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_student",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_student",
-    "text": "이정수 선생님은 아까 어두워지기 전에 들말 쪽으로 발걸음을 옮기셨습니다… 아니, 저는 아무것도 모릅니다! 제발 잡아가지만 말아 주세요.",
+    "text": "이정수 선생님은 아까 해 질 무렵 들말 뒷산 쪽으로 발걸음을 옮기셨습니다… 아, 아니, 저는 아무것도 모릅니다! 제발 잡아가지만 말아 주세요.",
     "next": "__EXPLORE__"
   },
   {
@@ -541,79 +1041,144 @@
     "locationId": "loc_police_substation",
     "background": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
-      { "characterId": "char_sato", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_sato",
-    "text": "강 순사보! 면사무소에서 넘어온 노무동원 명부의 이정수가 소집에 응하지 않고 잠적했다. 오늘 밤 안으로 들말과 야학 일대를 뒤져 이정수의 행방을 확인하고 보고하라. 이번이 네 충성심을 증명할 마지막 기회다!",
+    "text": "강 순사보! 면사무소에서 넘어온 노무동원 명부의 이정수가 소집에 응하지 않고 잠적했다. 오늘 밤 안으로 들말과 야학 뒷산 일대를 뒤져 이정수의 행방을 확인하고 보고하라. 이번이 네 충성심을 증명할 마지막 기회다!",
     "next": "police_c3_main_2"
   },
   {
     "id": "police_c3_main_2",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
-      { "characterId": "char_police_taesu", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_taesu",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_police_taesu",
-    "text": "이정수가 최덕수 집이나 뒷산 쪽으로 빠졌을 가능성이 커. 네가 이번에 못 잡아 오면 다나카 주임이 네 제복부터 벗기고 형 집안까지 가만 안 둘 거야.",
+    "text": "이정수가 최덕수 집이나 뒷산 쪽으로 빠졌을 가능성이 커. 네가 이번에 못 잡아 오면 다나카 주임이 네 제복부터 벗기고 형님네 집안까지 불온 방조로 엮어 버릴 거야.",
     "next": "police_c3_main_3"
   },
   {
     "id": "police_c3_main_3",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "center" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
     "text": "차별받으면서도 지켜 온 제복, 형 강영수와 집안의 안위, 그리고 명부 속에 적힌 이정수의 운명 앞에서 강동혁은 마지막 선택을 내려야 한다.",
     "choices": [
       {
         "id": "p3_a",
-        "text": "명령에 따라 이정수의 행방을 끝까지 추적해 확인된 은신 정황을 상관에게 보고한다.",
-        "subtext": "제복과 생계는 유지되지만 이정수와 도운 주민들은 체포 위기에 놓인다.",
+        "text": "\"지금 즉시 들말과 뒷산 길목을 수색하겠습니다.\" 명령에 따라 이정수의 은신처를 끝까지 추적해 보고한다.",
         "effects": {
-          "variables": { "livelihood": 2, "cooperation": 2, "communityBurden": 1, "autonomy": -1, "solidarity": -1 },
-          "relationships": { "char_sato": 12, "char_jeongsu": -22 },
-          "setFlags": ["p3_a"]
+          "variables": {
+            "livelihood": 2,
+            "cooperation": 2,
+            "communityBurden": 1,
+            "autonomy": -1,
+            "solidarity": -1
+          },
+          "relationships": {
+            "char_sato": 12,
+            "char_jeongsu": -22
+          },
+          "setFlags": [
+            "p3_a"
+          ]
         },
-        "logSummary": "이정수의 행방을 조사하고 확인된 내용을 상관에게 보고했다.",
+        "logSummary": "명령에 따라 이정수의 행방을 추적하고 확인된 은신 정황을 상관에게 보고했다.",
         "next": "police_c3_react_a"
       },
       {
         "id": "p3_b",
-        "text": "강제 노무동원과 무고한 주민 감시에 반대한다고 공개적으로 밝히며, 조사 지시 자체를 거부하고 다나카 주임에게 문제를 제기한다.",
-        "subtext": "파면과 구금 위험은 물론 형 강영수와 집안까지 큰 고통을 겪을 수 있다.",
+        "text": "허리띠를 풀어 배지와 경봉을 다나카 주임 책상 위에 내려놓는다. \"강제 노무동원 추적은 못 합니다. 무고한 이웃을 사냥하는 명령, 여기서 거부하겠습니다.\"",
         "effects": {
-          "variables": { "livelihood": -3, "cooperation": -3, "communityBurden": -1, "autonomy": 3, "solidarity": 2 },
-          "relationships": { "char_sato": -28, "char_jeongsu": 20, "char_yeongsu": -14 },
-          "setFlags": ["p3_b", "police_public_resist", "police_c3_refused_order"]
+          "variables": {
+            "livelihood": -3,
+            "cooperation": -3,
+            "communityBurden": -1,
+            "autonomy": 3,
+            "solidarity": 2
+          },
+          "relationships": {
+            "char_sato": -28,
+            "char_jeongsu": 20,
+            "char_yeongsu": -14
+          },
+          "setFlags": [
+            "p3_b",
+            "police_public_resist",
+            "police_c3_refused_order"
+          ]
         },
-        "logSummary": "강제 노무동원과 주민 감시에 반대하며 조사 지시를 거부하고 상관에게 공개 문제 제기했다.",
+        "logSummary": "다나카 주임 책상에 배지와 경봉을 내려놓으며 강제 노무동원 추적 명령을 공개 거부했다.",
         "next": "police_c3_react_b"
       },
       {
         "id": "p3_c",
-        "text": "책임을 피하고 실적을 만들기 위해, 이정수가 아닌 다른 마을 주민에게 의심이 향하도록 잘못된 정보를 흘린다.",
-        "subtext": "자신의 책임은 모면하지만 애꿎은 이웃 주민이 주재소에 끌려가게 된다.",
+        "text": "\"이정수 대신 야학을 돕던 다른 들말 청년이 연락책입니다.\" 책임을 피하려 애꿎은 주민에게 의심이 향하도록 허위 첩보를 올린다.",
         "effects": {
-          "variables": { "livelihood": 2, "cooperation": 3, "communityBurden": 3, "autonomy": -2, "solidarity": -3 },
-          "relationships": { "char_sato": 8, "char_villager": -25, "char_deoksu": -18 },
-          "setFlags": ["p3_c"]
+          "variables": {
+            "livelihood": 2,
+            "cooperation": 3,
+            "communityBurden": 3,
+            "autonomy": -2,
+            "solidarity": -3
+          },
+          "relationships": {
+            "char_sato": 8,
+            "char_villager": -25,
+            "char_deoksu": -18
+          },
+          "setFlags": [
+            "p3_c"
+          ]
         },
-        "logSummary": "책임을 피하기 위해 다른 주민에게 의심이 향하도록 잘못된 정보를 제공했다.",
+        "logSummary": "책임을 피하기 위해 애꿎은 들말 청년에게 의심이 향하도록 허위 첩보를 제공했다.",
         "next": "police_c3_react_c"
       },
       {
         "id": "p3_d",
-        "text": "주재소 수색 경로와 시간을 이정수 쪽에 몰래 전달해 산 너머로 피할 시간을 벌어 준다.",
-        "subtext": "겉으로는 수색에 참여하지만 들킬 경우 큰 처벌을 감수해야 한다.",
+        "text": "\"뒷산 동쪽부터 훑어보겠습니다.\" 수색에 나서는 척 빠져나가, 야학 학생 편으로 주재소 수색 경로와 시간을 이정수에게 몰래 전한다.",
         "effects": {
-          "variables": { "livelihood": -1, "cooperation": -1, "communityBurden": -1, "autonomy": 1, "solidarity": 1 },
-          "relationships": { "char_jeongsu": 16, "char_sato": -8 },
-          "setFlags": ["p3_d", "police_tipped_off"]
+          "variables": {
+            "livelihood": -1,
+            "cooperation": -1,
+            "communityBurden": -1,
+            "autonomy": 1,
+            "solidarity": 1
+          },
+          "relationships": {
+            "char_jeongsu": 16,
+            "char_sato": -8
+          },
+          "setFlags": [
+            "p3_d",
+            "police_tipped_off"
+          ]
         },
-        "logSummary": "이정수에게 단속 정보를 미리 전달해 피신할 시간을 벌어 주었다.",
+        "logSummary": "야학 학생 편으로 주재소 수색 경로와 시간을 이정수에게 몰래 전달해 피신할 틈을 주었다.",
         "next": "police_c3_react_d"
       }
     ]
@@ -622,8 +1187,16 @@
     "id": "police_c3_react_a",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_sato", "expression": "field", "position": "left" },
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_sato",
+        "expression": "field",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_sato",
     "text": "훌륭하다, 강 순사보. 즉시 출동해 이정수를 연행하라. 자네의 충성심은 잊지 않겠네.",
@@ -631,46 +1204,97 @@
   },
   {
     "id": "police_c3_react_b",
-    "locationId": "loc_home",
+    "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_yeongsu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
-    "speakerId": "char_yeongsu",
-    "text": "동혁아… 결국 제복을 벗고 조사를 받게 됐다니. 네가 부당한 명령을 거부한 뜻은 알겠다만, 우리 집안에 들이닥친 순사들과 끊긴 생계는 어쩌란 말이냐… 정말 너무 힘겹구나.",
+    "speakerId": "char_sato",
+    "text": "이 배은망덕한 놈! 당장 제복을 벗기고 유치장에 가두라! 박태수, 네가 대원을 이끌고 이정수를 추적하되 강동혁 친형 강영수 집부터 뒤져 불온 연락 흔적이 없는지 확인하라!",
     "next": "police_c3_react_b2"
   },
   {
     "id": "police_c3_react_b2",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_villager", "expression": "calm", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_yeongsu",
+    "text": "이틀 만에 유치장에서 풀려나 돌아왔구나…. 네가 부당한 명령을 거부한 뜻은 알겠다만, 순사들이 마당을 뒤집어 놓고 끊긴 월급과 생계는 어쩌란 말이냐. 한 번쯤은 우리 식구 얼굴도 먼저 떠올려 주지 그랬어….",
+    "next": "police_c3_react_b3"
+  },
+  {
+    "id": "police_c3_react_b3",
+    "locationId": "loc_farmland",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_villager",
+        "expression": "calm",
+        "position": "right"
+      }
     ],
     "speakerId": "char_villager",
-    "text": "강동혁, 네가 마지막에 제복을 벗어 던지며 맞섰다는 얘기가 마을에 다 퍼졌네. 그동안 제복을 원망했던 사람들도 마음이 복잡해졌어. 여기 찬거리라도 좀 받아 두게.",
+    "text": "강동혁, 네가 마지막에 제복을 벗어 던지며 맞섰다는 얘기가 들말에 퍼졌네. 여기 보리라도 좀 받아 두게. 다만 곁을 지나며 냉랭하게 돌아선 이웃 말마따나, 어제까지 그 제복을 입고 골목을 훑던 기억까지 하루아침에 지워지진 않는 모양이네.",
     "next": "police_epi_1"
   },
   {
     "id": "police_c3_react_c",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_police_taesu", "expression": "stern", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_taesu",
+        "expression": "stern",
+        "position": "right"
+      }
     ],
     "speakerId": "char_police_taesu",
-    "text": "애꿎은 들말 청년을 대신 끌고 와서 위기를 넘겼군. 다나카 주임 눈은 속였을지 몰라도, 마을 사람들이 가만히 잊을 것 같으냐?",
+    "text": "애꿎은 들말 청년을 대신 끌고 와서 위기를 넘겼군. 다나카 주임 눈은 속였을지 몰라도, 끌려간 청년 식구들과 마을 사람들이 이걸 가만히 잊을 것 같으냐?",
     "next": "police_epi_1"
   },
   {
     "id": "police_c3_react_d",
     "locationId": "loc_meeting_room",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "patrol", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jeongsu",
-    "text": "강동혁, 네가 흘려 준 쪽지 덕분에 가까스로 빠져나간다. 제복을 입고 있으면서도 마지막 선을 지켜 줘서 고맙다.",
+    "text": "강동혁, 야학 애 편으로 보내 준 수색 경로 쪽지 받았다. 덕분에 주재소 대원들이 오기 전에 산 너머로 빠져나간다. 제복을 입고 있으면서도 마지막 선을 지켜 줘서 고맙다.",
     "next": "police_epi_1"
   },
   {
@@ -686,14 +1310,20 @@
     "conditionalNext": [
       {
         "condition": {
-          "requiredFlags": ["police_public_resist"],
-          "minVars": { "autonomy": 10 }
+          "requiredFlags": [
+            "police_public_resist"
+          ],
+          "minVars": {
+            "autonomy": 10
+          }
         },
         "next": "police_epi_resist_1"
       },
       {
         "condition": {
-          "minVars": { "cooperation": 14 }
+          "minVars": {
+            "cooperation": 14
+          }
         },
         "next": "police_epi_coop_1"
       }
@@ -704,20 +1334,38 @@
     "id": "police_epi_resist_1",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_yeongsu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_yeongsu",
-    "text": "해방이 왔다, 동혁아. 지난겨울 네가 명령을 거부한 뒤로 우리 집안이 겪은 감시와 궁핍을 생각하면 아직도 가슴이 먹먹하다. 그래도 네가 끝내 주민들 편에 섰던 걸 기억해 주는 이웃들이 있더구나.",
-    "setFlags": ["police_ending_3"],
+    "text": "해방이 왔다, 동혁아. 지난 한 해 네가 주재소 명령에 맞선 뒤로 우리 집안이 겪은 감시와 궁핍을 생각하면 아직도 가슴이 먹먹하다. 그래도 네가 끝내 주민들 편에 섰던 걸 기억해 주는 이웃들이 있더구나.",
+    "setFlags": [
+      "police_ending_3"
+    ],
     "next": "police_epi_resist_2"
   },
   {
     "id": "police_epi_resist_2",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_deoksu",
     "text": "강동혁, 자네가 부당한 명령에 맞선 건 분명 고마운 일이오. 다만 그 전에 제복을 입고 단속에 나섰던 시간까지 없던 일이 되진 않겠지. 이제부터 어떻게 살아갈지가 더 중요할 걸세.",
@@ -727,7 +1375,11 @@
     "id": "police_epi_resist_3",
     "locationId": "loc_home",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "center" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
     "text": "부당한 권력에 맞선 선택은 일부 주민의 공감으로 남았지만, 가족이 감당한 고통과 과거 제복을 입고 수행했던 업무의 책임 역시 해방과 동시에 사라지지는 않았다.",
@@ -737,19 +1389,33 @@
     "id": "police_epi_coop_1",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_deoksu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_deoksu",
     "text": "다나카 주임은 도망쳤고 이제 제복도 벗었구먼. 일본인 상관한테 차별받으며 고생했다지만, 우리 곳간을 뒤지고 청년들을 추적하던 그 손이 바로 당신 손이었소.",
-    "setFlags": ["police_ending_1"],
+    "setFlags": [
+      "police_ending_1"
+    ],
     "next": "police_epi_coop_2"
   },
   {
     "id": "police_epi_coop_2",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "center" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
     "text": "차별을 딛고 인정받으려 충실히 수행한 단속과 보고는, 해방된 마을에서 지울 수 없는 책임과 깊은 고립으로 되돌아왔다.",
@@ -759,22 +1425,65 @@
     "id": "police_epi_gray_1",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "left" },
-      { "characterId": "char_jeongsu", "expression": "neutral", "position": "right" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_deoksu",
+    "text": "강동혁, 자네가 주재소 안에서 틈을 봐 마을 편의를 봐주려 애쓴 적이 있다는 걸 아주 모르는 건 아니오. 하지만 제복을 벗지 못한 채 그 조직의 일부로 머물렀던 시간까지 지워지는 건 아니겠지.",
+    "setFlags": [
+      "police_ending_2"
+    ],
+    "conditionalNext": [
+      {
+        "condition": {
+          "requiredFlags": [
+            "p3_d"
+          ]
+        },
+        "next": "police_epi_gray_jeongsu"
+      }
+    ],
+    "next": "police_epi_gray_2"
+  },
+  {
+    "id": "police_epi_gray_jeongsu",
+    "locationId": "loc_police_substation",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
     ],
     "speakerId": "char_jeongsu",
-    "text": "동혁아, 네가 몰래 단속 일정을 흘려 줘서 최악을 피한 사람들이 있다는 건 알고 있어. 하지만 제복을 벗지 못한 채 그 조직의 일부로 머물렀던 시간까지 지워지는 건 아니겠지.",
-    "setFlags": ["police_ending_2"],
+    "text": "동혁아, 그날 밤 네가 수색 경로를 몰래 알려 준 덕에 내가 살아 돌아온 건 잊지 않아. 그래도 우리 둘 다 1944년의 기억을 쉽게 지우진 못하겠지.",
     "next": "police_epi_gray_2"
   },
   {
     "id": "police_epi_gray_2",
     "locationId": "loc_police_substation",
     "characters": [
-      { "characterId": "char_police_asst", "expression": "neutral", "position": "center" }
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "center"
+      }
     ],
     "speakerName": "해설",
-    "text": "직접적인 충돌을 피하며 정보를 흘리고 보고를 늦추던 회색 지대의 시간. 제복을 벗은 뒤에도, 차별받았던 기억과 권력을 행사했던 책임은 함께 남아 있었다.",
+    "text": "정면 충돌을 피하며 틈을 찾고 버텼던 회색 지대의 시간. 제복을 벗은 뒤에도, 차별받았던 기억과 권력을 행사했던 책임은 함께 남아 있었다.",
     "next": "__ENDING__"
   }
 ]

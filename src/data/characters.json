@@ -6,7 +6,7 @@
     "defaultExpression": "neutral",
     "expressions": {
       "neutral": "/assets/aistudio/Korean_farmer_pixel_art_sprite_1ac6b1e0_e1e87f41.jpg",
-      "work": "/assets/aistudio/Korean_male_farmer_pixel_sprite_49efd26c_96be0cd5.jpg",
+      "work": "/assets/aistudio/Korean_farmer_pixel_art_sprite_1ac6b1e0_e1e87f41.jpg",
       "tired": "/assets/aistudio/Pixel_art_farmer_character_standing_1dda8750_b97f0313.png"
     },
     "description": "들말에서 다섯 마지기 논을 부치는 농민. 가족의 겨울 양식과 마을 이웃 사이의 책임감 사이에서 고민합니다.",
@@ -21,7 +21,7 @@
       "neutral": "/assets/aistudio/Young_man_carrying_document_folder_67f4d3c7_370f7e5d.png",
       "formal": "/assets/aistudio/Pixel_art_office_clerk_sprite_356d8ffe_93593a24.jpg",
       "worried": "/assets/aistudio/Pixel_art_office_clerk_sprite_16e39dc8_1ee20749.jpg",
-      "field": "/assets/aistudio/Clerk_holding_ledger_pixel_art_68ccb602_723cbc58.png"
+      "field": "/assets/aistudio/Young_man_carrying_document_folder_67f4d3c7_370f7e5d.png"
     },
     "description": "보통학교와 고등보통학교를 졸업하고 면사무소에 취직한 27세 서기. 문서 한 장에 적힌 먹줄이 타인의 삶을 바꾼다는 현실 앞에서 갈등합니다.",
     "isFictional": true
@@ -57,7 +57,7 @@
     "defaultExpression": "worried",
     "expressions": {
       "worried": "/assets/aistudio/Pixel_art_woman_in_hanbok_44ffe95a_366cd83f.jpg",
-      "calm": "/assets/aistudio/Woman_standing_in_retro_pixel_159b8e02_9c7cf6af.jpg",
+      "calm": "/assets/aistudio/Pixel_art_woman_in_hanbok_44ffe95a_366cd83f.jpg",
       "bundle": "/assets/aistudio/Pixel_art_woman_carrying_bundle_931b3b2f_8d9c0655.png"
     },
     "description": "배급과 물가, 이웃의 눈치 속에서 가족의 하루하루를 지켜 내려는 생활인입니다.",
@@ -94,8 +94,8 @@
     "defaultExpression": "neutral",
     "expressions": {
       "neutral": "/assets/aistudio/Clerk_character_pixel_art_sprite_fef88d0d_1b147acc.jpg",
-      "papers": "/assets/aistudio/Pixel_clerk_holding_documents_3da2c788_3e62fbe9.png",
-      "ledger": "/assets/aistudio/Young_man_standing_with_ledger_a643ffa2_0e673bb3.png"
+      "papers": "/assets/aistudio/Pixel_art_office_clerk_sprite_19fdb5f4_cca7f14d.png",
+      "ledger": "/assets/aistudio/Clerk_character_pixel_art_sprite_fef88d0d_1b147acc.jpg"
     },
     "description": "오래 근무한 선임 실무자. 규정을 어겼을 때 돌아올 문책과 현실적 생존법을 잘 알고 있습니다.",
     "isFictional": true
@@ -107,7 +107,7 @@
     "defaultExpression": "neutral",
     "expressions": {
       "neutral": "/assets/aistudio/Korean_farmer_pixel_art_sprite_1ac6b1e0_e1e87f41.jpg",
-      "work": "/assets/aistudio/Korean_male_farmer_pixel_sprite_49efd26c_96be0cd5.jpg"
+      "work": "/assets/aistudio/Korean_farmer_pixel_art_sprite_1ac6b1e0_e1e87f41.jpg"
     },
     "description": "대대로 지주의 땅을 빌려 농사짓는 30대 소작농. 가족의 생존과 언젠가 자기 땅을 갖는 일을 꿈꿉니다.",
     "isFictional": true
@@ -119,9 +119,9 @@
     "defaultExpression": "worried",
     "expressions": {
       "worried": "/assets/aistudio/Pixel_art_woman_in_hanbok_44ffe95a_366cd83f.jpg",
-      "calm": "/assets/aistudio/Woman_standing_in_retro_pixel_159b8e02_9c7cf6af.jpg",
+      "calm": "/assets/aistudio/Pixel_art_woman_in_hanbok_44ffe95a_366cd83f.jpg",
       "bundle": "/assets/aistudio/Pixel_art_woman_carrying_bundle_931b3b2f_8d9c0655.png",
-      "packing": "/assets/aistudio/Woman_standing_with_cloth_bundle_10048094_38311d7f.png"
+      "packing": "/assets/aistudio/Pixel_art_woman_carrying_bundle_931b3b2f_8d9c0655.png"
     },
     "description": "가족의 식량과 안전을 우선시하며 현실적인 걱정을 드러냅니다.",
     "isFictional": true
@@ -169,8 +169,8 @@
     "defaultExpression": "neutral",
     "expressions": {
       "neutral": "/assets/aistudio/Young_man_carrying_document_folder_67f4d3c7_370f7e5d.png",
-      "papers": "/assets/aistudio/Clerk_holding_ledger_pixel_art_68ccb602_723cbc58.png",
-      "ledger": "/assets/aistudio/Young_man_standing_with_ledger_a643ffa2_0e673bb3.png"
+      "papers": "/assets/aistudio/Pixel_art_office_clerk_sprite_28934ae9_7c0cebeb.jpg",
+      "ledger": "/assets/aistudio/Pixel_art_office_clerk_sprite_ffab4682_9825eeff.jpg"
     },
     "description": "면사무소에서 증산·공출 정책과 경작권 이전을 농촌에 전달하고 실적을 관리합니다.",
     "isFictional": true
@@ -182,7 +182,7 @@
     "defaultExpression": "stern",
     "expressions": {
       "stern": "/assets/aistudio/Man_standing_in_pixel_art_52192664_1385c575.png",
-      "formal": "/assets/aistudio/Middle-aged_man_standing_pixel_art_108d0804_b22e35c5.png"
+      "formal": "/assets/aistudio/Man_standing_in_pixel_art_52192664_1385c575.png"
     },
     "description": "토지 소유권과 소작 관계를 통해 농민의 삶에 막강한 영향력을 행사하는 조선인 지주입니다.",
     "isFictional": true
@@ -265,8 +265,8 @@
     "defaultExpression": "neutral",
     "expressions": {
       "neutral": "/assets/aistudio/Clerk_character_pixel_art_sprite_fef88d0d_1b147acc.jpg",
-      "papers": "/assets/aistudio/Pixel_clerk_holding_documents_3da2c788_3e62fbe9.png",
-      "ledger": "/assets/aistudio/Young_man_standing_with_ledger_a643ffa2_0e673bb3.png"
+      "papers": "/assets/aistudio/Pixel_art_office_clerk_sprite_19fdb5f4_cca7f14d.png",
+      "ledger": "/assets/aistudio/Clerk_character_pixel_art_sprite_fef88d0d_1b147acc.jpg"
     },
     "description": "김진호의 동료 서기(28세). 식민지 질서에 순응하는 것을 현실적 처세라 믿으며 진호의 죄책감을 무마합니다. (채만식 《치숙》·《맹순사》·《미스터 방》의 자기합리화·기회주의 모티브를 참고한 창작 인물)",
     "isFictional": true
@@ -289,8 +289,8 @@
     "role": "면사무소 면장",
     "defaultExpression": "stern",
     "expressions": {
-      "stern": "/assets/aistudio/Middle-aged_man_standing_pixel_art_108d0804_b22e35c5.png",
-      "formal": "/assets/aistudio/Pixel_art_male_office_clerk_a5de2ff0_3cad09a5.jpg"
+      "stern": "/assets/aistudio/Pixel_art_office_clerk_sprite_28934ae9_7c0cebeb.jpg",
+      "formal": "/assets/aistudio/Pixel_art_office_clerk_sprite_28934ae9_7c0cebeb.jpg"
     },
     "description": "일제 행정기관과 지역 유지 사이에서 권력을 유지하는 50대 면장. 유력 지주에게는 편의를 제공하면서 진호에게는 행정 실적을 압박합니다.",
     "isFictional": true
@@ -302,7 +302,7 @@
     "defaultExpression": "worried",
     "expressions": {
       "worried": "/assets/aistudio/Pixel_art_woman_in_hanbok_44ffe95a_366cd83f.jpg",
-      "calm": "/assets/aistudio/Woman_standing_in_retro_pixel_159b8e02_9c7cf6af.jpg",
+      "calm": "/assets/aistudio/Pixel_art_woman_in_hanbok_44ffe95a_366cd83f.jpg",
       "bundle": "/assets/aistudio/Pixel_art_woman_carrying_bundle_931b3b2f_8d9c0655.png"
     },
     "description": "가난한 살림 속에서 아들이 면사무소 서기가 된 것을 의지하며, 전쟁 말기 가족의 안위를 노심초사 걱정하는 어머니입니다.",
