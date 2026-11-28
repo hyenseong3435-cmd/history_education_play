@@ -235,8 +235,8 @@ export function VisualNovelStage({
         <div
           className={
             layout === 'desktop'
-              ? 'grid grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-2.5 max-h-[46dvh] overflow-y-auto overscroll-contain pr-0.5'
-              : 'flex flex-col gap-1.5 sm:gap-2'
+              ? 'grid grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-2.5 max-h-[46dvh] overflow-y-auto overflow-x-hidden overscroll-contain pr-0.5'
+              : 'flex flex-wrap items-stretch gap-2 w-full max-w-full'
           }
         >
           {evaluatedChoices.map(({ choice, unlocked }, idx) => {
@@ -250,14 +250,16 @@ export function VisualNovelStage({
               return (
                 <div
                   key={choice.id}
-                  className="w-full px-3 py-2.5 bg-[#121417]/94 border border-[#282C33] text-[#83817B] flex flex-col sm:flex-row sm:items-center justify-between gap-2"
+                  className={`w-full max-w-full min-w-0 h-auto px-3 py-2.5 bg-[#121417]/94 border border-[#282C33] text-[#83817B] flex flex-wrap items-center justify-between gap-2 ${
+                    layout === 'mobile' ? 'basis-full' : ''
+                  }`}
                 >
-                  <div className="space-y-0.5">
+                  <div className="space-y-0.5 min-w-0 flex-1">
                     <p className="text-xs sm:text-sm font-medium flex items-center gap-2">
                       <Lock className="w-3.5 h-3.5 shrink-0" />
-                      <span>조건 미충족 선택지</span>
+                      <span className="break-keep">조건 미충족 선택지</span>
                     </p>
-                    <p className="text-xs text-[#918E87]">
+                    <p className="text-xs text-[#918E87] break-keep [overflow-wrap:anywhere]">
                       {choice.lockedReason ??
                         '특정 단서 또는 사료 열람이 필요합니다.'}
                     </p>
@@ -266,7 +268,7 @@ export function VisualNovelStage({
                     <button
                       type="button"
                       onClick={() => onOpenSourceById(requiredSourceId)}
-                      className="min-h-[36px] px-3 py-1 bg-[#1B1E23] hover:bg-[#252930] text-[#E3DED4] border border-[#5B564D] text-xs font-medium flex items-center gap-1.5 self-start sm:self-center cursor-pointer whitespace-nowrap"
+                      className="min-h-[36px] px-3 py-1 bg-[#1B1E23] hover:bg-[#252930] text-[#E3DED4] border border-[#5B564D] text-xs font-medium flex items-center gap-1.5 cursor-pointer whitespace-nowrap shrink-0"
                     >
                       <BookOpen className="w-3.5 h-3.5 text-[#B2A999]" />
                       사료 열람하여 해금
@@ -281,14 +283,18 @@ export function VisualNovelStage({
                 key={choice.id}
                 type="button"
                 onClick={() => onSelectChoice(choice)}
-                className="group w-full min-h-[44px] sm:min-h-[50px] px-3 sm:px-4 py-2 sm:py-2.5 bg-[#171A20]/96 hover:bg-[#21252D] active:bg-[#2A2F38] border border-[#444A55] hover:border-[#B5AC9C] active:border-[#C7BFA9] text-left transition-colors duration-150 flex items-center gap-2.5 sm:gap-3 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B2A999]"
+                className={`group max-w-full min-w-0 h-auto min-h-[44px] sm:min-h-[50px] px-3 sm:px-4 py-2.5 bg-[#171A20]/96 hover:bg-[#21252D] active:bg-[#2A2F38] border border-[#444A55] hover:border-[#B5AC9C] active:border-[#C7BFA9] text-left transition-colors duration-150 flex items-start sm:items-center gap-2.5 sm:gap-3 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B2A999] ${
+                  layout === 'mobile'
+                    ? 'basis-full sm:basis-[calc(50%-0.25rem)] flex-grow'
+                    : 'w-full'
+                }`}
               >
-                <span className="font-data text-[11px] font-semibold text-[#C2B9A8] bg-[#22262E] border border-[#3E434E] group-hover:border-[#9E9586] w-6 h-6 flex items-center justify-center shrink-0">
+                <span className="font-data text-[11px] font-semibold text-[#C2B9A8] bg-[#22262E] border border-[#3E434E] group-hover:border-[#9E9586] w-6 h-6 mt-0.5 sm:mt-0 flex items-center justify-center shrink-0">
                   {idx + 1}
                 </span>
                 <div className="flex-1 min-w-0">
                   <span
-                    className={`block font-medium text-[#F2EFE9] leading-[1.4] break-keep ${
+                    className={`block font-medium text-[#F2EFE9] leading-[1.45] whitespace-normal break-keep [overflow-wrap:anywhere] ${
                       settings.textSize === 'large'
                         ? 'text-[15px] sm:text-[17px]'
                         : 'text-[13.5px] sm:text-[15px]'
@@ -297,12 +303,12 @@ export function VisualNovelStage({
                     {choice.text}
                   </span>
                   {choice.unlockTag && (
-                    <span className="inline-block mt-0.5 text-[11px] text-[#B2A999] font-normal">
+                    <span className="inline-block mt-0.5 text-[11px] text-[#B2A999] font-normal break-keep">
                       · {choice.unlockTag}
                     </span>
                   )}
                 </div>
-                <ChevronRight className="w-4 h-4 text-[#8E8B84] group-hover:text-[#D8D1C5] shrink-0 transition-colors" />
+                <ChevronRight className="w-4 h-4 mt-1 sm:mt-0 text-[#8E8B84] group-hover:text-[#D8D1C5] shrink-0 transition-colors" />
               </button>
             );
           })}
@@ -443,8 +449,8 @@ export function VisualNovelStage({
         </div>
 
         {/* Unified single-scroll lower dialogue & choice panel (no nested scroll traps) */}
-        <section className="flex-1 min-h-0 w-full max-w-3xl mx-auto px-3 sm:px-5 pt-2.5 pb-[max(0.875rem,env(safe-area-inset-bottom))] overflow-y-auto overscroll-contain bg-[#0F1114]">
-          <div className="flex flex-col gap-2.5">
+        <section className="flex-1 min-h-0 min-w-0 w-full max-w-3xl mx-auto px-3 sm:px-5 pt-2.5 pb-[max(0.875rem,env(safe-area-inset-bottom))] overflow-y-auto overflow-x-hidden overscroll-contain bg-[#0F1114]">
+          <div className="flex flex-col gap-2.5 min-w-0 w-full">
             {renderDialogueCard(true, showChoices)}
             {renderChoices('mobile')}
           </div>

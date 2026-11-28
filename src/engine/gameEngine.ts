@@ -554,13 +554,52 @@ export function saveAutoSave(state: GameState): void {
   }
 }
 
+function sanitizeLoadedState(raw: GameState): GameState {
+  const normalized: GameState = {
+    ...raw,
+    variables: normalizeLoadedVariables(raw.variables),
+  };
+
+  if (
+    normalized.screen === 'DIALOGUE' &&
+    (!normalized.currentNodeId || !EVENTS_BY_ID[normalized.currentNodeId])
+  ) {
+    if (normalized.occupation) {
+      return {
+        ...normalized,
+        screen: 'EXPLORE',
+        currentNodeId: null,
+      };
+    }
+    return {
+      ...normalized,
+      screen: 'TITLE',
+      currentNodeId: null,
+    };
+  }
+
+  if (
+    normalized.screen === 'ENDING' &&
+    (!normalized.activeEndingId ||
+      !ENDINGS.some((e) => e.id === normalized.activeEndingId))
+  ) {
+    const resolved = resolveEnding(normalized);
+    return {
+      ...normalized,
+      activeEndingId: resolved.id,
+    };
+  }
+
+  return normalized;
+}
+
 export function loadAutoSave(): SaveSlotData | null {
   try {
     const raw = localStorage.getItem(STORAGE_KEYS.AUTOSAVE);
     if (!raw) return null;
     const parsed = JSON.parse(raw) as SaveSlotData;
     if (parsed?.state) {
-      parsed.state.variables = normalizeLoadedVariables(parsed.state.variables);
+      parsed.state = sanitizeLoadedState(parsed.state);
     }
     return parsed;
   } catch {
@@ -575,7 +614,7 @@ export function loadManualSlots(): Record<string, SaveSlotData> {
     const parsed = JSON.parse(raw) as Record<string, SaveSlotData>;
     Object.values(parsed).forEach((slot) => {
       if (slot?.state) {
-        slot.state.variables = normalizeLoadedVariables(slot.state.variables);
+        slot.state = sanitizeLoadedState(slot.state);
       }
     });
     return parsed;

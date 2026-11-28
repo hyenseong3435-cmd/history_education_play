@@ -354,6 +354,25 @@
     ],
     "speakerId": "char_sato",
     "text": "그래, 그 태도가 맞다. 조선인 순사보라도 시키는 대로 일하면 제 몫은 챙겨 주지. 가을 공출 수색 때도 오늘처럼 보고하라.",
+    "next": "police_c1_react_a2"
+  },
+  {
+    "id": "police_c1_react_a2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_yeongsu",
+    "text": "동혁의 보고로 들말 청년 둘이 주재소에 불려가 매를 맞고 나온 저녁, 친형 강영수가 마당에서 동혁을 가로막았다. “동혁아, 네가 올린 보고서 때문에 이웃 집 아들이 피투성이가 되어 끌려갔다. 제복 입고 상관 비위 맞춰 정규 순사 되면 뭐 하느냐. 내 동생이 들말 사람들 숨통을 조이는 앞잡이가 됐다는데, 형이 마을에 얼굴을 들 수가 없다.”",
     "next": "police_c1_end"
   },
   {
@@ -430,6 +449,25 @@
     ],
     "speakerId": "char_police_taesu",
     "text": "치, 제법이네 강동혁. 선배 실적까지 가로채며 기어오르겠다 이거지? 방금 과태료 문 들말 농민들이 골목에서 널 뭐라 부르는지 귀 좀 기울여 봐.",
+    "next": "police_c1_react_c2"
+  },
+  {
+    "id": "police_c1_react_c2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_yeongsu",
+    "text": "단속 실적을 올리고 돌아온 동혁 앞에서 형 영수가 수저를 내려놓고 밥상을 물렸다. “선배 제치고 출세하려고 배고픈 노인네까지 닥치는 대로 과태료를 물렸다면서? 오늘 논둑에서 아무도 내게 말을 걸지 않더구나. 일본 순사보다 더 독한 조선인 순사보 동생을 둔 죄로 우리 집안이 통째로 버림받게 생겼다.”",
     "next": "police_c1_end"
   },
   {
@@ -928,6 +966,25 @@
     ],
     "speakerId": "char_deoksu",
     "text": "…같은 마을에서 자란 조선 사람이 어찌 이리 매정하오. 그래, 제복 입었으니 시키는 대로 다 가져가시오.",
+    "next": "police_c2_react_a2"
+  },
+  {
+    "id": "police_c2_react_a2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_yeongsu",
+    "text": "최덕수네 겨울 양식이 압수되고 그 집 아내가 마당에 주저앉아 통곡한 밤, 형 영수가 동혁의 제복 깃을 붙잡으며 절규했다. “덕수네는 우리랑 한동네에서 흙 만지며 자란 이웃이야! 어린 애 겨울 양식까지 뺏어 다나카 앞에 바치고 네가 얻은 게 고작 칭찬 몇 마디냐? 그 제복 벗어 던지지 못할 거면 다신 이 문턱을 넘지 마라!”",
     "next": "police_c2_end"
   },
   {
@@ -985,6 +1042,25 @@
     ],
     "speakerId": "char_sato",
     "text": "잘했다. 최덕수를 본보기로 엄벌에 처하면 다른 농가들도 알아서 곡식을 내놓겠지. 자네 공로를 군 경찰서에 올려 두겠네.",
+    "next": "police_c2_react_c2"
+  },
+  {
+    "id": "police_c2_react_c2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_yeongsu",
+    "text": "군 경찰서 표창 후보에 올랐다는 말을 듣자 형 영수가 차갑게 등을 돌렸다. “최덕수 하나를 제물 삼아 군 경찰서에 이름 올렸다니… 덕수는 주재소에서 다리를 절며 끌려 나왔단다. 형제라는 이유만으로 마을 사람들이 내 논 물길까지 막아 버렸어. 네 출세가 우리 집안을 산 채로 매장했구나.”",
     "next": "police_c2_end"
   },
   {
@@ -1428,6 +1504,25 @@
     ],
     "speakerId": "char_sato",
     "text": "훌륭하다, 강 순사보. 즉시 출동해 이정수를 연행하라. 자네의 충성심은 잊지 않겠네.",
+    "next": "police_c3_react_a2"
+  },
+  {
+    "id": "police_c3_react_a2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_yeongsu",
+    "text": "동혁의 손에 잡혀간 이정수가 끝내 탄광으로 끌려간 밤, 형 영수가 동혁의 짐 보따리를 마당 밖으로 내던지며 인연을 끊었다. “네 손으로 야학 선생을 묶어 넘겼다는 얘기가 밤새 들말에 퍼졌다. 이제 내 아우 강동혁은 죽고 없는 셈 치마. 일본 놈 밑에서 끝까지 충성하며 혼자 잘 먹고 잘 살아라!”",
     "next": "police_epi_1"
   },
   {
@@ -1504,6 +1599,25 @@
     ],
     "speakerId": "char_police_taesu",
     "text": "애꿎은 들말 청년을 대신 끌고 와서 위기를 넘겼군. 다나카 주임 눈은 속였을지 몰라도, 끌려간 청년 식구들과 마을 사람들이 이걸 가만히 잊을 것 같으냐?",
+    "next": "police_c3_react_c2"
+  },
+  {
+    "id": "police_c3_react_c2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_yeongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_yeongsu",
+    "text": "억울하게 끌려간 청년의 어머니가 마당에 찾아와 실신한 뒤, 형 영수가 핏발 선 눈으로 동혁을 노려보았다. “네 자리 하나 보전하자고 아무 죄 없는 들말 청년을 거짓으로 팔아넘겼구나…. 끌려간 애 어미가 내 바짓가랑이를 잡고 피눈물을 흘렸어. 이 천벌을 네놈 혼자 받는 게 아니라 우리 집안 대대로 뒤집어쓰게 됐구나….”",
     "next": "police_epi_1"
   },
   {
@@ -1646,7 +1760,7 @@
       }
     ],
     "speakerName": "해설",
-    "text": "차별을 딛고 인정받으려 충실히 수행한 단속과 보고는, 해방된 마을에서 지울 수 없는 책임과 깊은 고립으로 되돌아왔다.",
+    "text": "차별을 딛고 인정받으려 충실히 수행한 단속과 보고는, 해방된 마을에서 지울 수 없는 책임과 고립으로 되돌아왔고 끝내 형 강영수마저 등을 돌린 채 집안은 산산조각이 나고 말았다.",
     "next": "__ENDING__"
   },
   {

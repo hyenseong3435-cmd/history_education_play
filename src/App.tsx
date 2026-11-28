@@ -447,7 +447,8 @@ export default function App() {
               }
             />
 
-            {state.screen === 'EXPLORE' && (
+            {(state.screen === 'EXPLORE' ||
+              (state.screen === 'DIALOGUE' && !currentNode)) && (
               <ExplorationView
                 state={state}
                 recentDelayedEffects={recentDelayedEffects}
@@ -487,6 +488,7 @@ export default function App() {
               }
             />
             <EndingScreen
+              key={activeEnding.id}
               ending={activeEnding}
               state={state}
               allOccupationsCompleted={allOccupationsCompleted}

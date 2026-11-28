@@ -407,6 +407,25 @@
     ],
     "speakerId": "char_bongsu",
     "text": "…그래, 급한 압류는 막았으니 자네를 탓하진 않겠네. 다만 이 반값으로는 가을까지 버틸 양식도 안 남아. 이 논 네 두락에 붙는 공출 몫이 만만치 않을 텐데… 자네도 각오하게.",
+    "next": "farmer_c1_react_a2"
+  },
+  {
+    "id": "farmer_c1_react_a2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_suni_farmer",
+    "text": "그날 밤, 우물가에서 돌아온 아내의 얼굴이 하얗게 질려 있었다. “봉수 씨 댁 식구들이 굶어 야반도주하듯 짐을 싼대요…. 동네 아낙들이 우리를 보고 ‘이웃 피 빨아 땅 늘렸다’며 다들 얼굴을 돌렸어요. 남의 눈물 밟은 땅에서 난 밥을 우리 애한테 어찌 먹여요?”",
     "next": "farmer_c1_end"
   },
   {
@@ -484,6 +503,25 @@
     ],
     "speakerId": "char_bongsu",
     "text": "여섯 할이라니… 덕수야, 자네마저 내 궁박한 처지를 밟고 올라설 줄은 몰랐네. 당장 쫓겨날 판이니 도장은 찍겠지만, 마을 사람들이 이 거래를 어떻게 보겠나.",
+    "next": "farmer_c1_react_c2"
+  },
+  {
+    "id": "farmer_c1_react_c2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_suni_farmer",
+    "text": "소문을 듣고 온 아내가 밥상을 밀어내며 울먹였다. “봉수 형님한테 여섯 할 소작을 받아 내기로 했다면서요? 우리도 박 영감한테 평생 등골이 휘어 놓고… 이러면 당신이 박 영감과 다를 게 뭐예요! 애가 아비 닮을까 무서워요.”",
     "next": "farmer_c1_end"
   },
   {
@@ -981,6 +1019,25 @@
     ],
     "speakerId": "char_clerk",
     "text": "…고생 많으셨습니다, 덕수 씨. 장부에 완납 예정으로 올리겠습니다. 강 순사보님, 이 집은 됐으니 다음 집으로 가시지요.",
+    "next": "farmer_c2_react_a2"
+  },
+  {
+    "id": "farmer_c2_react_a2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_suni_farmer",
+    "text": "공출 가마니를 모두 실어 보낸 뒤, 텅 빈 광 앞에 주저앉은 아내가 열이 오른 어린 아들을 안고 무너졌다. “시키는 대로 다 바치고 나니 광 바닥에 좁쌀 한 줌 안 남았어요…. 애는 밤새 배고프다고 열이 끓는데, 당신은 순사 무섭다고 식구 목숨줄까지 고스란히 갖다 바친 거예요?”",
     "next": "farmer_c2_end"
   },
   {
@@ -1043,6 +1100,25 @@
     ],
     "speakerId": "char_villager",
     "text": "우연히 담 너머로 그 말을 엿들은 이웃 어르신이 혀를 찼다. “아랫말 늙은이 몫을 끌어다 자기 공출을 메우려 하다니… 먹고살자고 이웃 숨통을 끊는 짓은 사람 도리가 아니네.”",
+    "next": "farmer_c2_react_c2"
+  },
+  {
+    "id": "farmer_c2_react_c2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_suni_farmer",
+    "text": "저녁 무렵, 마당에 돌아온 아내가 대문을 걸어 잠그며 떨리는 목소리로 쏘아붙였다. “아랫말 노인네가 공출 미납으로 주재소에 끌려갔다면서요…. 그 집 벼를 끌어다 우리 몫을 메우려 했다는 소문이 온 동네에 퍼졌어요. 창피해서 애 손 잡고 마당 밖으로도 못 나가겠어요!”",
     "next": "farmer_c2_end"
   },
   {
@@ -1516,6 +1592,25 @@
     ],
     "speakerId": "char_jeongsu",
     "text": "…원망하지 않겠습니다, 형님. 어린 아들과 아주머니를 두고 무리한 청을 드렸습니다. 부디 무사히 겨울을 나십시오.",
+    "next": "farmer_c3_react_a2"
+  },
+  {
+    "id": "farmer_c3_react_a2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_suni_farmer",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_suni_farmer",
+    "text": "빗장을 걸어 잠근 직후 골목 끝에서 순사들의 고함과 이정수가 끌려가는 비명이 들려왔다. 제 손으로 보내라 했던 아내마저 방구석에 엎드려 오열했다. “내가 막으라 했지만… 방 안에서 애가 ‘선생님 잡혀갔냐’고 묻는데 차마 대답을 못 했어요. 우리 살겠다고 사람 하나를 문 밖으로 떠밀어 죽인 거예요….”",
     "next": "farmer_epi_1"
   },
   {
@@ -1598,7 +1693,7 @@
       }
     ],
     "speakerId": "char_suni_farmer",
-    "text": "여보… 우리 집은 수색을 피해서 다행이긴 한데, 이튿날 새벽 아랫말 둘째가 숯가마에서 대신 끌려갔대요. 그 집 어머니 울음소리가 들려서 밥이 목으로 넘어가질 않아요.",
+    "text": "여보… 당신이 주재소에 숯가마를 일렀다는 말이 골목에 돌고 있어요. 이튿날 새벽 아랫말 둘째가 대신 끌려가 그 집 어미가 마당에서 피를 토하며 울부짖었대요. 살겠다고 남의 자식을 사지로 떠민 사람 곁에서 내가 어찌 한 이불을 덮고 살아요….",
     "next": "farmer_epi_1"
   },
   {
@@ -1767,7 +1862,7 @@
       }
     ],
     "speakerName": "해설",
-    "text": "가족의 생존을 지키려 택한 순응과 계산은 전시의 위기를 넘기게 해 주었지만, 해방된 마을에는 토지 갈등과 차가운 고립으로 되돌아왔다.",
+    "text": "가족을 지키겠다며 택한 순응과 계산은 전시의 위기를 넘기게 해 주었지만, 해방된 마을에는 토지 갈등과 차가운 고립, 그리고 말없이 등을 돌린 아내와 아들의 깊은 상처로 되돌아왔다.",
     "next": "__ENDING__"
   },
   {

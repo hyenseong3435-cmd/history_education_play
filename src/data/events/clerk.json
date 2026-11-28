@@ -347,6 +347,25 @@
     ],
     "speakerId": "char_myeonjang",
     "text": "군더더기 없이 깔끔하군. 김 서기는 행정이 뭔지 알아. 이 대장이 군청에 들어가면 올가을 공출 실적은 걱정이 없겠어.",
+    "next": "clerk_c1_react_a2"
+  },
+  {
+    "id": "clerk_c1_react_a2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_jinho_mother",
+    "text": "그날 밤, 월급 봉투를 내미는 진호 앞에서 어머니가 끝내 봉투를 밀어냈다. “진호야… 아까 들말 봉수 댁이 대문 앞에서 울다 갔다. 네가 부풀려 찍은 대장 때문에 올가을 굶어 죽게 생겼다고…. 내 입에 풀칠하자고 이웃 논을 말려 죽이는 돈이면, 이 어미는 차라리 굶고 말겠다.”",
     "next": "clerk_c1_end"
   },
   {
@@ -429,6 +448,25 @@
     ],
     "speakerId": "char_taesu",
     "text": "면장에게 크게 꾸중을 들은 박태수가 이를 악물고 지나갔다. “김진호, 참 출세에 눈이 멀었구나. 동료 등 밟고 올라간 자리가 언제까지 안전할지 두고 보자.”",
+    "next": "clerk_c1_react_c2"
+  },
+  {
+    "id": "clerk_c1_react_c2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_jinho_mother",
+    "text": "면사무소 안팎의 소문을 전해 들은 어머니가 깊은 한숨을 내쉬며 진호를 외면했다. “자리 지키라고 했지, 동료 등을 밟고 기어오르라 가르치진 않았다. 일본 놈들 밑에서 칭찬 몇 마디 듣자고 사람 도리까지 버리면 그 월급 받아 온들 우리 집안에 무슨 복이 있겠느냐.”",
     "next": "clerk_c1_end"
   },
   {
@@ -891,6 +929,25 @@
     ],
     "speakerId": "char_police_asst",
     "text": "다음 날 아침, 사본을 수령하러 온 강동혁 순사보가 명단을 훑어보았다. “이정수 주소지까지 정확하군요. 고생하셨습니다, 김 서기님. 주재소에서 곧장 움직이겠습니다.” 진호는 차마 고개를 들지 못했다.",
+    "next": "clerk_c2_react_a2"
+  },
+  {
+    "id": "clerk_c2_react_a2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_jinho_mother",
+    "text": "어릴 적부터 한 마당에서 자란 이정수의 어머니가 달려와 통곡하고 돌아간 뒤, 진호의 어머니가 마루에 무너져 내렸다. “진호야, 네가 제 손으로 정수 이름을 넘겼다는 게 정말이냐…. 정수 어미가 ‘내 아들 살려 내라’고 땅을 치는데 이 에미가 부끄러워 고개를 못 들었다. 네가 출세하려고 평생 벗을 탄광에 팔아넘겼구나!”",
     "next": "clerk_c2_end"
   },
   {
@@ -973,6 +1030,25 @@
     ],
     "speakerId": "char_taesu",
     "text": "아랫말 가난한 집 둘째로 바꿔 넣었군. 인원만 맞으면 면장님도 모른 척 넘어가실 거야. 대신 며칠 뒤 소집장 받아 들고 울부짖을 그 집 부모 얼굴은 마주치지 않게 조심해.",
+    "next": "clerk_c2_react_c2"
+  },
+  {
+    "id": "clerk_c2_react_c2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_jinho_mother",
+    "text": "며칠 뒤 아랫말 소작농 아들이 징용 열차에 끌려간 밤, 담장 너머로 들려오는 곡소리에 어머니가 진호의 손목을 붙잡고 흐느꼈다. “죄 없는 남의 집 자식을 네 붓끝 하나로 대신 사지에 밀어 넣었구나…. 저 곡소리가 들리느냐? 네가 지킨 그 자리가 남의 자식 목숨값이란 걸 평생 어찌 감당하려느냐….”",
     "next": "clerk_c2_end"
   },
   {
@@ -1415,6 +1491,25 @@
     ],
     "speakerId": "char_myeonjang",
     "text": "수고했네, 김 서기. 자네 덕분에 군청 체면을 세웠어. 승진 추천서는 내가 직접 올려 두겠네.",
+    "next": "clerk_c3_react_a2"
+  },
+  {
+    "id": "clerk_c3_react_a2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_jinho_mother",
+    "text": "승진 추천 소식을 들고 돌아온 진호 앞에, 대문에는 붉은 흙으로 ‘친일 주구’라 적혀 있었고 어머니는 병석에 누워 등을 돌렸다. “승진이라니… 네가 독촉장 들고 쫓아낸 집 애들이 길에서 돌을 던지며 욕을 하더라. 먹고살려던 아들이 어느새 마을 원수가 됐구나. 제발 내 앞에서 그 월급 얘기 좀 그만하거라….”",
     "next": "clerk_epi_1"
   },
   {
@@ -1503,6 +1598,25 @@
     ],
     "speakerId": "char_villager",
     "text": "앞마당에서 추가 독촉장을 받아 든 들말 어르신이 치를 떨었다. “박 영감 곳간은 멀쩡한데 힘없는 소작농만 털어 실적을 채우다니… 김진호 서기, 이 은원은 마을이 두고두고 기억할 것이오.”",
+    "next": "clerk_c3_react_c2"
+  },
+  {
+    "id": "clerk_c3_react_c2",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jinho_mother",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_jinho_mother",
+    "text": "어머니는 아궁이 앞에 멍하니 앉아 진호가 들어와도 고개를 들지 않았다. “힘 있는 지주 집은 빼주고 굶주리는 소작농만 쥐어짰다며 온 마을이 우리 집 대문에 침을 뱉고 간다. 가난이 서러워 공부를 시켰더니, 가난한 이웃 피를 빠는 관리가 되고 말았구나….”",
     "next": "clerk_epi_1"
   },
   {
@@ -1668,7 +1782,7 @@
       }
     ],
     "speakerName": "해설",
-    "text": "안정과 승진을 위해 쌓아 올린 행정 실적은 해방과 동시에 가장 지우기 어려운 증거가 되어 김진호 앞에 놓였다.",
+    "text": "안정과 승진을 위해 쌓아 올린 행정 실적은 해방과 동시에 가장 지우기 어려운 증거가 되었고, 대문 밖을 나서지 못한 채 시들어 가는 어머니 앞에서 김진호는 끝내 어떤 변명도 찾지 못했다.",
     "next": "__ENDING__"
   },
   {
