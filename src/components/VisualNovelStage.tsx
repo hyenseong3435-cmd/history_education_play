@@ -214,91 +214,103 @@ export function VisualNovelStage({
     </div>
   );
 
-  const renderChoices = (maxHeightClass: string) =>
-    hasChoices && isTypingDone ? (
+  const showChoices = hasChoices && isTypingDone;
+
+  const renderChoices = (layout: 'mobile' | 'desktop') =>
+    showChoices ? (
       <div
         role="group"
         aria-label="선택지"
-        className={`flex flex-col gap-1.5 sm:gap-2 ${maxHeightClass} overflow-y-auto pr-0.5`}
+        className="w-full space-y-2"
       >
-        {evaluatedChoices.map(({ choice, unlocked }, idx) => {
-          const requiredSourceId = choice.condition?.requiredSources?.[0];
-          const sourceIsUnlockedButUnread =
-            Boolean(requiredSourceId) &&
-            state.unlockedSources.includes(requiredSourceId!) &&
-            !state.readSources.includes(requiredSourceId!);
+        <div className="flex items-center justify-between px-0.5">
+          <span className="text-[11px] sm:text-xs font-medium tracking-wide text-[#B2A999]">
+            행동을 선택하세요
+          </span>
+          <span className="hidden sm:inline text-[11px] text-[#7D7A74] font-data">
+            단축키 1 – {evaluatedChoices.length}
+          </span>
+        </div>
 
-          if (!unlocked) {
-            return (
-              <div
-                key={choice.id}
-                className="w-full px-3.5 py-2.5 bg-[#121417]/94 border border-[#282C33] text-[#83817B] flex flex-col sm:flex-row sm:items-center justify-between gap-2"
-              >
-                <div className="space-y-0.5">
-                  <p className="text-xs sm:text-sm font-medium flex items-center gap-2">
-                    <Lock className="w-3.5 h-3.5 shrink-0" />
-                    <span>조건 미충족 선택지</span>
-                  </p>
-                  <p className="text-xs text-[#918E87]">
-                    {choice.lockedReason ??
-                      '특정 단서 또는 사료 열람이 필요합니다.'}
-                  </p>
-                </div>
-                {sourceIsUnlockedButUnread && requiredSourceId && (
-                  <button
-                    type="button"
-                    onClick={() => onOpenSourceById(requiredSourceId)}
-                    className="min-h-[38px] px-3 py-1.5 bg-[#1B1E23] hover:bg-[#252930] text-[#E3DED4] border border-[#5B564D] text-xs font-medium flex items-center gap-1.5 self-start sm:self-center cursor-pointer whitespace-nowrap"
-                  >
-                    <BookOpen className="w-3.5 h-3.5 text-[#B2A999]" />
-                    사료 열람하여 해금
-                  </button>
-                )}
-              </div>
-            );
+        <div
+          className={
+            layout === 'desktop'
+              ? 'grid grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-2.5 max-h-[46dvh] overflow-y-auto overscroll-contain pr-0.5'
+              : 'flex flex-col gap-2.5'
           }
+        >
+          {evaluatedChoices.map(({ choice, unlocked }, idx) => {
+            const requiredSourceId = choice.condition?.requiredSources?.[0];
+            const sourceIsUnlockedButUnread =
+              Boolean(requiredSourceId) &&
+              state.unlockedSources.includes(requiredSourceId!) &&
+              !state.readSources.includes(requiredSourceId!);
 
-          return (
-            <button
-              key={choice.id}
-              type="button"
-              onClick={() => onSelectChoice(choice)}
-              className="w-full min-h-[48px] sm:min-h-[52px] px-3.5 sm:px-4 py-2.5 sm:py-3 bg-[#15171B]/96 hover:bg-[#1E2127] active:bg-[#262A31] border border-[#3B4049] hover:border-[#9E9586] text-left transition-colors duration-150 flex items-start gap-2.5 sm:gap-3 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B2A999]"
-            >
-              <span className="font-data text-xs font-medium text-[#9E9586] mt-0.5 shrink-0">
-                0{idx + 1}
-              </span>
-              <div className="flex-1 min-w-0 space-y-0.5">
-                <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+            if (!unlocked) {
+              return (
+                <div
+                  key={choice.id}
+                  className="w-full px-3.5 py-3 bg-[#121417]/94 border border-[#282C33] text-[#83817B] flex flex-col sm:flex-row sm:items-center justify-between gap-2"
+                >
+                  <div className="space-y-0.5">
+                    <p className="text-xs sm:text-sm font-medium flex items-center gap-2">
+                      <Lock className="w-3.5 h-3.5 shrink-0" />
+                      <span>조건 미충족 선택지</span>
+                    </p>
+                    <p className="text-xs text-[#918E87]">
+                      {choice.lockedReason ??
+                        '특정 단서 또는 사료 열람이 필요합니다.'}
+                    </p>
+                  </div>
+                  {sourceIsUnlockedButUnread && requiredSourceId && (
+                    <button
+                      type="button"
+                      onClick={() => onOpenSourceById(requiredSourceId)}
+                      className="min-h-[38px] px-3 py-1.5 bg-[#1B1E23] hover:bg-[#252930] text-[#E3DED4] border border-[#5B564D] text-xs font-medium flex items-center gap-1.5 self-start sm:self-center cursor-pointer whitespace-nowrap"
+                    >
+                      <BookOpen className="w-3.5 h-3.5 text-[#B2A999]" />
+                      사료 열람하여 해금
+                    </button>
+                  )}
+                </div>
+              );
+            }
+
+            return (
+              <button
+                key={choice.id}
+                type="button"
+                onClick={() => onSelectChoice(choice)}
+                className="group w-full min-h-[54px] px-3.5 sm:px-4 py-3 bg-[#171A20]/96 hover:bg-[#21252D] active:bg-[#2A2F38] border border-[#444A55] hover:border-[#B5AC9C] active:border-[#C7BFA9] text-left transition-colors duration-150 flex items-start gap-3 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B2A999]"
+              >
+                <span className="font-data text-[11px] font-semibold text-[#C2B9A8] bg-[#22262E] border border-[#3E434E] group-hover:border-[#9E9586] w-6 h-6 flex items-center justify-center mt-0.5 shrink-0">
+                  {idx + 1}
+                </span>
+                <div className="flex-1 min-w-0">
                   <span
-                    className={`font-medium text-[#EFECE6] leading-snug break-keep ${
+                    className={`block font-medium text-[#F2EFE9] leading-[1.6] break-keep ${
                       settings.textSize === 'large'
-                        ? 'text-base sm:text-lg'
-                        : 'text-sm sm:text-base'
+                        ? 'text-[16px] sm:text-[17px]'
+                        : 'text-[14px] sm:text-[15px]'
                     }`}
                   >
                     {choice.text}
                   </span>
                   {choice.unlockTag && (
-                    <span className="text-[11px] text-[#B2A999] font-normal">
+                    <span className="inline-block mt-1 text-[11px] text-[#B2A999] font-normal">
                       · {choice.unlockTag}
                     </span>
                   )}
                 </div>
-                {choice.subtext && (
-                  <p className="text-xs text-[#9C9991] leading-snug break-keep">
-                    {choice.subtext}
-                  </p>
-                )}
-              </div>
-              <ChevronRight className="w-4 h-4 text-[#8E8B84] mt-0.5 shrink-0" />
-            </button>
-          );
-        })}
+                <ChevronRight className="w-4 h-4 text-[#8E8B84] group-hover:text-[#D8D1C5] mt-1 shrink-0 transition-colors" />
+              </button>
+            );
+          })}
+        </div>
       </div>
     ) : null;
 
-  const renderDialogueCard = (isSplitPanel: boolean) => (
+  const renderDialogueCard = (isSplitPanel: boolean, compact = false) => (
     <div
       onClick={handleBoxAction}
       role={!hasChoices ? 'button' : undefined}
@@ -311,14 +323,24 @@ export function VisualNovelStage({
       }}
       className={`${
         isSplitPanel
-          ? 'bg-[#14161A] border border-[#2D3139] p-3.5 sm:p-4 flex flex-col justify-between'
-          : 'dialogue-box p-4 sm:p-5'
+          ? `bg-[#14161A] border border-[#2D3139] ${
+              compact ? 'px-3.5 py-2.5' : 'p-3.5 sm:p-4'
+            } flex flex-col justify-between`
+          : `dialogue-box ${compact ? 'px-4 py-3 sm:px-5 sm:py-3.5' : 'p-4 sm:p-5'}`
       } transition-colors ${!hasChoices || !isTypingDone ? 'cursor-pointer' : ''}`}
     >
       {/* Speaker nameplate */}
-      <div className="flex items-baseline justify-between gap-3 mb-2 pb-1.5 border-b border-[#292D34] shrink-0">
+      <div
+        className={`flex items-baseline justify-between gap-3 border-b border-[#292D34] shrink-0 ${
+          compact ? 'mb-1.5 pb-1' : 'mb-2 pb-1.5'
+        }`}
+      >
         <div className="flex flex-wrap items-baseline gap-2 min-w-0">
-          <span className="font-editorial text-base sm:text-lg font-semibold text-[#F1EEE8]">
+          <span
+            className={`font-editorial font-semibold text-[#F1EEE8] ${
+              compact ? 'text-sm sm:text-base' : 'text-base sm:text-lg'
+            }`}
+          >
             {speakerDisplayName}
           </span>
           {speakerDisplayRole && (
@@ -333,11 +355,19 @@ export function VisualNovelStage({
       </div>
 
       {/* Dialogue prose */}
-      <div className="flex flex-col justify-between gap-2.5 min-h-[60px] sm:min-h-[72px]">
+      <div
+        className={`flex flex-col justify-between gap-2.5 ${
+          compact ? 'min-h-0' : 'min-h-[64px] sm:min-h-[72px]'
+        }`}
+      >
         <p
-          className={`text-[#E3E0D9] leading-[1.72] break-keep ${
+          className={`text-[#E3E0D9] leading-[1.68] break-keep ${
             settings.textSize === 'large'
-              ? 'text-base sm:text-xl'
+              ? compact
+                ? 'text-[15px] sm:text-lg'
+                : 'text-base sm:text-xl'
+              : compact
+              ? 'text-[13.5px] sm:text-[15px]'
               : 'text-sm sm:text-base md:text-[16.5px]'
           }`}
         >
@@ -356,7 +386,7 @@ export function VisualNovelStage({
                 e.stopPropagation();
                 handleBoxAction();
               }}
-              className="min-h-[40px] px-4 py-1.5 bg-[#1B1E23] hover:bg-[#252930] text-[#ECE9E2] border border-[#3E434D] text-xs sm:text-sm font-medium flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap"
+              className="min-h-[42px] px-4 py-1.5 bg-[#1B1E23] hover:bg-[#252930] text-[#ECE9E2] border border-[#3E434D] text-xs sm:text-sm font-medium flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap"
             >
               <span>{isTypingDone ? '다음' : '전체 보기'}</span>
               <ChevronRight className="w-4 h-4 text-[#A49B8C]" />
@@ -369,18 +399,24 @@ export function VisualNovelStage({
 
   return (
     <div className="relative flex-1 min-h-0 h-full w-full flex flex-col overflow-hidden bg-[#0E0F11]">
-      {/* SPLIT PORTRAIT VIEW — Auto on portrait phones & tablets (or whenever user selects 'portrait' ratio) */}
+      {/* SPLIT PORTRAIT VIEW — Mobile phones & portrait tablets (or forced 'portrait' ratio) */}
       <div
         className={`${
           forceSplitPortrait
             ? 'flex'
             : settings.displayRatio === 'auto'
             ? 'flex md:landscape:hidden'
-            : 'flex sm:hidden'
+            : 'flex md:hidden'
         } flex-1 min-h-0 w-full flex-col overflow-hidden`}
       >
-        {/* Crisp upper pixel-art scene canvas (prevents harsh vertical cropping) */}
-        <div className="relative w-full flex-[1.08] min-h-[190px] max-h-[52%] border-b border-[#2A2D34] overflow-hidden flex flex-col justify-between shrink-0">
+        {/* Adaptive upper scene canvas: generous during dialogue, smoothly yields space when choices appear */}
+        <div
+          className={`relative w-full border-b border-[#2A2D34] overflow-hidden flex flex-col justify-between shrink-0 transition-all duration-300 ${
+            showChoices
+              ? 'h-[23%] min-h-[116px] max-h-[172px]'
+              : 'h-[44%] min-h-[200px] max-h-[360px]'
+          }`}
+        >
           <div className="absolute inset-0 z-0">
             <ResilientBackground
               src={bgUrl}
@@ -394,26 +430,30 @@ export function VisualNovelStage({
           {renderTopBadges()}
 
           <div className="relative z-10 flex-1 min-h-0 w-full max-w-3xl mx-auto px-3 pointer-events-none">
-            {renderSprites('h-[84%] max-h-[280px] w-auto max-w-[44vw]')}
+            {renderSprites(
+              showChoices
+                ? 'h-[92%] max-h-[135px] w-auto max-w-[34vw]'
+                : 'h-[86%] max-h-[270px] w-auto max-w-[44vw]'
+            )}
           </div>
         </div>
 
-        {/* Lower dedicated dialogue & choice panel (thumb-zone friendly) */}
-        <section className="flex-1 min-h-0 w-full max-w-3xl mx-auto px-3 sm:px-5 py-3 sm:py-4 flex flex-col justify-between gap-2.5 overflow-y-auto bg-[#0F1114]">
-          <div className="space-y-2">
-            {renderDialogueCard(true)}
+        {/* Unified single-scroll lower dialogue & choice panel (no nested scroll traps) */}
+        <section className="flex-1 min-h-0 w-full max-w-3xl mx-auto px-3.5 sm:px-5 pt-3 pb-[max(1rem,env(safe-area-inset-bottom))] overflow-y-auto overscroll-contain bg-[#0F1114]">
+          <div className="flex flex-col gap-3">
+            {renderDialogueCard(true, showChoices)}
+            {renderChoices('mobile')}
           </div>
-          {renderChoices('flex-1 min-h-0')}
         </section>
       </div>
 
-      {/* FULL CINEMATIC LANDSCAPE VIEW — Desktop & Tablet Landscape (Zero Scroll) */}
+      {/* FULL CINEMATIC LANDSCAPE VIEW — Desktop & Tablet Landscape */}
       {!forceSplitPortrait && (
         <div
           className={`${
             settings.displayRatio === 'auto'
               ? 'hidden md:landscape:flex'
-              : 'hidden sm:flex'
+              : 'hidden md:flex'
           } relative flex-1 min-h-0 w-full flex-col justify-between overflow-hidden`}
         >
           {/* Full Background Layer */}
@@ -423,21 +463,25 @@ export function VisualNovelStage({
               alt={location?.name ?? '장면 배경'}
               className="w-full h-full"
               imageClassName="saturate-[0.78] brightness-[0.9]"
-              overlayClassName="bg-gradient-to-t from-[#0D0E10] via-[#0D0E10]/20 to-[#0D0E10]/45"
+              overlayClassName="bg-gradient-to-t from-[#0D0E10] via-[#0D0E10]/25 to-[#0D0E10]/45"
             />
           </div>
 
           {renderTopBadges()}
 
           {/* Character Sprite Layer — scales cleanly to remaining vertical space */}
-          <div className="relative z-10 flex-1 min-h-0 w-full max-w-5xl mx-auto px-6 pointer-events-none">
-            {renderSprites('h-[88%] max-h-[380px] min-h-[150px] w-auto max-w-[38vw]')}
+          <div className="relative z-10 flex-1 min-h-[120px] w-full max-w-5xl mx-auto px-6 pointer-events-none">
+            {renderSprites(
+              showChoices
+                ? 'h-[90%] max-h-[280px] min-h-[110px] w-auto max-w-[30vw]'
+                : 'h-[88%] max-h-[380px] min-h-[150px] w-auto max-w-[38vw]'
+            )}
           </div>
 
-          {/* Bottom Interactive Dock */}
-          <section className="relative z-20 shrink-0 w-full max-w-5xl mx-auto px-5 pb-4 space-y-2">
-            {renderChoices('max-h-[36dvh]')}
-            {renderDialogueCard(false)}
+          {/* Bottom Interactive Dock — Consistent top-to-bottom reading flow (situation -> choices) */}
+          <section className="relative z-20 shrink-0 w-full max-w-5xl mx-auto px-5 pb-4 space-y-2.5">
+            {renderDialogueCard(false, showChoices)}
+            {renderChoices('desktop')}
           </section>
         </div>
       )}
