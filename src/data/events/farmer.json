@@ -202,7 +202,7 @@
     "choices": [
       {
         "id": "f1_a",
-        "text": "박만석이 제시한 값에 도장을 찍는다",
+        "text": "제시된 값에 도장을 찍는다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -226,7 +226,7 @@
       },
       {
         "id": "f1_b",
-        "text": "계약서를 밀어내고 거래의 부당함을 외친다",
+        "text": "계약서를 밀어내고 부당함을 외친다",
         "effects": {
           "variables": {
             "livelihood": -3,
@@ -261,7 +261,7 @@
       },
       {
         "id": "f1_c",
-        "text": "값을 조금 더 치는 대신 소작 몫을 요구한다",
+        "text": "조금 더 쳐 주고 소작 몫을 요구한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -286,7 +286,7 @@
       },
       {
         "id": "f1_d",
-        "text": "토지 확인을 핑계로 도장을 닷새 미룬다",
+        "text": "토지 확인을 핑계로 도장을 미룬다",
         "effects": {
           "variables": {
             "livelihood": -1,
@@ -781,7 +781,7 @@
     "choices": [
       {
         "id": "f2_a",
-        "text": "정해진 공출 가마니 수를 기한 안에 낸다",
+        "text": "정해진 공출량을 기한 안에 낸다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -803,7 +803,7 @@
       },
       {
         "id": "f2_b",
-        "text": "통지서를 내려놓고 농민들과 함께 항의한다",
+        "text": "통지서를 내려놓고 공개 항의한다",
         "effects": {
           "variables": {
             "livelihood": -3,
@@ -838,7 +838,7 @@
       },
       {
         "id": "f2_c",
-        "text": "이웃 농가의 벼를 내 몫으로 합쳐 넣자고 한다",
+        "text": "이웃 벼를 내 몫에 합쳐 넣자고 한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -860,7 +860,7 @@
       },
       {
         "id": "f2_d",
-        "text": "수확량을 줄여 신고하고 밤에 벼를 숨긴다",
+        "text": "수확을 줄여 신고하고 벼를 숨긴다",
         "effects": {
           "variables": {
             "livelihood": -1,
@@ -1332,7 +1332,7 @@
     "choices": [
       {
         "id": "f3_a",
-        "text": "이정수를 돌려보내고 문을 걸어 잠근다",
+        "text": "이정수를 돌려보내고 문을 잠근다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -1354,7 +1354,7 @@
       },
       {
         "id": "f3_b",
-        "text": "이정수를 보낸 뒤 마을 회관 앞에서 항의한다",
+        "text": "회관 앞에서 강제 동원에 항의한다",
         "effects": {
           "variables": {
             "livelihood": -3,
@@ -1379,7 +1379,7 @@
       },
       {
         "id": "f3_c",
-        "text": "의심을 돌리려 주재소에 다른 곳을 귀띔한다",
+        "text": "주재소에 다른 은신처를 귀띔한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -1401,7 +1401,7 @@
       },
       {
         "id": "f3_d",
-        "text": "순찰 시간과 주먹밥을 챙겨 고개로 보낸다",
+        "text": "순찰 시간을 알려 주고 고개로 보낸다",
         "effects": {
           "variables": {
             "livelihood": -1,

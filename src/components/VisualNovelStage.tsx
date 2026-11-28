@@ -236,7 +236,7 @@ export function VisualNovelStage({
           className={
             layout === 'desktop'
               ? 'grid grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-2.5 max-h-[46dvh] overflow-y-auto overscroll-contain pr-0.5'
-              : 'flex flex-col gap-2'
+              : 'flex flex-col gap-1.5 sm:gap-2'
           }
         >
           {evaluatedChoices.map(({ choice, unlocked }, idx) => {
@@ -281,16 +281,16 @@ export function VisualNovelStage({
                 key={choice.id}
                 type="button"
                 onClick={() => onSelectChoice(choice)}
-                className="group w-full min-h-[46px] sm:min-h-[52px] px-3 sm:px-4 py-2.5 sm:py-3 bg-[#171A20]/96 hover:bg-[#21252D] active:bg-[#2A2F38] border border-[#444A55] hover:border-[#B5AC9C] active:border-[#C7BFA9] text-left transition-colors duration-150 flex items-center gap-2.5 sm:gap-3 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B2A999]"
+                className="group w-full min-h-[44px] sm:min-h-[50px] px-3 sm:px-4 py-2 sm:py-2.5 bg-[#171A20]/96 hover:bg-[#21252D] active:bg-[#2A2F38] border border-[#444A55] hover:border-[#B5AC9C] active:border-[#C7BFA9] text-left transition-colors duration-150 flex items-center gap-2.5 sm:gap-3 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B2A999]"
               >
                 <span className="font-data text-[11px] font-semibold text-[#C2B9A8] bg-[#22262E] border border-[#3E434E] group-hover:border-[#9E9586] w-6 h-6 flex items-center justify-center shrink-0">
                   {idx + 1}
                 </span>
                 <div className="flex-1 min-w-0">
                   <span
-                    className={`block font-medium text-[#F2EFE9] leading-[1.45] break-keep ${
+                    className={`block font-medium text-[#F2EFE9] leading-[1.4] break-keep ${
                       settings.textSize === 'large'
-                        ? 'text-[15.5px] sm:text-[17px]'
+                        ? 'text-[15px] sm:text-[17px]'
                         : 'text-[13.5px] sm:text-[15px]'
                     }`}
                   >

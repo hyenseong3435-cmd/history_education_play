@@ -159,7 +159,7 @@
     "choices": [
       {
         "id": "p1_a",
-        "text": "지시대로 들말 동향을 꼼꼼히 조사해 보고한다",
+        "text": "지시대로 들말 동향을 보고한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -181,7 +181,7 @@
       },
       {
         "id": "p1_b",
-        "text": "수첩을 내려놓고 과잉 단속의 부당함을 항의한다",
+        "text": "수첩을 내려놓고 과잉 단속에 항의한다",
         "effects": {
           "variables": {
             "livelihood": -3,
@@ -215,7 +215,7 @@
       },
       {
         "id": "p1_c",
-        "text": "박태수보다 앞서 사소한 위반까지 적극 적발한다",
+        "text": "앞장서서 사소한 위반까지 적발한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -238,7 +238,7 @@
       },
       {
         "id": "p1_d",
-        "text": "순찰을 나서는 척 들말에 일정을 몰래 귀띔한다",
+        "text": "순찰하는 척 들말에 일정을 귀띔한다",
         "effects": {
           "variables": {
             "livelihood": -1,
@@ -732,7 +732,7 @@
     "choices": [
       {
         "id": "p2_a",
-        "text": "은닉 벼 가마니 정황을 주재소에 그대로 보고한다",
+        "text": "은닉 벼 정황을 그대로 보고한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -754,7 +754,7 @@
       },
       {
         "id": "p2_b",
-        "text": "빈손으로 돌아가 압수 조서 날인을 거부한다",
+        "text": "빈손으로 돌아가 날인을 거부한다",
         "effects": {
           "variables": {
             "livelihood": -3,
@@ -789,7 +789,7 @@
       },
       {
         "id": "p2_c",
-        "text": "최덕수 집에 책임을 몰아 과장 보고한다",
+        "text": "최덕수 집에 책임을 몰아 보고한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -812,7 +812,7 @@
       },
       {
         "id": "p2_d",
-        "text": "재조사 일정을 귀띔하고 보고서에서 누락한다",
+        "text": "재조사를 귀띔하고 보고에서 뺀다",
         "effects": {
           "variables": {
             "livelihood": -1,
@@ -1242,7 +1242,7 @@
     "choices": [
       {
         "id": "p3_a",
-        "text": "명령대로 들말과 뒷산 길목을 끝까지 수색한다",
+        "text": "명령대로 들말과 뒷산을 수색한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -1264,7 +1264,7 @@
       },
       {
         "id": "p3_b",
-        "text": "배지와 경봉을 내려놓고 추적 명령을 거부한다",
+        "text": "배지를 내려놓고 추적을 거부한다",
         "effects": {
           "variables": {
             "livelihood": -3,
@@ -1289,7 +1289,7 @@
       },
       {
         "id": "p3_c",
-        "text": "다른 들말 청년에게 의심이 향하도록 허위 보고한다",
+        "text": "다른 청년을 지목해 허위 보고한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -1312,7 +1312,7 @@
       },
       {
         "id": "p3_d",
-        "text": "수색에 나서는 척 빠져나가 수색 경로를 알린다",
+        "text": "수색하는 척 빠져나가 경로를 알린다",
         "effects": {
           "variables": {
             "livelihood": -1,
