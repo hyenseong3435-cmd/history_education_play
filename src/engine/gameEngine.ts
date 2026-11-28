@@ -120,6 +120,48 @@ export function startNewOccupationGame(occupationId: OccupationId): GameState {
     initialFlags.push('unlock_police_substation');
   }
 
+  // Optional cross-occupation memory from previously completed runs (standalone play remains self-contained)
+  const pastRecords = loadPlaythroughRecords();
+  for (const rec of pastRecords) {
+    const decisionIds = new Set(rec.decisions.map((d) => d.id));
+    if (rec.occupation === 'police_assistant') {
+      if (decisionIds.has('p1_d') || decisionIds.has('p2_d') || decisionIds.has('p3_d')) {
+        if (!initialFlags.includes('world_police_tipped_off')) {
+          initialFlags.push('world_police_tipped_off');
+        }
+      }
+      if (decisionIds.has('p1_b') || decisionIds.has('p2_b') || decisionIds.has('p3_b')) {
+        if (!initialFlags.includes('world_police_resisted')) {
+          initialFlags.push('world_police_resisted');
+        }
+      }
+    }
+    if (rec.occupation === 'farmer') {
+      if (decisionIds.has('f2_d')) {
+        if (!initialFlags.includes('world_farmer_hid_grain')) {
+          initialFlags.push('world_farmer_hid_grain');
+        }
+      }
+      if (decisionIds.has('f1_b') || decisionIds.has('f2_b') || decisionIds.has('f3_b')) {
+        if (!initialFlags.includes('world_farmer_resisted')) {
+          initialFlags.push('world_farmer_resisted');
+        }
+      }
+    }
+    if (rec.occupation === 'clerk') {
+      if (decisionIds.has('c2_d') || decisionIds.has('c3_d')) {
+        if (!initialFlags.includes('world_clerk_delayed_roster')) {
+          initialFlags.push('world_clerk_delayed_roster');
+        }
+      }
+      if (decisionIds.has('c1_b') || decisionIds.has('c2_b') || decisionIds.has('c3_b')) {
+        if (!initialFlags.includes('world_clerk_resisted')) {
+          initialFlags.push('world_clerk_resisted');
+        }
+      }
+    }
+  }
+
   return {
     screen: 'DIALOGUE',
     occupation: occupationId,
@@ -602,6 +644,7 @@ export function appendPlaythroughRecord(
 ): PlaythroughRecord[] {
   if (!state.occupation) return loadPlaythroughRecords();
   const existing = loadPlaythroughRecords();
+  const savedMemo = loadReflectionMemo(ending.id);
   const record: PlaythroughRecord = {
     id: `rec_${Date.now()}`,
     completedAt: new Date().toISOString(),
@@ -613,8 +656,43 @@ export function appendPlaythroughRecord(
     decisionCount: state.decisionLog.length,
     readSourceCount: state.readSources.length,
     decisions: [...state.decisionLog],
+    reflectionQuestions: [...ending.reflectionQuestions],
+    reflectionMemo: savedMemo,
   };
   const updated = [record, ...existing].slice(0, 30);
+  try {
+    localStorage.setItem(STORAGE_KEYS.RECORDS, JSON.stringify(updated));
+  } catch {
+    // Ignore
+  }
+  return updated;
+}
+
+export function updatePlaythroughRecordMemo(
+  recordId: string | null,
+  endingId: string,
+  memo: string
+): PlaythroughRecord[] {
+  saveReflectionMemo(endingId, memo);
+  const existing = loadPlaythroughRecords();
+  let matched = false;
+  const updated = existing.map((rec) => {
+    if (!matched && ((recordId && rec.id === recordId) || (!recordId && rec.endingId === endingId))) {
+      matched = true;
+      return { ...rec, reflectionMemo: memo };
+    }
+    return rec;
+  });
+  if (!matched && recordId) {
+    // Fallback to latest record with matching endingId
+    let fallbackMatched = false;
+    for (let i = 0; i < updated.length; i += 1) {
+      if (!fallbackMatched && updated[i].endingId === endingId) {
+        updated[i] = { ...updated[i], reflectionMemo: memo };
+        fallbackMatched = true;
+      }
+    }
+  }
   try {
     localStorage.setItem(STORAGE_KEYS.RECORDS, JSON.stringify(updated));
   } catch {

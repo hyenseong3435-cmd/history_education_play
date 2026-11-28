@@ -1,38 +1,24 @@
 import { useCallback, useEffect, useState } from 'react';
-import { BarChart3, BookOpen, ChevronRight, Lock } from 'lucide-react';
-import {
-  CHARACTERS_BY_ID,
-  LOCATIONS_BY_ID,
-  getVariableMetaForOccupation,
-} from '../data';
+import { BookOpen, ChevronRight, Lock } from 'lucide-react';
+import { CHARACTERS_BY_ID, LOCATIONS_BY_ID } from '../data';
 import { evaluateCondition } from '../engine/gameEngine';
 import type {
   ChoiceOption,
   DialogueNode,
   GameSettings,
   GameState,
-  VariableKey,
-  Variables,
 } from '../types/game';
 import { PixelSprite } from './PixelSprite';
 import { ResilientBackground } from './ResilientBackground';
-
-export interface ChoiceFeedback {
-  variableChanges: Partial<Variables>;
-  hasTrace: boolean;
-  choiceText: string;
-}
 
 interface VisualNovelStageProps {
   node: DialogueNode;
   state: GameState;
   settings: GameSettings;
   isModalOpen: boolean;
-  lastChoiceFeedback?: ChoiceFeedback | null;
   onAdvance: () => void;
   onSelectChoice: (choice: ChoiceOption) => void;
   onOpenSourceById: (sourceId: string) => void;
-  onOpenStatus: () => void;
 }
 
 const SPEED_MS: Record<GameSettings['textSpeed'], number> = {
@@ -47,11 +33,9 @@ export function VisualNovelStage({
   state,
   settings,
   isModalOpen,
-  lastChoiceFeedback = null,
   onAdvance,
   onSelectChoice,
   onOpenSourceById,
-  onOpenStatus,
 }: VisualNovelStageProps) {
   const [displayedCount, setDisplayedCount] = useState<number>(
     settings.textSpeed === 'instant' ? node.text.length : 0
@@ -149,53 +133,6 @@ export function VisualNovelStage({
 
   const stageCharacters = node.characters ?? [];
   const forceSplitPortrait = settings.displayRatio === 'portrait';
-  const activeVariableMeta = getVariableMetaForOccupation(state.occupation);
-
-  const feedbackEntries = lastChoiceFeedback
-    ? (
-        Object.entries(lastChoiceFeedback.variableChanges) as [
-          VariableKey,
-          number | undefined,
-        ][]
-      ).filter(([, delta]) => typeof delta === 'number' && delta !== 0)
-    : [];
-
-  const renderFeedbackStrip = () => {
-    if (!lastChoiceFeedback) return null;
-    if (feedbackEntries.length === 0 && !lastChoiceFeedback.hasTrace) {
-      return null;
-    }
-
-    return (
-      <div className="px-3 py-1.5 bg-[#121418]/94 border border-[#2F333C] flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[11px] sm:text-xs">
-        <span className="text-[#9E978B] font-medium">직전 선택 반영</span>
-        {feedbackEntries.map(([key, delta]) => {
-          const val = delta as number;
-          const label =
-            activeVariableMeta.find((m) => m.key === key)?.shortLabel ??
-            activeVariableMeta.find((m) => m.key === key)?.label ??
-            key;
-          return (
-            <span
-              key={key}
-              className={`font-data px-1.5 py-0.5 border ${
-                val > 0
-                  ? 'bg-[#1B2026] border-[#49515E] text-[#E5E1D8]'
-                  : 'bg-[#221617] border-[#613431] text-[#DEA69F]'
-              }`}
-            >
-              {label} {val > 0 ? `+${val}` : val}
-            </span>
-          );
-        })}
-        {lastChoiceFeedback.hasTrace && (
-          <span className="text-[#B2A999]">
-            · 이 선택의 흔적이 이후 사건에 남습니다
-          </span>
-        )}
-      </div>
-    );
-  };
 
   const renderSprites = (sizeClass: string) =>
     stageCharacters.map((sc, index) => {
@@ -250,7 +187,10 @@ export function VisualNovelStage({
         )}
       </div>
 
-      <div className="pointer-events-auto flex items-center gap-1.5 max-w-full">
+      <div className="pointer-events-auto flex flex-wrap items-center justify-end gap-1.5 max-w-full">
+        <div className="hidden sm:block px-2.5 py-1 bg-[#121417]/86 border border-[#2A2D34] text-[11px] font-editorial text-[#ABA59A]">
+          끝을 알 수 없는 지배 · 10년? 50년? 영원히?
+        </div>
         {node.historicalBadge && (
           <div className="max-w-xs sm:max-w-sm">
             {node.historicalBadge.kind === 'source' &&
@@ -270,15 +210,6 @@ export function VisualNovelStage({
             )}
           </div>
         )}
-        <button
-          type="button"
-          onClick={onOpenStatus}
-          className="px-2.5 py-1 bg-[#14161A]/95 hover:bg-[#202329] border border-[#3D424C] hover:border-[#9E9586] text-[11px] sm:text-xs text-[#DFDCD5] flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap shrink-0"
-          title="현재 변수 현황 창 열기"
-        >
-          <BarChart3 className="w-3.5 h-3.5 text-[#B2A999] shrink-0" />
-          <span>변수 현황</span>
-        </button>
       </div>
     </div>
   );
@@ -470,7 +401,6 @@ export function VisualNovelStage({
         {/* Lower dedicated dialogue & choice panel (thumb-zone friendly) */}
         <section className="flex-1 min-h-0 w-full max-w-3xl mx-auto px-3 sm:px-5 py-3 sm:py-4 flex flex-col justify-between gap-2.5 overflow-y-auto bg-[#0F1114]">
           <div className="space-y-2">
-            {renderFeedbackStrip()}
             {renderDialogueCard(true)}
           </div>
           {renderChoices('flex-1 min-h-0')}
@@ -506,7 +436,6 @@ export function VisualNovelStage({
 
           {/* Bottom Interactive Dock */}
           <section className="relative z-20 shrink-0 w-full max-w-5xl mx-auto px-5 pb-4 space-y-2">
-            {renderFeedbackStrip()}
             {renderChoices('max-h-[36dvh]')}
             {renderDialogueCard(false)}
           </section>

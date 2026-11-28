@@ -77,7 +77,7 @@ export function TitleScreen({
       {/* Top archival header line */}
       <header className="relative z-10 shrink-0 hidden sm:flex w-full max-w-6xl mx-auto px-5 sm:px-8 pt-4 pb-2.5 border-b border-[#25282E]/80 items-center justify-end gap-4">
         <p className="text-xs text-[#7D7B75] font-data tracking-wider">
-          1942 — 1945 · ARCHIVAL EDITION
+          1944 — 1945 · ARCHIVAL EDITION
         </p>
       </header>
 
@@ -91,7 +91,10 @@ export function TitleScreen({
             그날, 당신의 선택
           </h1>
           <div className="w-12 h-px bg-[#5B5852] mb-4 sm:mb-5" aria-hidden="true" />
-          <p className="text-xs sm:text-sm md:text-base text-[#C4C0B8] leading-[1.75] mb-6 sm:mb-7 max-w-lg break-keep">
+          <p className="font-editorial text-sm sm:text-base md:text-[17px] text-[#EDE8DF] leading-[1.7] mb-3 max-w-lg break-keep">
+            당신은 이 지배가 언제 끝날지 모릅니다. 10년일지, 50년일지, 아니면 영원히 계속될지.
+          </p>
+          <p className="text-xs sm:text-sm md:text-[15px] text-[#BEB9B0] leading-[1.75] mb-6 sm:mb-7 max-w-lg break-keep">
             농사꾼, 면사무소 직원, 순사보. 전시총동원체제 아래 서로 다른 자리에
             섰던 세 사람의 시선으로 일상적 통제와 생존, 협력과 저항, 그리고
             선택이 남긴 책임을 차분히 마주합니다.
@@ -149,7 +152,7 @@ export function TitleScreen({
             ) : (
               <div className="p-4 bg-[#17191D] border border-[#7A2E29] space-y-3">
                 <p className="text-xs sm:text-sm text-[#DFDCD5] leading-relaxed">
-                  새 게임을 시작하면 현재 자동 저장된 진행과 지표가 초기화됩니다.
+                  새 게임을 시작하면 현재 자동 저장된 진행이 초기화됩니다.
                   완료된 플레이 기록과 수동 슬롯은 그대로 보관됩니다.
                 </p>
                 <div className="flex items-center gap-2">
@@ -187,7 +190,7 @@ export function TitleScreen({
                 className="min-h-[46px] px-3.5 py-2.5 bg-[#15171B]/92 hover:bg-[#1E2127] text-[#D4D0C7] border border-[#2C3037] hover:border-[#454B56] transition-colors flex items-center justify-center sm:justify-start gap-2 text-sm cursor-pointer whitespace-nowrap"
               >
                 <ScrollText className="w-4 h-4 text-[#A49B8C] shrink-0" />
-                <span>사료 노트</span>
+                <span>사료 자료실</span>
               </button>
               <button
                 type="button"
@@ -217,7 +220,7 @@ export function TitleScreen({
       <footer className="relative z-10 shrink-0 w-full max-w-6xl mx-auto px-5 sm:px-8 py-3 border-t border-[#25282E]/90 flex flex-wrap items-center justify-between gap-2.5 text-xs text-[#898780]">
         <div className="flex items-start sm:items-center gap-2 min-w-0 flex-1">
           <BookOpen className="w-3.5 h-3.5 text-[#9F9687] shrink-0 mt-0.5 sm:mt-0" />
-          <span className="leading-relaxed break-keep">
+          <span className="leading-relaxed break-keep font-bold text-[#E6E3DC]">
             실제 역사적 제도 및 사료를 기반으로 하되, 소설을 참고해 각색하였습니다. 그로 인해 게임의 요소가 허구적 인물과 사건이오니 학습하실때 유의하길 바라겠습니다.
           </span>
         </div>

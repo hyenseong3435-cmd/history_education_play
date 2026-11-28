@@ -1,8 +1,6 @@
 import {
-  BarChart3,
   BookOpen,
   Calendar,
-  ClipboardList,
   Monitor,
   Save,
   Settings,
@@ -13,8 +11,6 @@ import type { DisplayRatioMode, GameState } from '../types/game';
 export type ActiveModalType =
   | null
   | 'sources'
-  | 'status'
-  | 'log'
   | 'save'
   | 'settings'
   | 'records'
@@ -51,7 +47,7 @@ export function TopGameBar({
   return (
     <header className="shrink-0 z-30 w-full bg-[#111316]/96 backdrop-blur-sm border-b border-[#2A2D34]">
       <div className="max-w-7xl mx-auto px-3 sm:px-5 h-12 flex items-center justify-between gap-2 sm:gap-4">
-        {/* Left: Quiet institutional identity & current chapter/role */}
+        {/* Left: Quiet institutional identity, chapter/role & historical uncertainty reminder */}
         <div className="flex items-center gap-2 min-w-0">
           <span className="font-editorial text-sm sm:text-base font-semibold text-[#ECE9E2] tracking-tight whitespace-nowrap shrink-0">
             그날, 당신의 선택
@@ -66,6 +62,12 @@ export function TopGameBar({
               </span>
             </span>
           )}
+          <span className="hidden xl:inline-flex items-center gap-2 text-xs text-[#7F7B72] truncate">
+            <span aria-hidden="true">·</span>
+            <span className="font-editorial">
+              이 지배가 언제 끝날지 모릅니다
+            </span>
+          </span>
         </div>
 
         {/* Right: Restrained single-line utility actions */}
@@ -87,37 +89,16 @@ export function TopGameBar({
             type="button"
             onClick={() => onOpenModal('sources')}
             className="relative min-h-[38px] px-2 sm:px-2.5 py-1 text-xs sm:text-sm text-[#D6D3CB] hover:text-[#F4F1EB] hover:bg-[#1D2025] border border-transparent hover:border-[#343942] transition-colors flex items-center gap-1.5 cursor-pointer whitespace-nowrap shrink-0"
-            title="사료 노트"
+            title="사료 자료실"
           >
             <BookOpen className="w-4 h-4 text-[#A49B8C] shrink-0" />
             <span className="hidden sm:inline">사료</span>
-            <span className="hidden lg:inline">노트</span>
+            <span className="hidden lg:inline">자료실</span>
             {unreadSourceCount > 0 && (
               <span className="font-data text-[11px] font-medium text-[#F4F1EB] bg-[#7A2E29] px-1.5 py-0.5 leading-none">
                 +{unreadSourceCount}
               </span>
             )}
-          </button>
-
-          <button
-            type="button"
-            onClick={() => onOpenModal('status')}
-            className="min-h-[38px] px-2 sm:px-2.5 py-1 text-xs sm:text-sm text-[#D6D3CB] hover:text-[#F4F1EB] hover:bg-[#1D2025] border border-[#2F333B] hover:border-[#7E7668] transition-colors flex items-center gap-1.5 cursor-pointer whitespace-nowrap shrink-0"
-            title="변수 현황 창 열기"
-          >
-            <BarChart3 className="w-4 h-4 text-[#B2A999] shrink-0" />
-            <span className="hidden sm:inline">변수</span>
-            <span className="hidden lg:inline">현황</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => onOpenModal('log')}
-            className="min-h-[38px] px-2 sm:px-2.5 py-1 text-xs sm:text-sm text-[#D6D3CB] hover:text-[#F4F1EB] hover:bg-[#1D2025] border border-transparent hover:border-[#343942] transition-colors flex items-center gap-1.5 cursor-pointer whitespace-nowrap shrink-0"
-            title="선택 기록"
-          >
-            <ClipboardList className="w-4 h-4 text-[#A49B8C] shrink-0" />
-            <span className="hidden sm:inline">기록</span>
           </button>
 
           <button

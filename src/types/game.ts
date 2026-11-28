@@ -301,6 +301,8 @@ export interface PlaythroughRecord {
   decisionCount: number;
   readSourceCount: number;
   decisions: DecisionRecord[];
+  reflectionQuestions?: string[];
+  reflectionMemo?: string;
 }
 
 export type DisplayRatioMode = 'auto' | '16:9' | '4:3' | 'portrait';

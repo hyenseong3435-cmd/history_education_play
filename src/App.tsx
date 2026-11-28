@@ -18,6 +18,7 @@ import {
   saveManualSlot,
   saveSettings,
   startNewOccupationGame,
+  updatePlaythroughRecordMemo,
 } from './engine/gameEngine';
 import type {
   ChoiceOption,
@@ -39,10 +40,7 @@ import { HistoricalTimelineModal } from './components/HistoricalTimelineModal';
 import { OccupationSelectScreen } from './components/OccupationSelectScreen';
 import { TitleScreen } from './components/TitleScreen';
 import { TopGameBar, type ActiveModalType } from './components/TopGameBar';
-import {
-  VisualNovelStage,
-  type ChoiceFeedback,
-} from './components/VisualNovelStage';
+import { VisualNovelStage } from './components/VisualNovelStage';
 
 const RATIO_CYCLE: DisplayRatioMode[] = ['auto', '16:9', '4:3', 'portrait'];
 
@@ -83,8 +81,7 @@ export default function App() {
     useState<TimelineTab>('common');
   const [timelineInitialOcc, setTimelineInitialOcc] =
     useState<OccupationId | null>(null);
-  const [lastChoiceFeedback, setLastChoiceFeedback] =
-    useState<ChoiceFeedback | null>(null);
+  const [activeRecordId, setActiveRecordId] = useState<string | null>(null);
 
   // Latest save for Title screen "이어하기"
   const latestSave = useMemo<SaveSlotData | null>(() => {
@@ -187,7 +184,7 @@ export default function App() {
     clearAutoSave();
     setAutoSave(null);
     setRecentDelayedEffects([]);
-    setLastChoiceFeedback(null);
+    setActiveRecordId(null);
     const fresh = createInitialGameState();
     setState({ ...fresh, screen: 'PROLOGUE' });
   }, [settings.soundEnabled]);
@@ -196,7 +193,7 @@ export default function App() {
     if (!latestSave) return;
     playUiSound('click', settings.soundEnabled);
     setRecentDelayedEffects([]);
-    setLastChoiceFeedback(null);
+    setActiveRecordId(null);
     setState(latestSave.state);
   }, [latestSave, settings.soundEnabled]);
 
@@ -204,7 +201,7 @@ export default function App() {
     (occupationId: OccupationId) => {
       playUiSound('chapter', settings.soundEnabled);
       setRecentDelayedEffects([]);
-      setLastChoiceFeedback(null);
+      setActiveRecordId(null);
       const initial = startNewOccupationGame(occupationId);
       const firstNode = initial.currentNodeId
         ? EVENTS_BY_ID[initial.currentNodeId]
@@ -219,7 +216,6 @@ export default function App() {
       playUiSound('click', settings.soundEnabled);
       const targetNode = EVENTS_BY_ID[startNodeId];
       if (!targetNode) return;
-      setLastChoiceFeedback(null);
 
       setState((prev) => {
         const nextVisited = prev.visitedExplorationKeys.includes(visitKey)
@@ -250,7 +246,6 @@ export default function App() {
 
     playUiSound('chapter', settings.soundEnabled);
     setRecentDelayedEffects([]);
-    setLastChoiceFeedback(null);
     setState((prev) => {
       const next: GameState = {
         ...prev,
@@ -265,7 +260,6 @@ export default function App() {
   const transitionToTarget = useCallback(
     (currentState: GameState, targetId: string | null) => {
       if (!targetId || targetId === '__EXPLORE__') {
-        setLastChoiceFeedback(null);
         setState({
           ...currentState,
           screen: 'EXPLORE',
@@ -276,7 +270,6 @@ export default function App() {
 
       if (targetId === '__NEXT_CHAPTER__') {
         playUiSound('chapter', settings.soundEnabled);
-        setLastChoiceFeedback(null);
         const { nextState, newlyTriggered } = advanceToNextChapter(currentState);
         setRecentDelayedEffects(newlyTriggered);
         setState(nextState);
@@ -285,10 +278,10 @@ export default function App() {
 
       if (targetId === '__ENDING__') {
         playUiSound('chapter', settings.soundEnabled);
-        setLastChoiceFeedback(null);
         const ending = resolveEnding(currentState);
         const updatedRecords = appendPlaythroughRecord(currentState, ending);
         setRecords(updatedRecords);
+        setActiveRecordId(updatedRecords[0]?.id ?? null);
         clearAutoSave();
         setAutoSave(null);
         setState({
@@ -327,7 +320,6 @@ export default function App() {
     if (!currentNode) return;
 
     playUiSound('advance', settings.soundEnabled);
-    setLastChoiceFeedback(null);
     const nextTarget = resolveNextNodeId(currentNode, state);
     transitionToTarget(state, nextTarget);
   }, [state, settings.soundEnabled, transitionToTarget]);
@@ -335,16 +327,6 @@ export default function App() {
   const handleSelectChoice = useCallback(
     (choice: ChoiceOption) => {
       playUiSound('choice', settings.soundEnabled);
-      const variableChanges = choice.effects?.variables ?? {};
-      const hasTrace = Boolean(
-        (choice.effects?.setFlags && choice.effects.setFlags.length > 0) ||
-          choice.effects?.delayedEffect
-      );
-      setLastChoiceFeedback({
-        variableChanges,
-        hasTrace,
-        choiceText: choice.text,
-      });
       const updatedState = applyChoiceToState(state, choice);
       transitionToTarget(updatedState, choice.next);
     },
@@ -364,7 +346,7 @@ export default function App() {
     (slot: SaveSlotData) => {
       playUiSound('click', settings.soundEnabled);
       setRecentDelayedEffects([]);
-      setLastChoiceFeedback(null);
+      setActiveRecordId(null);
       setState(slot.state);
     },
     [settings.soundEnabled]
@@ -381,9 +363,22 @@ export default function App() {
 
   const handleReturnToTitle = useCallback(() => {
     playUiSound('click', settings.soundEnabled);
-    setLastChoiceFeedback(null);
     setState((prev) => ({ ...prev, screen: 'TITLE' }));
   }, [settings.soundEnabled]);
+
+  const handleSaveReflectionMemo = useCallback(
+    (memo: string) => {
+      if (!state.activeEndingId) return;
+      playUiSound('paper', settings.soundEnabled);
+      const updated = updatePlaythroughRecordMemo(
+        activeRecordId,
+        state.activeEndingId,
+        memo
+      );
+      setRecords(updated);
+    },
+    [activeRecordId, state.activeEndingId, settings.soundEnabled]
+  );
 
   const currentNode = state.currentNodeId
     ? EVENTS_BY_ID[state.currentNodeId] ?? null
@@ -459,7 +454,6 @@ export default function App() {
                 onVisitLocation={handleVisitLocation}
                 onStartMainEvent={handleStartMainEvent}
                 onOpenSources={() => handleOpenModal('sources')}
-                onOpenStatus={() => handleOpenModal('status')}
               />
             )}
 
@@ -469,11 +463,9 @@ export default function App() {
                 state={state}
                 settings={settings}
                 isModalOpen={activeModal !== null || timelineOpen}
-                lastChoiceFeedback={lastChoiceFeedback}
                 onAdvance={handleAdvanceDialogue}
                 onSelectChoice={handleSelectChoice}
                 onOpenSourceById={handleOpenSourceById}
-                onOpenStatus={() => handleOpenModal('status')}
               />
             )}
           </>
@@ -498,10 +490,11 @@ export default function App() {
               ending={activeEnding}
               state={state}
               allOccupationsCompleted={allOccupationsCompleted}
+              onSaveReflectionMemo={handleSaveReflectionMemo}
               onRestartOtherOccupation={() => {
                 playUiSound('click', settings.soundEnabled);
                 setRecentDelayedEffects([]);
-                setLastChoiceFeedback(null);
+                setActiveRecordId(null);
                 const fresh = createInitialGameState();
                 setState({ ...fresh, screen: 'OCCUPATION_SELECT' });
               }}

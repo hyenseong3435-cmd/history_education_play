@@ -1,2366 +1,858 @@
 [
   {
-    "id": "farmer_prologue_1",
+    "id": "farmer_c1_intro_1",
     "locationId": "loc_farmland",
     "background": "/assets/aistudio/Pixel_art_rice_paddies_landscape_005bd82c_d8816a80.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "center",
-        "expression": "neutral"
-      }
+      { "characterId": "char_deoksu", "expression": "work", "position": "center" }
     ],
-    "speakerName": "프롤로그 · 남의 땅에서 피어난 봄 (1942년 봄)",
-    "text": "1942년 봄. 전라북도 옥구군을 참고한 가상의 농촌 마을 들판에 찬 안개가 걷히고 있습니다. 서른넷의 소작농 최덕수는 대대로 지주의 땅을 빌려 농사를 지으며, 언젠가 자기 이름 석 자가 적힌 논 한 마지기를 갖는 날을 꿈꿔 왔습니다.",
+    "speakerName": "해설",
+    "text": "1944년 봄, 경상도의 작은 농촌 마을 송현면. 전쟁이 언제 끝날지, 이 식민지 지배가 십 년이 갈지 오십 년이 갈지 아무도 알지 못한 채 또 한 해의 못자리가 시작되었다.",
     "historicalBadge": {
-      "kind": "fiction",
-      "label": "역사적 허구 · 1942년 사료 F를 바탕으로 구성한 창작 서사입니다"
+      "kind": "fact",
+      "label": "역사적 배경 · 1944년 농업생산책임제와 공출 강화"
     },
-    "next": "farmer_prologue_2"
-  },
-  {
-    "id": "farmer_prologue_2",
-    "locationId": "loc_home",
-    "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_suni_farmer",
-        "position": "right",
-        "expression": "bundle"
-      }
-    ],
-    "speakerId": "char_suni_farmer",
-    "speakerName": "최순이",
-    "speakerRole": "덕수의 아내",
-    "text": "여보, 보릿고개도 아직 먼데 뒤주 바닥이 벌써 보여요. 아이는 하루가 다르게 크는데, 올해 소작료에 공출까지 떼고 나면 가을에 남는 게 있기는 할까요.",
-    "next": "farmer_prologue_3"
-  },
-  {
-    "id": "farmer_prologue_3",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "work"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "right",
-        "expression": "neutral"
-      }
-    ],
-    "speakerId": "char_bongsu",
-    "speakerName": "김봉수",
-    "speakerRole": "이웃 농민",
-    "text": "덕수야, 나... 결국 아랫배미 논 네 두락을 내놓기로 했네. 작년 흉작에 금융조합 빚까지 불어났는데, 큰아들마저 노무 동원으로 끌려가 버리니 도저히 못자리 낼 일손이 없구먼.",
-    "next": "farmer_prologue_4"
-  },
-  {
-    "id": "farmer_prologue_4",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "right",
-        "expression": "neutral"
-      }
-    ],
-    "speakerId": "char_deoksu",
-    "speakerName": "최덕수",
-    "speakerRole": "소작농 (주인공)",
-    "text": "봉수, 십 년 넘게 자네 손으로 가꾼 논 아닌가. 읍내로 떠난다 해도 빈손으로 어찌 버티려고... 면사무소나 지주 영감에게 조금만 말미를 달라고 사정해 보면 안 되겠나?",
-    "next": "farmer_prologue_5"
-  },
-  {
-    "id": "farmer_prologue_5",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "right",
-        "expression": "work"
-      }
-    ],
-    "speakerId": "char_bongsu",
-    "speakerName": "김봉수",
-    "speakerRole": "이웃 농민",
-    "text": "벌써 찾아가 빌어 봤네. 전시 식량 증산에 한 평도 묵힐 수 없다며 면사무소와 금융조합에서 벌써 새 경작자를 찾고 있더군. 정든 땅을 두고 떠나려니 발이 떨어지질 않는구먼.",
-    "next": "farmer_prologue_6"
-  },
-  {
-    "id": "farmer_prologue_6",
-    "locationId": "loc_township_office",
-    "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_oh",
-        "position": "right",
-        "expression": "papers"
-      }
-    ],
-    "speakerId": "char_oh",
-    "speakerName": "오 주사",
-    "speakerRole": "면사무소 직원",
-    "text": "최덕수 씨, 김봉수 씨가 포기한 아랫배미 논 네 두락 말입니다. 면사무소와 금융조합이 주선해서 성실한 자네에게 경작권을 넘겨주려 하네. 비료 배급도 우선 알선해 줄 테니, 올해 증산 목표만 확실히 채워 주시게.",
-    "unlockSourceId": "source_F",
-    "historicalBadge": {
-      "kind": "source",
-      "label": "사료 F 연결 · 《조선농보》 1942년 8월호 경작권 이전·증산 사례 보기",
-      "sourceId": "source_F"
-    },
-    "next": "farmer_prologue_7"
-  },
-  {
-    "id": "farmer_prologue_7",
-    "locationId": "loc_home",
-    "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_suni_farmer",
-        "position": "right",
-        "expression": "worried"
-      }
-    ],
-    "speakerId": "char_suni_farmer",
-    "speakerName": "최순이",
-    "speakerRole": "덕수의 아내",
-    "text": "여보... 봉수네 생각하면 가슴이 미어지지만, 우리도 당장 올겨울 아이 밥그릇을 걱정해야 할 처지잖아요. 우리가 안 맡아도 면사무소는 어차피 다른 사람에게 넘길 텐데... 어떻게 하시겠어요?",
-    "next": "farmer_prologue_choice"
-  },
-  {
-    "id": "farmer_prologue_choice",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_oh",
-        "position": "right",
-        "expression": "neutral",
-        "dimmed": true
-      }
-    ],
-    "speakerId": "char_deoksu",
-    "speakerName": "최덕수",
-    "speakerRole": "선택 1 · 남겨진 논의 경작권",
-    "text": "이웃 김봉수의 몰락 위에 놓인 논 네 두락. 면사무소와 금융조합이 내민 경작권 이전 제안을 어떻게 받아들일 것인가.",
-    "choices": [
-      {
-        "id": "f_c0_a",
-        "text": "A. 가족의 생계를 위해 면사무소 주선대로 경작권을 받아들인다.",
-        "subtext": "체제 협력 · 생계 우선 (생계 안정 +12, 체제 협력 +18, 주민 연대 -15)",
-        "effects": {
-          "variables": {
-            "livelihood": 2,
-            "cooperation": 3,
-            "solidarity": -3,
-            "communityBurden": 1
-          },
-          "relationships": {
-            "char_oh": 10,
-            "char_suni_farmer": 6,
-            "char_bongsu": -14
-          },
-          "setFlags": [
-            "f_c0_accepted_land"
-          ]
-        },
-        "logSummary": "[선택 1] 가족의 생존을 우선해 면사무소와 금융조합이 주선한 김봉수의 논 네 두락 경작권을 수락했습니다.",
-        "next": "farmer_prologue_res_a"
-      },
-      {
-        "id": "f_c0_b",
-        "text": "B. 봉수의 사정을 먼저 확인하고, 언젠가 되돌려 줄 조건이나 몫을 나눌 길을 찾는다.",
-        "subtext": "관계 조율 · 절충 (주민 연대 +12, 저항 참여 +6, 생계 안정 -4)",
-        "effects": {
-          "variables": {
-            "solidarity": 2,
-            "livelihood": -1,
-            "cooperation": -1,
-            "autonomy": 1
-          },
-          "relationships": {
-            "char_bongsu": 12,
-            "char_oh": -4
-          },
-          "setFlags": [
-            "f_c0_checked_bongsu"
-          ]
-        },
-        "logSummary": "[선택 1] 면사무소 제안에 바로 도장을 찍지 않고 김봉수의 사정과 추후 귀환 가능성을 먼저 헤아렸습니다.",
-        "next": "farmer_prologue_res_b"
-      },
-      {
-        "id": "f_c0_c",
-        "text": "C. 동원으로 쫓겨난 이웃의 땅을 관이 일방적으로 넘기는 건 부당하다며 공동 대응을 제안한다.",
-        "subtext": "연대 · 문제 제기 (주민 연대 +15, 저항 참여 +16, 체제 협력 -12)",
-        "effects": {
-          "variables": {
-            "solidarity": 3,
-            "autonomy": 3,
-            "cooperation": -2,
-            "communityBurden": 2
-          },
-          "relationships": {
-            "char_bongsu": 15,
-            "char_oh": -12,
-            "char_manseok": -8
-          },
-          "setFlags": [
-            "f_c0_protested_transfer"
-          ]
-        },
-        "logSummary": "[선택 1] 이농 농민의 경작권을 일방적으로 이전하는 처사에 이의를 제기하고 마을 농민들과의 공동 대응을 모색했습니다.",
-        "next": "farmer_prologue_res_c"
-      },
-      {
-        "id": "f_c0_d",
-        "text": "D. 분란과 부담을 피하기 위해 경작권 이전을 거절하고 기존 소작지만 지킨다.",
-        "subtext": "침묵 · 거리 두기 (체제 협력 -12, 생계 안정 -12, 저항 참여 +4)",
-        "effects": {
-          "variables": {
-            "cooperation": -2,
-            "livelihood": -2,
-            "autonomy": 1
-          },
-          "relationships": {
-            "char_suni_farmer": -6,
-            "char_oh": -8
-          },
-          "setFlags": [
-            "f_c0_declined_land"
-          ]
-        },
-        "logSummary": "[선택 1] 이웃의 땅을 맡는 부담과 갈등을 피해 기존 소작지 농사에만 머물기로 했습니다.",
-        "next": "farmer_prologue_res_d"
-      }
-    ]
-  },
-  {
-    "id": "farmer_prologue_res_a",
-    "locationId": "loc_township_office",
-    "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_oh",
-        "position": "right",
-        "expression": "ledger"
-      }
-    ],
-    "speakerId": "char_oh",
-    "speakerName": "오 주사",
-    "speakerRole": "면사무소 직원",
-    "text": "잘 생각했네, 최덕수 씨. 자네처럼 시국을 이해하는 농민이 늘어야 군청에서도 우리 면을 좋게 보지. 대신 올가을 증산 실적은 확실히 보여 줘야 하네.",
-    "next": "farmer_c1_intro_1"
-  },
-  {
-    "id": "farmer_prologue_res_b",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "right",
-        "expression": "neutral"
-      }
-    ],
-    "speakerId": "char_bongsu",
-    "speakerName": "김봉수",
-    "speakerRole": "이웃 농민",
-    "text": "고맙네, 덕수... 말이라도 그렇게 해 주니 마음이 조금 놓이네. 하지만 지주와 면사무소가 계약서를 쥐고 있는 이상, 자네 뜻대로만 되지는 않을 걸세.",
-    "next": "farmer_c1_intro_1"
-  },
-  {
-    "id": "farmer_prologue_res_c",
-    "locationId": "loc_township_office",
-    "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_oh",
-        "position": "right",
-        "expression": "papers"
-      }
-    ],
-    "speakerId": "char_oh",
-    "speakerName": "오 주사",
-    "speakerRole": "면사무소 직원",
-    "text": "이보게 최덕수 씨, 지금이 어느 시국인데 공동 대응이니 뭐니 하는 소리를 꺼내나! 괜히 주재소 귀에 들어가면 자네 집안부터 무사하지 못할 걸세. 말조심하게.",
-    "next": "farmer_c1_intro_1"
-  },
-  {
-    "id": "farmer_prologue_res_d",
-    "locationId": "loc_home",
-    "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_suni_farmer",
-        "position": "right",
-        "expression": "worried"
-      }
-    ],
-    "speakerId": "char_suni_farmer",
-    "speakerName": "최순이",
-    "speakerRole": "덕수의 아내",
-    "text": "남의 눈치 안 보고 마음은 편하겠지만... 당장 올해 보릿고개와 겨울 양식은 어쩌려고 그러세요. 그 논은 결국 다른 집으로 넘어가고 말았잖아요.",
-    "next": "farmer_c1_intro_1"
-  },
-  {
-    "id": "farmer_c1_intro_1",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "center",
-        "expression": "work"
-      }
-    ],
-    "speakerName": "제1장 · 풍년의 대가 (1942년 여름~가을)",
-    "text": "1942년 여름과 가을. 덕수가 새벽 이슬을 맞으며 논을 갈고 김을 맨 덕에 들판에는 모처럼 누런 벼 이삭이 가득 고개를 숙였습니다. 그러나 수확이 다가올수록 마을에는 기쁨보다 무거운 긴장이 감돕니다.",
     "next": "farmer_c1_intro_2"
   },
   {
     "id": "farmer_c1_intro_2",
-    "locationId": "loc_township_office",
-    "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
+    "locationId": "loc_farmland",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "work"
-      },
-      {
-        "characterId": "char_oh",
-        "position": "right",
-        "expression": "papers"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
     ],
-    "speakerId": "char_oh",
-    "speakerName": "오 주사",
-    "speakerRole": "면사무소 직원",
-    "text": "최덕수 씨, 올해 작황이 훌륭하다고 면장님께서도 보고를 받으셨네. 군청에서 내려온 공출 목표를 넘겨 납부하면 '애국 증산 모범 농민' 표창과 함께 내년 비료 배급을 우선 배정받을 수 있네. 잘 생각해 두게.",
+    "speakerId": "char_suni_farmer",
+    "text": "여보, 김봉수 씨네가 끝내 빚과 공출을 못 견디고 논 네 두락을 내놓는대요. 지주 박만석 영감 쪽 사람이 벌써 들락거리던데… 우리 식구 먹고살려면 논 한 뙈기가 아쉬운 형편이잖아요.",
     "next": "farmer_c1_intro_3"
   },
   {
     "id": "farmer_c1_intro_3",
     "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "center",
-        "expression": "neutral"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
     ],
     "speakerId": "char_deoksu",
-    "speakerName": "최덕수",
-    "speakerRole": "소작농 (주인공)",
-    "text": "(풍년이 들었는데도 손에 쥐는 쌀은 더 줄어드는구나... 타작마당에서 공출량을 결정하기 전에 마을 지도에서 집과 들판, 면사무소, 마을 회관, 마을 어귀를 둘러보며 사람들 사정부터 들어봐야겠다.)",
-    "historicalBadge": {
-      "kind": "fact",
-      "label": "마을 탐색 · 지도의 장소를 선택해 가족·김봉수·오 주사·지주 박만석의 입장을 확인하세요"
-    },
+    "text": "봉수 형님이 십 년 넘게 피땀 흘린 논이오. 그걸 남의 손에 넘기기 전에 직접 만나 이야기부터 들어 봐야겠소. 잠깐 집과 면사무소 쪽 사정도 살펴보고 논둑으로 가 보리다.",
     "next": "__EXPLORE__"
   },
   {
     "id": "exp_farmer_c1_home",
     "locationId": "loc_home",
-    "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
     "characters": [
-      {
-        "characterId": "char_suni_farmer",
-        "position": "left",
-        "expression": "bundle"
-      },
-      {
-        "characterId": "char_son",
-        "position": "right",
-        "expression": "neutral"
-      }
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "left" },
+      { "characterId": "char_son", "expression": "neutral", "position": "right" }
     ],
     "speakerId": "char_suni_farmer",
-    "speakerName": "최순이",
-    "speakerRole": "덕수의 아내",
-    "text": "지주 댁에 소작료 반을 떼어 주고 면사무소 공출까지 다 채우면 우리 식구 겨울 양식은 콩깻묵과 시래기뿐이에요. 표창장이 밥을 먹여 주는 것도 아닌데, 그래도 비료가 없으면 내년 농사는 또 어쩌나요...",
+    "text": "곳간에 남은 좁쌀도 보릿고개를 넘기기 빠듯해요. 봉수 씨네 사정이 딱한 건 알지만, 우리 애 굶기는 일만은 없어야 하지 않겠어요?",
     "next": "exp_farmer_c1_home_2"
   },
   {
     "id": "exp_farmer_c1_home_2",
     "locationId": "loc_home",
-    "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_son",
-        "position": "right",
-        "expression": "alt"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
     ],
-    "speakerId": "char_son",
-    "speakerName": "아들",
-    "speakerRole": "덕수의 어린 아들",
-    "text": "아버지, 올해는 벼가 저렇게 많이 열렸는데 추석 때 흰쌀밥 먹을 수 있어요? 옆집 봉수 아저씨네 형은 아직도 안 돌아왔대요.",
-    "next": "__EXPLORE__"
-  },
-  {
-    "id": "exp_farmer_c1_farmland",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "right",
-        "expression": "work"
-      }
-    ],
-    "speakerId": "char_bongsu",
-    "speakerName": "김봉수",
-    "speakerRole": "이웃 농민",
-    "text": "떠나기 전에 마지막으로 아랫배미 논 한 번 보려고 왔네. 벼가 참 실하게 여물었구먼... 내 손으로 십 년을 부쳤을 때도 이만큼 잘 된 해는 드물었는데.",
-    "next": "exp_farmer_c1_farmland_2"
-  },
-  {
-    "id": "exp_farmer_c1_farmland_2",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "right",
-        "expression": "neutral"
-      }
-    ],
-    "speakerId": "char_bongsu",
-    "speakerName": "김봉수",
-    "speakerRole": "이웃 농민",
-    "text": "읍내 날품팔이도 변변치 않은 데다, 이번엔 동생 앞으로도 징용 소문이 돈다네. 덕수야, 면사무소가 주는 상이나 비료에는 언제나 뒤에 붙는 값이 있다는 걸 잊지 말게.",
+    "speakerId": "char_deoksu",
+    "text": "알고 있소. 하지만 남의 억울한 처지를 발판 삼아 얻은 논이 우리 식구에게 온전한 복이 될지는 쉽게 장담 못 하겠구려.",
     "next": "__EXPLORE__"
   },
   {
     "id": "exp_farmer_c1_office",
     "locationId": "loc_township_office",
-    "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_oh",
-        "position": "right",
-        "expression": "papers"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_clerk", "expression": "formal", "position": "right" }
     ],
-    "speakerId": "char_oh",
-    "speakerName": "오 주사",
-    "speakerRole": "면사무소 직원",
-    "text": "마침 잘 왔네. 여기 농회 회보 《조선농보》를 보게. 다른 군에서도 방치된 소작지를 이어받아 증산·초과 공출을 달성한 농민을 '애국 증산 모범 농민'으로 대대적으로 표창했더군.",
+    "speakerId": "char_clerk",
+    "text": "최덕수 씨, 올해 새로 들어온 면서기 김진호입니다. 군청에서 토지 경작자와 예상 수확량을 빠짐없이 정리하라는 지시가 내려왔습니다. 김봉수 씨 논 네 두락도 정리되는 대로 신고해 주셔야 합니다.",
+    "historicalBadge": {
+      "kind": "source",
+      "label": "사료 F 확인 · 경작권 이전과 증산 표창 기록",
+      "sourceId": "source_F"
+    },
     "unlockSourceId": "source_F",
     "next": "exp_farmer_c1_office_2"
   },
   {
     "id": "exp_farmer_c1_office_2",
     "locationId": "loc_township_office",
-    "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "characters": [
-      {
-        "characterId": "char_oh",
-        "position": "left",
-        "expression": "ledger"
-      },
-      {
-        "characterId": "char_reporter",
-        "position": "right",
-        "expression": "neutral"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_clerk", "expression": "worried", "position": "right" }
     ],
-    "speakerId": "char_reporter",
-    "speakerName": "지방 신문 기자",
-    "speakerRole": "회보 · 신문 취재원",
-    "text": "군청에서도 올해 모범 농민 미담 기사를 꼭 실으라고 지시가 내려왔습니다. 최덕수 씨께서 초과 공출 실적을 내주신다면, 제가 직접 취재해 《조선농보》에 크게 실어 드리겠습니다.",
-    "historicalBadge": {
-      "kind": "source",
-      "label": "사료 F 확인 · 《조선농보》 1942년 8월호 모범 농민 선전 맥락 보기",
-      "sourceId": "source_F"
-    },
-    "next": "__EXPLORE__"
-  },
-  {
-    "id": "exp_farmer_c1_meeting",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
-    "characters": [
-      {
-        "characterId": "char_villager",
-        "position": "left",
-        "expression": "worried"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "right",
-        "expression": "neutral"
-      }
-    ],
-    "speakerId": "char_villager",
-    "speakerName": "마을 어르신",
-    "speakerRole": "같은 마을 소작농",
-    "text": "다들 들었소? 이웃 면에서 어느 집이 표창 받겠다고 공출을 초과 납부했다가, 이듬해 군청이 그 수확량을 기준 삼아 온 동네 할당량을 두 배로 올려 버렸답디다.",
-    "next": "exp_farmer_c1_meeting_2"
-  },
-  {
-    "id": "exp_farmer_c1_meeting_2",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_villager",
-        "position": "right",
-        "expression": "calm"
-      }
-    ],
-    "speakerId": "char_villager",
-    "speakerName": "마을 어르신",
-    "speakerRole": "같은 마을 소작농",
-    "text": "덕수 자네도 올해 농사가 잘됐다던데... 제발 혼자 살겠다고 기준선 끌어올리는 일만은 말아 주게. 우리도 다 같이 소작료와 공출 부담 좀 줄여 달라고 입을 모아야 살지 않겠소.",
-    "next": "__EXPLORE__"
-  },
-  {
-    "id": "exp_farmer_c1_clinic",
-    "locationId": "loc_clinic",
-    "background": "/assets/aistudio/Colonial_Korea_pixel_art_street_41461940_083abc1a.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_manseok",
-        "position": "right",
-        "expression": "stern"
-      }
-    ],
-    "speakerId": "char_manseok",
-    "speakerName": "박만석",
-    "speakerRole": "지주",
-    "text": "어이, 최덕수 아닌가. 들판에 나가 보니 올해 벼가 제법 잘 익었더군. 면사무소 주선으로 땅을 맡겼든 어쨌든, 그 논 등기부등본에 적힌 주인은 나 박만석이라는 걸 잊지 말게.",
-    "next": "exp_farmer_c1_clinic_2"
-  },
-  {
-    "id": "exp_farmer_c1_clinic_2",
-    "locationId": "loc_clinic",
-    "background": "/assets/aistudio/Colonial_Korea_pixel_art_street_41461940_083abc1a.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_manseok",
-        "position": "right",
-        "expression": "formal"
-      }
-    ],
-    "speakerId": "char_manseok",
-    "speakerName": "박만석",
-    "speakerRole": "지주",
-    "text": "공출이든 소작료든 말썽 없이 잘 바치는 소작인에게 땅을 맡기는 게 이치야. 쓸데없이 마을 회관 같은 데서 시끄럽게 구는 사람은 내년 봄에 가차 없이 경작권을 회수할 테니 알아서 처신하게.",
-    "historicalBadge": {
-      "kind": "fact",
-      "label": "식민지 농촌 구조 · 소작농은 전시 공출과 지주의 경작권 회수 권한이라는 이중 제약에 놓였습니다"
-    },
+    "speakerId": "char_deoksu",
+    "text": "논 주인이 바뀔 때마다 면사무소 장부에 곧바로 올라가 공출 할당이 붙는군…. 서기 양반도 위에서 시키는 대로 적을 뿐이겠지만, 농민 숨통은 점점 좁아지는구려.",
     "next": "__EXPLORE__"
   },
   {
     "id": "farmer_c1_main_1",
     "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
+    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "work"
-      },
-      {
-        "characterId": "char_manseok",
-        "position": "right",
-        "expression": "stern",
-        "dimmed": true
-      }
+      { "characterId": "char_bongsu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_manseok", "expression": "stern", "position": "right" }
     ],
-    "speakerName": "선택 2 · 증산과 공출의 갈림길",
-    "text": "가을 타작이 끝나고 가마니가 높이 쌓였습니다. 그러나 면사무소의 공출 독촉과 지주 박만석의 소작료 계산이 겹치며, 덕수의 마당에는 가족의 겨울 식량과 체제의 요구, 이웃의 고통이 한꺼번에 교차합니다.",
+    "speakerId": "char_bongsu",
+    "text": "덕수야, 면목 없다만 이 논 네 두락을 자네가 맡아 주지 않겠나. 금융조합 빚에 작년 공출 독촉까지 겹쳐 당장 급전이 없으면 식구들이 읍내 밖으로 쫓겨날 판이야.",
     "next": "farmer_c1_main_2"
   },
   {
     "id": "farmer_c1_main_2",
     "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_oh",
-        "position": "right",
-        "expression": "papers"
-      }
+      { "characterId": "char_bongsu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_manseok", "expression": "stern", "position": "right" }
     ],
-    "speakerId": "char_oh",
-    "speakerName": "오 주사",
-    "speakerRole": "면사무소 직원",
-    "text": "최덕수 씨, 이제 결정하시게. 목표량을 넘겨 공출하면 '애국 증산 모범 농민' 표창과 비료 3포대가 자네 몫일세. 반면 실적이 부족하거나 농민들이 선동에 흔들리면 면에서도 좌시할 수 없네.",
+    "speakerId": "char_manseok",
+    "text": "허허, 김 서방 처지가 급하니 시세보다 훨씬 헐값에 넘기는 게 이치 아닌가. 최덕수 자네도 올해 공출 할당을 채우려면 이 논이 필요할 테니, 내가 정한 조건대로 오늘 도장 찍고 끝내세.",
+    "next": "farmer_c1_main_3"
+  },
+  {
+    "id": "farmer_c1_main_3",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_bongsu", "expression": "neutral", "position": "center" },
+      { "characterId": "char_manseok", "expression": "stern", "position": "right" }
+    ],
+    "speakerName": "해설",
+    "text": "논둑 주위에는 지나가던 마을 농민 몇 사람과 면사무소 쪽을 오가는 사람들이 멈춰 서서 이 거래를 지켜보고 있다. 가족의 생계, 김봉수의 절박함, 그리고 지주 박만석의 일방적인 조건 앞에서 최덕수는 선택해야 한다.",
     "choices": [
       {
-        "id": "f_c1_a",
-        "text": "A. 면사무소 요구에 적극 협조해 초과 공출을 달성하고 표창과 비료를 받는다.",
-        "subtext": "체제 협력 · 모범 실적 (체제 협력 +26, 감시·부담 +14, 주민 연대 -18)",
+        "id": "f1_a",
+        "text": "김봉수의 급한 사정을 받아들여 제시된 낮은 가격으로 논 네 두락을 인수한다.",
+        "subtext": "가족의 겨울 양식과 농사 기반을 우선 확보한다.",
         "effects": {
-          "variables": {
-            "cooperation": 5,
-            "livelihood": -1,
-            "solidarity": -4,
-            "communityBurden": 3,
-            "autonomy": -2
-          },
-          "relationships": {
-            "char_oh": 15,
-            "char_bongsu": -18,
-            "char_manseok": 10
-          },
-          "setFlags": [
-            "f_c1_model_farmer"
-          ],
+          "variables": { "livelihood": 2, "cooperation": 2, "communityBurden": 1, "autonomy": -1, "solidarity": -1 },
+          "relationships": { "char_suni_farmer": 8, "char_bongsu": -14, "char_manseok": 10 },
+          "setFlags": ["f1_a", "farmer_bought_land"]
+        },
+        "logSummary": "김봉수의 급한 사정을 이용해 낮은 가격으로 논 네 두락을 인수했다.",
+        "next": "farmer_c1_react_a"
+      },
+      {
+        "id": "f1_b",
+        "text": "이웃의 궁박함을 이용해 헐값과 불리한 조건을 강요하는 관행이 부당하다고 주민들 앞에서 공개적으로 항의하며 공정한 거래를 요구한다.",
+        "subtext": "박만석과 면사무소의 미움을 사 가족 생계까지 위태로워질 수 있다.",
+        "effects": {
+          "variables": { "livelihood": -3, "cooperation": -3, "communityBurden": -1, "autonomy": 3, "solidarity": 2 },
+          "relationships": { "char_bongsu": 18, "char_manseok": -25, "char_suni_farmer": -10 },
+          "setFlags": ["f1_b", "farmer_public_resist", "farmer_c1_public_protest"],
           "delayedEffect": {
-            "id": "de_farmer_excess_quota",
+            "id": "del_f1_b",
             "triggerChapter": 2,
-            "title": "초과 공출 실적의 파장",
-            "description": "덕수의 초과 공출 기록이 군청 보고서에 오르면서, 마을 전체의 다음 해 공출 할당 기준을 압박하는 근거가 되고 있습니다.",
-            "variables": {
-              "communityBurden": 2,
-              "solidarity": -1
-            },
-            "flag": "triggered_de_farmer_excess_quota"
+            "title": "지주와 면사무소의 압박",
+            "description": "봄철 논 거래에서 공개적으로 항의한 뒤 비료 배급이 줄어들고 집안 생계가 더 팍팍해졌다.",
+            "variables": { "livelihood": -1 },
+            "flag": "farmer_c1_retaliation"
           }
         },
-        "logSummary": "[선택 2] 초과 공출을 달성해 ‘애국 증산 모범 농민’ 표창과 비료 3포대를 받았으나, 마을 이웃들의 부담과 시선이 무거워졌습니다.",
-        "next": "farmer_c1_award_1"
+        "logSummary": "지주 측의 불공정한 토지 거래 관행에 공개적으로 문제 제기하며 공정한 거래를 요구했다.",
+        "next": "farmer_c1_react_b"
       },
       {
-        "id": "f_c1_b",
-        "text": "B. 목표량만 최소한으로 채우고 나머지는 가족의 겨울 식량으로 남긴다.",
-        "subtext": "생계 유지 · 침묵 (생계 안정 +8, 체제 협력 +4, 저항 참여 -4)",
+        "id": "f1_c",
+        "text": "논을 인수하되, 김봉수가 이 논을 계속 부치며 높은 몫을 내도록 내게 유리한 조건을 제시한다.",
+        "subtext": "이웃의 손실을 바탕으로 내 이익과 안정적인 수확을 극대화한다.",
         "effects": {
-          "variables": {
-            "livelihood": 2,
-            "cooperation": 1,
-            "solidarity": -1,
-            "autonomy": -1
-          },
-          "relationships": {
-            "char_suni_farmer": 8
-          },
-          "setFlags": [
-            "f_c1_minimal_quota"
-          ]
+          "variables": { "livelihood": 2, "cooperation": 3, "communityBurden": 3, "autonomy": -2, "solidarity": -3 },
+          "relationships": { "char_bongsu": -24, "char_manseok": 14, "char_suni_farmer": 4 },
+          "setFlags": ["f1_c", "farmer_bought_land", "farmer_harsh_terms"]
         },
-        "logSummary": "[선택 2] 표창을 노리지 않고 할당 목표만 최소한으로 채워 가족의 겨울 양식을 지키는 쪽을 택했습니다.",
-        "next": "farmer_c1_res_b"
+        "logSummary": "논을 인수하되 김봉수에게 불리한 소작 조건을 제시해 사익을 챙겼다.",
+        "next": "farmer_c1_react_c"
       },
       {
-        "id": "f_c1_c",
-        "text": "C. 이웃 농민들과 함께 과도한 공출 할당과 소작료 인하를 요구하는 탄원에 나선다.",
-        "subtext": "공동 대응 · 연대 (주민 연대 +16, 저항 참여 +18, 체제 협력 -12)",
+        "id": "f1_d",
+        "text": "오늘 당장 도장을 찍지 않고 거래를 미룬 채, 마을 농민들과 김봉수의 사정을 함께 의논해 보자고 제안한다.",
+        "subtext": "직접 충돌은 피하면서도 일방적인 거래를 지연시키고 대안을 찾는다.",
         "effects": {
-          "variables": {
-            "solidarity": 3,
-            "autonomy": 4,
-            "communityBurden": 3,
-            "cooperation": -2
-          },
-          "relationships": {
-            "char_bongsu": 14,
-            "char_oh": -14,
-            "char_manseok": -14
-          },
-          "setFlags": [
-            "f_c1_collective_petition"
-          ],
-          "delayedEffect": {
-            "id": "de_farmer_petition_watch",
-            "triggerChapter": 2,
-            "title": "면사무소와 주재소의 시선",
-            "description": "공출 감면을 요구한 탄원 이후 면사무소와 주재소에서 덕수의 동향을 주시하기 시작했습니다.",
-            "variables": {
-              "communityBurden": 1
-            },
-            "flag": "triggered_de_farmer_petition_watch"
-          }
+          "variables": { "livelihood": -1, "cooperation": -1, "communityBurden": -1, "autonomy": 1, "solidarity": 1 },
+          "relationships": { "char_bongsu": 10, "char_manseok": -8 },
+          "setFlags": ["f1_d", "farmer_delayed_land"]
         },
-        "logSummary": "[선택 2] 마을 농민들과 함께 과도한 공출 할당과 소작료 부담 완화를 요구하며 공동 대응에 나섰습니다.",
-        "next": "farmer_c1_res_c"
-      },
-      {
-        "id": "f_c1_d",
-        "text": "D. 공출 물량 일부를 몰래 빼돌려 가족과 어려운 이웃에게 나눈다.",
-        "subtext": "우회적 저항 · 위험 감수 (저항 참여 +8, 주민 연대 +6, 체제 협력 -10)",
-        "effects": {
-          "variables": {
-            "cooperation": -2,
-            "livelihood": 1,
-            "autonomy": 2,
-            "solidarity": 1,
-            "communityBurden": 1
-          },
-          "relationships": {
-            "char_bongsu": 8,
-            "char_suni_farmer": 4,
-            "char_oh": -8
-          },
-          "setFlags": [
-            "f_c1_secret_share"
-          ]
-        },
-        "logSummary": "[선택 2] 단속 위험을 무릅쓰고 수확물 일부를 따로 빼돌려 가족과 굶주린 이웃의 식량으로 나누었습니다.",
-        "next": "farmer_c1_res_d"
+        "logSummary": "거래를 미루고 마을 농민들과 김봉수의 사정을 함께 의논하려 했다.",
+        "next": "farmer_c1_react_d"
       }
     ]
   },
   {
-    "id": "farmer_c1_award_1",
-    "locationId": "loc_township_office",
-    "background": "/assets/aistudio/Official_notice_on_wooden_desk_52b4fbca_831db51a.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_oh",
-        "position": "center",
-        "expression": "papers"
-      },
-      {
-        "characterId": "char_reporter",
-        "position": "right",
-        "expression": "glasses"
-      }
-    ],
-    "speakerId": "char_oh",
-    "speakerName": "오 주사 · 면사무소 표창식",
-    "speakerRole": "면사무소 직원",
-    "text": "며칠 뒤 면사무소 앞마당에서 표창식이 열렸습니다. 면장은 덕수에게 붉은 도장이 찍힌 '애국 증산 모범 농민' 표창장과 비료 3포대를 건네며, 방치된 논을 일궈 초과 공출을 이룬 모범 사례로 군청과 신문에 보고하겠다고 치켜세웠습니다.",
-    "historicalBadge": {
-      "kind": "source",
-      "label": "사료 F 연결 · 개인의 성실함이 전시 선전 사례로 기록되는 구조",
-      "sourceId": "source_F"
-    },
-    "next": "farmer_c1_award_2"
-  },
-  {
-    "id": "farmer_c1_award_2",
+    "id": "farmer_c1_react_a",
     "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "right",
-        "expression": "neutral"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_bongsu", "expression": "neutral", "position": "right" }
     ],
     "speakerId": "char_bongsu",
-    "speakerName": "김봉수",
-    "speakerRole": "이웃 농민",
-    "text": "자네는 남의 땅까지 맡아 표창을 받았구먼. 면장이 온 동네에 자네 이름을 부르더군.",
-    "next": "farmer_c1_award_3"
+    "text": "…고맙네, 덕수야. 급한 불은 껐으니 원망은 않겠네. 다만 이 헐값으로는 올겨울 식구들 입에 풀칠하기도 막막하구나.",
+    "next": "farmer_c1_end"
   },
   {
-    "id": "farmer_c1_award_3",
+    "id": "farmer_c1_react_b",
     "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "right",
-        "expression": "neutral"
-      }
+      { "characterId": "char_manseok", "expression": "stern", "position": "left" },
+      { "characterId": "char_villager", "expression": "calm", "position": "right" }
     ],
-    "speakerId": "char_deoksu",
-    "speakerName": "최덕수",
-    "speakerRole": "소작농 (주인공)",
-    "text": "나도 어쩔 수 없었네. 가족이 굶어 죽게 생겼는데, 빈 논을 그냥 둘 순 없지 않은가.",
-    "next": "farmer_c1_award_4"
+    "speakerId": "char_manseok",
+    "text": "어허, 소작농 주제에 감히 마을 유지와 면사무소가 정한 질서에 큰소리를 치는가! 네 집안이 올해 비료 배급과 공출 검사에서 무사할 줄 아느냐!",
+    "next": "farmer_c1_react_b2"
   },
   {
-    "id": "farmer_c1_award_4",
+    "id": "farmer_c1_react_b2",
     "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "right",
-        "expression": "work"
-      }
-    ],
-    "speakerId": "char_bongsu",
-    "speakerName": "김봉수",
-    "speakerRole": "이웃 농민",
-    "text": "자네를 탓하려는 게 아닐세. 다만 내게서 땅이 떠난 까닭까지 사라지는 건 아니지.",
-    "next": "__NEXT_CHAPTER__"
-  },
-  {
-    "id": "farmer_c1_res_b",
-    "locationId": "loc_home",
-    "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_suni_farmer",
-        "position": "right",
-        "expression": "calm"
-      }
-    ],
-    "speakerId": "char_suni_farmer",
-    "speakerName": "최순이",
-    "speakerRole": "덕수의 아내",
-    "text": "면사무소 눈치는 좀 보이지만, 그래도 올겨울 아이 굶길 걱정은 덜었어요. 조용히 우리 식구만 건사하며 이 전쟁이 끝나기만 기다려요.",
-    "conditionalNext": [
-      {
-        "condition": {
-          "minVars": {
-            "cooperation": 11
-          }
-        },
-        "next": "farmer_c1_award_1"
-      }
-    ],
-    "next": "__NEXT_CHAPTER__"
-  },
-  {
-    "id": "farmer_c1_res_c",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_villager",
-        "position": "right",
-        "expression": "worried"
-      }
+      { "characterId": "char_bongsu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_villager", "expression": "calm", "position": "right" }
     ],
     "speakerId": "char_villager",
-    "speakerName": "마을 어르신",
-    "speakerRole": "같은 마을 소작농",
-    "text": "면사무소는 탄원서를 받자마자 호통을 치며 돌려보냈지만, 덕수 자네가 앞장서 준 덕에 마을 사람들이 숨죽이고 있던 속내를 처음 꺼내 보았네. 다만 주재소 귀에 들어갈까 다들 밤잠을 설치는구먼.",
-    "next": "__NEXT_CHAPTER__"
+    "text": "박 영감이 얼굴이 붉으락푸르락 돌아갔구먼. 덕수 자네 집안에 불똥이 튈까 걱정이긴 하다만… 속 시원하게 맞는 말 해 준 자네가 고맙네. 봉수 논값도 조금은 덜 깎이게 됐어.",
+    "next": "farmer_c1_end"
   },
   {
-    "id": "farmer_c1_res_d",
-    "locationId": "loc_home",
-    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
+    "id": "farmer_c1_react_c",
+    "locationId": "loc_farmland",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_suni_farmer",
-        "position": "right",
-        "expression": "bundle"
-      }
+      { "characterId": "char_bongsu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_manseok", "expression": "formal", "position": "right" }
     ],
-    "speakerId": "char_suni_farmer",
-    "speakerName": "최순이",
-    "speakerRole": "덕수의 아내",
-    "text": "봉수네와 아랫집 어르신께 곡식을 조금 나눠 드리니 눈물을 글썽이시더군요. 그래도 여보, 순사들 가택 수색이라도 나오면 어쩌나 밤마다 가슴이 내려앉아요.",
+    "speakerId": "char_bongsu",
+    "text": "덕수야, 자네마저 박 영감과 똑같은 조건을 내밀 줄은 몰랐네…. 그래, 당장 갈 곳이 없으니 도장을 찍겠지만 이 마음은 쉽게 잊히지 않을 걸세.",
+    "next": "farmer_c1_end"
+  },
+  {
+    "id": "farmer_c1_react_d",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_bongsu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_manseok", "expression": "stern", "position": "right" }
+    ],
+    "speakerId": "char_manseok",
+    "text": "흥, 시간 끌어 봐야 달라질 것도 없을 텐데. 면사무소 토지 대장 정리 기한이 코앞이니 알아서들 하게.",
+    "next": "farmer_c1_end"
+  },
+  {
+    "id": "farmer_c1_end",
+    "locationId": "loc_farmland",
+    "speakerName": "해설",
+    "text": "봄철 논 네 두락 거래의 소문은 금세 면사무소 대장과 마을 구석구석으로 퍼져 나갔다. 그리고 뙤약볕의 여름이 지나고, 공출의 계절인 1944년 가을이 다가왔다.",
     "next": "__NEXT_CHAPTER__"
   },
   {
     "id": "farmer_c2_intro_1",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
+    "locationId": "loc_home",
+    "background": "/assets/aistudio/Pixel_art_rural_home_interior_942b29b7_44755d67.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_jaemun",
-        "position": "right",
-        "expression": "neutral"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
     ],
-    "speakerName": "제2장 · 봄은 누구에게 오는가 (1942년 늦가을)",
-    "text": "1942년 늦가을, 찬 서리가 내린 밤. 과거 농민조합운동과 연결되어 활동했던 이재문이 인적이 끊긴 마을 창고 뒤편으로 최덕수를 조용히 불러냈습니다.",
-    "next": "farmer_c2_intro_2"
+    "speakerName": "해설",
+    "text": "1944년 초가을. 벼 이삭은 고개를 숙였지만 마을 공기는 무겁다. 면사무소에서는 올해 공출 할당표를 내걸었고, 주재소 순사보들이 들말 골목을 수시로 돌고 있다.",
+    "conditionalNext": [
+      { "condition": { "requiredFlags": ["f1_b"] }, "next": "farmer_c2_intro_b" },
+      { "condition": { "requiredFlags": ["f1_c"] }, "next": "farmer_c2_intro_c" },
+      { "condition": { "requiredFlags": ["f1_d"] }, "next": "farmer_c2_intro_d" }
+    ],
+    "next": "farmer_c2_intro_a"
   },
   {
-    "id": "farmer_c2_intro_2",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
+    "id": "farmer_c2_intro_a",
+    "locationId": "loc_home",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_jaemun",
-        "position": "right",
-        "expression": "serious"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
     ],
-    "speakerId": "char_jaemun",
-    "speakerName": "이재문",
-    "speakerRole": "과거 농민운동 활동가",
-    "text": "덕수 씨, 올해 추수 끝난 들판을 보셨소? 김봉수 씨가 땅을 놓은 건 게을러서가 아니오. 지주의 고율 소작료, 금융조합 빚, 거기에 전시 노무 동원과 공출까지 겹쳐 한 농민을 쫓아낸 거요.",
-    "next": "farmer_c2_intro_3"
+    "speakerId": "char_suni_farmer",
+    "text": "봄에 봉수 씨 논을 넘겨받아 농사 면적이 늘었더니, 면사무소에서 우리 집 공출 할당량도 그만큼 크게 늘려 잡았대요. 이대로 다 내면 올겨울 애 먹을 양식이 남지 않아요.",
+    "next": "__EXPLORE__"
   },
   {
-    "id": "farmer_c2_intro_3",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
+    "id": "farmer_c2_intro_b",
+    "locationId": "loc_home",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_jaemun",
-        "position": "right",
-        "expression": "serious"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
     ],
-    "speakerId": "char_deoksu",
-    "speakerName": "최덕수",
-    "speakerRole": "소작농 (주인공)",
-    "text": "재문 씨, 나라고 그걸 모르는 게 아니오. 하지만 우리 같은 소작농이 뭘 어쩌겠소. 주재소 순사들 눈이 시퍼렇게 살아 있는데, 괜히 나섰다간 처자식까지 길바닥에 나앉을 판이오.",
-    "next": "farmer_c2_intro_4"
+    "speakerId": "char_suni_farmer",
+    "text": "여보, 봄에 박 영감 앞에서 큰소리친 뒤로 우리 집만 비료 배급이 줄고 애국반 모임에서도 눈총을 받아요. 마을 어르신 두 분이 몰래 보리 한 되를 건네주시긴 했지만… 우리 식구까지 이렇게 시달려야 하나요?",
+    "next": "__EXPLORE__"
   },
   {
-    "id": "farmer_c2_intro_4",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
+    "id": "farmer_c2_intro_c",
+    "locationId": "loc_home",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_jaemun",
-        "position": "right",
-        "expression": "neutral"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
     ],
-    "speakerId": "char_jaemun",
-    "speakerName": "이재문",
-    "speakerRole": "과거 농민운동 활동가",
-    "text": "그래서 혼자 싸우라는 게 아니오. 소작료 인하와 무리한 공출 완화 같은 당장의 생계 요구부터 농민들이 함께 목소리를 모아야 하오. 경제적 요구를 지키는 싸움이 곧 이 식민지 수탈 구조에 맞서는 길로 이어지기 때문이오.",
-    "next": "farmer_c2_main_1"
+    "speakerId": "char_suni_farmer",
+    "text": "봉수 씨 집이 결국 고향을 떠날 채비를 한대요. 이웃들 눈초리가 차가워진 데다, 면사무소에서는 늘어난 땅만큼 공출도 더 내라고 독촉장을 보냈어요.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "farmer_c2_intro_d",
+    "locationId": "loc_home",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
+    ],
+    "speakerId": "char_suni_farmer",
+    "text": "봄에 이웃들과 의논해 봉수 씨 사정을 조금 덜어 주긴 했지만, 면사무소와 지주가 정한 공출 할당량은 한 톨도 줄지 않았대요. 올해 겨울 양식이 걱정이에요.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_farmer_c2_farmland",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_villager", "expression": "worried", "position": "left" },
+      { "characterId": "char_bongsu", "expression": "neutral", "position": "right" }
+    ],
+    "speakerId": "char_villager",
+    "text": "조선식량관리령인지 뭔지 때문에 이제는 자기 논에서 거둔 쌀도 마음대로 못 먹는다더군. 주재소 강동혁 순사보가 공출 모자란 집 곳간을 뒤지러 다닌다는 소문까지 도네.",
+    "historicalBadge": {
+      "kind": "source",
+      "label": "사료 D 확인 · 조선식량관리령과 미곡 공출",
+      "sourceId": "source_D"
+    },
+    "unlockSourceId": "source_D",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_farmer_c2_clinic",
+    "locationId": "loc_clinic",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_doctor", "expression": "calm", "position": "right" }
+    ],
+    "speakerId": "char_doctor",
+    "text": "덕수 씨, 읍내 신문을 보면 전쟁이 갈수록 험해지고 있소. 면사무소나 주재소도 군청 할당을 못 채우면 자기네가 문책을 당하니 농촌을 더 거칠게 몰아세우는 것이오. 몸 상하지 않게 조심하시오.",
+    "historicalBadge": {
+      "kind": "source",
+      "label": "사료 I 확인 · 전시 말기 통제와 남겨진 책임",
+      "sourceId": "source_I"
+    },
+    "unlockSourceId": "source_I",
+    "next": "__EXPLORE__"
   },
   {
     "id": "farmer_c2_main_1",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
+    "locationId": "loc_farmland",
+    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_jaemun",
-        "position": "right",
-        "expression": "serious"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_clerk", "expression": "field", "position": "right" }
     ],
-    "speakerId": "char_jaemun",
-    "speakerName": "이재문",
-    "speakerRole": "선택 3 · 이재문의 제안",
-    "text": "감시가 삼엄한 시절이라 공개 모임은 어렵소. 대신 뜻이 맞는 이웃 몇이서 소작 조건과 공출 문제를 의논하려 하는데... 덕수 씨, 함께해 주시겠소?",
+    "speakerId": "char_clerk",
+    "text": "최덕수 씨, 면사무소에서 나온 김진호입니다. 올해 농업생산책임제 할당량대로 이번 주 안에 공출미를 내셔야 합니다. 기한을 넘기면 주재소에서 직접 곡식 보관 실태를 조사하러 나옵니다.",
+    "historicalBadge": {
+      "kind": "fact",
+      "label": "역사적 사실 · 1944년 미곡 공출 독촉과 주재소 단속"
+    },
+    "next": "farmer_c2_main_2"
+  },
+  {
+    "id": "farmer_c2_main_2",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "center" },
+      { "characterId": "char_clerk", "expression": "worried", "position": "right" }
+    ],
+    "speakerId": "char_suni_farmer",
+    "text": "서기 양반, 보시다시피 올해 벼 알이 제대로 여물지도 않았어요. 이 할당량을 다 내고 나면 우리 세 식구는 겨울을 못 납니다….",
+    "next": "farmer_c2_main_3"
+  },
+  {
+    "id": "farmer_c2_main_3",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_clerk", "expression": "worried", "position": "center" },
+      { "characterId": "char_villager", "expression": "worried", "position": "right" }
+    ],
+    "speakerName": "해설",
+    "text": "주위에는 같은 통지서를 받아 든 들말 농민들이 침울하게 모여 서 있다. 공출 목표를 채우면 곳간이 비고, 맞서면 면사무소와 주재소의 시선이 집중된다. 최덕수는 어떻게 대응할 것인가.",
     "choices": [
       {
-        "id": "f_c2_a",
-        "text": "A. 이재문의 비밀 농민 모임에 참여해 소작료·공출 공동 대응을 준비한다.",
-        "subtext": "연대 참여 · 저항 (주민 연대 +20, 저항 참여 +20, 감시·부담 +14)",
+        "id": "f2_a",
+        "text": "가족의 겨울 식량을 줄여서라도 정해진 공출 목표량을 그대로 맞춰 낸다.",
+        "subtext": "단속과 분란은 피할 수 있지만 가족의 굶주림을 감당해야 한다.",
         "effects": {
-          "variables": {
-            "solidarity": 4,
-            "autonomy": 4,
-            "communityBurden": 3,
-            "cooperation": -2
-          },
-          "relationships": {
-            "char_jaemun": 18,
-            "char_bongsu": 10,
-            "char_oh": -10
-          },
-          "setFlags": [
-            "f_c2_joined_jaemun"
-          ]
+          "variables": { "livelihood": 2, "cooperation": 2, "communityBurden": 1, "autonomy": -1, "solidarity": -1 },
+          "relationships": { "char_clerk": 6, "char_suni_farmer": -4 },
+          "setFlags": ["f2_a"]
         },
-        "logSummary": "[선택 3] 탄압의 위험을 감수하고 이재문이 제안한 비밀 농민 모임에 참여해 공동 대응을 준비하기로 했습니다.",
-        "next": "farmer_c2_res_a"
+        "logSummary": "가족의 겨울 식량을 줄여서라도 면사무소의 공출 목표를 달성했다.",
+        "next": "farmer_c2_react_a"
       },
       {
-        "id": "f_c2_b",
-        "text": "B. 비밀 조직에는 들지 않되, 마을 사정을 나누고 상부상조·협동으로 이웃을 돕는다.",
-        "subtext": "협동 · 신중한 연대 (주민 연대 +12, 저항 참여 +10, 감시·부담 +6)",
+        "id": "f2_b",
+        "text": "현실에 맞지 않는 공출 할당의 부당함을 모인 주민들 앞에서 공개적으로 지적하며 농민들과 함께 조정을 요구한다.",
+        "subtext": "면사무소와 경찰의 감시가 집중되고 가족에게까지 압박이 미칠 수 있다.",
         "effects": {
-          "variables": {
-            "solidarity": 2,
-            "autonomy": 2,
-            "communityBurden": 1,
-            "cooperation": -1
-          },
-          "relationships": {
-            "char_jaemun": 6,
-            "char_bongsu": 10
-          },
-          "setFlags": [
-            "f_c2_cooperative_help"
-          ]
+          "variables": { "livelihood": -3, "cooperation": -3, "communityBurden": -1, "autonomy": 3, "solidarity": 2 },
+          "relationships": { "char_villager": 16, "char_clerk": -10, "char_suni_farmer": -12 },
+          "setFlags": ["f2_b", "farmer_public_resist", "farmer_c2_public_protest"],
+          "delayedEffect": {
+            "id": "del_f2_b",
+            "triggerChapter": 3,
+            "title": "공출 항의 이후의 감시와 가족의 부담",
+            "description": "공개 항의 이후 주재소 순사보가 집 앞을 오가고 배급이 까다로워지며 아내 순이의 걱정이 깊어졌다.",
+            "variables": { "livelihood": -1 },
+            "flag": "farmer_c2_family_pressure"
+          }
         },
-        "logSummary": "[선택 3] 조직적 활동에는 거리를 두되, 농민들의 상호 부조와 협동 방식으로 이웃을 돕기로 했습니다.",
-        "next": "farmer_c2_res_b"
+        "logSummary": "주민들 앞에서 공출 할당의 부당성을 공개 지적하고 농민들과 함께 항의했다.",
+        "next": "farmer_c2_react_b"
       },
       {
-        "id": "f_c2_c",
-        "text": "C. 가족이 다칠 위험이 너무 크다며 거절하고 조용히 생업에만 집중한다.",
-        "subtext": "침묵 · 가족 보호 (생계 안정 +8, 저항 참여 -12, 주민 연대 -6)",
+        "id": "f2_c",
+        "text": "사정이 더 어려운 이웃 농가의 수확량을 내 공출 실적으로 돌려 채울 방법을 면사무소 쪽에 슬쩍 타진한다.",
+        "subtext": "내 곳간과 실적은 지킬 수 있지만 다른 농민의 부담이 커진다.",
         "effects": {
-          "variables": {
-            "livelihood": 2,
-            "autonomy": -2,
-            "solidarity": -1
-          },
-          "relationships": {
-            "char_jaemun": -8,
-            "char_suni_farmer": 8
-          },
-          "setFlags": [
-            "f_c2_declined_quiet"
-          ]
+          "variables": { "livelihood": 2, "cooperation": 3, "communityBurden": 3, "autonomy": -2, "solidarity": -3 },
+          "relationships": { "char_villager": -20, "char_bongsu": -15 },
+          "setFlags": ["f2_c"]
         },
-        "logSummary": "[선택 3] 가족의 안전을 우선해 이재문의 제안을 거절하고, 어떤 모임에도 엮이지 않기로 했습니다.",
-        "next": "farmer_c2_res_c"
+        "logSummary": "이웃 농민의 생산량을 자신의 공출 실적으로 활용할 방법을 모색했다.",
+        "next": "farmer_c2_react_c"
       },
       {
-        "id": "f_c2_d",
-        "text": "D. 불온한 접촉이 마을에 화를 부를까 두려워 면사무소 오 주사에게 동향을 흘린다.",
-        "subtext": "체제 협력 · 밀고 (체제 협력 +18, 주민 연대 -20, 저항 참여 -10)",
+        "id": "f2_d",
+        "text": "실제 수확량보다 낮게 신고하고 겨울 양식 일부를 곳간 안쪽에 따로 감춰 두며 공출량을 조정한다.",
+        "subtext": "당장 굶주림을 피하려 하지만 주재소 조사에 적발될 위험을 안게 된다.",
         "effects": {
-          "variables": {
-            "cooperation": 4,
-            "solidarity": -4,
-            "autonomy": -2,
-            "communityBurden": 2
-          },
-          "relationships": {
-            "char_oh": 14,
-            "char_jaemun": -25,
-            "char_bongsu": -12
-          },
-          "setFlags": [
-            "f_c2_reported_oh"
-          ]
+          "variables": { "livelihood": -1, "cooperation": -1, "communityBurden": -1, "autonomy": 1, "solidarity": 1 },
+          "relationships": { "char_suni_farmer": 6, "char_police_asst": -8 },
+          "setFlags": ["f2_d", "farmer_hid_grain"]
         },
-        "logSummary": "[선택 3] 마을과 가족에 닥칠 화를 피하기 위해 이재문의 접촉 사실을 면사무소 오 주사에게 알렸습니다.",
-        "next": "farmer_c2_res_d"
+        "logSummary": "실제 생산량을 낮게 신고하고 겨울 양식 일부를 따로 숨겨 공출량을 조정했다.",
+        "next": "farmer_c2_react_d"
       }
     ]
   },
   {
-    "id": "farmer_c2_res_a",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_jaemun",
-        "position": "right",
-        "expression": "neutral"
-      }
-    ],
-    "speakerId": "char_jaemun",
-    "speakerName": "이재문",
-    "speakerRole": "과거 농민운동 활동가",
-    "text": "고맙소, 덕수 씨. 쉬운 결심이 아니었을 텐데... 우리끼리라도 서로 눈과 귀가 되어 주면, 적어도 혼자 무너지는 이웃은 줄일 수 있을 거요.",
-    "next": "farmer_c2_context"
-  },
-  {
-    "id": "farmer_c2_res_b",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_jaemun",
-        "position": "right",
-        "expression": "neutral"
-      }
-    ],
-    "speakerId": "char_jaemun",
-    "speakerName": "이재문",
-    "speakerRole": "과거 농민운동 활동가",
-    "text": "충분히 이해하오. 누구에게나 감당할 수 있는 무게가 다르니까. 마을 안에서 서로 식량과 일손을 보태는 일만으로도 작은 방패가 될 수 있을 거요.",
-    "next": "farmer_c2_context"
-  },
-  {
-    "id": "farmer_c2_res_c",
-    "locationId": "loc_home",
-    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_suni_farmer",
-        "position": "right",
-        "expression": "worried"
-      }
-    ],
-    "speakerId": "char_deoksu",
-    "speakerName": "최덕수",
-    "speakerRole": "소작농 (주인공)",
-    "text": "미안하오, 재문 씨. 나에겐 지켜야 할 처자식이 있소. 어서 돌아가 주시오. 오늘 밤 여기서 나눈 이야기는 듣지 않은 걸로 하겠소.",
-    "next": "farmer_c2_context"
-  },
-  {
-    "id": "farmer_c2_res_d",
-    "locationId": "loc_township_office",
-    "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_oh",
-        "position": "right",
-        "expression": "papers"
-      }
-    ],
-    "speakerId": "char_oh",
-    "speakerName": "오 주사",
-    "speakerRole": "면사무소 직원",
-    "text": "잘 알려 주었네, 최덕수 씨. 자네 이름이 거론되지 않게 조용히 주재소에 넘겨 두지. 시국을 어지럽히는 자들을 미리 막아야 자네 집안도 편히 농사짓지 않겠나.",
-    "next": "farmer_c2_context"
-  },
-  {
-    "id": "farmer_c2_context",
+    "id": "farmer_c2_react_a",
     "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
     "characters": [
-      {
-        "characterId": "char_teacher",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_jaemun",
-        "position": "right",
-        "expression": "neutral",
-        "dimmed": true
-      }
+      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
     ],
-    "speakerId": "char_teacher",
-    "speakerName": "박 교사 · 농민운동의 다양한 흐름",
-    "speakerRole": "농촌 야학 · 계몽 인사",
-    "text": "1930년대 이후 일제의 사상·치안 탄압으로 공개 농민운동은 크게 위축되었습니다. 그래도 사회주의 계열의 토지·계급 투쟁뿐 아니라, 야학 교육과 협동조합, 소작 조건 개선을 통해 농민 스스로 힘을 기르려는 다양한 모색이 조용히 이어졌습니다.",
-    "historicalBadge": {
-      "kind": "fact",
-      "label": "역사적 맥락 · 문학(이기영 《봄》)의 모티브와 1940년대 전시 통제 현실을 구분해 이해합니다"
-    },
+    "speakerId": "char_clerk",
+    "text": "…고생 많으셨습니다, 덕수 씨. 장부에 완납으로 올려 두겠습니다. 저도 마음이 편치만은 않군요.",
+    "next": "farmer_c2_end"
+  },
+  {
+    "id": "farmer_c2_react_b",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_clerk", "expression": "worried", "position": "center" },
+      { "characterId": "char_villager", "expression": "calm", "position": "right" }
+    ],
+    "speakerId": "char_villager",
+    "text": "덕수 말이 틀린 데가 하나 없소! 사람부터 살고 봐야 나라에 곡식도 내지 않겠소! 우리 집도 이번 할당은 도저히 무리요!",
+    "next": "farmer_c2_react_b2"
+  },
+  {
+    "id": "farmer_c2_react_b2",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_clerk", "expression": "worried", "position": "left" },
+      { "characterId": "char_police_asst", "expression": "patrol", "position": "right" }
+    ],
+    "speakerId": "char_police_asst",
+    "text": "소란이 크군…. 최덕수, 공출 집행을 방해하면 주재소에서 가만있지 않는다. 일단 오늘 보고에 올려 두겠다.",
+    "next": "farmer_c2_end"
+  },
+  {
+    "id": "farmer_c2_react_c",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_villager", "expression": "worried", "position": "right" }
+    ],
+    "speakerId": "char_villager",
+    "text": "아니, 아랫말 영감 몫까지 끌어다 자기 집 실적으로 돌리려 하다니… 덕수 자네가 어쩌다 그리 변했는가.",
+    "next": "farmer_c2_end"
+  },
+  {
+    "id": "farmer_c2_react_d",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
+    ],
+    "speakerId": "char_suni_farmer",
+    "text": "두 가마니를 광 구석에 숨겨 두긴 했는데… 며칠 뒤 주재소 강동혁 순사보가 집안을 훑고 지나갈 때 가슴이 철렁 내려앉았어요.",
+    "conditionalNext": [
+      { "condition": { "requiredFlags": ["world_police_tipped_off"] }, "next": "farmer_c2_react_d_world" }
+    ],
+    "next": "farmer_c2_end"
+  },
+  {
+    "id": "farmer_c2_react_d_world",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "calm", "position": "right" }
+    ],
+    "speakerId": "char_suni_farmer",
+    "text": "그런데 이상해요. 단속 나오기 전날 밤, 누군가 대문 틈에 '내일 수색'이라 적은 종이를 꽂아 두고 갔더군요. 주재소 안에서도 눈감아 준 사람이 있었던 걸까요….",
+    "next": "farmer_c2_end"
+  },
+  {
+    "id": "farmer_c2_end",
+    "locationId": "loc_home",
+    "speakerName": "해설",
+    "text": "추수가 끝난 1944년 늦가을, 마을에는 공출보다 더 무서운 소식이 돌았다. 면사무소 노무동원 명부가 주재소로 넘어가 청년들을 추적하기 시작했다는 것이다.",
     "next": "__NEXT_CHAPTER__"
   },
   {
     "id": "farmer_c3_intro_1",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Colonial_Korea_pixel_art_street_41461940_083abc1a.jpg",
+    "locationId": "loc_home",
+    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_peddler",
-        "position": "right",
-        "expression": "neutral"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
     ],
-    "speakerId": "char_peddler",
-    "speakerName": "장터 행상",
-    "speakerRole": "제3장 · 독립이 오면 모든 것이 달라질까? (1943년)",
-    "text": "쉬잇, 덕수 양반. 읍내 장터에서 들은 얘긴데, 남양 전선에서 일본군이 슬슬 밀린다는 소문이 파다하오. 놋그릇까지 긁어 가는 걸 보면 전쟁이 오래 못 가서 조선이 독립할지도 모른답디다.",
-    "next": "farmer_c3_intro_2"
+    "speakerName": "해설",
+    "text": "1944년 늦가을 저녁. 찬바람이 불어오는 송현면 들말에 어둠이 내려앉는다.",
+    "conditionalNext": [
+      { "condition": { "requiredFlags": ["f2_b"] }, "next": "farmer_c3_intro_b" },
+      { "condition": { "requiredFlags": ["f2_d"] }, "next": "farmer_c3_intro_d" }
+    ],
+    "next": "farmer_c3_intro_default"
   },
   {
-    "id": "farmer_c3_intro_2",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
+    "id": "farmer_c3_intro_b",
+    "locationId": "loc_home",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_jaemun",
-        "position": "right",
-        "expression": "serious"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
+    ],
+    "speakerId": "char_suni_farmer",
+    "text": "여보… 당신 뜻이 옳다는 건 나도 알아요. 덕분에 몇 집은 공출 기한을 며칠 늦추기도 했죠. 하지만 왜 아무 잘못도 없는 나와 어린 애까지 주재소 눈치를 보며 이런 고생을 겪어야 해요?",
+    "next": "farmer_c3_intro_b2"
+  },
+  {
+    "id": "farmer_c3_intro_b2",
+    "locationId": "loc_home",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
     ],
     "speakerId": "char_deoksu",
-    "speakerName": "최덕수",
-    "speakerRole": "소작농 (주인공)",
-    "text": "재문 씨, 정말 일본이 지고 독립이 오면... 그때는 우리 같은 소작농도 제 땅에서 마음 편히 농사지을 수 있겠지요?",
-    "next": "farmer_c3_intro_3"
+    "text": "…미안하오, 순이. 당신과 아이를 힘들게 하려던 게 아니오. 그저 가만히 있으면 다들 차례로 무너질 것 같아 입을 다물 수 없었소.",
+    "next": "__EXPLORE__"
   },
   {
-    "id": "farmer_c3_intro_3",
+    "id": "farmer_c3_intro_d",
+    "locationId": "loc_home",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
+    ],
+    "speakerId": "char_suni_farmer",
+    "text": "숨겨 둔 쌀 덕분에 당장 굶지는 않지만, 주재소 순사보가 골목만 지나가도 심장이 내려앉아요. 오늘 밤에는 야학 이정수 선생을 찾는다고 주재소가 떠들썩하대요.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "farmer_c3_intro_default",
+    "locationId": "loc_home",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
+    ],
+    "speakerId": "char_suni_farmer",
+    "text": "여보, 마을 회관 야학을 이끌던 이정수 씨가 노무동원 명부에 올라 경찰이 찾고 있대요. 밤길에 공연히 엮이지 않게 대문 단속 단단히 해 두세요.",
+    "next": "__EXPLORE__"
+  },
+  {
+    "id": "exp_farmer_c3_meeting",
     "locationId": "loc_meeting_room",
     "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_jaemun",
-        "position": "right",
-        "expression": "serious"
-      }
+      { "characterId": "char_student", "expression": "neutral", "position": "left" },
+      { "characterId": "char_villager", "expression": "worried", "position": "right" }
     ],
-    "speakerId": "char_jaemun",
-    "speakerName": "이재문",
-    "speakerRole": "과거 농민운동 활동가",
-    "text": "덕수 씨, 곰곰이 생각해 보시오. 일본 순사와 면장이 물러간다 해도, 박만석 같은 조선인 지주들이 등기부등본을 쥔 채 소작료 반을 그대로 거둬간다면 농민의 봄이 저절로 오겠소?",
-    "next": "farmer_c3_intro_4"
-  },
-  {
-    "id": "farmer_c3_intro_4",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
-    "characters": [
-      {
-        "characterId": "char_teacher",
-        "position": "left",
-        "expression": "serious"
-      },
-      {
-        "characterId": "char_jaemun",
-        "position": "right",
-        "expression": "neutral"
-      }
-    ],
-    "speakerId": "char_teacher",
-    "speakerName": "박 교사 · 해방 이후를 향한 서로 다른 전망",
-    "speakerRole": "농촌 야학 · 계몽 인사",
-    "text": "당시에도 해방 이후를 두고 생각이 갈렸습니다. 먼저 민족 독립을 위해 계층을 넘어 연대해야 한다는 주장, 독립과 함께 토지·계급 제도의 근본 개혁이 필요하다는 주장, 그리고 농민 교육과 협동을 통한 점진적 자립을 중시하는 견해가 교차했습니다.",
-    "next": "farmer_c3_main_1"
+    "speakerId": "char_student",
+    "text": "면사무소 김진호 서기가 작성한 노무동원 명부에 이정수 선생님 이름이 올라갔대요. 주재소 강동혁 순사보가 오늘 밤 안으로 행방을 확인하러 나올 거라는 얘기가 돌고 있습니다.",
+    "historicalBadge": {
+      "kind": "source",
+      "label": "사료 E 확인 · 노무동원 명부와 강제 징용",
+      "sourceId": "source_E"
+    },
+    "unlockSourceId": "source_E",
+    "next": "__EXPLORE__"
   },
   {
     "id": "farmer_c3_main_1",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
+    "locationId": "loc_home",
+    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "center",
-        "expression": "neutral"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
     ],
-    "speakerId": "char_deoksu",
-    "speakerName": "최덕수",
-    "speakerRole": "선택 4 · 독립 이후의 사회",
-    "text": "독립이 온다면, 정말 모든 것이 달라질까. 소작농 최덕수는 다가올 내일을 어떤 마음으로 준비할 것인가.",
+    "speakerId": "char_jeongsu",
+    "text": "덕수 형님, 늦은 밤에 죄송합니다. 면사무소 노무동원 명부에 제 이름이 올라갔고, 주재소에서 곧 저를 찾으러 나온답니다. 하룻밤만 몸을 숨기거나 마을을 빠져나갈 길을 도울 수 있겠습니까?",
+    "next": "farmer_c3_main_2"
+  },
+  {
+    "id": "farmer_c3_main_2",
+    "locationId": "loc_home",
+    "characters": [
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "left" },
+      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+    ],
+    "speakerId": "char_suni_farmer",
+    "text": "이정수 선생님 사정은 딱하지만… 주재소에서 우리 집을 뒤져 들키기라도 하면 우리 아들과 집안은 어쩌라고요. 제발 생각 좀 해 주세요, 여보.",
+    "next": "farmer_c3_main_3"
+  },
+  {
+    "id": "farmer_c3_main_3",
+    "locationId": "loc_home",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "center" },
+      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+    ],
+    "speakerName": "해설",
+    "text": "문밖에서는 순찰하는 구두 소리가 멀리서 들려온다. 가족의 안전, 노무동원 제도의 부당함, 그리고 이웃 청년의 운명 앞에서 최덕수는 마지막 결정을 내려야 한다.",
     "choices": [
       {
-        "id": "f_c3_a",
-        "text": "A. 우선 민족 독립이 먼저이니, 지주와 농민이 분열하기보다 함께 힘을 모아야 한다고 본다.",
-        "subtext": "민족 연대 우선 (주민 연대 +8, 저항 참여 +8)",
+        "id": "f3_a",
+        "text": "가족과 농사를 지켜야 하니 도울 수 없다며 정중히 거절하고 문을 닫는다.",
+        "subtext": "집안의 안전을 최우선으로 지키지만 이정수는 홀로 어둠 속으로 떠나야 한다.",
         "effects": {
-          "variables": {
-            "solidarity": 2,
-            "autonomy": 2
-          },
-          "setFlags": [
-            "f_c3_national_unity"
-          ]
+          "variables": { "livelihood": 2, "cooperation": 2, "communityBurden": 1, "autonomy": -1, "solidarity": -1 },
+          "relationships": { "char_suni_farmer": 8, "char_jeongsu": -12 },
+          "setFlags": ["f3_a"]
         },
-        "logSummary": "[선택 4] 일제 축출과 민족 독립이 최우선 과제이며, 그 과정에서 계층을 넘은 연대가 필요하다고 보았습니다.",
-        "next": "farmer_c3_res_a"
+        "logSummary": "가족과 농사를 지키기 위해 이정수의 부탁을 거절했다.",
+        "next": "farmer_c3_react_a"
       },
       {
-        "id": "f_c3_b",
-        "text": "B. 독립 이후에도 토지 제도와 소작 구조가 바뀌지 않으면 농민의 삶은 달라지지 않는다고 주장한다.",
-        "subtext": "토지 개혁 · 구조 비판 (저항 참여 +16, 주민 연대 +12, 체제 협력 -10)",
+        "id": "f3_b",
+        "text": "강제 노무동원 자체의 부당함을 공개적으로 문제 제기하며, 이웃 농민들과 함께 동원 반대 입장을 밝히겠다고 나선다.",
+        "subtext": "주재소 감시와 탄압이 자신뿐 아니라 가족에게도 직접적인 타격으로 돌아올 수 있다.",
         "effects": {
-          "variables": {
-            "autonomy": 3,
-            "solidarity": 2,
-            "cooperation": -2,
-            "communityBurden": 2
-          },
-          "relationships": {
-            "char_jaemun": 14,
-            "char_manseok": -14
-          },
-          "setFlags": [
-            "f_c3_land_reform"
-          ]
+          "variables": { "livelihood": -3, "cooperation": -3, "communityBurden": -1, "autonomy": 3, "solidarity": 2 },
+          "relationships": { "char_jeongsu": 20, "char_suni_farmer": -14, "char_villager": 14 },
+          "setFlags": ["f3_b", "farmer_public_resist", "farmer_c3_public_protest"]
         },
-        "logSummary": "[선택 4] 민족 해방뿐 아니라 지주·소작 구조와 토지 소유 문제의 근본적 개혁이 함께 이루어져야 한다고 판단했습니다.",
-        "next": "farmer_c3_res_b"
+        "logSummary": "노무동원 제도의 부당성을 공개적으로 제기하고 주민들과 동원 반대 입장을 표명했다.",
+        "next": "farmer_c3_react_b"
       },
       {
-        "id": "f_c3_c",
-        "text": "C. 급격한 충돌보다 농민 교육과 협동으로 스스로 일어설 기반을 다지는 쪽이 현실적이라고 본다.",
-        "subtext": "점진적 자립 · 협동 (생계 안정 +8, 주민 연대 +6, 저항 참여 +4)",
+        "id": "f3_c",
+        "text": "우리 집에 의심이 쏠리지 않도록, 주재소 쪽에 동원을 피하려는 다른 청년의 행방을 슬쩍 알린다.",
+        "subtext": "자신의 안전을 확보하는 대신 무고한 다른 이웃에게 위험을 떠넘긴다.",
         "effects": {
-          "variables": {
-            "livelihood": 2,
-            "solidarity": 1,
-            "autonomy": 1
-          },
-          "setFlags": [
-            "f_c3_gradual_reform"
-          ]
+          "variables": { "livelihood": 2, "cooperation": 3, "communityBurden": 3, "autonomy": -2, "solidarity": -3 },
+          "relationships": { "char_jeongsu": -25, "char_villager": -20 },
+          "setFlags": ["f3_c"]
         },
-        "logSummary": "[선택 4] 정치적 충돌보다 농촌 계몽과 협동을 통해 농민 스스로 자립 기반을 넓히는 점진적 변화를 택했습니다.",
-        "next": "farmer_c3_res_c"
+        "logSummary": "의심을 피하기 위해 다른 마을 청년의 행방을 주재소 쪽에 알렸다.",
+        "next": "farmer_c3_react_c"
       },
       {
-        "id": "f_c3_d",
-        "text": "D. 독립이든 개혁이든 당장 내 가족이 살아남는 일이 먼저라며 바깥 논의와 거리를 둔다.",
-        "subtext": "생존 집중 · 침묵 (생계 안정 +12, 저항 참여 -14, 주민 연대 -8)",
+        "id": "f3_d",
+        "text": "집에 직접 숨기지는 못하더라도, 주재소 순찰 시간과 산길 정보를 알려 주고 주먹밥과 짚신을 챙겨 보낸다.",
+        "subtext": "전면 충돌은 피하면서 이정수가 피신할 작은 시간을 벌어 준다.",
         "effects": {
-          "variables": {
-            "livelihood": 2,
-            "autonomy": -3,
-            "solidarity": -2,
-            "cooperation": 1
-          },
-          "relationships": {
-            "char_suni_farmer": 10,
-            "char_jaemun": -10
-          },
-          "setFlags": [
-            "f_c3_family_first"
-          ]
+          "variables": { "livelihood": -1, "cooperation": -1, "communityBurden": -1, "autonomy": 1, "solidarity": 1 },
+          "relationships": { "char_jeongsu": 14, "char_suni_farmer": -2 },
+          "setFlags": ["f3_d"]
         },
-        "logSummary": "[선택 4] 거대한 시국 논의보다 당장 눈앞의 가족 생존을 지키는 데 모든 힘을 기울이기로 했습니다.",
-        "next": "farmer_c3_res_d"
+        "logSummary": "직접 개입은 피하되 단속 정보와 필요한 물자를 챙겨 이정수에게 전달했다.",
+        "next": "farmer_c3_react_d"
       }
     ]
   },
   {
-    "id": "farmer_c3_res_a",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_jaemun",
-        "position": "right",
-        "expression": "neutral"
-      }
-    ],
-    "speakerId": "char_jaemun",
-    "speakerName": "이재문",
-    "speakerRole": "과거 농민운동 활동가",
-    "text": "나라를 되찾는 일이 급하다는 말씀도 맞소. 다만 해방된 그날, 누가 그 땅의 주인이 될지는 우리가 미리 묻지 않으면 아무도 대신 답해 주지 않을 거요.",
-    "next": "farmer_c3_branch"
-  },
-  {
-    "id": "farmer_c3_res_b",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_jaemun",
-        "position": "right",
-        "expression": "serious"
-      }
-    ],
-    "speakerId": "char_jaemun",
-    "speakerName": "이재문",
-    "speakerRole": "과거 농민운동 활동가",
-    "text": "그렇소. 땅을 일구는 사람이 땅의 주인이 되지 못하면, 깃발만 바뀔 뿐 소작농의 봄은 오지 않소. 다만 그 말을 꺼내는 순간부터 주재소와 지주 양쪽의 칼날을 각오해야 할 거요.",
-    "next": "farmer_c3_branch"
-  },
-  {
-    "id": "farmer_c3_res_c",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_teacher",
-        "position": "right",
-        "expression": "neutral"
-      }
-    ],
-    "speakerId": "char_teacher",
-    "speakerName": "박 교사",
-    "speakerRole": "농촌 야학 · 계몽 인사",
-    "text": "배움과 협동으로 힘을 기르는 길도 귀하지요. 다만 전시 통제가 날로 옥죄어 오는 지금, 그 시간을 우리에게 허락해 줄지가 걱정일 뿐이오.",
-    "next": "farmer_c3_branch"
-  },
-  {
-    "id": "farmer_c3_res_d",
+    "id": "farmer_c3_react_a",
     "locationId": "loc_home",
-    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_suni_farmer",
-        "position": "right",
-        "expression": "calm"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
+    ],
+    "speakerId": "char_jeongsu",
+    "text": "…이해합니다, 형님. 어린 아드님과 아주머니를 두고 무리한 부탁을 드렸습니다. 부디 무사히 겨울을 나십시오.",
+    "next": "farmer_epi_1"
+  },
+  {
+    "id": "farmer_c3_react_b",
+    "locationId": "loc_home",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "center" },
+      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
     ],
     "speakerId": "char_suni_farmer",
-    "speakerName": "최순이",
-    "speakerRole": "덕수의 아내",
-    "text": "여보, 잘 생각하셨어요. 세상이 어떻게 뒤집히든 우리 세 식구 목숨부터 붙어 있어야 내일도 있는 거잖아요.",
-    "next": "farmer_c3_branch"
+    "text": "여보, 정말 그렇게까지 나서야겠어요? 당신 혼자 당하는 게 아니라 나와 애까지 주재소에 불려 다니고 굶어야 한다고요! 왜 우리까지 그 대가를 치러야 하느냐고요!",
+    "next": "farmer_c3_react_b2"
   },
   {
-    "id": "farmer_c3_branch",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_policeman",
-        "position": "right",
-        "expression": "patrol",
-        "dimmed": true
-      }
-    ],
-    "speakerName": "1943년 겨울의 갈림길",
-    "text": "1943년의 겨울바람이 들판을 휩쓸고 지나갑니다. 전시 말기 조선총독부의 감시망은 농촌의 작은 모임조차 용납하지 않았습니다.",
-    "conditionalNext": [
-      {
-        "condition": {
-          "minVars": {
-            "solidarity": 13,
-            "autonomy": 12
-          },
-          "anyFlags": [
-            "f_c1_collective_petition",
-            "f_c2_joined_jaemun",
-            "f_c3_land_reform"
-          ]
-        },
-        "next": "farmer_e3_raid_1"
-      },
-      {
-        "condition": {
-          "minVars": {
-            "solidarity": 15,
-            "autonomy": 14
-          }
-        },
-        "next": "farmer_e3_raid_1"
-      }
-    ],
-    "next": "__NEXT_CHAPTER__"
-  },
-  {
-    "id": "farmer_e3_raid_1",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Pixel_art_village_meeting_room_871c99cc_650f5534.png",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_jaemun",
-        "position": "right",
-        "expression": "serious"
-      }
-    ],
-    "speakerName": "1943년 겨울밤 · 마을 창고의 탄압",
-    "text": "연대와 저항을 택한 덕수는 그해 겨울밤, 이재문 및 이웃 농민들과 함께 마을 창고에서 공출·소작료 공동 대응을 논의하고 있었습니다. 그때 누군가의 밀고로 어둠 속을 가르는 거친 구둣발 소리가 창고 문을 에워쌌습니다.",
-    "next": "farmer_e3_raid_2"
-  },
-  {
-    "id": "farmer_e3_raid_2",
-    "locationId": "loc_police_substation",
-    "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_policeman",
-        "position": "right",
-        "expression": "stern"
-      }
-    ],
-    "speakerId": "char_policeman",
-    "speakerName": "주재소 순사",
-    "speakerRole": "식민지 경찰",
-    "text": "황국신민으로서 성전(聖戰)에 협력하기는커녕 불온한 패거리를 만들어 치안을 어지럽혀? 배후가 누구냐!",
-    "next": "farmer_e3_raid_3"
-  },
-  {
-    "id": "farmer_e3_raid_3",
+    "id": "farmer_c3_react_b2",
     "locationId": "loc_home",
-    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_manseok",
-        "position": "right",
-        "expression": "stern"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
     ],
-    "speakerName": "보복과 고립",
-    "text": "주재소에서 모진 조사를 받고 만신창이가 되어 풀려난 덕수를 기다린 것은 더 차가운 보복이었습니다. 지주 박만석은 즉시 소작지를 회수했고, 면사무소는 덕수의 집을 비료와 식량 배급 명단에서 제외했습니다.",
-    "next": "farmer_e3_raid_4"
+    "speakerId": "char_jeongsu",
+    "text": "아주머니, 형님… 두 분 마음 모두 너무 무겁습니다. 형님이 앞장서 목소리를 내어 주신 덕분에 몇몇 이웃들도 더 이상 침묵하지 않겠다고 했습니다. 하지만 가족분들께 닥칠 고초가 걱정입니다.",
+    "next": "farmer_epi_1"
   },
   {
-    "id": "farmer_e3_raid_4",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_villager",
-        "position": "right",
-        "expression": "worried"
-      }
-    ],
-    "speakerId": "char_villager",
-    "speakerName": "마을 어르신",
-    "speakerRole": "같은 마을 소작농",
-    "text": "덕수 자네가 쓸데없이 설치는 바람에 온 동네가 요시찰 구역으로 찍혔잖소! 순사들이 밤낮으로 기웃거리는데 이제 우린 어찌 살란 말이오!",
-    "next": "farmer_e3_raid_5"
-  },
-  {
-    "id": "farmer_e3_raid_5",
+    "id": "farmer_c3_react_c",
     "locationId": "loc_home",
-    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_suni_farmer",
-        "position": "right",
-        "expression": "worried"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
     ],
     "speakerId": "char_suni_farmer",
-    "speakerName": "최순이",
-    "speakerRole": "덕수의 아내",
-    "text": "우리가 대체 무슨 큰 죄를 지었다고 아이 밥그릇까지 빼앗겨야 하나요? 남들 다 참고 살 때 왜 당신만 나서서 집안을 이 꼴로 만들었소...",
-    "next": "farmer_e3_raid_6"
+    "text": "여보… 우리 집이 의심받지 않아서 다행이긴 한데, 아랫집 둘째가 대신 끌려갔다는 소리를 들으니 밥이 목으로 넘어가질 않아요.",
+    "next": "farmer_epi_1"
   },
   {
-    "id": "farmer_e3_raid_6",
-    "locationId": "loc_township_office",
-    "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_oh",
-        "position": "right",
-        "expression": "papers"
-      }
-    ],
-    "speakerId": "char_oh",
-    "speakerName": "오 주사",
-    "speakerRole": "면사무소 직원",
-    "text": "최덕수 씨, 지금이라도 전향 각서에 도장을 찍고 모임 사람들과 이재문의 행방을 대면 배급과 소작지 문제는 다시 알아봐 주겠네. 처자식 생각해서 마지막으로 결정하시게.",
-    "next": "farmer_e3_final_choice"
-  },
-  {
-    "id": "farmer_e3_final_choice",
+    "id": "farmer_c3_react_d",
     "locationId": "loc_home",
-    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_suni_farmer",
-        "position": "right",
-        "expression": "worried",
-        "dimmed": true
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_jeongsu", "expression": "serious", "position": "right" }
     ],
-    "speakerId": "char_deoksu",
-    "speakerName": "최덕수",
-    "speakerRole": "마지막 선택 · 가족과 연대 사이",
-    "text": "굶주림에 지친 아내와 어린 아들, 공포에 질린 이웃들, 그리고 수배를 피해 숨어든 동료들. 마지막 선택 앞에서 덕수는 어떤 길을 감당할 것인가.",
-    "choices": [
-      {
-        "id": "f_e3_a",
-        "text": "A. 끝까지 침묵하며 동료와 이재문을 지키고, 가족과 함께 고난을 감수한다.",
-        "subtext": "연대 고수 · 가혹한 희생 (저항 참여 +10, 주민 연대 +8, 생계 안정 -12)",
-        "effects": {
-          "variables": {
-            "autonomy": 2,
-            "solidarity": 2,
-            "livelihood": -2
-          },
-          "setFlags": [
-            "farmer_ending_3",
-            "f_e3_silent"
-          ]
-        },
-        "logSummary": "[마지막 선택] 면사무소의 회유를 거부하고 침묵으로 동료를 지켰으나, 가족은 극심한 굶주림과 감시를 견뎌야 했습니다.",
-        "next": "farmer_e3_after_a"
-      },
-      {
-        "id": "f_e3_b",
-        "text": "B. 가족의 굶주림을 더는 견딜 수 없어 모임 해산과 전향 각서에 서명한다.",
-        "subtext": "가족 생존 · 뼈아픈 후퇴 (생계 안정 +8, 저항 참여 -10, 주민 연대 -10)",
-        "effects": {
-          "variables": {
-            "livelihood": 2,
-            "autonomy": -2,
-            "solidarity": -2
-          },
-          "setFlags": [
-            "farmer_ending_3",
-            "f_e3_recant"
-          ]
-        },
-        "logSummary": "[마지막 선택] 무고한 가족의 굶주림을 멈추기 위해 전향 각서에 서명했지만, 이미 깊어진 상처와 고립은 되돌릴 수 없었습니다.",
-        "next": "farmer_e3_after_b"
-      },
-      {
-        "id": "f_e3_c",
-        "text": "C. 모든 책임을 혼자 떠안겠다며 마을 이웃과 가족만은 선처해 달라고 매달린다.",
-        "subtext": "책임 감당 · 공동체 보호 (주민 연대 +6, 감시·부담 -6, 생계 안정 -8)",
-        "effects": {
-          "variables": {
-            "solidarity": 1,
-            "communityBurden": -1,
-            "livelihood": -2
-          },
-          "setFlags": [
-            "farmer_ending_3",
-            "f_e3_take_blame"
-          ]
-        },
-        "logSummary": "[마지막 선택] 이웃에게 번진 연대책임을 줄이려 모든 책임을 스스로 떠안았으나, 그 대가는 혹독한 옥바라지와 궁핍으로 이어졌습니다.",
-        "next": "farmer_e3_after_c"
-      }
-    ]
+    "speakerId": "char_jeongsu",
+    "text": "이 정도만으로도 큰 도움이 됩니다. 주재소 안에서도 누군가 단속 일정을 흘려 준 것 같더군요. 이 빚은 잊지 않겠습니다, 형님.",
+    "next": "farmer_epi_1"
   },
   {
-    "id": "farmer_e3_after_a",
-    "locationId": "loc_home",
-    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_suni_farmer",
-        "position": "right",
-        "expression": "worried"
-      }
-    ],
-    "speakerId": "char_deoksu",
-    "speakerName": "최덕수",
-    "speakerRole": "소작농 (주인공)",
-    "text": "남의 이름을 팔아 얻은 쌀은 목에 넘어가지 않을 것이오. 미안하오, 순이... 정말 미안하오.",
-    "next": "farmer_e3_collapse"
-  },
-  {
-    "id": "farmer_e3_after_b",
-    "locationId": "loc_township_office",
-    "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_oh",
-        "position": "right",
-        "expression": "papers"
-      }
-    ],
-    "speakerId": "char_deoksu",
-    "speakerName": "최덕수",
-    "speakerRole": "소작농 (주인공)",
-    "text": "떨리는 손으로 각서에 도장을 찍었지만, 이미 회수된 논은 돌아오지 않았고 요시찰 낙인이 찍힌 집안을 바라보는 마을의 차가운 시선도 거두어지지 않았습니다.",
-    "next": "farmer_e3_collapse"
-  },
-  {
-    "id": "farmer_e3_after_c",
-    "locationId": "loc_police_substation",
-    "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_policeman",
-        "position": "right",
-        "expression": "stern"
-      }
-    ],
-    "speakerId": "char_deoksu",
-    "speakerName": "최덕수",
-    "speakerRole": "소작농 (주인공)",
-    "text": "이웃들은 그저 내 말을 잠깐 들었을 뿐이오. 처벌할 거면 나만 처벌하고, 동네 사람들과 내 처자식 배급만은 풀어 주시오.",
-    "next": "farmer_e3_collapse"
-  },
-  {
-    "id": "farmer_e3_collapse",
+    "id": "farmer_epi_1",
     "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
-    "characters": [
-      {
-        "characterId": "char_jaemun",
-        "position": "center",
-        "expression": "serious"
-      }
-    ],
-    "speakerName": "와해된 모임, 길고 추운 두 해",
-    "text": "결국 마을의 비밀 모임은 완전히 와해되었고, 수배를 피한 이재문은 국경을 넘어 만주로 몸을 숨겼습니다. 감시와 굶주림, 깨어진 신뢰 속에서 길고 혹독한 두 해가 흘렀습니다.",
-    "next": "__NEXT_CHAPTER__"
-  },
-  {
-    "id": "farmer_c4_intro_1",
-    "locationId": "loc_township_office",
-    "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
-    "characters": [
-      {
-        "characterId": "char_student",
-        "position": "left",
-        "expression": "active"
-      },
-      {
-        "characterId": "char_reporter",
-        "position": "right",
-        "expression": "neutral"
-      }
-    ],
-    "speakerName": "제4장 · 해방, 그리고 돌아오지 않는 땅 (1945년 8월 15일 정오)",
-    "text": "1945년 8월 15일 정오. 면사무소 앞마당의 낡은 라디오에서 잡음 섞인 일왕의 항복 방송이 흘러나왔습니다. 잠시 정적이 흐른 뒤, 들판과 마을 곳곳에서 억눌렸던 \"조선 독립 만세!\" 함성이 터져 나왔습니다.",
-    "next": "farmer_c4_intro_2"
-  },
-  {
-    "id": "farmer_c4_intro_2",
-    "locationId": "loc_township_office",
-    "background": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
-    "characters": [
-      {
-        "characterId": "char_student",
-        "position": "center",
-        "expression": "neutral"
-      }
-    ],
-    "speakerId": "char_student",
-    "speakerName": "읍내 청년 · 건국준비위원회",
-    "speakerRole": "자생적 농민위 참여자",
-    "text": "헌병대와 일본인 순사들은 짐을 챙겨 황급히 자취를 감추었습니다! 이제 마을에도 건국준비위원회와 자생적 농민위원회가 꾸려졌습니다. 그러나 식민지배가 남긴 상처와 땅의 문제는 해방의 함성과 함께 사라지지 않았습니다.",
-    "conditionalNext": [
-      {
-        "condition": {
-          "requiredFlags": [
-            "farmer_ending_3"
-          ]
-        },
-        "next": "farmer_c4_e3_1"
-      }
-    ],
-    "next": "farmer_c4_conflict_1"
-  },
-  {
-    "id": "farmer_c4_conflict_1",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "center",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_manseok",
-        "position": "right",
-        "expression": "stern"
-      }
-    ],
-    "speakerName": "논 네 두락을 둘러싼 정면 충돌",
-    "text": "해방의 기쁨이 채 가시기도 전, 마을 앞마당에서 '아랫배미 논 네 두락'을 둘러싼 세 사람의 입장이 정면으로 맞부딪쳤습니다.",
-    "next": "farmer_c4_conflict_2"
-  },
-  {
-    "id": "farmer_c4_conflict_2",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "right",
-        "expression": "work"
-      }
-    ],
-    "speakerId": "char_bongsu",
-    "speakerName": "김봉수",
-    "speakerRole": "이웃 농민",
-    "text": "왜놈들이 물러갔으니 이제 원래 내 논 네 두락을 돌려받아야겠소! 노무 동원과 흉작 때문에 강제로 뺏기다시피 내놓은 땅이오. 내 피땀이 서린 터전을 되찾는 게 당연하지 않소!",
-    "next": "farmer_c4_conflict_3"
-  },
-  {
-    "id": "farmer_c4_conflict_3",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "right",
-        "expression": "neutral"
-      }
-    ],
-    "speakerId": "char_deoksu",
-    "speakerName": "최덕수",
-    "speakerRole": "소작농 (주인공)",
-    "text": "봉수, 자네 억울함은 알지만 나 역시 지난 세 해 동안 그 논에 피땀을 쏟아 가족 목숨을 붙였네. 빈 땅을 지켜 낸 내 세월은 또 어디서 보상받으란 말인가!",
-    "next": "farmer_c4_conflict_4"
-  },
-  {
-    "id": "farmer_c4_conflict_4",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_manseok",
-        "position": "right",
-        "expression": "stern"
-      }
-    ],
-    "speakerId": "char_manseok",
-    "speakerName": "박만석",
-    "speakerRole": "지주",
-    "text": "둘 다 그만들 하시게. 일본이 물러갔다고 내 땅이 자네들 땅이 되는 줄 아나? 곧 들어설 미군정에서도 사유재산권은 엄연히 보장된다고 하더군. 이 등기부등본에 적힌 주인은 나 박만석이네.",
+    "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
+    "speakerName": "해설",
+    "text": "1945년 8월 15일. 영원할 것만 같았던 식민지 지배가 갑작스러운 항복 방송과 함께 끝났다. 송현면에도 만세 소리가 울려 퍼졌지만, 1944년에 내린 선택의 흔적은 사라지지 않았다.",
     "historicalBadge": {
       "kind": "fact",
-      "label": "문학적 모티브 · 채만식 《논 이야기》가 제기한 해방 직후 토지 소외의 문제의식"
+      "label": "1945년 8월 · 해방된 마을과 남겨진 문제"
     },
-    "next": "farmer_c4_branch"
-  },
-  {
-    "id": "farmer_c4_branch",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "center",
-        "expression": "neutral"
-      }
-    ],
-    "speakerName": "돌아온 선택의 무게",
-    "text": "해방의 햇살 아래서도 땅은 여전히 소작농의 손에 닿지 않았습니다. 그리고 지난 세 해 동안 최덕수가 택해 온 길의 결과가 이제 마을 앞에서 선명하게 드러납니다.",
     "conditionalNext": [
       {
         "condition": {
-          "minVars": {
-            "cooperation": 12
-          },
-          "maxVars": {
-            "solidarity": 9
-          },
-          "anyFlags": [
-            "f_c1_model_farmer",
-            "f_c2_reported_oh",
-            "f_c0_accepted_land"
-          ]
+          "requiredFlags": ["farmer_public_resist"],
+          "minVars": { "autonomy": 11 }
         },
-        "next": "farmer_c4_e1_1"
+        "next": "farmer_epi_resist_1"
       },
       {
         "condition": {
-          "minVars": {
-            "cooperation": 14
-          },
-          "maxVars": {
-            "solidarity": 8
-          }
+          "minVars": { "cooperation": 14 }
         },
-        "next": "farmer_c4_e1_1"
+        "next": "farmer_epi_coop_1"
       }
     ],
-    "next": "farmer_c4_e2_1"
+    "next": "farmer_epi_gray_1"
   },
   {
-    "id": "farmer_c4_e1_1",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_student",
-        "position": "right",
-        "expression": "neutral",
-        "dimmed": true
-      }
-    ],
-    "speakerName": "엔딩 1 · 모범 농민의 초상",
-    "text": "해방 이튿날. 자생적 농민위원회가 붙인 벽보 아래 모인 마을 사람들 사이에서, 유독 최덕수의 주변만 썰렁하게 비어 있습니다. 수군거림과 차가운 시선이 등 뒤로 쏟아집니다.",
-    "setFlags": [
-      "farmer_ending_1"
-    ],
-    "next": "farmer_c4_e1_2"
-  },
-  {
-    "id": "farmer_c4_e1_2",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "right",
-        "expression": "neutral"
-      }
-    ],
-    "speakerId": "char_deoksu",
-    "speakerName": "최덕수",
-    "speakerRole": "소작농 (주인공)",
-    "text": "나도 먹고살려고, 내 새끼 굶기지 않으려고 시키는 대로 열심히 농사지었을 뿐이네! 내가 무슨 매국노라도 된다는 말인가!",
-    "next": "farmer_c4_e1_3"
-  },
-  {
-    "id": "farmer_c4_e1_3",
-    "locationId": "loc_meeting_room",
-    "background": "/assets/aistudio/Colonial_era_village_meeting_room_23e730f6_35159ca6.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "right",
-        "expression": "work"
-      }
-    ],
-    "speakerId": "char_bongsu",
-    "speakerName": "김봉수",
-    "speakerRole": "이웃 농민",
-    "text": "덕수야, 자네가 밤낮으로 일해 바친 그 초과 공출 실적이, 우리 동네 전체의 다음 해 공출 할당 기준이 되었네. 자네가 표창장 받고 비료 포대 짊어지고 올 때, 할당량 못 채운 우리 집은 놋숟가락까지 털리고 내 동생은 징용 영장을 받아 끌려갔단 말이네!",
-    "next": "farmer_c4_e1_4"
-  },
-  {
-    "id": "farmer_c4_e1_4",
-    "locationId": "loc_home",
-    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "center",
-        "expression": "neutral"
-      }
-    ],
-    "speakerName": "흙벽에 남은 붉은 도장",
-    "text": "말문이 막힌 채 돌아온 초가집 안방. 흙벽에는 면사무소에서 받은 붉은 도장 찍힌 ‘애국 증산 모범 농민’ 표창장이 여전히 걸려 있습니다. 떼어 내려 손을 뻗었다가도, 덕수는 한참을 움직이지 못합니다.",
-    "next": "farmer_c4_e1_5"
-  },
-  {
-    "id": "farmer_c4_e1_5",
-    "locationId": "loc_home",
-    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "center",
-        "expression": "neutral"
-      }
-    ],
-    "speakerName": "내레이션",
-    "text": "해방은 찾아왔지만, 그가 잃어버린 공동체의 온기는 돌아오지 않았다. 그는 자신의 피땀 어린 노력을 기억했으나, 사람들은 그의 성실함이 지탱해 준 가혹한 체제의 무게를 기억했다.",
-    "next": "__ENDING__"
-  },
-  {
-    "id": "farmer_c4_e2_1",
+    "id": "farmer_epi_resist_1",
     "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_manseok",
-        "position": "right",
-        "expression": "formal"
-      }
-    ],
-    "speakerName": "엔딩 2 · 나만의 봄은 오지 않았다",
-    "text": "해방 후 얼마 지나지 않아 지주 박만석이 마름을 대동하고 덕수가 일구던 논둑에 나타났습니다. 누구와도 다투지 않고 조용히 가족만 지켜 온 덕수에게 돌아온 것은 일방적인 통보였습니다.",
-    "setFlags": [
-      "farmer_ending_2"
-    ],
-    "next": "farmer_c4_e2_2"
-  },
-  {
-    "id": "farmer_c4_e2_2",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_manseok",
-        "position": "right",
-        "expression": "stern"
-      }
-    ],
-    "speakerId": "char_manseok",
-    "speakerName": "박만석",
-    "speakerRole": "지주",
-    "text": "면사무소 주선으로 잠시 맡겼을 뿐, 자넨 임시 소작인에 불과해. 이제 내가 직영 농장을 운영할 참이니 당장 논을 비우게.",
-    "next": "farmer_c4_e2_3"
-  },
-  {
-    "id": "farmer_c4_e2_3",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_bongsu",
-        "position": "right",
-        "expression": "neutral"
-      }
-    ],
-    "speakerId": "char_bongsu",
-    "speakerName": "김봉수",
-    "speakerRole": "이웃 농민",
-    "text": "덕수 자네 사정도 딱하지만, 우리가 다 같이 목소리 낼 때 자네는 늘 뒤로 빠져 눈치만 보지 않았는가. 나 역시 빼앗긴 내 터전부터 되찾아야 하네.",
-    "next": "farmer_c4_e2_4"
-  },
-  {
-    "id": "farmer_c4_e2_4",
-    "locationId": "loc_home",
-    "background": "/assets/aistudio/Retro_pixel_art_village_scene_9b628550_aea43340.jpg",
-    "characters": [
-      {
-        "characterId": "char_suni_farmer",
-        "position": "left",
-        "expression": "packing"
-      },
-      {
-        "characterId": "char_son",
-        "position": "right",
-        "expression": "alt"
-      }
-    ],
-    "speakerId": "char_son",
-    "speakerName": "아들",
-    "speakerRole": "덕수의 어린 아들",
-    "text": "아버지, 우리는 왜 우리 땅이 없어요? 아버지가 제일 열심히 농사지었잖아요.",
-    "next": "farmer_c4_e2_5"
-  },
-  {
-    "id": "farmer_c4_e2_5",
-    "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Korean_rural_landscape_pixel_art_6e169d5a_1d898776.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_suni_farmer",
-        "position": "right",
-        "expression": "packing"
-      }
-    ],
-    "speakerName": "내레이션",
-    "text": "덕수는 끝내 대답하지 못했습니다. 그는 누구의 봄도 빼앗지 않기 위해 숨죽였으나, 끝내 자기 가족의 봄조차 지켜내지 못했다. 구조적 불평등 앞에서 홀로 선 개인의 침묵은, 그 자체로 가장 취약한 패배의 다른 이름이었다.",
-    "next": "__ENDING__"
-  },
-  {
-    "id": "farmer_c4_e3_1",
-    "locationId": "loc_home",
-    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_suni_farmer",
-        "position": "right",
-        "expression": "worried"
-      }
-    ],
-    "speakerName": "엔딩 3 · 우리의 봄은 아직 오지 않았다",
-    "text": "1945년 8월 15일. 들판 너머로 해방의 만세 소리가 울려 퍼지지만, 덕수의 초가집 마당에는 깊은 적막만이 감돕니다. 지난 두 해 동안 옥바라지와 굶주림을 버텨 낸 가족에게는 축배를 들 힘조차 남아 있지 않았습니다.",
-    "next": "farmer_c4_e3_2"
-  },
-  {
-    "id": "farmer_c4_e3_2",
-    "locationId": "loc_home",
-    "background": "/assets/aistudio/Rural_Korean_home_interior_869de285_d2c6279c.jpg",
-    "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_suni_farmer",
-        "position": "right",
-        "expression": "bundle"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "worried", "position": "right" }
     ],
     "speakerId": "char_suni_farmer",
-    "speakerName": "최순이",
-    "speakerRole": "덕수의 아내",
-    "text": "여보... 정말 일본이 물러갔다는데, 왜 우리 앞엔 아무것도 달라진 게 없을까요. 빼앗긴 논도, 등 돌린 이웃도, 만주로 떠난 사람들도 돌아오지 않는데...",
-    "next": "farmer_c4_e3_3"
+    "text": "해방이 왔다는데… 지난겨울 주재소 조사와 배급 제외를 견디며 굶주린 세월이 한꺼번에 밀려와요. 당신이 옳은 말을 한 건 알지만, 아무것도 몰랐던 우리 식구가 치른 대가가 너무 컸어요.",
+    "setFlags": ["farmer_ending_3"],
+    "next": "farmer_epi_resist_2"
   },
   {
-    "id": "farmer_c4_e3_3",
+    "id": "farmer_epi_resist_2",
     "locationId": "loc_farmland",
-    "background": "/assets/aistudio/Retro_RPG_colonial_Korea_art_2fc231b4_2cc16232.jpg",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "left",
-        "expression": "neutral"
-      },
-      {
-        "characterId": "char_manseok",
-        "position": "right",
-        "expression": "stern"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_villager", "expression": "calm", "position": "center" },
+      { "characterId": "char_bongsu", "expression": "neutral", "position": "right" }
     ],
-    "speakerName": "여전한 땅의 주인, 찢어진 공동체",
-    "text": "마을 어귀에서는 지주 박만석이 여전히 등기부등본을 움켜쥔 채 소작지를 관리하고 있습니다. 공포 속에서 서로를 원망하던 공동체의 균열은 해방이 왔다고 해서 하루아침에 아물지 않았습니다.",
-    "next": "farmer_c4_e3_4"
+    "speakerId": "char_villager",
+    "text": "덕수야, 자네 집안이 겪은 고초를 보며 다들 마음이 무거웠네. 그래도 아무도 입 못 열던 시절에 자네가 나서 준 걸 마을 사람들이 다 기억하네. 여기 보리라도 나누세.",
+    "next": "farmer_epi_resist_3"
   },
   {
-    "id": "farmer_c4_e3_4",
-    "locationId": "loc_police_substation",
-    "background": "/assets/aistudio/Colonial_police_substation_pixel__10fb542b_24f914e3.png",
+    "id": "farmer_epi_resist_3",
+    "locationId": "loc_farmland",
     "characters": [
-      {
-        "characterId": "char_deoksu",
-        "position": "center",
-        "expression": "neutral"
-      }
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "center" }
     ],
-    "speakerName": "내레이션",
-    "text": "마침내 독립은 찾아왔으나, 그들이 꿈꾸었던 진정한 해방의 봄은 당도하지 않았다. 얼어붙은 땅을 녹이기 위해 온몸을 던졌던 이들은, 봄의 온기가 채 닿기도 전에 너무나 많은 것을 잃어버렸다.",
+    "speakerName": "해설",
+    "text": "저항은 헛되지 않았고 일부 이웃의 공감과 연대로 남았지만, 가족이 짊어져야 했던 상처와 토지 문제의 해답은 해방된 마을에서도 쉽게 지워지지 않았다.",
+    "next": "__ENDING__"
+  },
+  {
+    "id": "farmer_epi_coop_1",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_bongsu", "expression": "neutral", "position": "right" }
+    ],
+    "speakerId": "char_bongsu",
+    "text": "덕수야, 해방이 됐으니 이제 내 논 네 두락 이야기를 다시 해야겠다. 전쟁 중에 헐값과 공출에 밀려 넘긴 땅을 이대로 남의 것으로 둘 수는 없지 않은가.",
+    "setFlags": ["farmer_ending_1"],
+    "next": "farmer_epi_coop_2"
+  },
+  {
+    "id": "farmer_epi_coop_2",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_villager", "expression": "worried", "position": "right" }
+    ],
+    "speakerId": "char_villager",
+    "text": "먹고살려고 그랬다는 말은 안다네. 하지만 자네가 공출과 지주 편에 맞춰 사는 동안 이웃들은 더 궁지에 몰렸어. 이제 마을에서 얼굴을 마주 보기가 쉽지 않구먼.",
+    "next": "farmer_epi_coop_3"
+  },
+  {
+    "id": "farmer_epi_coop_3",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "center" }
+    ],
+    "speakerName": "해설",
+    "text": "가족의 생존을 지키려 택한 순응과 사익은 전시의 위기를 넘기게 해 주었지만, 해방된 마을에는 토지 갈등과 차가운 고립으로 되돌아왔다.",
+    "next": "__ENDING__"
+  },
+  {
+    "id": "farmer_epi_gray_1",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_bongsu", "expression": "neutral", "position": "center" },
+      { "characterId": "char_jeongsu", "expression": "neutral", "position": "right" }
+    ],
+    "speakerId": "char_jeongsu",
+    "text": "덕수 형님, 해방이 왔습니다. 그 밤에 건네주신 도움 덕분에 무사히 돌아왔습니다. 다만 봉수 씨 논 문제와 지난겨울 마을에 쌓인 앙금은 이제부터 우리가 풀어야 할 숙제로 남았군요.",
+    "setFlags": ["farmer_ending_2"],
+    "next": "farmer_epi_gray_2"
+  },
+  {
+    "id": "farmer_epi_gray_2",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "left" },
+      { "characterId": "char_suni_farmer", "expression": "calm", "position": "right" }
+    ],
+    "speakerId": "char_suni_farmer",
+    "text": "크게 나서지도, 아주 외면하지도 못하며 겨우 버텨 냈어요. 그런데 해방이 됐다고 해서 우리 땅이 생기는 것도, 지난 세월의 미안함이 사라지는 것도 아니네요.",
+    "next": "farmer_epi_gray_3"
+  },
+  {
+    "id": "farmer_epi_gray_3",
+    "locationId": "loc_farmland",
+    "characters": [
+      { "characterId": "char_deoksu", "expression": "neutral", "position": "center" }
+    ],
+    "speakerName": "해설",
+    "text": "조심스러운 우회와 타협 끝에 가족은 살아남았으나, 식민지 시기에 얽힌 토지와 이웃의 상처는 해방된 마을에도 고스란히 남아 있었다.",
     "next": "__ENDING__"
   }
 ]

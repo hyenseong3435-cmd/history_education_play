@@ -6,32 +6,33 @@
     "protagonistId": "char_deoksu",
     "protagonistName": "최덕수",
     "age": 34,
-    "activePeriod": "1942~1945년",
-    "summary": "전라북도 옥구군을 참고한 가상의 농촌 마을에서 대대로 지주의 땅을 빌려 농사짓는 소작농입니다. 아내 최순이, 어린 아들과 함께 언젠가 자기 땅을 갖는 날을 꿈꿉니다.",
-    "socialPosition": "식민지 농촌의 소작농. 식민지 경제정책과 고율 소작료, 식량 수탈을 직접 감당하는 피지배자의 자리에 서 있습니다.",
-    "historicalScope": "1942~1945년 전시총동원체제 아래 농민은 노동력 동원(관알선·징용), 조선식량관리령에 따른 미곡 공출, 농업생산책임제 등 강화되는 수탈에 동시에 노출되었습니다.",
-    "moralDilemma": "가족을 굶기지 않기 위해 이웃이 떠난 땅과 초과 공출 표창을 받아들일 것인가, 침묵할 것인가, 탄압을 무릅쓰고 이웃 농민과 연대할 것인가.",
+    "activePeriod": "1944~1945년",
+    "summary": "1944년 경상도의 가상 농촌 마을 송현면에서 가족의 생계를 책임지는 34세 소작농입니다. 몰락한 이웃 김봉수의 논 네 두락 거래에서 시작해 공출 독촉과 이정수의 부탁까지, 생존과 양심 사이의 선택을 마주합니다.",
+    "socialPosition": "식민지 농촌의 소작농. 식량 공출과 고율 소작료, 노무동원의 압박을 생활 현장에서 직접 감당하는 피지배자의 자리에 서 있습니다.",
+    "historicalScope": "1944년 전쟁이 장기화되면서 조선식량관리령에 따른 미곡 공출과 농업생산책임제, 강제 노무동원이 마을 일상을 조여 왔습니다.",
+    "moralDilemma": "가족을 굶기지 않기 위해 이웃의 처지를 외면하고 요구에 따를 것인가, 가족에게 돌아올 위험을 감수하고 부당한 제도에 맞설 것인가.",
     "keyConflicts": [
-      "이웃 김봉수가 동원과 흉작으로 포기한 논 네 두락의 경작권 이전 문제",
-      "가족의 식량과 면사무소·금융조합의 증산·공출 실적 압박 사이의 갈등",
-      "비밀 농민 연대의 탄압 위험과 해방 이후에도 남는 토지 소유권의 모순"
+      "경제적 어려움에 몰린 이웃 김봉수의 논 네 두락 매매와 불공정한 거래 관행",
+      "겨울 식량이 모자란 상황에서 면사무소(김진호)가 독촉하는 미곡 공출 할당",
+      "노무동원 명부에 올라 경찰 추적을 피하려는 청년 이정수의 밤중 부탁"
     ],
     "startLocationId": "loc_farmland",
     "startBackground": "/assets/aistudio/Pixel_art_rice_paddies_landscape_005bd82c_d8816a80.jpg",
     "portraitSprite": "/assets/aistudio/Korean_farmer_pixel_art_sprite_1ac6b1e0_e1e87f41.jpg",
     "initialVariables": {
-      "livelihood": 8,
-      "cooperation": 8,
+      "livelihood": 9,
+      "cooperation": 9,
       "communityBurden": 9,
       "autonomy": 9,
-      "solidarity": 11
+      "solidarity": 10
     },
     "initialRelationships": {
-      "char_suni_farmer": 78,
-      "char_son": 82,
-      "char_bongsu": 62,
-      "char_jaemun": 45,
-      "char_oh": 40,
+      "char_suni_farmer": 80,
+      "char_son": 84,
+      "char_bongsu": 65,
+      "char_jeongsu": 60,
+      "char_clerk": 50,
+      "char_police_asst": 45,
       "char_manseok": 30
     },
     "initialUnlockedLocations": [
@@ -46,17 +47,17 @@
       {
         "characterId": "char_suni_farmer",
         "relation": "아내 (최순이)",
-        "note": "가족의 식량과 안전을 우선시하며 현실적인 걱정을 드러냅니다."
+        "note": "가족의 겨울 양식과 안전을 최우선으로 여기며 덕수의 선택이 불러올 파장을 걱정합니다."
       },
       {
         "characterId": "char_bongsu",
         "relation": "이웃 농민 (김봉수)",
-        "note": "노동력 동원과 흉작으로 기존 경작지를 포기해야 했던 이웃입니다."
+        "note": "빚과 공출 부담으로 논 네 두락을 처분할 수밖에 없는 처지에 놓인 이웃입니다."
       },
       {
-        "characterId": "char_jaemun",
-        "relation": "활동가 (이재문)",
-        "note": "과거 농민운동 경험을 지녔으며 공동 대응과 토지 문제를 제기합니다."
+        "characterId": "char_jeongsu",
+        "relation": "마을 청년 · 야학 교사 (이정수)",
+        "note": "야학과 청년 활동에 참여했다가 노무동원 명부에 올라 도움을 청합니다."
       }
     ]
   },
@@ -68,32 +69,32 @@
     "protagonistName": "김진호",
     "age": 27,
     "activePeriod": "1944~1945년",
-    "summary": "가난한 집안에서 자라 면사무소 서기가 된 27세 조선인 행정 실무자입니다. 직접 폭력을 행사하지 않는다는 안도감 속에서, 문서 위 먹줄 한 줄이 이웃의 삶을 바꾸는 현실을 마주합니다.",
-    "socialPosition": "피식민자이면서 동시에 식민지 행정체계를 통해 공출과 노동력 동원, 황민화 시책을 실행하는 말단 행정직원입니다.",
-    "historicalScope": "1944~1945년 일제강점기 말기, 면사무소 서기는 농업생산책임제·미곡 공출 집계, 노무동원 대상자 명부 작성, 창씨개명·황민화 행정 등 식민지 통치의 실무를 수행했습니다.",
-    "moralDilemma": "‘위에서 시킨 서류 업무일 뿐’이라며 출세와 가족 생계를 지킬 것인가, 먹줄 하나에 담긴 타인의 삶과 책임을 직면하고 부당한 행정에 맞설 것인가.",
+    "summary": "1944년 경상도 송현면 면사무소에 안정적인 직장을 얻기 위해 취직한 27세 면서기입니다. 농지·생산량 정리와 노무동원 명부 작성, 공출 실적 압박 속에서 서류 한 줄이 이웃의 삶을 바꾸는 현실을 마주합니다.",
+    "socialPosition": "피식민자이면서 동시에 식민지 말단 행정기관에서 토지 기록·공출 집계·노무동원 명부를 작성하는 행정 실무자입니다.",
+    "historicalScope": "1944~1945년 전시 말기, 면사무소 서기는 농업생산책임제에 따른 공출 배정과 강제 노무동원 대상자 명부 작성 등 식민 통치의 문서 실무를 담당했습니다.",
+    "moralDilemma": "‘위에서 시킨 행정 절차’라며 직장과 어머니의 생계를 지킬 것인가, 부당한 지침과 명부 작성 자체에 문제를 제기할 것인가.",
     "keyConflicts": [
-      "지주의 청탁과 면장의 실적 압박 속에서 노무동원 대상자 명부를 작성하는 일",
-      "동료 박태수의 현실주의적 자기합리화와 소꿉친구 이정수의 윤리적 질문 사이의 갈등",
-      "해방이 찾아와도 지워지지 않는 서류와 과거 행정 행위의 책임 문제"
+      "김봉수의 논 네 두락 거래를 포함한 마을 토지·생산량 기록과 불리한 행정 지침",
+      "노무동원 명부 속에서 마주한 소꿉친구 이정수의 이름과 경찰(강동혁)으로 이어지는 추적",
+      "오 면장의 공출·동원 실적 압박과 가족(어머니)에게 돌아올 불이익 사이의 갈등"
     ],
     "startLocationId": "loc_township_office",
     "startBackground": "/assets/aistudio/Colonial_era_township_office_pix__6a042e14_8e0cf2e5.jpg",
     "portraitSprite": "/assets/aistudio/Young_man_carrying_document_folder_67f4d3c7_370f7e5d.png",
     "initialVariables": {
-      "livelihood": 11,
+      "livelihood": 10,
       "cooperation": 10,
-      "communityBurden": 10,
-      "autonomy": 10,
-      "solidarity": 10
+      "communityBurden": 9,
+      "autonomy": 9,
+      "solidarity": 9
     },
     "initialRelationships": {
-      "char_taesu": 62,
+      "char_jinho_mother": 82,
       "char_jeongsu": 74,
-      "char_myeonjang": 45,
-      "char_deoksu": 50,
-      "char_jinho_mother": 80,
-      "char_manseok": 35
+      "char_taesu": 60,
+      "char_myeonjang": 48,
+      "char_deoksu": 52,
+      "char_police_asst": 45
     },
     "initialUnlockedLocations": [
       "loc_home",
@@ -105,19 +106,19 @@
     "initialUnlockedSources": ["source_D", "source_E"],
     "familyAndContacts": [
       {
-        "characterId": "char_taesu",
-        "relation": "동료 서기 (박태수)",
-        "note": "식민지 질서에 순응해 출세하는 것이 현실적 처세라 믿으며 진호의 죄책감을 무마합니다."
+        "characterId": "char_jinho_mother",
+        "relation": "어머니",
+        "note": "아들이 어렵게 얻은 면사무소 직장에 의지하며 가족의 안전을 간절히 바랍니다."
       },
       {
         "characterId": "char_jeongsu",
         "relation": "소꿉친구 · 야학 교사 (이정수)",
-        "note": "마을 청년들에게 한글과 산술을 가르치며 진호의 선택에 정면으로 질문을 던집니다."
+        "note": "마을 청년들을 가르치다 노무동원 명부에 올라 진호의 펜 끝에 운명이 걸립니다."
       },
       {
         "characterId": "char_myeonjang",
         "relation": "상관 (오 면장)",
-        "note": "군청 실적을 강조하며 지역 유력 지주의 청탁은 수용하고 진호를 압박합니다."
+        "note": "군청의 공출·동원 할당 실적을 강조하며 진호에게 성과와 순응을 요구합니다."
       }
     ]
   },
@@ -128,23 +129,23 @@
     "protagonistId": "char_police_asst",
     "protagonistName": "강동혁",
     "age": 24,
-    "activePeriod": "1943~1945년",
-    "summary": "가난한 소작농 집안의 셋째 아들로 가족의 생계를 책임지고 정규 순사로 승진하려 경찰 조직에 들어온 24세 조선인 순사보입니다.",
-    "socialPosition": "경찰 조직 내부에서는 차별받는 최하위 계급이면서, 마을 주민에게는 제복을 입고 감시·단속·물리적 강제력을 집행하는 현장 경찰입니다.",
-    "historicalScope": "1943년 가을~1945년 8월 전시 말기, 산간 농촌 주재소의 조선인 순사보는 야간 통행 단속, 밀주·산림·식량 규정 단속, 노무동원 기피자 수색, 야학 사상 감시에 직접 동원되었습니다.",
-    "moralDilemma": "가난에서 벗어나기 위해 제복의 명령을 따르며 이웃과 친형·옛 친구를 단속할 것인가, 폭력적 구조 속에서 가족과 이웃을 지키려다 자신과 주변까지 위태롭게 할 것인가.",
+    "activePeriod": "1944~1945년",
+    "summary": "1944년 경상도 송현면 주재소에서 조직 내 인정을 바라며 일하는 24세 조선인 순사보입니다. 일본인 상관 다나카 주임의 차별 속에서 최덕수의 집 곡식 조사와 이정수 추적 명령을 마주합니다.",
+    "socialPosition": "경찰 조직 내부에서는 차별받는 최하위 계급이면서, 마을 주민에게는 제복을 입고 공출 단속과 동원 회피자 조사를 집행하는 현장 경찰입니다.",
+    "historicalScope": "1944~1945년 전시 말기, 주재소의 조선인 순사보는 식량 공출 위반 조사, 노무동원 대상자 추적, 야학 감시 등 식민지 경찰 통제의 최전선에 동원되었습니다.",
+    "moralDilemma": "차별을 딛고 조직에서 인정받기 위해 이웃을 단속할 것인가, 가족(형 강영수)의 안위를 위협할 줄 알면서도 부당한 명령에 맞설 것인가.",
     "keyConflicts": [
-      "다나카 주임의 실적 압박과 선배 박태수의 출세·합리화 논리",
-      "단속 현장에서 마주한 이웃 최덕수와 산속 숯가마터에 숨어 지내는 친형 강영수",
-      "옛 친구 이정수의 야학 감시 명령과 해방 이후에도 지워지지 않는 제복의 책임"
+      "일본인 상관 다나카 주임의 차별적 태도와 선배 순사보 박태수와의 실적 경쟁",
+      "공출 부진 조사 중 소작농 최덕수의 집에서 발견한 곡식 은닉 정황",
+      "면사무소(김진호)가 작성한 노무동원 명부의 이정수 행방 추적과 가족에 대한 압박"
     ],
     "startLocationId": "loc_police_substation",
     "startBackground": "/assets/aistudio/Colonial_police_substation_pixel__57c882b7_e06b590d.jpg",
     "portraitSprite": "/assets/aistudio/Korean_police_assistant_pixel_sp__43efdc41_22c3570f.jpg",
     "initialVariables": {
-      "livelihood": 12,
+      "livelihood": 10,
       "cooperation": 10,
-      "communityBurden": 10,
+      "communityBurden": 9,
       "autonomy": 8,
       "solidarity": 9
     },
@@ -152,9 +153,9 @@
       "char_sato": 45,
       "char_police_taesu": 58,
       "char_yeongsu": 78,
-      "char_jeongsu": 62,
-      "char_deoksu": 55,
-      "char_clerk": 45
+      "char_jeongsu": 60,
+      "char_deoksu": 54,
+      "char_clerk": 48
     },
     "initialUnlockedLocations": [
       "loc_home",
@@ -167,18 +168,18 @@
     "familyAndContacts": [
       {
         "characterId": "char_sato",
-        "relation": "상관 (다나카 주임 · 40대)",
-        "note": "일본인 주재소장. 승진과 실적을 미끼로 동혁을 압박하면서도 동등한 경찰로 대우하지 않습니다."
-      },
-      {
-        "characterId": "char_police_taesu",
-        "relation": "선배 순사보 (박태수 · 30세)",
-        "note": "권력에 순응해 적극적으로 주민을 단속하며 생계와 직업의 논리로 행동을 합리화합니다."
+        "relation": "상관 (다나카 주임)",
+        "note": "일본인 주재소장. 동혁을 차별하면서도 마을 공출·동원 조사의 실적을 강하게 압박합니다."
       },
       {
         "characterId": "char_yeongsu",
-        "relation": "친형 (강영수 · 29세)",
-        "note": "소작농 출신으로 노무동원을 피해 산간 지역의 숯가마 근처에 숨어 지냅니다."
+        "relation": "친형 (강영수)",
+        "note": "마을에서 농사를 지으며 집안을 돌봅니다. 동혁의 선택이 집안의 감시로 번질까 걱정합니다."
+      },
+      {
+        "characterId": "char_police_taesu",
+        "relation": "선배 순사보 (박태수)",
+        "note": "적극적인 단속으로 상관의 눈에 들려 하며 동혁을 자극합니다."
       }
     ]
   }

@@ -168,16 +168,15 @@ export function HistoricalTimelineModal({
           {activeTab === 'common' && activeCommonEvent && (
             <div className="space-y-5">
               <div className="p-3.5 bg-[#111316] border border-[#282C33] text-xs sm:text-sm text-[#BDB9B0] leading-relaxed break-keep">
-                세 직업군의 이야기를 동일한 연도에 억지로 맞추지 않고, 1937년 중일전쟁부터
-                1945년 해방까지 전시총동원체제가 단계적으로 강화된 역사적 흐름 속에 연결해
-                살펴볼 수 있습니다. (1942년 관알선 · 1943년 조선식량관리령 · 1944년 징용 확대 및
-                농업생산책임제는 서로 구분되는 제도 단계입니다.)
+                1937년 중일전쟁부터 1945년 해방까지 전시총동원체제가 단계적으로 강화된
+                역사적 흐름을 살피고, 1944년 경상도의 한 가상 농촌 마을에서 세 직업군이
+                마주한 공통 사건과 어떻게 연결되는지 확인할 수 있습니다.
               </div>
 
               {/* Occupation Activity Span Visual Band */}
               <div className="p-3.5 bg-[#101215] border border-[#262A31] space-y-2">
                 <p className="text-[11px] font-semibold text-[#A49B8C] tracking-wide">
-                  세 직업군의 주요 활동 시기 비교 (1942 — 1945)
+                  같은 마을, 세 직업군의 시선 비교 (1944 — 1945)
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   {TIMELINE_DATA.occupationTimelines.map((ot) => (
@@ -308,7 +307,7 @@ export function HistoricalTimelineModal({
                     </div>
                   </div>
 
-                  <p className="p-2.5 bg-[#E3DDD1] border border-[#C2BCAE] text-xs text-[#2B2823] leading-relaxed">
+                  <p className="p-2.5 bg-[#E3DDD1] border border-[#C2BCAE] text-xs font-bold text-[#1F1D19] leading-relaxed">
                     {activeCommonEvent.factVsFictionNote}
                   </p>
                 </article>
@@ -371,7 +370,7 @@ export function HistoricalTimelineModal({
                               </p>
                             ))}
                           </div>
-                          <p className="text-[11px] text-[#4C473F] bg-[#E3DDD1] p-2 border border-[#C2BCAE]">
+                          <p className="text-[11px] font-bold text-[#1F1D19] bg-[#E3DDD1] p-2 border border-[#C2BCAE]">
                             {ev.factVsFictionNote}
                           </p>
                         </div>
@@ -535,9 +534,9 @@ export function HistoricalTimelineModal({
                       「{TIMELINE_DATA.synthesisSummary.title}」
                     </h3>
                     <p className="text-xs sm:text-sm text-[#B5B1A9] leading-relaxed break-keep">
-                      농사꾼(1942~1945), 순사보(1943~1945), 면서기(1944~1945) 세 직업의
-                      이야기를 모두 끝까지 체험하면, 서로 다른 시기와 자리에 놓였던 세 삶을
-                      하나의 식민지 지배 구조로 비교하는 종합 연표가 해금됩니다.
+                      농사꾼(최덕수), 면서기(김진호), 순사보(강동혁) 세 직업의
+                      이야기를 모두 끝까지 체험하면, 1944년 같은 마을에서 벌어진
+                      공통 사건을 하나의 식민지 지배 구조로 비교하는 종합 연표가 해금됩니다.
                     </p>
                   </div>
 

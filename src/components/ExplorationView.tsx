@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   ArrowRight,
-  BarChart3,
   BookOpen,
   CheckCircle2,
   Compass,
@@ -30,7 +29,6 @@ interface ExplorationViewProps {
   ) => void;
   onStartMainEvent: () => void;
   onOpenSources: () => void;
-  onOpenStatus: () => void;
 }
 
 interface MapPinCoord {
@@ -57,14 +55,11 @@ export function ExplorationView({
   onVisitLocation,
   onStartMainEvent,
   onOpenSources,
-  onOpenStatus,
 }: ExplorationViewProps) {
   const chapter =
     CHAPTERS.find((c) => c.number === state.chapter) ?? CHAPTERS[0];
   const chapterDisplay = getChapterDisplay(chapter, state.occupation);
   const occ = state.occupation ? OCCUPATIONS_BY_ID[state.occupation] : null;
-  const isFarmer = state.occupation === 'farmer';
-  const isClerk = state.occupation === 'clerk';
   const { availableLocations, visitedCount, totalActionableCount } =
     getChapterExplorationStats(state);
 
@@ -214,14 +209,6 @@ export function ExplorationView({
               >
                 사료 ({state.readSources.length}/{state.unlockedSources.length})
               </button>
-              <button
-                type="button"
-                onClick={onOpenStatus}
-                className="min-h-[32px] px-2 py-1 bg-[#17191D] hover:bg-[#22252B] text-[#DFDCD5] border border-[#363B44] hover:border-[#9E9586] flex items-center gap-1 transition-colors cursor-pointer whitespace-nowrap"
-              >
-                <BarChart3 className="w-3.5 h-3.5 text-[#B2A999]" />
-                <span>변수 현황</span>
-              </button>
             </div>
 
             <button
@@ -234,6 +221,15 @@ export function ExplorationView({
               </span>
               <ArrowRight className="w-3.5 h-3.5 shrink-0" />
             </button>
+          </div>
+        </div>
+
+        {/* Quiet Historical Uncertainty Framing Bar */}
+        <div className="border-t border-[#1E2127] bg-[#0F1114]/95">
+          <div className="max-w-7xl mx-auto px-3 sm:px-5 py-1.5 flex items-center justify-between gap-2 text-[11px] sm:text-xs text-[#9C978D]">
+            <p className="font-editorial truncate">
+              당신은 이 지배가 언제 끝날지 모릅니다. 10년일지, 50년일지, 영원히 계속될지 모르는 채 오늘의 선택을 마주합니다.
+            </p>
           </div>
         </div>
 
@@ -295,14 +291,14 @@ export function ExplorationView({
       <div className="flex-1 min-h-0 w-full max-w-7xl mx-auto p-2.5 sm:p-4 flex flex-col lg:grid lg:grid-cols-12 gap-2.5 sm:gap-3.5 overflow-hidden">
         {/* Interactive Archival Map of Songhyeon-myeon */}
         <section
-          aria-label={isFarmer ? '옥구 방면 농촌 마을 지도' : '송현면 일대 지도'}
+          aria-label="경상도 송현면 농촌 마을 지도"
           className="flex-1 min-h-[210px] lg:col-span-8 xl:col-span-9 relative border border-[#2C3038] bg-[#101215] flex flex-col overflow-hidden"
         >
           {/* Quiet Map Header Strip */}
           <div className="shrink-0 px-3 sm:px-4 py-2 border-b border-[#22262D] bg-[#131519]/90 flex items-center justify-between gap-2 text-xs">
             <div className="flex items-center gap-2 min-w-0">
               <span className="font-editorial font-semibold text-[#ECE9E2] whitespace-nowrap">
-                {isFarmer ? '옥구 방면 농촌 마을 약도' : '송현면 일대 약도'}
+                송현면(경상도 가상 농촌) 약도
               </span>
               <span className="hidden sm:inline text-[#6E6C67]" aria-hidden="true">
                 ·
@@ -651,9 +647,7 @@ export function ExplorationView({
                           }`}
                         >
                           <span>
-                            {isFarmer && location.id === 'loc_clinic'
-                              ? '마을 어귀'
-                              : isClerk && location.id === 'loc_meeting_room'
+                            {location.id === 'loc_meeting_room'
                               ? '마을 회관·야학'
                               : coord.shortName}
                           </span>

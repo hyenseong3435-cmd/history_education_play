@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import {
+  ChevronDown,
+  ChevronUp,
   Download,
   Home,
   Save,
@@ -8,19 +10,13 @@ import {
   VolumeX,
   X,
 } from 'lucide-react';
-import {
-  CHARACTERS_BY_ID,
-  ENDINGS,
-  OCCUPATIONS_BY_ID,
-  getClerkRiskMetrics,
-  getVariableMetaForOccupation,
-} from '../data';
+import { ENDINGS, OCCUPATIONS_BY_ID } from '../data';
+import { loadReflectionMemo } from '../engine/gameEngine';
 import type {
   GameSettings,
   GameState,
   PlaythroughRecord,
   SaveSlotData,
-  VariableKey,
 } from '../types/game';
 import { SourceArchivePanel } from './SourceArchivePanel';
 import type { ActiveModalType } from './TopGameBar';
@@ -43,14 +39,12 @@ interface GameModalsProps {
 }
 
 const MODAL_TITLES: Record<Exclude<ActiveModalType, null>, string> = {
-  sources: '사료 노트',
-  status: '변수 현황 · 인물 관계',
-  log: '선택 기록',
+  sources: '사료 자료실',
   save: '저장 및 불러오기',
   settings: '환경 설정',
   records: '플레이 기록',
   guide: '게임 설명',
-  credits: '사료 노트 · 전체 열람',
+  credits: '사료 자료실 · 전체 열람',
 };
 
 const SLOT_IDS = ['slot_1', 'slot_2', 'slot_3'];
@@ -73,11 +67,17 @@ export function GameModals({
 }: GameModalsProps) {
   const [saveToast, setSaveToast] = useState<string | null>(null);
   const [confirmTitleReturn, setConfirmTitleReturn] = useState(false);
+  const [expandedRecordId, setExpandedRecordId] = useState<string | null>(null);
 
   useEffect(() => {
     setConfirmTitleReturn(false);
     setSaveToast(null);
-  }, [activeModal]);
+    if (activeModal === 'records' && records.length > 0) {
+      setExpandedRecordId(records[0].id);
+    } else {
+      setExpandedRecordId(null);
+    }
+  }, [activeModal, records]);
 
   useEffect(() => {
     if (!activeModal) return;
@@ -99,27 +99,21 @@ export function GameModals({
   };
 
   const uniqueEndedIds = new Set(records.map((r) => r.endingId));
-  const occ = state.occupation ? OCCUPATIONS_BY_ID[state.occupation] : null;
-  const activeVariableMeta = getVariableMetaForOccupation(state.occupation);
-  const lastDecisionChanges =
-    state.decisionLog.length > 0
-      ? state.decisionLog[state.decisionLog.length - 1].variableChanges
-      : {};
-  const clerkRisk =
-    state.occupation === 'clerk'
-      ? getClerkRiskMetrics(state.flags, state.relationships)
-      : null;
+  const isWideArchiveModal =
+    activeModal === 'sources' || activeModal === 'credits';
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-[2px] flex items-center justify-center p-3 sm:p-5"
+      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-[2px] flex items-center justify-center p-2.5 sm:p-5"
       role="dialog"
       aria-modal="true"
       aria-label={MODAL_TITLES[activeModal]}
       onClick={onClose}
     >
       <div
-        className="w-full max-w-4xl max-h-[88dvh] bg-[#15171A] border border-[#343841] flex flex-col overflow-hidden shadow-2xl"
+        className={`w-full ${
+          isWideArchiveModal ? 'max-w-6xl' : 'max-w-4xl'
+        } max-h-[90dvh] bg-[#15171A] border border-[#343841] flex flex-col overflow-hidden shadow-2xl`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
@@ -131,7 +125,7 @@ export function GameModals({
             type="button"
             onClick={onClose}
             aria-label="창 닫기"
-            className="min-w-[40px] min-h-[40px] flex items-center justify-center text-[#A8A49C] hover:text-[#F4F1EB] hover:bg-[#1F2228] border border-transparent hover:border-[#393E48] transition-colors cursor-pointer"
+            className="min-w-[44px] min-h-[44px] flex items-center justify-center text-[#A8A49C] hover:text-[#F4F1EB] hover:bg-[#1F2228] border border-transparent hover:border-[#393E48] transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>
@@ -148,250 +142,7 @@ export function GameModals({
             />
           )}
 
-          {/* 2. STATUS & RELATIONSHIPS */}
-          {activeModal === 'status' && (
-            <div className="space-y-6">
-              {occ && (
-                <div className="pb-4 border-b border-[#292D34] flex flex-wrap items-baseline justify-between gap-2">
-                  <div>
-                    <p className="text-xs text-[#9E978B]">
-                      제{state.chapter}장 진행 중
-                    </p>
-                    <h3 className="font-editorial text-xl font-semibold text-[#F1EEE8]">
-                      {occ.name} · {occ.protagonistName} ({occ.age}세)
-                    </h3>
-                  </div>
-                  <p className="text-xs text-[#96938B]">{occ.socialPosition}</p>
-                </div>
-              )}
-
-              <div className="space-y-3">
-                <div>
-                  <h4 className="font-editorial text-base font-semibold text-[#EAE7E0]">
-                    {occ ? `${occ.name} 전용 5대 변수 현황 (0–20)` : '5대 핵심 지표 (0–20)'}
-                  </h4>
-                  <p className="text-xs text-[#928F88] mt-0.5">
-                    직업마다 서로 다른 5대 변수가 0~20 범위로 적용됩니다. 이 수치들은 도덕성을
-                    채점하는 점수가 아니라, 선택이 남긴 구조적 위치와 관계의 흔적입니다.
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-                  {activeVariableMeta.map((meta) => {
-                    const val = state.variables[meta.key];
-                    const pct = Math.max(0, Math.min(100, (val / 20) * 100));
-                    const lastDelta = lastDecisionChanges[meta.key];
-                    return (
-                      <div
-                        key={meta.key}
-                        className="p-3.5 bg-[#111316] border border-[#292D34] space-y-2"
-                      >
-                        <div className="flex items-center justify-between gap-2">
-                          <span className="text-sm font-semibold text-[#ECE9E2]">
-                            {meta.label}
-                          </span>
-                          <div className="flex items-center gap-2">
-                            {typeof lastDelta === 'number' && lastDelta !== 0 && (
-                              <span
-                                className={`font-data text-xs px-1.5 py-0.5 border ${
-                                  lastDelta > 0
-                                    ? 'text-[#DFDCD5] bg-[#1F2429] border-[#4A505A]'
-                                    : 'text-[#D69D96] bg-[#211718] border-[#5E3431]'
-                                }`}
-                              >
-                                최근 {lastDelta > 0 ? `+${lastDelta}` : lastDelta}
-                              </span>
-                            )}
-                            <span className="font-data text-sm font-medium text-[#B2A999]">
-                              {val} / 20
-                            </span>
-                          </div>
-                        </div>
-                        <div className="h-1.5 w-full bg-[#1E2126] overflow-hidden">
-                          <div
-                            className="h-full bg-[#9E9586] transition-all duration-200"
-                            style={{ width: `${pct}%` }}
-                          />
-                        </div>
-                        <div className="flex items-center justify-between text-[11px] text-[#7E7C76]">
-                          <span>0 · {meta.lowNote}</span>
-                          <span>20 · {meta.highNote}</span>
-                        </div>
-                        <p className="text-xs text-[#A5A29A] leading-snug">
-                          {meta.description}
-                        </p>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                {clerkRisk && (
-                  <div className="pt-2 space-y-2">
-                    <p className="text-xs font-semibold text-[#A8A49C]">
-                      면서기 추가 상황 지표 (선택 누적 반영)
-                    </p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      <div className="p-3 bg-[#141214] border border-[#3B2B2D] space-y-1.5">
-                        <div className="flex items-center justify-between text-xs">
-                          <span className="font-semibold text-[#E8D5D2]">
-                            주재소 감시 위험
-                          </span>
-                          <span className="font-data text-[#D69D96]">
-                            {clerkRisk.surveillanceRisk} / 100
-                          </span>
-                        </div>
-                        <div className="h-1.5 w-full bg-[#1E1A1B] overflow-hidden">
-                          <div
-                            className="h-full bg-[#9C4A43] transition-all duration-200"
-                            style={{ width: `${clerkRisk.surveillanceRisk}%` }}
-                          />
-                        </div>
-                        <p className="text-[11px] text-[#9E9591]">
-                          항의·서류 지연·명부 거부가 누적될수록 면장과 주재소의 감시가 강해집니다.
-                        </p>
-                      </div>
-                      <div className="p-3 bg-[#111316] border border-[#292D34] space-y-1.5">
-                        <div className="flex items-center justify-between text-xs">
-                          <span className="font-semibold text-[#ECE9E2]">
-                            가족 안전도
-                          </span>
-                          <span className="font-data text-[#B2A999]">
-                            {clerkRisk.familySafety} / 100
-                          </span>
-                        </div>
-                        <div className="h-1.5 w-full bg-[#1E2126] overflow-hidden">
-                          <div
-                            className="h-full bg-[#8D897E] transition-all duration-200"
-                            style={{ width: `${clerkRisk.familySafety}%` }}
-                          />
-                        </div>
-                        <p className="text-[11px] text-[#9E9A92]">
-                          어머니와 가족이 감시·생계 위기에서 얼마나 보호되고 있는지를 보여줍니다.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* NPC Relationships */}
-              <div className="space-y-3 pt-2 border-t border-[#292D34]">
-                <h4 className="font-editorial text-base font-semibold text-[#EAE7E0]">
-                  주변 인물과의 관계
-                </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
-                  {Object.entries(state.relationships).map(([charId, score]) => {
-                    const ch = CHARACTERS_BY_ID[charId];
-                    if (!ch) return null;
-                    const relationLabel =
-                      score >= 70
-                        ? '신뢰 깊음'
-                        : score >= 45
-                        ? '보통 · 조심스러움'
-                        : '긴장 · 거리감';
-                    return (
-                      <div
-                        key={charId}
-                        className="p-3 bg-[#111316] border border-[#272B32] space-y-1"
-                      >
-                        <div className="flex items-center justify-between gap-2">
-                          <span className="text-sm font-semibold text-[#EAE7E0]">
-                            {ch.name}
-                          </span>
-                          <span className="font-data text-xs text-[#B2A999]">
-                            {score}
-                          </span>
-                        </div>
-                        <p className="text-[11px] text-[#8E8B84]">{ch.role}</p>
-                        <p className="text-[11px] text-[#B8B4AC]">
-                          상태: {relationLabel}
-                        </p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {state.triggeredDelayedEffects.length > 0 && (
-                <div className="space-y-2 pt-2 border-t border-[#292D34]">
-                  <h4 className="font-editorial text-base font-semibold text-[#EAE7E0]">
-                    발생한 지연 결과
-                  </h4>
-                  <ul className="space-y-1.5 text-xs sm:text-sm text-[#C4C0B8]">
-                    {state.triggeredDelayedEffects.map((eff) => (
-                      <li key={eff.id}>
-                        <strong className="text-[#D69D96]">{eff.title}</strong> —{' '}
-                        {eff.description}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-          )}
-
-          {/* 3. DECISION LOG */}
-          {activeModal === 'log' && (
-            <div className="space-y-4">
-              <p className="text-xs sm:text-sm text-[#A5A29A]">
-                지금까지 주요 사건에서 내린 모든 선택과 지표 변화가 시간순으로 기록됩니다.
-              </p>
-
-              {state.decisionLog.length === 0 ? (
-                <div className="p-8 bg-[#111316] border border-[#292D34] text-center text-sm text-[#8D8A83]">
-                  아직 기록된 주요 선택이 없습니다. 각 장의 주요 사건에서 결정을 내리면
-                  이곳에 기록됩니다.
-                </div>
-              ) : (
-                <ol className="space-y-3">
-                  {state.decisionLog.map((rec, idx) => (
-                    <li
-                      key={`${rec.id}-${idx}`}
-                      className="p-4 bg-[#111316] border border-[#2A2E35] space-y-2"
-                    >
-                      <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-[#9E978B]">
-                        <span>
-                          0{idx + 1}. 제{rec.chapter}장 · {rec.eventTitle}
-                        </span>
-                        {rec.hasDelayedEffect && (
-                          <span className="text-[#D49790]">지연 결과 연결됨</span>
-                        )}
-                      </div>
-                      <p className="text-sm sm:text-base font-medium text-[#F1EEE8]">
-                        {rec.choiceText}
-                      </p>
-                      <p className="text-xs text-[#9C9991]">{rec.summary}</p>
-                      {Object.keys(rec.variableChanges).length > 0 && (
-                        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 pt-1.5 border-t border-[#22252B] text-xs font-data text-[#B5B1A9]">
-                          {(
-                            Object.entries(rec.variableChanges) as [
-                              VariableKey,
-                              number,
-                            ][]
-                          ).map(([key, delta]) => {
-                            if (!delta) return null;
-                            const label =
-                              activeVariableMeta.find((m) => m.key === key)
-                                ?.label ?? key;
-                            return (
-                              <span key={key}>
-                                {label}{' '}
-                                <strong className="text-[#DED9CE]">
-                                  {delta > 0 ? `+${delta}` : delta}
-                                </strong>
-                              </span>
-                            );
-                          })}
-                        </div>
-                      )}
-                    </li>
-                  ))}
-                </ol>
-              )}
-            </div>
-          )}
-
-          {/* 4. SAVE & LOAD */}
+          {/* 2. SAVE & LOAD */}
           {activeModal === 'save' && (
             <div className="space-y-4">
               <p className="text-xs sm:text-sm text-[#A5A29A]">
@@ -429,7 +180,7 @@ export function GameModals({
                       onLoadSlot(autoSave);
                       onClose();
                     }}
-                    className="min-h-[42px] px-4 py-2 bg-[#1D2026] hover:bg-[#272B33] text-[#F1EEE8] border border-[#444954] text-xs sm:text-sm font-medium flex items-center justify-center gap-1.5 cursor-pointer whitespace-nowrap"
+                    className="min-h-[44px] px-4 py-2 bg-[#1D2026] hover:bg-[#272B33] text-[#F1EEE8] border border-[#444954] text-xs sm:text-sm font-medium flex items-center justify-center gap-1.5 cursor-pointer whitespace-nowrap"
                   >
                     <Download className="w-4 h-4" />
                     불러오기
@@ -472,7 +223,7 @@ export function GameModals({
                           <button
                             type="button"
                             onClick={() => handleManualSave(slotId)}
-                            className="min-h-[40px] px-3.5 py-1.5 bg-[#7A2E29] hover:bg-[#8C3731] text-[#F4F1EB] border border-[#96453F] text-xs sm:text-sm font-medium flex items-center gap-1.5 cursor-pointer whitespace-nowrap"
+                            className="min-h-[44px] px-3.5 py-2 bg-[#7A2E29] hover:bg-[#8C3731] text-[#F4F1EB] border border-[#96453F] text-xs sm:text-sm font-medium flex items-center gap-1.5 cursor-pointer whitespace-nowrap"
                           >
                             <Save className="w-3.5 h-3.5" />
                             저장하기
@@ -486,7 +237,7 @@ export function GameModals({
                                 onLoadSlot(slot);
                                 onClose();
                               }}
-                              className="min-h-[40px] px-3.5 py-1.5 bg-[#1D2026] hover:bg-[#272B33] text-[#F1EEE8] border border-[#444954] text-xs sm:text-sm font-medium flex items-center gap-1.5 cursor-pointer whitespace-nowrap"
+                              className="min-h-[44px] px-3.5 py-2 bg-[#1D2026] hover:bg-[#272B33] text-[#F1EEE8] border border-[#444954] text-xs sm:text-sm font-medium flex items-center gap-1.5 cursor-pointer whitespace-nowrap"
                             >
                               <Download className="w-3.5 h-3.5" />
                               불러오기
@@ -495,7 +246,7 @@ export function GameModals({
                               type="button"
                               onClick={() => onDeleteSlot(slotId)}
                               aria-label={`슬롯 ${index + 1} 삭제`}
-                              className="min-h-[40px] px-2.5 py-1.5 bg-[#17191D] hover:bg-[#2A1C1C] text-[#BFA09C] border border-[#3B3030] text-xs flex items-center cursor-pointer"
+                              className="min-h-[44px] px-3 py-2 bg-[#17191D] hover:bg-[#2A1C1C] text-[#BFA09C] border border-[#3B3030] text-xs flex items-center cursor-pointer"
                             >
                               <Trash2 className="w-4 h-4" />
                             </button>
@@ -509,7 +260,7 @@ export function GameModals({
             </div>
           )}
 
-          {/* 5. SETTINGS */}
+          {/* 3. SETTINGS */}
           {activeModal === 'settings' && (
             <div className="space-y-6">
               <div className="space-y-2">
@@ -664,14 +415,14 @@ export function GameModals({
                             onClose();
                             onReturnToTitle();
                           }}
-                          className="min-h-[40px] px-4 py-1.5 bg-[#7A2E29] hover:bg-[#8C3731] text-[#F4F1EB] text-sm font-medium cursor-pointer"
+                          className="min-h-[44px] px-4 py-2 bg-[#7A2E29] hover:bg-[#8C3731] text-[#F4F1EB] text-sm font-medium cursor-pointer"
                         >
                           메인 메뉴로 이동
                         </button>
                         <button
                           type="button"
                           onClick={() => setConfirmTitleReturn(false)}
-                          className="min-h-[40px] px-4 py-1.5 bg-[#15171A] text-[#C6C2B9] border border-[#32363E] text-sm cursor-pointer"
+                          className="min-h-[44px] px-4 py-2 bg-[#15171A] text-[#C6C2B9] border border-[#32363E] text-sm cursor-pointer"
                         >
                           취소
                         </button>
@@ -683,12 +434,12 @@ export function GameModals({
             </div>
           )}
 
-          {/* 6. PLAYTHROUGH RECORDS */}
+          {/* 4. PLAYTHROUGH RECORDS (Post-Game Saved Choices + Reflection Questions & Memo) */}
           {activeModal === 'records' && (
             <div className="space-y-5">
               <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[#292D34]">
-                <p className="text-xs sm:text-sm text-[#B8B4AC]">
-                  완료한 회차와 도달한 엔딩, 당시의 선택 기록을 비교해 볼 수 있습니다.
+                <p className="text-xs sm:text-sm text-[#B8B4AC] break-keep">
+                  게임을 마친 회차의 결말과 당시 선택한 선택지, 역사 성찰 질문 및 나의 성찰 메모가 저장됩니다.
                 </p>
                 <span className="font-data text-xs text-[#B2A999]">
                   수집한 엔딩 {uniqueEndedIds.size} / {ENDINGS.length}
@@ -701,49 +452,145 @@ export function GameModals({
                     아직 완료된 플레이 기록이 없습니다.
                   </p>
                   <p className="text-xs text-[#86837C]">
-                    세 직업 중 하나를 선택해 제3장 엔딩까지 완료하면 이곳에 누적 기록됩니다.
+                    세 직업 중 하나를 선택해 엔딩까지 완료하면 선택한 선택지와 성찰 질문이 이곳에 저장됩니다.
                   </p>
                 </div>
               ) : (
-                <div className="space-y-3">
+                <div className="space-y-3.5">
                   {records.map((rec) => {
                     const recOcc = OCCUPATIONS_BY_ID[rec.occupation];
-                    const recVarMeta = getVariableMetaForOccupation(
-                      rec.occupation
-                    );
+                    const isExpanded = expandedRecordId === rec.id;
+                    const endingDef = ENDINGS.find((e) => e.id === rec.endingId);
+                    const reflectionQuestions =
+                      rec.reflectionQuestions && rec.reflectionQuestions.length > 0
+                        ? rec.reflectionQuestions
+                        : endingDef?.reflectionQuestions ?? [];
+                    const savedMemo =
+                      typeof rec.reflectionMemo === 'string' &&
+                      rec.reflectionMemo.trim().length > 0
+                        ? rec.reflectionMemo
+                        : loadReflectionMemo(rec.endingId);
+
                     return (
                       <article
                         key={rec.id}
-                        className="p-4 bg-[#111316] border border-[#2A2E35] space-y-2.5"
+                        className="bg-[#111316] border border-[#2A2E35] overflow-hidden"
                       >
-                        <div className="flex flex-wrap items-baseline justify-between gap-2">
-                          <div>
-                            <p className="text-xs text-[#9E978B]">
-                              {recOcc?.name} ({recOcc?.protagonistName}) ·{' '}
-                              {rec.endingScope === 'occupation'
-                                ? '직업 전용 결말'
-                                : '공통 결말'}
-                            </p>
-                            <h3 className="font-editorial text-lg font-semibold text-[#F1EEE8]">
-                              {rec.endingTitle}
-                            </h3>
-                          </div>
-                          <span className="font-data text-xs text-[#89867F]">
-                            {new Date(rec.completedAt).toLocaleString('ko-KR')}
-                          </span>
-                        </div>
-
-                        <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs font-data text-[#B5B1A9] pt-1.5 border-t border-[#22252B]">
-                          {recVarMeta.map((m) => (
-                            <span key={m.key}>
-                              {m.shortLabel}{' '}
-                              <strong className="text-[#E2DDD2]">
-                                {rec.finalVariables[m.key]}/20
-                              </strong>
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setExpandedRecordId((prev) =>
+                              prev === rec.id ? null : rec.id
+                            )
+                          }
+                          aria-expanded={isExpanded}
+                          className="w-full p-4 sm:p-5 text-left hover:bg-[#171A1F] transition-colors cursor-pointer space-y-2"
+                        >
+                          <div className="flex flex-wrap items-start justify-between gap-3">
+                            <div className="space-y-0.5 min-w-0">
+                              <p className="text-xs text-[#9E978B]">
+                                {recOcc?.name} ({recOcc?.protagonistName}) ·{' '}
+                                {rec.endingScope === 'occupation'
+                                  ? '직업 전용 결말'
+                                  : '공통 결말'}
+                              </p>
+                              <h3 className="font-editorial text-lg sm:text-xl font-semibold text-[#F1EEE8]">
+                                {rec.endingTitle}
+                              </h3>
+                            </div>
+                            <span className="font-data text-xs text-[#89867F] shrink-0">
+                              {new Date(rec.completedAt).toLocaleString('ko-KR')}
                             </span>
-                          ))}
-                          <span>· 열람 사료 {rec.readSourceCount}건</span>
-                        </div>
+                          </div>
+
+                          <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-[#22252B] text-xs text-[#B5B1A9]">
+                            <span className="font-data">
+                              선택한 결정 {rec.decisions?.length ?? rec.decisionCount}건 · 열람 사료 {rec.readSourceCount}건
+                            </span>
+                            <span className="text-[#CFC9BD] flex items-center gap-1">
+                              <span>
+                                {isExpanded
+                                  ? '선택 기록 · 성찰 질문 접기'
+                                  : '선택 기록 · 성찰 질문 보기'}
+                              </span>
+                              {isExpanded ? (
+                                <ChevronUp className="w-4 h-4" />
+                              ) : (
+                                <ChevronDown className="w-4 h-4" />
+                              )}
+                            </span>
+                          </div>
+                        </button>
+
+                        {isExpanded && (
+                          <div className="px-4 sm:px-5 pb-5 pt-4 border-t border-[#262A32] bg-[#0D0F12] space-y-5">
+                            {/* Saved Choices */}
+                            <div className="space-y-2.5">
+                              <p className="text-xs font-semibold tracking-wider text-[#B2A999]">
+                                선택한 선택지 기록
+                              </p>
+                              {!rec.decisions || rec.decisions.length === 0 ? (
+                                <p className="text-xs text-[#86837C]">
+                                  기록된 선택지가 없습니다.
+                                </p>
+                              ) : (
+                                <ol className="space-y-2.5">
+                                  {rec.decisions.map((dec, idx) => (
+                                    <li
+                                      key={`${dec.id}-${idx}`}
+                                      className="p-3.5 bg-[#131519] border border-[#252830] space-y-1"
+                                    >
+                                      <p className="text-[11px] text-[#9E978B]">
+                                        0{idx + 1}. 제{dec.chapter}장 · {dec.eventTitle}
+                                      </p>
+                                      <p className="text-sm font-medium text-[#F1EEE8] break-keep">
+                                        {dec.choiceText}
+                                      </p>
+                                      <p className="text-xs text-[#9C9991] leading-relaxed break-keep">
+                                        {dec.summary}
+                                      </p>
+                                    </li>
+                                  ))}
+                                </ol>
+                              )}
+                            </div>
+
+                            {/* Saved Reflection Questions */}
+                            {reflectionQuestions.length > 0 && (
+                              <div className="space-y-2.5 pt-3 border-t border-[#22252B]">
+                                <p className="text-xs font-semibold tracking-wider text-[#B2A999]">
+                                  결말의 역사 성찰 질문
+                                </p>
+                                <ol className="space-y-2 text-xs sm:text-sm text-[#D8D4CC] leading-relaxed break-keep">
+                                  {reflectionQuestions.map((q, qIdx) => (
+                                    <li key={qIdx} className="flex items-start gap-2">
+                                      <span className="font-data text-xs text-[#D69D96] mt-0.5 shrink-0">
+                                        Q{qIdx + 1}.
+                                      </span>
+                                      <span>{q}</span>
+                                    </li>
+                                  ))}
+                                </ol>
+                              </div>
+                            )}
+
+                            {/* Saved Reflection Memo */}
+                            <div className="space-y-2 pt-3 border-t border-[#22252B]">
+                              <p className="text-xs font-semibold tracking-wider text-[#B2A999]">
+                                나의 성찰 메모
+                              </p>
+                              {savedMemo && savedMemo.trim().length > 0 ? (
+                                <p className="p-3.5 bg-[#131519] border border-[#2B2F37] text-xs sm:text-sm text-[#E6E3DC] leading-relaxed whitespace-pre-line break-keep">
+                                  {savedMemo}
+                                </p>
+                              ) : (
+                                <p className="text-xs text-[#838079]">
+                                  작성된 성찰 메모가 없습니다. 결말 화면의 「03. 역사 성찰 노트」에서 생각을 남길 수 있습니다.
+                                </p>
+                              )}
+                            </div>
+                          </div>
+                        )}
                       </article>
                     );
                   })}
@@ -752,43 +599,46 @@ export function GameModals({
             </div>
           )}
 
-          {/* 7. GAME GUIDE */}
+          {/* 5. GAME GUIDE */}
           {activeModal === 'guide' && (
             <div className="space-y-5 text-sm text-[#C8C4BC] leading-[1.82]">
               <div className="space-y-2">
                 <h3 className="font-editorial text-lg font-semibold text-[#F1EEE8]">
-                  01. 교육적 목적
+                  01. 교육적 목적과 시대적 전제
                 </h3>
-                <p>
+                <p className="break-keep">
                   「그날, 당신의 선택」은 1940년대 식민지 조선에서 살아간 개인들의
                   선택을 단순한 선악이나 영웅·배신자의 이분법으로 재단하지 않고,
                   당시의 권력관계, 생계 조건, 공동체 갈등, 그리고 선택의 결과와
                   책임을 입체적으로 성찰하기 위해 제작된 역사교육용 비주얼 노벨입니다.
+                  플레이어는 해방이 언제 올지 — 10년 뒤일지, 50년 뒤일지, 영원히
+                  계속될지 — 알지 못한 채 눈앞의 선택을 마주하게 됩니다.
                 </p>
               </div>
 
               <div className="space-y-2 pt-3 border-t border-[#292D34]">
                 <h3 className="font-editorial text-lg font-semibold text-[#F1EEE8]">
-                  02. 세 직업의 서로 다른 스토리라인
+                  02. 같은 마을, 세 직업의 시선 (1944~1945)
                 </h3>
-                <p>
-                  농사꾼(최덕수 · 《빼앗긴 땅, 빼앗긴 봄》 · 1942~1945), 면서기(김진호 ·
-                  《먹줄의 무게》 · 1944~1945), 순사보(강동혁 · 《녹슨 환도》 · 1943~1945)
-                  중 하나를 선택해 시작합니다. 세 직업은 서로 다른 시기에 식민지 통치를
-                  경험하며, 역사 연표를 통해 하나의 시대적 맥락으로 이어집니다.
+                <p className="break-keep">
+                  농사꾼(최덕수 · 《빼앗긴 땅, 빼앗긴 봄》), 면서기(김진호 ·
+                  《먹줄의 무게》), 순사보(강동혁 · 《녹슨 환도》) 중 하나를
+                  선택해 시작합니다. 세 직업은 1944년 경상도의 같은 가상 농촌
+                  마을에서 벌어진 토지 거래, 공출, 노무동원 사건을 각자의
+                  자리에서 경험하며, 1945년 8월 해방 이후의 책임을 마주합니다.
                 </p>
               </div>
 
               <div className="space-y-2 pt-3 border-t border-[#292D34]">
                 <h3 className="font-editorial text-lg font-semibold text-[#F1EEE8]">
-                  03. 마을 지도 탐색, 0–20 변수 현황, 역사 연표와 사료 노트
+                  03. 보이지 않게 누적되는 선택과 사후 성찰 기록
                 </h3>
-                <p>
-                  주요 선택에 들어가기 전, 마을 약도에서 장소를 선택해 가족·이웃·
+                <p className="break-keep">
+                  주요 선택에 들어가기 전, 마을 약도에서 장소를 탐색해 가족·이웃·
                   면사무소·야학·주재소 인물과 대화하고 역사 사료를 확인할 수 있습니다.
-                  상단의 「연표」「사료」「변수 현황」 버튼으로 1937~1945년 역사 연표,
-                  원문·사진이 수록된 사료 노트, 0~20 범위의 5대 변수와 인물 관계를
-                  언제든 확인할 수 있습니다.
+                  선택의 결과와 인물 간 관계는 게임 진행 중 수치로 드러나지 않고
+                  묵시적으로 누적되어 결말을 결정하며, 이야기를 끝까지 마친 뒤
+                  선택한 모든 선택지와 역사 성찰 질문이 「플레이 기록」에 저장됩니다.
                 </p>
               </div>
 
@@ -798,13 +648,13 @@ export function GameModals({
                 </h3>
                 <ul className="space-y-1 text-xs sm:text-sm text-[#B4B0A8]">
                   <li>· PC: 마우스 클릭 또는 키보드 Space / Enter(대화 진행), 숫자 1–4(선택지 결정), Esc(메뉴 닫기)</li>
-                  <li>· 모바일: 대화창 터치로 진행, 세로 배치된 선택지 버튼 터치, 상단 메뉴로 언제든 연표·사료·변수 현황·저장 접근</li>
+                  <li>· 모바일: 대화창 터치로 진행, 세로 배치된 선택지 버튼 터치, 상단 메뉴로 언제든 연표·사료 자료실·저장 접근</li>
                 </ul>
               </div>
             </div>
           )}
 
-          {/* 8. SOURCES NOTE (FULL ARCHIVE FROM TITLE) */}
+          {/* 6. SOURCES ARCHIVE (FULL ACCESS FROM TITLE) */}
           {activeModal === 'credits' && (
             <div className="space-y-5">
               <SourceArchivePanel
@@ -814,11 +664,11 @@ export function GameModals({
                 onMarkSourceRead={onMarkSourceRead}
               />
 
-              <div className="p-4 bg-[#111316] border border-[#292D34] text-xs text-[#9E9B93] leading-relaxed space-y-1.5">
-                <p className="font-semibold text-[#DFDCD5]">
-                  역사적 사실과 허구적 각색의 구분 원칙
+              <div className="p-4 sm:p-5 bg-[#111316] border border-[#343841] text-xs sm:text-sm leading-relaxed space-y-1.5">
+                <p className="font-bold text-[#F4F1EB]">
+                  학습 안내 · 역사적 사실과 허구적 각색의 구분 원칙
                 </p>
-                <p>
+                <p className="font-bold text-[#E6E3DC] break-keep">
                   대동아공영권 선전, 애국반·배급 통제, 《조선식량관리령》·쌀 공출,
                   《조선농보》 경작권 이전·증산 표창 사례, 국가총동원법·노무동원(모집·관알선·징용),
                   면사무소 행정과 순사보 제도는 실제 역사 사료에 기반합니다. 반면

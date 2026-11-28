@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { ArrowLeft, ArrowRight, Calendar, Check } from 'lucide-react';
-import { OCCUPATIONS, getVariableMetaForOccupation } from '../data';
-import type { OccupationId } from '../types/game';
+import { useEffect, useState } from 'react';
+import { ArrowLeft, ArrowRight, Calendar, X } from 'lucide-react';
+import { OCCUPATIONS } from '../data';
+import type { OccupationData, OccupationId } from '../types/game';
 import { PixelSprite } from './PixelSprite';
 import { ResilientBackground } from './ResilientBackground';
 
@@ -20,10 +20,18 @@ export function OccupationSelectScreen({
   onBackToTitle,
   onOpenTimeline,
 }: OccupationSelectScreenProps) {
-  const [selectedId, setSelectedId] = useState<OccupationId>('farmer');
-  const activeOcc =
-    OCCUPATIONS.find((o) => o.id === selectedId) ?? OCCUPATIONS[0];
-  const activeVariableMeta = getVariableMetaForOccupation(activeOcc.id);
+  const [inspectedOcc, setInspectedOcc] = useState<OccupationData | null>(null);
+
+  useEffect(() => {
+    if (!inspectedOcc) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setInspectedOcc(null);
+      }
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [inspectedOcc]);
 
   if (step === 'PROLOGUE') {
     return (
@@ -49,6 +57,16 @@ export function OccupationSelectScreen({
               </h2>
             </div>
 
+            {/* Historical Uncertainty Premise */}
+            <div className="py-3.5 px-4 bg-[#14161A] border-y border-[#3A3D45] space-y-1">
+              <p className="font-editorial text-base sm:text-lg font-medium text-[#F4F1EB] leading-relaxed break-keep">
+                “당신은 이 지배가 언제 끝날지 모릅니다. 10년일지, 50년일지, 아니면 영원히 계속될지.”
+              </p>
+              <p className="text-xs sm:text-sm text-[#A9A49A] leading-relaxed break-keep">
+                해방이 몇 년 뒤에 올지 알지 못한 채, 당장 오늘 가족의 생계와 이웃의 시선, 그리고 명령 앞에서 선택을 내려야 합니다.
+              </p>
+            </div>
+
             <div className="space-y-3 text-sm sm:text-[15px] text-[#CECAC1] leading-[1.78] break-keep">
               <p>
                 1930년대 후반 중일전쟁과 1941년 태평양전쟁을 거치며 조선총독부의
@@ -60,18 +78,18 @@ export function OccupationSelectScreen({
                 동원이 마을과 가정의 일상 깊숙이 스며들었습니다.
               </p>
               <p>
-                이 이야기에서 당신은 1940년대 식민지 조선의 농촌(전라북도 옥구군을
-                참고한 가상 마을 및 가상의 송현면)에서 살아가는 한 사람이 되어
-                해방 전후의 갈림길을 지나갑니다. 선택한 직업에 따라 사회적 위치,
-                마주하는 인물, 사건을 접하는 시선과 선택지가 달라집니다.
+                이 이야기에서 당신은 1944년 경상도의 가상 농촌 마을 송현면에서
+                살아가는 한 사람이 되어 해방 직전의 갈림길을 지나갑니다. 선택한
+                직업에 따라 사회적 위치, 마주하는 인물, 같은 사건을 접하는 시선과
+                선택지가 달라집니다.
               </p>
             </div>
 
-            <div className="p-3.5 sm:p-4 bg-[#121417] border border-[#2B2F36] space-y-1 text-xs sm:text-sm text-[#A7A39B]">
-              <p className="font-semibold text-[#E4E0D8]">
-                학습 안내 · 사실과 허구의 구분
+            <div className="p-3.5 sm:p-4 bg-[#121417] border border-[#343841] space-y-1.5 text-xs sm:text-sm">
+              <p className="font-bold text-[#F4F1EB]">
+                학습 안내 · 사료 및 허구의 구분
               </p>
-              <p className="leading-relaxed">
+              <p className="font-bold text-[#EAE6DE] leading-relaxed break-keep">
                 미곡 공출, 경작권 이전·증산 표창 기록(사료 F), 국가총동원법·노무
                 동원, 창씨개명 행정, 면사무소·애국반 행정망, 주재소 경찰 통제
                 구조는 실제 역사적 사실에 기반합니다. 반면 가상의 마을과
@@ -129,12 +147,12 @@ export function OccupationSelectScreen({
           </button>
           <div className="flex items-center gap-3">
             <p className="hidden sm:block text-xs sm:text-sm text-[#8F8D86] whitespace-nowrap">
-              직업 선택 · 1942~1945 식민지 조선
+              직업 선택 · 1944~1945 경상도 가상 농촌 마을
             </p>
             <button
               type="button"
-              onClick={() => onOpenTimeline(activeOcc.id)}
-              className="min-h-[34px] px-2.5 py-1 bg-[#181B20] hover:bg-[#22262E] border border-[#3B4049] hover:border-[#9E9586] text-xs text-[#DFDCD5] flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap"
+              onClick={() => onOpenTimeline()}
+              className="min-h-[36px] px-3 py-1 bg-[#181B20] hover:bg-[#22262E] border border-[#3B4049] hover:border-[#9E9586] text-xs text-[#DFDCD5] flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap"
             >
               <Calendar className="w-3.5 h-3.5 text-[#B2A999]" />
               <span>역사 연표 보기</span>
@@ -143,275 +161,247 @@ export function OccupationSelectScreen({
         </div>
       </header>
 
-      {/* Zero-Scroll Split Workspace on Desktop, Tabbed Dossier on Mobile/Tablet */}
-      <main className="flex-1 min-h-0 w-full max-w-6xl mx-auto px-3.5 sm:px-6 py-3 sm:py-5 flex flex-col lg:grid lg:grid-cols-12 gap-3.5 sm:gap-4 overflow-hidden">
-        {/* Mobile & Tablet Horizontal 3-Tab Selector (< lg) */}
-        <div className="lg:hidden shrink-0 space-y-2">
-          <h2 className="font-editorial text-lg sm:text-xl font-semibold text-[#F1EEE8]">
-            어느 자리에서 그날을 살아가시겠습니까?
-          </h2>
-          <div className="grid grid-cols-3 gap-2">
-            {OCCUPATIONS.map((occ) => {
-              const isSelected = occ.id === selectedId;
-              return (
-                <button
-                  key={occ.id}
-                  type="button"
-                  onClick={() => setSelectedId(occ.id)}
-                  className={`min-h-[46px] px-2.5 py-2 text-left border transition-colors cursor-pointer ${
-                    isSelected
-                      ? 'bg-[#1D2026] border-[#B2A999] text-[#F4F1EB]'
-                      : 'bg-[#141619] border-[#2A2E35] text-[#A8A49C] hover:border-[#474C56]'
-                  }`}
-                >
-                  <p className="font-editorial text-xs sm:text-sm font-semibold truncate">
-                    {occ.name}
-                  </p>
-                  <p className="text-[11px] opacity-80 truncate">
-                    {occ.protagonistName} · {occ.activePeriod ?? ''}
-                  </p>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Desktop Left Column: 3 Vertical Roster Cards (lg+) */}
-        <section className="hidden lg:flex lg:col-span-5 flex-col min-h-0 gap-3">
-          <div className="shrink-0 space-y-1">
-            <p className="text-xs text-[#9E978B] tracking-[0.14em]">
-              인물 및 사회적 위치 선택
+      {/* Intuitive 3-Character Selection Gallery */}
+      <main className="flex-1 min-h-0 w-full max-w-6xl mx-auto px-3.5 sm:px-6 py-4 sm:py-6 overflow-y-auto flex flex-col">
+        <div className="my-auto w-full flex flex-col gap-4 sm:gap-5">
+          {/* Heading + Historical Uncertainty Motif */}
+          <div className="text-center max-w-2xl mx-auto space-y-1.5 shrink-0">
+            <p className="text-xs sm:text-sm text-[#B2A999] font-editorial tracking-wide break-keep">
+              당신은 이 지배가 언제 끝날지 모릅니다. 10년? 50년? 영원히?
             </p>
-            <h2 className="font-editorial text-2xl font-semibold text-[#F1EEE8] leading-snug">
+            <h2 className="font-editorial text-xl sm:text-3xl font-semibold text-[#F4F1EB] leading-snug break-keep">
               어느 자리에서 그날을 살아가시겠습니까?
             </h2>
+            <p className="text-xs sm:text-sm text-[#98958E] break-keep">
+              인물을 눌러 해당 직업의 상황과 마주할 갈등을 확인한 뒤 시작하세요.
+            </p>
           </div>
 
-          <div className="flex-1 min-h-0 flex flex-col gap-2.5">
-            {OCCUPATIONS.map((occ) => {
-              const isSelected = occ.id === selectedId;
-              return (
-                <button
-                  key={occ.id}
-                  type="button"
-                  onClick={() => setSelectedId(occ.id)}
-                  className={`flex-1 min-h-0 text-left transition-colors duration-150 flex overflow-hidden cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B2A999] ${
-                    isSelected
-                      ? 'bg-[#1A1D22] border border-[#B2A999]'
-                      : 'bg-[#141619] border border-[#2B2E35] hover:border-[#494E58]'
-                  }`}
-                >
-                  <div className="relative w-28 xl:w-32 shrink-0 border-r border-[#272A31] overflow-hidden">
+          {/* 3 Clean Full-Body Character Cards (Responsive across Phone, Tablet, Laptop) */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 sm:gap-5 items-stretch">
+            {OCCUPATIONS.map((occ) => (
+              <button
+                key={occ.id}
+                type="button"
+                onClick={() => setInspectedOcc(occ)}
+                className="group relative flex flex-row sm:flex-col overflow-hidden bg-[#14161A] border border-[#2D3139] hover:border-[#B2A999] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B2A999] transition-colors duration-150 text-left cursor-pointer"
+              >
+                {/* Full-Body Portrait Stage — explicit safe height/width so sprite is never clipped */}
+                <div className="relative w-[132px] h-[184px] shrink-0 sm:w-full sm:h-[clamp(220px,38dvh,330px)] overflow-hidden border-r sm:border-r-0 sm:border-b border-[#272A31]">
+                  <div className="absolute inset-0 z-0">
                     <ResilientBackground
                       src={occ.startBackground}
-                      alt={`${occ.name} 시작 배경`}
+                      alt={`${occ.name} 배경`}
                       className="w-full h-full"
-                      imageClassName="saturate-[0.65] brightness-[0.82]"
-                      overlayClassName="bg-gradient-to-t from-[#121417]/90 via-transparent to-transparent"
+                      imageClassName="saturate-[0.65] brightness-[0.8] group-hover:scale-[1.03] transition-transform duration-300"
+                      overlayClassName="bg-gradient-to-t from-[#111316]/90 via-[#111316]/25 to-[#111316]/35"
                     />
-                    <div className="absolute inset-0 flex items-end justify-center pb-1 pointer-events-none">
-                      <PixelSprite
-                        src={occ.portraitSprite}
-                        alt={`${occ.protagonistName} 캐릭터`}
-                        fallbackName={occ.protagonistName}
-                        className="h-[88%] max-h-[120px] w-auto"
-                      />
-                    </div>
                   </div>
+                  <div className="relative z-10 w-full h-full px-2.5 pt-3.5 pb-2 sm:px-4 sm:pt-5 sm:pb-3 flex items-end justify-center pointer-events-none">
+                    <PixelSprite
+                      src={occ.portraitSprite}
+                      alt={`${occ.name} ${occ.protagonistName} 전신 캐릭터`}
+                      fallbackName={occ.protagonistName}
+                      className="w-full h-full object-contain object-bottom group-hover:scale-[1.03] transition-transform duration-200"
+                    />
+                  </div>
+                </div>
 
-                  <div className="flex-1 min-w-0 p-3.5 flex flex-col justify-between gap-1.5">
-                    <div>
-                      <div className="flex items-center justify-between gap-2">
-                        <p className="text-xs text-[#9E978B]">
-                          {occ.protagonistName} ({occ.age}세)
-                          {occ.activePeriod && (
-                            <span className="font-data text-[11px] text-[#B2A999] ml-1.5">
-                              · {occ.activePeriod}
-                            </span>
-                          )}
-                        </p>
-                        {isSelected && (
-                          <span className="text-[11px] text-[#E6E2DA] flex items-center gap-1 whitespace-nowrap">
-                            <Check className="w-3.5 h-3.5 text-[#B2A999]" />
-                            선택됨
-                          </span>
-                        )}
-                      </div>
-                      <h3 className="font-editorial text-lg font-semibold text-[#F1EEE8] leading-snug">
-                        {occ.name}
-                      </h3>
-                      <p className="text-xs text-[#B8B4AC] leading-relaxed line-clamp-2 mt-1 break-keep">
-                        {occ.summary}
-                      </p>
-                    </div>
-                    <p className="text-[11px] text-[#86837C] truncate pt-1.5 border-t border-[#24272D]">
-                      {occ.socialPosition}
+                {/* Clear Occupation & Character Identity Footer */}
+                <div className="flex-1 min-w-0 p-4 sm:p-4 md:p-5 bg-[#14161A] group-hover:bg-[#191C22] transition-colors flex flex-col sm:flex-row sm:items-end justify-between gap-2.5">
+                  <div className="space-y-1 min-w-0">
+                    <p className="text-[11px] sm:text-xs font-data text-[#9E978B]">
+                      {occ.activePeriod}
+                    </p>
+                    <h3 className="font-editorial text-xl sm:text-2xl font-semibold text-[#F4F1EB] leading-tight">
+                      {occ.name}
+                    </h3>
+                    <p className="text-sm text-[#C8C4BC]">
+                      {occ.protagonistName}{' '}
+                      <span className="text-xs text-[#8D8A83]">({occ.age}세)</span>
                     </p>
                   </div>
-                </button>
-              );
-            })}
+                  <span className="text-xs text-[#B2A999] group-hover:text-[#F4F1EB] flex items-center gap-1 whitespace-nowrap shrink-0 sm:pb-0.5">
+                    <span>상세 보기</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </span>
+                </div>
+              </button>
+            ))}
           </div>
-        </section>
 
-        {/* Right / Main Dossier Inspection Panel */}
-        <section className="flex-1 min-h-0 lg:col-span-7 archival-panel flex flex-col overflow-hidden">
-          {/* Selected Occupation Visual Banner */}
-          <div className="relative h-28 sm:h-32 xl:h-36 shrink-0 border-b border-[#292D34] overflow-hidden">
-            <ResilientBackground
-              src={activeOcc.startBackground}
-              alt={`${activeOcc.name} 배경`}
-              className="w-full h-full"
-              imageClassName="saturate-[0.65] brightness-[0.8]"
-              overlayClassName="bg-gradient-to-r from-[#111316]/95 via-[#111316]/78 to-[#111316]/35"
-            />
-            <div className="relative z-10 h-full px-4 sm:px-5 flex items-center justify-between gap-3">
-              <div className="min-w-0 max-w-md space-y-1">
-                <p className="text-[11px] sm:text-xs text-[#A49B8C]">
-                  {activeOcc.title} · {activeOcc.protagonistName} ({activeOcc.age}세)
-                  {activeOcc.activePeriod && (
-                    <span className="font-data text-[#DFD8CA] ml-1.5">
-                      · {activeOcc.activePeriod}
-                    </span>
-                  )}
-                </p>
-                <h3 className="font-editorial text-xl sm:text-2xl font-semibold text-[#F1EEE8] leading-tight">
-                  {activeOcc.name}
-                </h3>
-                <p className="text-xs text-[#C4C0B8] line-clamp-2 break-keep">
-                  {activeOcc.socialPosition}
-                </p>
-              </div>
-              <div className="h-full flex items-end pt-2 shrink-0 pointer-events-none">
-                <PixelSprite
-                  src={activeOcc.portraitSprite}
-                  alt={activeOcc.protagonistName}
-                  fallbackName={activeOcc.protagonistName}
-                  className="h-[92%] max-h-[126px] w-auto"
+          {/* Quiet bottom helper line */}
+          <p className="text-center text-xs text-[#7D7A74] shrink-0 break-keep">
+            선택의 결과는 눈에 보이지 않게 누적되어 결말을 만들며, 플레이를 마친 뒤 모든 선택과 성찰 질문이 기록됩니다.
+          </p>
+        </div>
+      </main>
+
+      {/* Interactive Character Detail Inspection Modal */}
+      {inspectedOcc && (
+        <div
+          className="fixed inset-0 z-50 bg-black/82 backdrop-blur-[2px] flex items-center justify-center p-3 sm:p-5"
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${inspectedOcc.name} ${inspectedOcc.protagonistName} 상세 정보`}
+          onClick={() => setInspectedOcc(null)}
+        >
+          <div
+            className="w-full max-w-3xl max-h-[88dvh] bg-[#15171A] border border-[#3B404A] flex flex-col overflow-hidden shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Visual Character Header */}
+            <div className="relative min-h-[144px] sm:h-44 shrink-0 border-b border-[#2B2F36] overflow-hidden">
+              <div className="absolute inset-0 z-0">
+                <ResilientBackground
+                  src={inspectedOcc.startBackground}
+                  alt={`${inspectedOcc.name} 배경`}
+                  className="w-full h-full"
+                  imageClassName="saturate-[0.65] brightness-[0.8]"
+                  overlayClassName="bg-gradient-to-r from-[#111316]/96 via-[#111316]/82 to-[#111316]/40"
                 />
               </div>
-            </div>
-          </div>
+              <button
+                type="button"
+                onClick={() => setInspectedOcc(null)}
+                aria-label="창 닫기"
+                className="absolute top-3 right-3 z-20 min-w-[40px] min-h-[40px] bg-[#121417]/90 hover:bg-[#1E2127] border border-[#3C414B] text-[#CFCBC2] hover:text-[#F4F1EB] flex items-center justify-center cursor-pointer"
+              >
+                <X className="w-5 h-5" />
+              </button>
 
-          {/* Dossier Details (scrolls internally only on short viewports) */}
-          <div className="flex-1 min-h-0 p-4 sm:p-5 grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5 overflow-y-auto">
-            <div className="md:col-span-7 space-y-3.5">
-              <div className="space-y-1">
-                <p className="text-xs font-semibold text-[#A8A49C]">
-                  역사적 권한 및 업무 범위
-                </p>
-                <p className="text-xs sm:text-sm text-[#CCC8BF] leading-relaxed break-keep">
-                  {activeOcc.historicalScope}
-                </p>
-              </div>
-
-              <div className="space-y-1.5">
-                <p className="text-xs font-semibold text-[#A8A49C]">
-                  마주하게 될 핵심 갈등
-                </p>
-                <ul className="space-y-1 text-xs sm:text-sm text-[#CCC8BF]">
-                  {activeOcc.keyConflicts.map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <span className="font-data text-[11px] text-[#9B9385] mt-0.5">
-                        0{idx + 1}.
-                      </span>
-                      <span className="break-keep leading-snug">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {activeOcc.moralDilemma && (
-                <div className="p-3 bg-[#151314] border-l-2 border-[#7A2E29] border-y border-r border-y-[#2B2729] border-r-[#2B2729] space-y-1">
-                  <p className="text-[11px] font-semibold text-[#D69D96]">
-                    핵심 도덕적 딜레마
+              <div className="relative z-10 h-full px-4 sm:px-6 pr-14 sm:pr-16 py-3 flex items-center justify-between gap-3 sm:gap-4">
+                <div className="min-w-0 space-y-1">
+                  <p className="text-[11px] sm:text-xs text-[#B2A999] font-data">
+                    {inspectedOcc.activePeriod} · {inspectedOcc.title}
                   </p>
-                  <p className="text-xs text-[#DFDCD5] leading-relaxed break-keep">
-                    {activeOcc.moralDilemma}
+                  <h3 className="font-editorial text-xl sm:text-3xl font-semibold text-[#F4F1EB] leading-tight">
+                    {inspectedOcc.name}{' '}
+                    <span className="text-base sm:text-xl font-normal text-[#DFDCD5]">
+                      {inspectedOcc.protagonistName} ({inspectedOcc.age}세)
+                    </span>
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#C4C0B8] break-keep line-clamp-2">
+                    {inspectedOcc.socialPosition}
+                  </p>
+                </div>
+                <div className="w-20 h-32 sm:w-28 sm:h-40 py-1 shrink-0 flex items-end justify-center pointer-events-none">
+                  <PixelSprite
+                    src={inspectedOcc.portraitSprite}
+                    alt={`${inspectedOcc.name} ${inspectedOcc.protagonistName} 전신`}
+                    fallbackName={inspectedOcc.protagonistName}
+                    className="w-full h-full object-contain object-bottom"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Concise, High-Readability Situation & Dilemma Body (No Variables Shown) */}
+            <div className="flex-1 overflow-y-auto p-5 sm:p-6 space-y-5">
+              {/* Situation Summary */}
+              <div className="space-y-2">
+                <p className="text-xs font-semibold tracking-wider text-[#A49B8C]">
+                  이 게임에서의 상황
+                </p>
+                <p className="text-sm sm:text-[15px] text-[#E6E3DC] leading-[1.75] break-keep">
+                  {inspectedOcc.summary}
+                </p>
+                <p className="text-xs sm:text-sm text-[#B8B4AC] leading-[1.72] break-keep">
+                  {inspectedOcc.historicalScope}
+                </p>
+              </div>
+
+              {/* Core Moral Dilemma — clean hairline framing */}
+              {inspectedOcc.moralDilemma && (
+                <div className="p-4 bg-[#111316] border border-[#443534] space-y-1.5">
+                  <p className="text-xs font-semibold text-[#D69D96]">
+                    마주할 질문
+                  </p>
+                  <p className="text-sm text-[#EDEAE3] leading-[1.7] break-keep">
+                    {inspectedOcc.moralDilemma}
                   </p>
                 </div>
               )}
 
-              <div className="space-y-1.5">
-                <p className="text-xs font-semibold text-[#A8A49C]">
-                  주요 가족 및 주변 인물
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                  {activeOcc.familyAndContacts.map((fc) => (
-                    <div
-                      key={fc.characterId}
-                      className="p-2.5 bg-[#111316] border border-[#272B32]"
-                    >
-                      <p className="text-xs font-semibold text-[#E8E4DC]">
-                        {fc.relation}
-                      </p>
-                      <p className="text-[11px] text-[#96938B] mt-0.5 leading-snug break-keep">
-                        {fc.note}
-                      </p>
-                    </div>
-                  ))}
+              {/* Key Conflicts + Contacts */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-1 border-t border-[#262930]">
+                <div className="space-y-2 pt-3">
+                  <p className="text-xs font-semibold tracking-wider text-[#A49B8C]">
+                    주요 갈등
+                  </p>
+                  <ul className="space-y-2 text-xs sm:text-sm text-[#CFCBC2]">
+                    {inspectedOcc.keyConflicts.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="font-data text-xs text-[#9E9586] mt-0.5 shrink-0">
+                          0{idx + 1}.
+                        </span>
+                        <span className="break-keep leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="space-y-2 pt-3">
+                  <p className="text-xs font-semibold tracking-wider text-[#A49B8C]">
+                    주변 인물
+                  </p>
+                  <div className="space-y-2">
+                    {inspectedOcc.familyAndContacts.map((fc) => (
+                      <div
+                        key={fc.characterId}
+                        className="p-3 bg-[#111316] border border-[#272B32] space-y-0.5"
+                      >
+                        <p className="text-xs sm:text-sm font-semibold text-[#ECE9E2]">
+                          {fc.relation}
+                        </p>
+                        <p className="text-xs text-[#9C9991] leading-snug break-keep">
+                          {fc.note}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Initial 5 variables (0-20 scale) */}
-            <div className="md:col-span-5 md:border-l md:border-[#2A2E35] md:pl-5 space-y-3">
-              <div>
-                <p className="text-xs font-semibold text-[#A8A49C]">
-                  초기 상태 지표 (0–20)
-                </p>
-                <p className="text-[11px] text-[#86837C] mt-0.5 leading-snug">
-                  도덕적 우열이 아닌 시작 시점의 사회적 조건입니다.
-                </p>
+            {/* Action Footer */}
+            <div className="shrink-0 px-5 sm:px-6 py-3.5 border-t border-[#2A2E35] bg-[#111316] flex flex-col-reverse sm:flex-row items-stretch sm:items-center justify-between gap-2.5">
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setInspectedOcc(null)}
+                  className="flex-1 sm:flex-none min-h-[44px] px-4 py-2 bg-[#16181C] hover:bg-[#202329] text-[#C8C4BC] border border-[#343841] text-xs sm:text-sm font-medium cursor-pointer whitespace-nowrap"
+                >
+                  다른 인물 보기
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const occId = inspectedOcc.id;
+                    setInspectedOcc(null);
+                    onOpenTimeline(occId);
+                  }}
+                  className="flex-1 sm:flex-none min-h-[44px] px-3.5 py-2 bg-[#181B20] hover:bg-[#22262E] text-[#DFDCD5] border border-[#3D424C] text-xs sm:text-sm flex items-center justify-center gap-1.5 cursor-pointer whitespace-nowrap"
+                >
+                  <Calendar className="w-3.5 h-3.5 text-[#B2A999]" />
+                  <span>시기 연표</span>
+                </button>
               </div>
-              <div className="space-y-2.5">
-                {activeVariableMeta.map((meta) => {
-                  const val = activeOcc.initialVariables[meta.key];
-                  const pct = Math.max(0, Math.min(100, (val / 20) * 100));
-                  return (
-                    <div key={meta.key} className="space-y-1">
-                      <div className="flex items-center justify-between text-xs">
-                        <span className="text-[#D4D0C8]">{meta.label}</span>
-                        <span className="font-data text-[#B2A999]">
-                          {val} / 20
-                        </span>
-                      </div>
-                      <div className="h-1.5 w-full bg-[#101215] border border-[#2B2F36] overflow-hidden">
-                        <div
-                          className="h-full bg-[#9E9586] transition-all duration-200"
-                          style={{ width: `${pct}%` }}
-                        />
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
+
               <button
                 type="button"
-                onClick={() => onOpenTimeline(activeOcc.id)}
-                className="w-full min-h-[38px] px-3 py-1.5 bg-[#16191E] hover:bg-[#20242C] border border-[#343942] text-xs text-[#D6D2C9] flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+                onClick={() => onSelectOccupation(inspectedOcc.id)}
+                className="min-h-[46px] px-6 py-2.5 bg-[#7A2E29] hover:bg-[#8C3731] active:bg-[#692621] text-[#F4F1EB] border border-[#96453F] font-medium text-sm sm:text-base flex items-center justify-center gap-2 transition-colors cursor-pointer whitespace-nowrap"
               >
-                <Calendar className="w-3.5 h-3.5 text-[#B2A999]" />
-                <span>{activeOcc.name} 시기 역사 연표 확인</span>
+                <span>
+                  {inspectedOcc.name} ({inspectedOcc.protagonistName})으로 시작하기
+                </span>
+                <ArrowRight className="w-4 h-4 shrink-0" />
               </button>
             </div>
           </div>
-
-          {/* Pinned Bottom Start CTA */}
-          <div className="shrink-0 p-3 sm:p-4 border-t border-[#2A2E35] bg-[#111316]">
-            <button
-              type="button"
-              onClick={() => onSelectOccupation(activeOcc.id)}
-              className="w-full min-h-[48px] px-5 py-2.5 bg-[#7A2E29] hover:bg-[#8C3731] active:bg-[#692621] text-[#F4F1EB] border border-[#96453F] font-medium text-sm sm:text-base flex items-center justify-center gap-2 transition-colors cursor-pointer whitespace-nowrap"
-            >
-              <span>
-                {activeOcc.name} ({activeOcc.protagonistName})으로 시작하기
-              </span>
-              <ArrowRight className="w-4 h-4 shrink-0" />
-            </button>
-          </div>
-        </section>
-      </main>
+        </div>
+      )}
     </div>
   );
 }
