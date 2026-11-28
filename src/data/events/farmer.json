@@ -202,7 +202,7 @@
     "choices": [
       {
         "id": "f1_a",
-        "text": "인주에 도장을 찍으며 말한다. “봉수 형님, 당장 급한 불부터 끄시지요. 우리 식구도 올해 양식이 빠듯합니다.”",
+        "text": "박만석이 제시한 값에 도장을 찍는다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -222,11 +222,11 @@
           ]
         },
         "logSummary": "박만석이 정한 낮은 가격에 도장을 찍고 김봉수의 논 네 두락을 인수했다.",
-        "next": "farmer_c1_react_a"
+        "next": "farmer_c1_say_a"
       },
       {
         "id": "f1_b",
-        "text": "계약서를 박만석 앞으로 밀어내며 모인 농민들 앞에서 외친다. “빚에 몰린 이웃 논을 반값에 후려치는 거래엔 도장 못 찍소!”",
+        "text": "계약서를 밀어내고 거래의 부당함을 외친다",
         "effects": {
           "variables": {
             "livelihood": -3,
@@ -257,11 +257,11 @@
           }
         },
         "logSummary": "논둑에 모인 농민들 앞에서 계약서를 밀어내며 지주의 헐값 거래 관행에 공개 항의했다.",
-        "next": "farmer_c1_react_b"
+        "next": "farmer_c1_say_b"
       },
       {
         "id": "f1_c",
-        "text": "“논값은 조금 더 쳐 드리리다. 대신 형님이 이 논을 계속 짓고 수확의 여섯 할을 내 앞으로 내시지요.”",
+        "text": "값을 조금 더 치는 대신 소작 몫을 요구한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -282,11 +282,11 @@
           ]
         },
         "logSummary": "논을 인수하면서 김봉수에게 수확의 여섯 할을 요구하는 불리한 소작 조건을 붙였다.",
-        "next": "farmer_c1_react_c"
+        "next": "farmer_c1_say_c"
       },
       {
         "id": "f1_d",
-        "text": "“면사무소 토지 확인이 덜 끝났으니 도장은 닷새 뒤에 찍지요.” 시간을 번 뒤 해 질 녘 농민들과 봉수 빚을 나눌 길을 찾는다.",
+        "text": "토지 확인을 핑계로 도장을 닷새 미룬다",
         "effects": {
           "variables": {
             "livelihood": -1,
@@ -305,9 +305,85 @@
           ]
         },
         "logSummary": "서류 확인을 핑계로 계약을 미루고 농민들과 김봉수의 빚을 덜 방법을 의논했다.",
-        "next": "farmer_c1_react_d"
+        "next": "farmer_c1_say_d"
       }
     ]
+  },
+  {
+    "id": "farmer_c1_say_a",
+    "locationId": "loc_farmland",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_bongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_deoksu",
+    "text": "인주에 도장을 찍으며 고개를 숙였다. “봉수 형님, 당장 급한 불부터 끄시지요. 우리 식구도 올해 양식이 빠듯합니다.”",
+    "next": "farmer_c1_react_a"
+  },
+  {
+    "id": "farmer_c1_say_b",
+    "locationId": "loc_farmland",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_manseok",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_deoksu",
+    "text": "계약서를 박만석 앞으로 밀어내며 모인 농민들 앞에서 외쳤다. “빚에 몰린 이웃 논을 반값에 후려치는 거래엔 도장 못 찍소!”",
+    "next": "farmer_c1_react_b"
+  },
+  {
+    "id": "farmer_c1_say_c",
+    "locationId": "loc_farmland",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_bongsu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_deoksu",
+    "text": "봉수 곁으로 다가가 낮게 말했다. “논값은 조금 더 쳐 드리리다. 대신 형님이 이 논을 계속 짓고 수확의 여섯 할을 내 앞으로 내시지요.”",
+    "next": "farmer_c1_react_c"
+  },
+  {
+    "id": "farmer_c1_say_d",
+    "locationId": "loc_farmland",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_manseok",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_deoksu",
+    "text": "서류를 접으며 차분히 말했다. “면사무소 토지 확인이 덜 끝났으니 도장은 닷새 뒤에 찍지요.” 그날 해 질 녘, 덕수는 농민들을 모아 봉수의 빚을 나눌 길을 찾았다.",
+    "next": "farmer_c1_react_d"
   },
   {
     "id": "farmer_c1_react_a",
@@ -705,7 +781,7 @@
     "choices": [
       {
         "id": "f2_a",
-        "text": "아내의 소매를 잡고 고개를 숙인다. “알겠소. 죽을 쑤어 먹더라도 정해진 가마니 수는 기한 안에 맞춰 내겠소.”",
+        "text": "정해진 공출 가마니 수를 기한 안에 낸다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -723,11 +799,11 @@
           ]
         },
         "logSummary": "가족 식량을 줄여서라도 기한 안에 공출 목표량을 그대로 맞춰 내기로 했다.",
-        "next": "farmer_c2_react_a"
+        "next": "farmer_c2_say_a"
       },
       {
         "id": "f2_b",
-        "text": "공출 통지서를 타작마당 바닥에 내려놓고 모인 농민들을 돌아보며 외친다. “사람이 살아야 공출도 내지, 이 엉터리 할당표엔 도장 못 찍소! 다들 같이 따집시다!”",
+        "text": "통지서를 내려놓고 농민들과 함께 항의한다",
         "effects": {
           "variables": {
             "livelihood": -3,
@@ -758,11 +834,11 @@
           }
         },
         "logSummary": "타작마당에서 공출 통지서를 내려놓고 농민들과 함께 할당의 부당함을 공개 항의했다.",
-        "next": "farmer_c2_react_b"
+        "next": "farmer_c2_say_b"
       },
       {
         "id": "f2_c",
-        "text": "김진호를 구석으로 불러 속삭인다. “아랫말 늙은이네는 일손이 없어 어차피 미납이라던데, 그 집 벼 몇 말을 내 몫으로 합쳐 넣으면 면 실적도 빨리 차지 않겠소?”",
+        "text": "이웃 농가의 벼를 내 몫으로 합쳐 넣자고 한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -780,11 +856,11 @@
           ]
         },
         "logSummary": "이웃 농가의 수확량을 자신의 공출 실적으로 돌려 채울 방법을 면사무소 쪽에 타진했다.",
-        "next": "farmer_c2_react_c"
+        "next": "farmer_c2_say_c"
       },
       {
         "id": "f2_d",
-        "text": "“수확이 이것뿐이오.” 쭉정이 섞인 가마니만 내보이고, 그날 밤 겨울 먹을 벼 두 가마니를 광 안쪽 짚더미 아래 깊이 숨긴다.",
+        "text": "수확량을 줄여 신고하고 밤에 벼를 숨긴다",
         "effects": {
           "variables": {
             "livelihood": -1,
@@ -803,9 +879,90 @@
           ]
         },
         "logSummary": "수확량을 낮춰 신고하고 겨울 양식 두 가마니를 광 안쪽 짚더미 아래 숨겼다.",
-        "next": "farmer_c2_react_d"
+        "next": "farmer_c2_say_d"
       }
     ]
+  },
+  {
+    "id": "farmer_c2_say_a",
+    "locationId": "loc_farmland",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_deoksu",
+    "text": "아내의 소매를 잡고 고개를 숙였다. “알겠소. 죽을 쑤어 먹더라도 정해진 가마니 수는 기한 안에 맞춰 내겠소.”",
+    "next": "farmer_c2_react_a"
+  },
+  {
+    "id": "farmer_c2_say_b",
+    "locationId": "loc_farmland",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_villager",
+        "expression": "worried",
+        "position": "center"
+      },
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_deoksu",
+    "text": "공출 통지서를 타작마당 바닥에 내려놓고 모인 농민들을 돌아보며 외쳤다. “사람이 살아야 공출도 내지, 이 엉터리 할당표엔 도장 못 찍소! 다들 같이 따집시다!”",
+    "next": "farmer_c2_react_b"
+  },
+  {
+    "id": "farmer_c2_say_c",
+    "locationId": "loc_farmland",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_deoksu",
+    "text": "김진호를 구석으로 불러 속삭였다. “아랫말 늙은이네는 일손이 없어 어차피 미납이라던데, 그 집 벼 몇 말을 내 몫으로 합쳐 넣으면 면 실적도 빨리 차지 않겠소?”",
+    "next": "farmer_c2_react_c"
+  },
+  {
+    "id": "farmer_c2_say_d",
+    "locationId": "loc_farmland",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_deoksu",
+    "text": "“수확이 이것뿐이오.” 덕수는 쭉정이 섞인 가마니만 내보이고, 그날 밤 겨울 먹을 벼 두 가마니를 광 안쪽 짚더미 아래 깊이 숨겼다.",
+    "next": "farmer_c2_react_d"
   },
   {
     "id": "farmer_c2_react_a",
@@ -1175,7 +1332,7 @@
     "choices": [
       {
         "id": "f3_a",
-        "text": "“정수 씨, 미안하오. 내 처자식을 경찰 손에 넘길 순 없으니 어서 돌아가시오.” 문을 닫고 빗장을 건다.",
+        "text": "이정수를 돌려보내고 문을 걸어 잠근다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -1193,11 +1350,11 @@
           ]
         },
         "logSummary": "가족과 농사를 지키기 위해 이정수의 부탁을 거절하고 대문을 닫았다.",
-        "next": "farmer_c3_react_a"
+        "next": "farmer_c3_say_a"
       },
       {
         "id": "f3_b",
-        "text": "“밤에 숨는 걸론 끝이 안 나네.” 이정수를 뒷산으로 보낸 뒤, 이튿날 아침 마을 회관 앞 소집 공고판 앞에 서서 농민들을 향해 강제 동원의 부당함을 공개적으로 외친다.",
+        "text": "이정수를 보낸 뒤 마을 회관 앞에서 항의한다",
         "effects": {
           "variables": {
             "livelihood": -3,
@@ -1218,11 +1375,11 @@
           ]
         },
         "logSummary": "이튿날 마을 회관 소집 공고판 앞에서 주민들과 함께 강제 노무동원의 부당함을 공개 항의했다.",
-        "next": "farmer_c3_react_b"
+        "next": "farmer_c3_say_b"
       },
       {
         "id": "f3_c",
-        "text": "이정수를 돌려보낸 뒤, 우리 집 의심을 돌리기 위해 주재소 순찰대에게 “아랫말 숯가마 쪽에 낯선 청년이 숨어 있더라”고 귀띔한다.",
+        "text": "의심을 돌리려 주재소에 다른 곳을 귀띔한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -1240,11 +1397,11 @@
           ]
         },
         "logSummary": "자신의 집에 쏠릴 의심을 피하기 위해 다른 마을 청년의 은신처를 주재소 순찰대에 알렸다.",
-        "next": "farmer_c3_react_c"
+        "next": "farmer_c3_say_c"
       },
       {
         "id": "f3_d",
-        "text": "“집엔 못 들이오. 대신 주재소 순찰은 자정께 삼거리를 지나니 지금 당장 뒷산 고개로 넘어가시오.” 주먹밥과 짚신을 쥐여 보낸다.",
+        "text": "순찰 시간과 주먹밥을 챙겨 고개로 보낸다",
         "effects": {
           "variables": {
             "livelihood": -1,
@@ -1262,9 +1419,85 @@
           ]
         },
         "logSummary": "집에 숨기지는 않되 주재소 순찰 시간과 산길을 알려 주고 주먹밥과 짚신을 챙겨 보냈다.",
-        "next": "farmer_c3_react_d"
+        "next": "farmer_c3_say_d"
       }
     ]
+  },
+  {
+    "id": "farmer_c3_say_a",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_deoksu",
+    "text": "덕수는 차마 눈을 마주치지 못한 채 문고리를 잡았다. “정수 씨, 미안하오. 내 처자식을 경찰 손에 넘길 순 없으니 어서 돌아가시오.”",
+    "next": "farmer_c3_react_a"
+  },
+  {
+    "id": "farmer_c3_say_b",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_deoksu",
+    "text": "“밤에 숨는 걸론 끝이 안 나네. 어서 뒷산으로 가게.” 이정수를 보낸 덕수는 이튿날 아침 마을 회관 앞 소집 공고판에 서서 농민들을 향해 강제 동원의 부당함을 공개적으로 외쳤다.",
+    "next": "farmer_c3_react_b"
+  },
+  {
+    "id": "farmer_c3_say_c",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_deoksu",
+    "text": "이정수를 돌려보낸 뒤, 덕수는 우리 집 의심을 돌리려 골목을 지나던 순찰대에게 다가갔다. “아랫말 숯가마 쪽에 낯선 청년이 숨어 있더군요.”",
+    "next": "farmer_c3_react_c"
+  },
+  {
+    "id": "farmer_c3_say_d",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_jeongsu",
+        "expression": "serious",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_deoksu",
+    "text": "덕수는 급히 주먹밥과 짚신을 쥐여 주며 속삭였다. “집엔 못 들이오. 대신 주재소 순찰은 자정께 삼거리를 지나니 지금 당장 뒷산 고개로 넘어가시오.”",
+    "next": "farmer_c3_react_d"
   },
   {
     "id": "farmer_c3_react_a",

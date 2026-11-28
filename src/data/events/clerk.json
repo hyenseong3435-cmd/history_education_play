@@ -154,7 +154,7 @@
     "choices": [
       {
         "id": "c1_a",
-        "text": "붓을 들어 대장을 채운다. “군청 지침대로 두 할 상향해 정리했습니다. 도장 올리겠습니다.”",
+        "text": "지침대로 두 할 올려 대장에 도장 찍는다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -172,11 +172,11 @@
           ]
         },
         "logSummary": "군청 지침대로 예상 생산량을 두 할 올려 토지 대장을 작성하고 결재를 올렸다.",
-        "next": "clerk_c1_react_a"
+        "next": "clerk_c1_say_a"
       },
       {
         "id": "c1_b",
-        "text": "붓을 내려놓고 대장을 덮으며 사무실 직원들 앞에서 말한다. “들말 논 사정을 직접 보고 왔습니다. 거짓 수확량을 적어 농민을 굶기는 장부에는 도장을 못 찍겠습니다.”",
+        "text": "붓을 내려놓고 직원들 앞에서 날인을 거부한다",
         "effects": {
           "variables": {
             "livelihood": -3,
@@ -206,11 +206,11 @@
           }
         },
         "logSummary": "사무실 직원들 앞에서 대장을 덮고 허위 증산 기록 작성을 공개적으로 거부했다.",
-        "next": "clerk_c1_react_b"
+        "next": "clerk_c1_say_b"
       },
       {
         "id": "c1_c",
-        "text": "오 면장 책상 앞에 박태수의 계산 오류를 짚어 올린다. “윗말 대장에 누락이 있어 제가 바로잡았습니다. 들말 대장도 지침대로 마쳤습니다.”",
+        "text": "박태수의 계산 오류를 짚어 면장에게 보고한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -228,11 +228,11 @@
           ]
         },
         "logSummary": "동료 박태수의 계산 오류를 면장에게 보고하고 지침대로 대장을 정리해 신임을 얻었다.",
-        "next": "clerk_c1_react_c"
+        "next": "clerk_c1_say_c"
       },
       {
         "id": "c1_d",
-        "text": "“김봉수 논 경계 확인이 덜 끝났습니다.” 서류 보완을 핑계로 제출을 늦추고, 퇴근길 들말에 들러 공출 기준 인상 소식을 미리 전한다.",
+        "text": "서류 보완을 핑계로 미루고 들말에 귀띔한다",
         "effects": {
           "variables": {
             "livelihood": -1,
@@ -250,9 +250,85 @@
           ]
         },
         "logSummary": "경계 확인을 핑계로 대장 제출을 지연시키고 들말 농민들에게 공출 인상 소식을 미리 알렸다.",
-        "next": "clerk_c1_react_d"
+        "next": "clerk_c1_say_d"
       }
     ]
+  },
+  {
+    "id": "clerk_c1_say_a",
+    "locationId": "loc_township_office",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_clerk",
+    "text": "붓을 들어 대장을 채운 뒤 자리에서 일어났다. “군청 지침대로 두 할 상향해 정리했습니다. 도장 올리겠습니다.”",
+    "next": "clerk_c1_react_a"
+  },
+  {
+    "id": "clerk_c1_say_b",
+    "locationId": "loc_township_office",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_clerk",
+    "text": "진호는 붓을 내려놓고 대장을 덮으며 사무실 직원들 앞에서 말했다. “들말 논 사정을 직접 보고 왔습니다. 거짓 수확량을 적어 농민을 굶기는 장부에는 도장을 못 찍겠습니다.”",
+    "next": "clerk_c1_react_b"
+  },
+  {
+    "id": "clerk_c1_say_c",
+    "locationId": "loc_township_office",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "formal",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_clerk",
+    "text": "오 면장 책상 앞에 박태수의 서류를 함께 올려놓았다. “윗말 대장에 누락이 있어 제가 바로잡았습니다. 들말 대장도 지침대로 마쳤습니다.”",
+    "next": "clerk_c1_react_c"
+  },
+  {
+    "id": "clerk_c1_say_d",
+    "locationId": "loc_township_office",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_clerk",
+    "text": "“김봉수 논 경계 확인이 덜 끝났습니다.” 서류 보완을 핑계로 제출을 늦춘 진호는 퇴근길 들말에 들러 공출 기준 인상 소식을 미리 전했다.",
+    "next": "clerk_c1_react_d"
   },
   {
     "id": "clerk_c1_react_a",
@@ -623,7 +699,7 @@
     "choices": [
       {
         "id": "c2_a",
-        "text": "숨을 고른 뒤 이정수의 이름을 정본 맨 위에 옮겨 적는다. “명부 정서를 마쳤습니다. 주재소로 넘기겠습니다.”",
+        "text": "이정수의 이름을 정본에 올려 주재소에 넘긴다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -642,11 +718,11 @@
           ]
         },
         "logSummary": "지시에 따라 소꿉친구 이정수의 이름을 노무동원 명부 정본에 그대로 기록해 넘겼다.",
-        "next": "clerk_c2_react_a"
+        "next": "clerk_c2_say_a"
       },
       {
         "id": "c2_b",
-        "text": "명부 초안을 오 면장 책상 위에 도로 올려놓으며 말한다. “산 사람을 탄광으로 끌고 가는 명부는 제 손으로 못 씁니다. 이 업무는 거부하겠습니다.”",
+        "text": "명부 초안을 돌려놓고 작성을 공개 거부한다",
         "effects": {
           "variables": {
             "livelihood": -3,
@@ -677,11 +753,11 @@
           }
         },
         "logSummary": "오 면장 앞에 명부 초안을 되돌려 놓으며 노무동원 명부 작성 업무를 공개 거부했다.",
-        "next": "clerk_c2_react_b"
+        "next": "clerk_c2_say_b"
       },
       {
         "id": "c2_c",
-        "text": "“이정수는 몸이 약해 부적합합니다. 대신 아랫말 소작농 집 둘째가 건장하니 그 아이로 채우시지요.”",
+        "text": "이정수 대신 아랫말 소작농 집 아들을 올린다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -700,11 +776,11 @@
           ]
         },
         "logSummary": "이정수를 빼는 대신 힘없는 아랫말 소작농 가구의 청년을 추천해 할당 인원을 채웠다.",
-        "next": "clerk_c2_react_c"
+        "next": "clerk_c2_say_c"
       },
       {
         "id": "c2_d",
-        "text": "이정수의 본적란에 일부러 오기를 남겨 군청 반송을 유도한 뒤, 어둠을 틈타 야학 문틈에 '명부 확정 임박' 쪽지를 밀어 넣는다.",
+        "text": "본적란에 오기를 남기고 야학에 쪽지를 넣는다",
         "effects": {
           "variables": {
             "livelihood": -1,
@@ -723,9 +799,80 @@
           ]
         },
         "logSummary": "서류 오기를 남겨 제출을 지연시키고 야학 문틈으로 이정수에게 경고 쪽지를 전했다.",
-        "next": "clerk_c2_react_d"
+        "next": "clerk_c2_say_d"
       }
     ]
+  },
+  {
+    "id": "clerk_c2_say_a",
+    "locationId": "loc_township_office",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_clerk",
+    "text": "숨을 고른 진호는 이정수의 이름을 정본 맨 위에 옮겨 적었다. “명부 정서를 마쳤습니다. 주재소로 넘기겠습니다.”",
+    "next": "clerk_c2_react_a"
+  },
+  {
+    "id": "clerk_c2_say_b",
+    "locationId": "loc_township_office",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_clerk",
+    "text": "명부 초안을 오 면장 책상 위에 도로 올려놓으며 말했다. “산 사람을 탄광으로 끌고 가는 명부는 제 손으로 못 씁니다. 이 업무는 거부하겠습니다.”",
+    "next": "clerk_c2_react_b"
+  },
+  {
+    "id": "clerk_c2_say_c",
+    "locationId": "loc_township_office",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_clerk",
+    "text": "진호는 펜 끝을 멈추고 면장을 바라보았다. “이정수는 몸이 약해 부적합합니다. 대신 아랫말 소작농 집 둘째가 건장하니 그 아이로 채우시지요.”",
+    "next": "clerk_c2_react_c"
+  },
+  {
+    "id": "clerk_c2_say_d",
+    "locationId": "loc_township_office",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "center"
+      }
+    ],
+    "speakerId": "char_clerk",
+    "text": "진호는 이정수의 본적란에 일부러 오기를 남겨 군청 반송을 유도한 뒤, 어둠을 틈타 야학 문틈에 ‘명부 확정 임박’이라 적은 쪽지를 밀어 넣었다.",
+    "next": "clerk_c2_react_d"
   },
   {
     "id": "clerk_c2_react_a",
@@ -1088,7 +1235,7 @@
     "choices": [
       {
         "id": "c3_a",
-        "text": "독촉장 뭉치를 들고 앞마당으로 나간다. “군청 명령입니다. 미납 가구는 내일까지 예외 없이 공출미를 납부하십시오.”",
+        "text": "독촉장을 들고 나가 미납 가구에 납부를 명한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -1106,11 +1253,11 @@
           ]
         },
         "logSummary": "면장의 지시에 따라 앞마당의 주민들에게 공출과 동원 납부를 강하게 독려해 실적을 채웠다.",
-        "next": "clerk_c3_react_a"
+        "next": "clerk_c3_say_a"
       },
       {
         "id": "c3_b",
-        "text": "독촉장 뭉치를 오 면장 책상에 반납하고 앞마당의 농민들이 보는 앞에서 선언한다. “굶어 가는 주민들에게 이 부당한 공출을 더는 강요하지 못하겠습니다. 차라리 파면하십시오.”",
+        "text": "독촉장을 반납하고 농민들 앞에서 거부한다",
         "effects": {
           "variables": {
             "livelihood": -3,
@@ -1131,11 +1278,11 @@
           ]
         },
         "logSummary": "독촉장을 면장 책상에 반납하고 주민들이 보는 앞에서 부당한 공출 강요 거부를 공개 선언했다.",
-        "next": "clerk_c3_react_b"
+        "next": "clerk_c3_say_b"
       },
       {
         "id": "c3_c",
-        "text": "지주와 유지 집안 명단은 슬그머니 빼고, 말발이 약한 최덕수 등 들말 빈농 가구에만 추가 할당 독촉장을 발부한다.",
+        "text": "유지 가구는 빼고 빈농 가구에만 독촉한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -1154,11 +1301,11 @@
           ]
         },
         "logSummary": "유지 가구는 제외하고 빈농과 소외된 가구에 공출 부담을 집중해 실적을 채웠다.",
-        "next": "clerk_c3_react_c"
+        "next": "clerk_c3_say_c"
       },
       {
         "id": "c3_d",
-        "text": "“들말 서쪽 논은 냉해 피해 구역입니다.” 재해 감면 서식을 끼워 넣어 장부상 목표치를 낮춰 올린다.",
+        "text": "냉해 피해 감면 서식을 끼워 목표치를 낮춘다",
         "effects": {
           "variables": {
             "livelihood": -1,
@@ -1176,9 +1323,80 @@
           ]
         },
         "logSummary": "재해 감면 서식 등 행정 절차의 허점을 활용해 서류상 목표를 낮추고 주민 부담을 덜어 주었다.",
-        "next": "clerk_c3_react_d"
+        "next": "clerk_c3_say_d"
       }
     ]
+  },
+  {
+    "id": "clerk_c3_say_a",
+    "locationId": "loc_township_office",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_clerk",
+    "text": "독촉장 뭉치를 들고 앞마당으로 나가 농민들 앞에 섰다. “군청 명령입니다. 미납 가구는 내일까지 예외 없이 공출미를 납부하십시오.”",
+    "next": "clerk_c3_react_a"
+  },
+  {
+    "id": "clerk_c3_say_b",
+    "locationId": "loc_township_office",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "worried",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_clerk",
+    "text": "진호는 독촉장 뭉치를 오 면장 책상에 반납하고 앞마당의 농민들이 보는 앞에서 선언했다. “굶어 가는 주민들에게 이 부당한 공출을 더는 강요하지 못하겠습니다. 차라리 파면하십시오.”",
+    "next": "clerk_c3_react_b"
+  },
+  {
+    "id": "clerk_c3_say_c",
+    "locationId": "loc_township_office",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "center"
+      }
+    ],
+    "speakerId": "char_clerk",
+    "text": "진호는 지주와 유지 집안 명단을 슬그머니 빼고, 말발이 약한 최덕수 등 들말 빈농 가구에만 추가 할당 독촉장을 발부했다.",
+    "next": "clerk_c3_react_c"
+  },
+  {
+    "id": "clerk_c3_say_d",
+    "locationId": "loc_township_office",
+    "characters": [
+      {
+        "characterId": "char_clerk",
+        "expression": "formal",
+        "position": "left"
+      },
+      {
+        "characterId": "char_myeonjang",
+        "expression": "formal",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_clerk",
+    "text": "진호는 재해 감면 서식을 서류철 사이에 끼워 올렸다. “들말 서쪽 논은 냉해 피해 구역입니다. 규정대로 목표치를 조정해 올렸습니다.”",
+    "next": "clerk_c3_react_d"
   },
   {
     "id": "clerk_c3_react_a",

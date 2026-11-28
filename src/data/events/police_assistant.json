@@ -159,7 +159,7 @@
     "choices": [
       {
         "id": "p1_a",
-        "text": "\"알겠습니다, 주임님.\" 지시에 따라 들말의 공출 불만과 동원 회피 정황을 규정대로 조사해 보고한다.",
+        "text": "지시대로 들말 동향을 꼼꼼히 조사해 보고한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -177,11 +177,11 @@
           ]
         },
         "logSummary": "상관의 지시에 충실히 따라 마을의 공출·동원 회피 여부를 조사하며 조직 내 입지를 다졌다.",
-        "next": "police_c1_react_a"
+        "next": "police_c1_say_a"
       },
       {
         "id": "p1_b",
-        "text": "순찰 수첩을 책상 위에 내려놓고 말한다. \"굶주리는 들말 주민을 본보기 삼아 몰아세우는 과잉 단속과 차별적 지시는 부당합니다.\"",
+        "text": "수첩을 내려놓고 과잉 단속의 부당함을 항의한다",
         "effects": {
           "variables": {
             "livelihood": -3,
@@ -211,11 +211,11 @@
           }
         },
         "logSummary": "다나카 주임 앞에서 순찰 수첩을 내려놓고 과잉 단속과 차별적 지시가 부당하다고 공개 항의했다.",
-        "next": "police_c1_react_b"
+        "next": "police_c1_say_b"
       },
       {
         "id": "p1_c",
-        "text": "\"선배님보다 제가 먼저 실적을 올리겠습니다.\" 수첩을 챙겨 들고 사소한 규정 위반까지 들말에서 적극 적발한다.",
+        "text": "박태수보다 앞서 사소한 위반까지 적극 적발한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -234,11 +234,11 @@
           ]
         },
         "logSummary": "선배 순사보보다 높은 실적을 얻기 위해 사소한 규정 위반까지 적극적으로 단속했다.",
-        "next": "police_c1_react_c"
+        "next": "police_c1_say_c"
       },
       {
         "id": "p1_d",
-        "text": "\"예, 순찰 다녀오겠습니다.\" 겉으로는 순찰을 돌면서 들말 입구에서 마주친 어르신에게 내일 아침 단속 일정을 몰래 귀띔한다.",
+        "text": "순찰을 나서는 척 들말에 일정을 몰래 귀띔한다",
         "effects": {
           "variables": {
             "livelihood": -1,
@@ -257,9 +257,85 @@
           ]
         },
         "logSummary": "지시를 형식적으로 수행하면서 내일 아침 단속 일정을 마을 주민에게 미리 귀띔했다.",
-        "next": "police_c1_react_d"
+        "next": "police_c1_say_d"
       }
     ]
+  },
+  {
+    "id": "police_c1_say_a",
+    "locationId": "loc_police_substation",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_police_asst",
+    "text": "동혁은 거수경례를 올리며 답했다. “알겠습니다, 주임님. 들말의 공출 불만과 동원 회피 정황을 규정대로 조사해 보고하겠습니다.”",
+    "next": "police_c1_react_a"
+  },
+  {
+    "id": "police_c1_say_b",
+    "locationId": "loc_police_substation",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_police_asst",
+    "text": "동혁은 순찰 수첩을 책상 위에 내려놓고 말했다. “굶주리는 들말 주민을 본보기 삼아 몰아세우는 과잉 단속과 차별적 지시는 부당합니다.”",
+    "next": "police_c1_react_b"
+  },
+  {
+    "id": "police_c1_say_c",
+    "locationId": "loc_police_substation",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_police_taesu",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_police_asst",
+    "text": "단속 수첩을 챙겨 들며 힘주어 말했다. “선배님보다 제가 먼저 실적을 올리겠습니다.” 동혁은 들말로 나가 사소한 규정 위반까지 낱낱이 적발했다.",
+    "next": "police_c1_react_c"
+  },
+  {
+    "id": "police_c1_say_d",
+    "locationId": "loc_police_substation",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_police_asst",
+    "text": "“예, 순찰 다녀오겠습니다.” 주재소를 나선 동혁은 들말 입구에서 마주친 어르신 곁으로 조용히 다가갔다.",
+    "next": "police_c1_react_d"
   },
   {
     "id": "police_c1_react_a",
@@ -656,7 +732,7 @@
     "choices": [
       {
         "id": "p2_a",
-        "text": "벼 가마니 수량을 수첩에 적으며 말한다. \"규정대로 처리할 수밖에 없습니다.\" 은닉 정황을 다나카 주임에게 그대로 보고한다.",
+        "text": "은닉 벼 가마니 정황을 주재소에 그대로 보고한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -674,11 +750,11 @@
           ]
         },
         "logSummary": "최덕수의 집에서 발견한 곡식 은닉 정황을 상관에게 그대로 보고했다.",
-        "next": "police_c2_react_a"
+        "next": "police_c2_say_a"
       },
       {
         "id": "p2_b",
-        "text": "빈손으로 주재소에 돌아가 다나카 주임과 박태수 앞에서 압수 조서를 밀어낸다. \"굶주린 농가 양식까지 빼앗는 수색은 부당합니다. 조서에 도장을 찍지 않겠습니다.\"",
+        "text": "빈손으로 돌아가 압수 조서 날인을 거부한다",
         "effects": {
           "variables": {
             "livelihood": -3,
@@ -709,11 +785,11 @@
           }
         },
         "logSummary": "주재소에서 압수 조서 날인을 공개 거부하며 굶주린 농가에 대한 부당한 공출 수색에 항의했다.",
-        "next": "police_c2_react_b"
+        "next": "police_c2_say_b"
       },
       {
         "id": "p2_c",
-        "text": "\"들말 공출 부진의 주범이 바로 여기 있습니다.\" 다른 집 조사는 대충 넘기고 최덕수에게 책임을 몰아 과장 보고한다.",
+        "text": "최덕수 집에 책임을 몰아 과장 보고한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -732,11 +808,11 @@
           ]
         },
         "logSummary": "실적을 위해 최덕수에게 책임을 집중시켜 과장 보고하고 다른 집 조사를 넘겼다.",
-        "next": "police_c2_react_c"
+        "next": "police_c2_say_c"
       },
       {
         "id": "p2_d",
-        "text": "광 문을 조용히 닫으며 덕수에게만 속삭인다. \"내일 박 순사보가 재조사를 나옵니다. 밤안에 옮기십시오.\" 보고서에는 이상 없음으로 적는다.",
+        "text": "재조사 일정을 귀띔하고 보고서에서 누락한다",
         "effects": {
           "variables": {
             "livelihood": -1,
@@ -755,9 +831,85 @@
           ]
         },
         "logSummary": "재조사 일정을 최덕수에게 몰래 전달하고 보고서에서 은닉 흔적을 누락해 넘겨주었다.",
-        "next": "police_c2_react_d"
+        "next": "police_c2_say_d"
       }
     ]
+  },
+  {
+    "id": "police_c2_say_a",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_police_asst",
+    "text": "동혁은 벼 가마니 수량을 수첩에 적으며 낮게 말했다. “규정대로 처리할 수밖에 없습니다.”",
+    "next": "police_c2_react_a"
+  },
+  {
+    "id": "police_c2_say_b",
+    "locationId": "loc_police_substation",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_police_asst",
+    "text": "빈손으로 주재소에 돌아온 동혁은 다나카 주임과 박태수 앞에서 압수 조서를 밀어냈다. “굶주린 농가 양식까지 빼앗는 수색은 부당합니다. 조서에 도장을 찍지 않겠습니다.”",
+    "next": "police_c2_react_b"
+  },
+  {
+    "id": "police_c2_say_c",
+    "locationId": "loc_police_substation",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "field",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_police_asst",
+    "text": "동혁은 다른 집 조사를 대충 넘긴 채 최덕수의 이름만 굵게 적어 올렸다. “들말 공출 부진의 주범이 바로 여기 있습니다.”",
+    "next": "police_c2_react_c"
+  },
+  {
+    "id": "police_c2_say_d",
+    "locationId": "loc_home",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_deoksu",
+        "expression": "neutral",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_police_asst",
+    "text": "동혁은 광 문을 조용히 닫으며 덕수에게만 들리게 속삭였다. “내일 박 순사보가 재조사를 나옵니다. 오늘 밤 안에 옮기십시오.” 보고서에는 이상 없음으로 적었다.",
+    "next": "police_c2_react_d"
   },
   {
     "id": "police_c2_react_a",
@@ -1090,7 +1242,7 @@
     "choices": [
       {
         "id": "p3_a",
-        "text": "\"지금 즉시 들말과 뒷산 길목을 수색하겠습니다.\" 명령에 따라 이정수의 은신처를 끝까지 추적해 보고한다.",
+        "text": "명령대로 들말과 뒷산 길목을 끝까지 수색한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -1108,11 +1260,11 @@
           ]
         },
         "logSummary": "명령에 따라 이정수의 행방을 추적하고 확인된 은신 정황을 상관에게 보고했다.",
-        "next": "police_c3_react_a"
+        "next": "police_c3_say_a"
       },
       {
         "id": "p3_b",
-        "text": "허리띠를 풀어 배지와 경봉을 다나카 주임 책상 위에 내려놓는다. \"강제 노무동원 추적은 못 합니다. 무고한 이웃을 사냥하는 명령, 여기서 거부하겠습니다.\"",
+        "text": "배지와 경봉을 내려놓고 추적 명령을 거부한다",
         "effects": {
           "variables": {
             "livelihood": -3,
@@ -1133,11 +1285,11 @@
           ]
         },
         "logSummary": "다나카 주임 책상에 배지와 경봉을 내려놓으며 강제 노무동원 추적 명령을 공개 거부했다.",
-        "next": "police_c3_react_b"
+        "next": "police_c3_say_b"
       },
       {
         "id": "p3_c",
-        "text": "\"이정수 대신 야학을 돕던 다른 들말 청년이 연락책입니다.\" 책임을 피하려 애꿎은 주민에게 의심이 향하도록 허위 첩보를 올린다.",
+        "text": "다른 들말 청년에게 의심이 향하도록 허위 보고한다",
         "effects": {
           "variables": {
             "livelihood": 2,
@@ -1156,11 +1308,11 @@
           ]
         },
         "logSummary": "책임을 피하기 위해 애꿎은 들말 청년에게 의심이 향하도록 허위 첩보를 제공했다.",
-        "next": "police_c3_react_c"
+        "next": "police_c3_say_c"
       },
       {
         "id": "p3_d",
-        "text": "\"뒷산 동쪽부터 훑어보겠습니다.\" 수색에 나서는 척 빠져나가, 야학 학생 편으로 주재소 수색 경로와 시간을 이정수에게 몰래 전한다.",
+        "text": "수색에 나서는 척 빠져나가 수색 경로를 알린다",
         "effects": {
           "variables": {
             "livelihood": -1,
@@ -1179,9 +1331,85 @@
           ]
         },
         "logSummary": "야학 학생 편으로 주재소 수색 경로와 시간을 이정수에게 몰래 전달해 피신할 틈을 주었다.",
-        "next": "police_c3_react_d"
+        "next": "police_c3_say_d"
       }
     ]
+  },
+  {
+    "id": "police_c3_say_a",
+    "locationId": "loc_police_substation",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_police_asst",
+    "text": "동혁은 경봉을 고쳐 쥐며 답했다. “지금 즉시 들말과 뒷산 길목을 수색하겠습니다.” 그날 밤, 동혁은 이정수의 은신처를 끝까지 추적해 보고했다.",
+    "next": "police_c3_react_a"
+  },
+  {
+    "id": "police_c3_say_b",
+    "locationId": "loc_police_substation",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_police_asst",
+    "text": "동혁은 허리띠를 풀어 배지와 경봉을 다나카 주임 책상 위에 내려놓았다. “강제 노무동원 추적은 못 합니다. 무고한 이웃을 사냥하는 명령, 여기서 거부하겠습니다.”",
+    "next": "police_c3_react_b"
+  },
+  {
+    "id": "police_c3_say_c",
+    "locationId": "loc_police_substation",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "neutral",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_police_asst",
+    "text": "동혁은 책임을 피하려 다른 이름을 꺼냈다. “이정수 대신 야학을 돕던 다른 들말 청년이 연락책입니다.”",
+    "next": "police_c3_react_c"
+  },
+  {
+    "id": "police_c3_say_d",
+    "locationId": "loc_police_substation",
+    "characters": [
+      {
+        "characterId": "char_police_asst",
+        "expression": "patrol",
+        "position": "left"
+      },
+      {
+        "characterId": "char_sato",
+        "expression": "stern",
+        "position": "right"
+      }
+    ],
+    "speakerId": "char_police_asst",
+    "text": "“뒷산 동쪽부터 훑어보겠습니다.” 수색에 나서는 척 빠져나온 동혁은 야학 학생 편으로 주재소 수색 경로와 시간을 이정수에게 몰래 전했다.",
+    "next": "police_c3_react_d"
   },
   {
     "id": "police_c3_react_a",

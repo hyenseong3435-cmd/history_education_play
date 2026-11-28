@@ -48,13 +48,13 @@ function getDisplayFrameStyle(ratio: DisplayRatioMode): CSSProperties | undefine
   if (ratio === '16:9') {
     return {
       width: 'min(100vw, calc(100dvh * 16 / 9))',
-      height: 'min(100dvh, max(560px, calc(100vw * 9 / 16)))',
+      height: 'min(100dvh, max(min(560px, 100dvh), calc(100vw * 9 / 16)))',
     };
   }
   if (ratio === '4:3') {
     return {
       width: 'min(100vw, calc(100dvh * 4 / 3))',
-      height: 'min(100dvh, max(560px, calc(100vw * 3 / 4)))',
+      height: 'min(100dvh, max(min(560px, 100dvh), calc(100vw * 3 / 4)))',
     };
   }
   return undefined;

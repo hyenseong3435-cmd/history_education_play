@@ -221,7 +221,7 @@ export function VisualNovelStage({
       <div
         role="group"
         aria-label="선택지"
-        className="w-full space-y-2"
+        className="w-full space-y-1.5 sm:space-y-2"
       >
         <div className="flex items-center justify-between px-0.5">
           <span className="text-[11px] sm:text-xs font-medium tracking-wide text-[#B2A999]">
@@ -236,7 +236,7 @@ export function VisualNovelStage({
           className={
             layout === 'desktop'
               ? 'grid grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-2.5 max-h-[46dvh] overflow-y-auto overscroll-contain pr-0.5'
-              : 'flex flex-col gap-2.5'
+              : 'flex flex-col gap-2'
           }
         >
           {evaluatedChoices.map(({ choice, unlocked }, idx) => {
@@ -250,7 +250,7 @@ export function VisualNovelStage({
               return (
                 <div
                   key={choice.id}
-                  className="w-full px-3.5 py-3 bg-[#121417]/94 border border-[#282C33] text-[#83817B] flex flex-col sm:flex-row sm:items-center justify-between gap-2"
+                  className="w-full px-3 py-2.5 bg-[#121417]/94 border border-[#282C33] text-[#83817B] flex flex-col sm:flex-row sm:items-center justify-between gap-2"
                 >
                   <div className="space-y-0.5">
                     <p className="text-xs sm:text-sm font-medium flex items-center gap-2">
@@ -266,7 +266,7 @@ export function VisualNovelStage({
                     <button
                       type="button"
                       onClick={() => onOpenSourceById(requiredSourceId)}
-                      className="min-h-[38px] px-3 py-1.5 bg-[#1B1E23] hover:bg-[#252930] text-[#E3DED4] border border-[#5B564D] text-xs font-medium flex items-center gap-1.5 self-start sm:self-center cursor-pointer whitespace-nowrap"
+                      className="min-h-[36px] px-3 py-1 bg-[#1B1E23] hover:bg-[#252930] text-[#E3DED4] border border-[#5B564D] text-xs font-medium flex items-center gap-1.5 self-start sm:self-center cursor-pointer whitespace-nowrap"
                     >
                       <BookOpen className="w-3.5 h-3.5 text-[#B2A999]" />
                       사료 열람하여 해금
@@ -281,28 +281,28 @@ export function VisualNovelStage({
                 key={choice.id}
                 type="button"
                 onClick={() => onSelectChoice(choice)}
-                className="group w-full min-h-[54px] px-3.5 sm:px-4 py-3 bg-[#171A20]/96 hover:bg-[#21252D] active:bg-[#2A2F38] border border-[#444A55] hover:border-[#B5AC9C] active:border-[#C7BFA9] text-left transition-colors duration-150 flex items-start gap-3 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B2A999]"
+                className="group w-full min-h-[46px] sm:min-h-[52px] px-3 sm:px-4 py-2.5 sm:py-3 bg-[#171A20]/96 hover:bg-[#21252D] active:bg-[#2A2F38] border border-[#444A55] hover:border-[#B5AC9C] active:border-[#C7BFA9] text-left transition-colors duration-150 flex items-center gap-2.5 sm:gap-3 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B2A999]"
               >
-                <span className="font-data text-[11px] font-semibold text-[#C2B9A8] bg-[#22262E] border border-[#3E434E] group-hover:border-[#9E9586] w-6 h-6 flex items-center justify-center mt-0.5 shrink-0">
+                <span className="font-data text-[11px] font-semibold text-[#C2B9A8] bg-[#22262E] border border-[#3E434E] group-hover:border-[#9E9586] w-6 h-6 flex items-center justify-center shrink-0">
                   {idx + 1}
                 </span>
                 <div className="flex-1 min-w-0">
                   <span
-                    className={`block font-medium text-[#F2EFE9] leading-[1.6] break-keep ${
+                    className={`block font-medium text-[#F2EFE9] leading-[1.45] break-keep ${
                       settings.textSize === 'large'
-                        ? 'text-[16px] sm:text-[17px]'
-                        : 'text-[14px] sm:text-[15px]'
+                        ? 'text-[15.5px] sm:text-[17px]'
+                        : 'text-[13.5px] sm:text-[15px]'
                     }`}
                   >
                     {choice.text}
                   </span>
                   {choice.unlockTag && (
-                    <span className="inline-block mt-1 text-[11px] text-[#B2A999] font-normal">
+                    <span className="inline-block mt-0.5 text-[11px] text-[#B2A999] font-normal">
                       · {choice.unlockTag}
                     </span>
                   )}
                 </div>
-                <ChevronRight className="w-4 h-4 text-[#8E8B84] group-hover:text-[#D8D1C5] mt-1 shrink-0 transition-colors" />
+                <ChevronRight className="w-4 h-4 text-[#8E8B84] group-hover:text-[#D8D1C5] shrink-0 transition-colors" />
               </button>
             );
           })}
@@ -324,27 +324,29 @@ export function VisualNovelStage({
       className={`${
         isSplitPanel
           ? `bg-[#14161A] border border-[#2D3139] ${
-              compact ? 'px-3.5 py-2.5' : 'p-3.5 sm:p-4'
+              compact ? 'px-3 py-2' : 'p-3.5 sm:p-4'
             } flex flex-col justify-between`
-          : `dialogue-box ${compact ? 'px-4 py-3 sm:px-5 sm:py-3.5' : 'p-4 sm:p-5'}`
+          : `dialogue-box ${compact ? 'px-4 py-2.5 sm:px-5 sm:py-3' : 'p-4 sm:p-5'}`
       } transition-colors ${!hasChoices || !isTypingDone ? 'cursor-pointer' : ''}`}
     >
       {/* Speaker nameplate */}
       <div
         className={`flex items-baseline justify-between gap-3 border-b border-[#292D34] shrink-0 ${
-          compact ? 'mb-1.5 pb-1' : 'mb-2 pb-1.5'
+          compact ? 'mb-1 pb-1' : 'mb-2 pb-1.5'
         }`}
       >
         <div className="flex flex-wrap items-baseline gap-2 min-w-0">
           <span
             className={`font-editorial font-semibold text-[#F1EEE8] ${
-              compact ? 'text-sm sm:text-base' : 'text-base sm:text-lg'
+              compact ? 'text-[13px] sm:text-base' : 'text-base sm:text-lg'
             }`}
           >
             {speakerDisplayName}
           </span>
           {speakerDisplayRole && (
-            <span className="text-xs text-[#9E978B]">· {speakerDisplayRole}</span>
+            <span className="text-[11px] sm:text-xs text-[#9E978B]">
+              · {speakerDisplayRole}
+            </span>
           )}
         </div>
         {!hasChoices && (
@@ -356,18 +358,20 @@ export function VisualNovelStage({
 
       {/* Dialogue prose */}
       <div
-        className={`flex flex-col justify-between gap-2.5 ${
+        className={`flex flex-col justify-between gap-2 ${
           compact ? 'min-h-0' : 'min-h-[64px] sm:min-h-[72px]'
         }`}
       >
         <p
-          className={`text-[#E3E0D9] leading-[1.68] break-keep ${
+          className={`text-[#E3E0D9] break-keep ${
+            compact ? 'leading-[1.52]' : 'leading-[1.68]'
+          } ${
             settings.textSize === 'large'
               ? compact
-                ? 'text-[15px] sm:text-lg'
+                ? 'text-[14.5px] sm:text-lg'
                 : 'text-base sm:text-xl'
               : compact
-              ? 'text-[13.5px] sm:text-[15px]'
+              ? 'text-[12.5px] sm:text-[14.5px]'
               : 'text-sm sm:text-base md:text-[16.5px]'
           }`}
         >
@@ -386,7 +390,7 @@ export function VisualNovelStage({
                 e.stopPropagation();
                 handleBoxAction();
               }}
-              className="min-h-[42px] px-4 py-1.5 bg-[#1B1E23] hover:bg-[#252930] text-[#ECE9E2] border border-[#3E434D] text-xs sm:text-sm font-medium flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap"
+              className="min-h-[40px] px-4 py-1.5 bg-[#1B1E23] hover:bg-[#252930] text-[#ECE9E2] border border-[#3E434D] text-xs sm:text-sm font-medium flex items-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap"
             >
               <span>{isTypingDone ? '다음' : '전체 보기'}</span>
               <ChevronRight className="w-4 h-4 text-[#A49B8C]" />
@@ -409,12 +413,12 @@ export function VisualNovelStage({
             : 'flex md:hidden'
         } flex-1 min-h-0 w-full flex-col overflow-hidden`}
       >
-        {/* Adaptive upper scene canvas: generous during dialogue, smoothly yields space when choices appear */}
+        {/* Adaptive upper scene canvas: shrinks cleanly when choices open so all 4 choices stay on screen */}
         <div
           className={`relative w-full border-b border-[#2A2D34] overflow-hidden flex flex-col justify-between shrink-0 transition-all duration-300 ${
             showChoices
-              ? 'h-[23%] min-h-[116px] max-h-[172px]'
-              : 'h-[44%] min-h-[200px] max-h-[360px]'
+              ? 'h-[17%] min-h-[86px] max-h-[124px]'
+              : 'h-[42%] min-h-[190px] max-h-[340px]'
           }`}
         >
           <div className="absolute inset-0 z-0">
@@ -432,15 +436,15 @@ export function VisualNovelStage({
           <div className="relative z-10 flex-1 min-h-0 w-full max-w-3xl mx-auto px-3 pointer-events-none">
             {renderSprites(
               showChoices
-                ? 'h-[92%] max-h-[135px] w-auto max-w-[34vw]'
-                : 'h-[86%] max-h-[270px] w-auto max-w-[44vw]'
+                ? 'h-[94%] max-h-[96px] w-auto max-w-[28vw]'
+                : 'h-[86%] max-h-[260px] w-auto max-w-[44vw]'
             )}
           </div>
         </div>
 
         {/* Unified single-scroll lower dialogue & choice panel (no nested scroll traps) */}
-        <section className="flex-1 min-h-0 w-full max-w-3xl mx-auto px-3.5 sm:px-5 pt-3 pb-[max(1rem,env(safe-area-inset-bottom))] overflow-y-auto overscroll-contain bg-[#0F1114]">
-          <div className="flex flex-col gap-3">
+        <section className="flex-1 min-h-0 w-full max-w-3xl mx-auto px-3 sm:px-5 pt-2.5 pb-[max(0.875rem,env(safe-area-inset-bottom))] overflow-y-auto overscroll-contain bg-[#0F1114]">
+          <div className="flex flex-col gap-2.5">
             {renderDialogueCard(true, showChoices)}
             {renderChoices('mobile')}
           </div>
@@ -473,7 +477,7 @@ export function VisualNovelStage({
           <div className="relative z-10 flex-1 min-h-[120px] w-full max-w-5xl mx-auto px-6 pointer-events-none">
             {renderSprites(
               showChoices
-                ? 'h-[90%] max-h-[280px] min-h-[110px] w-auto max-w-[30vw]'
+                ? 'h-[90%] max-h-[290px] min-h-[110px] w-auto max-w-[30vw]'
                 : 'h-[88%] max-h-[380px] min-h-[150px] w-auto max-w-[38vw]'
             )}
           </div>
